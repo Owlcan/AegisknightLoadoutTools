@@ -1,0 +1,352 @@
+/* Main Styles */
+:root {
+    --gold: #d4af37;
+    --silver: #c0c0c0;
+    --dark-stone: #2a2a2a;
+    --darker-stone: #1a1a1a;
+    --light-stone: #3a3a3a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cinzel Decorative', serif;
+    color: var(--gold);
+    background-color: #000;
+    background-image: url('https://www.transparenttextures.com/patterns/dark-stone.png');
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(42, 42, 42, 0.9);
+    border: 8px double var(--gold);
+    border-image: linear-gradient(45deg, var(--gold), var(--silver), var(--gold)) 1;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 2px solid var(--gold);
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 3rem;
+    text-shadow: 0 0 10px var(--gold);
+    color: var(--gold);
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--silver);
+    text-shadow: 0 0 5px var(--silver);
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: var(--gold);
+}
+
+/* Main Content */
+.selector-container {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.selectors {
+    flex: 1;
+    background-color: var(--dark-stone);
+    padding: 20px;
+    border: 1px solid var(--silver);
+    border-radius: 5px;
+}
+
+.info-panel {
+    flex: 1;
+    background-color: var(--dark-stone);
+    padding: 20px;
+    border: 1px solid var(--silver);
+    border-radius: 5px;
+    min-height: 400px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.armor-piece {
+    margin-bottom: 20px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--darker-stone);
+    color: var(--silver);
+    border: 1px solid var(--gold);
+    font-family: 'Cinzel Decorative', serif;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+}
+
+select:focus {
+    box-shadow: 0 0 5px var(--gold);
+}
+
+option {
+    background-color: var(--darker-stone);
+    color: var(--silver);
+}
+
+.action-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 12px 25px;
+    background: linear-gradient(to bottom, var(--gold), #a67c00);
+    color: var(--darker-stone);
+    font-family: 'Cinzel Decorative', serif;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(to bottom, #f1c40f, var(--gold));
+    transform: scale(1.05);
+}
+
+/* Item Details */
+.item-details {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.item-image-placeholder {
+    height: 200px;
+    background-color: var(--light-stone);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px dashed var(--silver);
+    overflow: hidden;
+}
+
+.placeholder-text {
+    color: var(--silver);
+    font-style: italic;
+}
+
+.armor-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.armor-image:hover {
+    transform: scale(1.05);
+}
+
+.item-description {
+    flex: 1;
+    max-height: 650px;
+    overflow-y: auto;
+    padding-right: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--gold) var(--dark-stone);
+}
+
+/* Custom scrollbar styling */
+.item-description::-webkit-scrollbar {
+    width: 8px;
+}
+
+.item-description::-webkit-scrollbar-track {
+    background: var(--dark-stone);
+}
+
+.item-description::-webkit-scrollbar-thumb {
+    background-color: var(--gold);
+    border-radius: 10px;
+    border: 2px solid var(--dark-stone);
+}
+
+.item-description h4 {
+    color: var(--silver);
+    margin: 15px 0 10px;
+    border-bottom: 1px solid var(--gold);
+    padding-bottom: 5px;
+}
+
+.armor-description {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.armor-progression p {
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-left: 3px solid var(--gold);
+    padding-bottom: 5px;
+}
+
+/* Loadout Results */
+.loadout-results {
+    background-color: var(--dark-stone);
+    padding: 30px;
+    border: 2px solid var(--gold);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Armor visualization section */
+.armor-visualization {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid var(--silver);
+}
+
+.armor-image-container {
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.armor-image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.armor-image-placeholder {
+    color: var(--silver);
+    font-family: 'Cinzel Decorative', cursive;
+    text-align: center;
+}
+
+/* Level effects chart */
+.level-effects-section {
+    margin: 30px 0;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--gold);
+    border-radius: 5px;
+}
+
+.level-effects-chart {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.effect-item {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--silver);
+    padding: 10px;
+    border-radius: 5px;
+    width: calc(50% - 10px);
+    box-sizing: border-box;
+}
+
+.effect-item h4 {
+    color: var(--gold);
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.effect-item p {
+    margin: 0;
+    color: var(--silver);
+    font-size: 14px;
+}
+
+.no-effects {
+    color: var(--silver);
+    font-style: italic;
+    text-align: center;
+    width: 100%;
+}
+
+/* Original loadout styles */
+.loadout-columns {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.loadout-column {
+    flex: 1;
+}
+
+.loadout-item {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--silver);
+}
+
+.loadout-item-name {
+    color: var(--silver);
+}
+
+.loadout-item-progression {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid var(--gold);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .selector-container {
+        flex-direction: column;
+    }
+    
+    .loadout-columns {
+        flex-direction: column;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+}

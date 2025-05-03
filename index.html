@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aegisknight Armor Selector</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Aegisknight Armor Selector</h1>
+        </header>
+        
+        <main>
+            <div class="selector-container">
+                <div class="selectors">
+                    <div class="armor-piece">
+                        <h2>Helmet</h2>                        <select id="helmet-select" onchange="updateArmorInfo('helmet')">
+                            <option value="">Select a Helmet...</option>
+                            <option value="Hypersensory-Scanner-Array">A. Hypersensory Scanner Array</option>
+                            <option value="Neuroprotective-Casement">B. Neuroprotective Casement</option>
+                            <option value="Ultimate-Bastion-Heavy-Helmet">C. Ultimate-Bastion Heavy Helmet</option>
+                            <option value="Golden-Chain-Hood">D. Golden Chain Hood</option>
+                            <option value="Oracles-Tongue-Helm">E. Oracle's Tongue Helm</option>
+                            <option value="Pacifier-Themed-Helmet">Pacifier of Quietude</option>
+                            <option value="Bonnet-Themed-Helmet">Bonnet of Blushing Bravado</option>
+                        </select>
+                    </div>
+                    
+                    <div class="armor-piece">
+                        <h2>Pauldrons</h2>                        <select id="pauldrons-select" onchange="updateArmorInfo('pauldrons')">
+                            <option value="">Select Pauldrons...</option>
+                            <option value="Exultant-Type">A. Exultant Type</option>
+                            <option value="Vanguard-Heavy-Type">B. Vanguard Heavy Type</option>
+                            <option value="Tech-Type">C. Tech Type</option>
+                            <option value="Marksman-Type-Pauldron">D. Marksman Type Pauldron</option>
+                            <option value="Kinetic-Resonance-Pauldron">E. Kinetic Resonance Pauldron</option>
+                            <option value="Diaper-Duty-Pauldrons">Diaper Duty Pauldrons</option>
+                        </select>
+                    </div>
+                    
+                    <div class="armor-piece">
+                        <h2>Chest Armor</h2>                        <select id="chest-select" onchange="updateArmorInfo('chest')">
+                            <option value="">Select Chest Armor...</option>
+                            <option value="Balanced-Type-Composite-Frame">Balanced Type Composite Frame</option>
+                            <option value="Bulwark-Type-Frame">Bulwark Type Frame</option>
+                            <option value="Light-Type-Frame">Light Type Frame</option>
+                            <option value="Xtra-Hev-Composite-Frame">Xtra-Hev Composite Frame</option>
+                            <option value="Soiling-Shield-Bib">Soiling Shield Bib</option>
+                        </select>
+                    </div>
+                    
+                    <div class="armor-piece">
+                        <h2>Arms/Gloves</h2>                        <select id="arms-select" onchange="updateArmorInfo('arms')">
+                            <option value="">Select Arms/Gloves...</option>
+                            <option value="Shadestreak-Handmantles">A. Shadestreak Handmantles</option>
+                            <option value="Blastbreaker-Fists">B. Blastbreaker Fists</option>
+                            <option value="Somatic-Satellites">C. Somatic Satellites</option>
+                            <option value="Serene-Palm-Gauntlets">D. Serene Palm Gauntlets</option>
+                            <option value="Infantile-Mittens">Infantile Mittens</option>
+                        </select>
+                    </div>
+                    
+                    <div class="armor-piece">
+                        <h2>Boots</h2>                        <select id="boots-select" onchange="updateArmorInfo('boots')">
+                            <option value="">Select Boots...</option>
+                            <option value="Ultra-Duty-Boots">A. Ultra-Duty Boots</option>
+                            <option value="Balanced-Boots">B. Balanced Boots</option>
+                            <option value="Blastcore-Soles">C. Blastcore Soles</option>
+                            <option value="Virtues-Bastion">D. Virtue's Bastion (Diaper Cover)</option>
+                            <option value="Ethereal-Stride-Boots">E. Ethereal Stride Boots</option>
+                        </select>
+                    </div>
+                    
+                    <div class="armor-piece">
+                        <h2>Raiment</h2>                        <select id="raiment-select" onchange="updateArmorInfo('raiment')">
+                            <option value="">Select Raiment...</option>
+                            <option value="Photonic-Cape">Photonic Cape</option>
+                            <option value="Soul-Core-Manifold">Soul Core Manifold</option>
+                            <option value="Godhead-Shard">Godhead Shard</option>
+                            <option value="Arcanomatrix">Arcanomatrix</option>
+                            <option value="Luminant-Engine">Luminant Engine</option>
+                            <option value="Mystery-Module">Mystery Module</option>
+                            <option value="Transmorphic-Belt">Transmorphic Belt</option>
+                            <option value="Unstable-Fury-Core">Unstable Fury Core</option>
+                            <option value="Diaper-Daycare-Raiment">Diaper Daycare Raiment</option>
+                            <option value="Mephidium-Coda">Mephidium Coda (Skunk's Tail)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="action-button">
+                        <button id="finalize-button" onclick="finalizeLoadout()">Finalize Loadout</button>
+                    </div>
+                </div>
+                  <div class="info-panel">
+                    <div class="item-details">
+                        <div class="item-image-placeholder">
+                            <div class="placeholder-text">Image Placeholder</div>
+                        </div>
+                        <div class="item-description">
+                            <h3 id="selected-item-name">Select an armor piece</h3>
+                            <div id="selected-item-description">Information about the selected item will appear here.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+              <div class="loadout-results" id="loadout-results" style="display: none;">
+                <h2>Your Aegisknight Loadout</h2>
+                
+                <!-- Visual representation of armor pieces -->
+                <div class="armor-visualization">
+                    <div class="armor-image-container" id="helmet-image">
+                        <div class="armor-image-placeholder">Helmet</div>
+                    </div>
+                    <div class="armor-image-container" id="pauldrons-image">
+                        <div class="armor-image-placeholder">Pauldrons</div>
+                    </div>
+                    <div class="armor-image-container" id="chest-image">
+                        <div class="armor-image-placeholder">Chest</div>
+                    </div>
+                    <div class="armor-image-container" id="arms-image">
+                        <div class="armor-image-placeholder">Arms</div>
+                    </div>
+                    <div class="armor-image-container" id="boots-image">
+                        <div class="armor-image-placeholder">Boots</div>
+                    </div>
+                    <div class="armor-image-container" id="raiment-image">
+                        <div class="armor-image-placeholder">Raiment</div>
+                    </div>
+                </div>
+                
+                <!-- Level 5 effects chart -->
+                <div class="level-effects-section">
+                    <h3>Level 5 Effects</h3>
+                    <div class="level-effects-chart" id="level-effects-chart">
+                        <p class="no-effects">Finalize your loadout to see Level 5 effects</p>
+                    </div>
+                </div>
+                
+                <!-- Detailed breakdown of armor pieces -->
+                <h3>Detailed Breakdown</h3>
+                <div class="loadout-columns">
+                    <div class="loadout-column">
+                        <div id="helmet-result" class="loadout-item">
+                            <h3>Helmet: <span class="loadout-item-name">None Selected</span></h3>
+                            <div class="loadout-item-progression"></div>
+                        </div>
+                        <div id="pauldrons-result" class="loadout-item">
+                            <h3>Pauldrons: <span class="loadout-item-name">None Selected</span></h3>
+                            <div class="loadout-item-progression"></div>
+                        </div>
+                        <div id="chest-result" class="loadout-item">
+                            <h3>Chest: <span class="loadout-item-name">None Selected</span></h3>
+                            <div class="loadout-item-progression"></div>
+                        </div>
+                    </div>
+                    <div class="loadout-column">
+                        <div id="arms-result" class="loadout-item">
+                            <h3>Arms/Gloves: <span class="loadout-item-name">None Selected</span></h3>
+                            <div class="loadout-item-progression"></div>
+                        </div>
+                        <div id="boots-result" class="loadout-item">
+                            <h3>Boots: <span class="loadout-item-name">None Selected</span></h3>
+                            <div class="loadout-item-progression"></div>
+                        </div>
+                        <div id="raiment-result" class="loadout-item">
+                            <h3>Raiment: <span class="loadout-item-name">None Selected</span></h3>
+                            <div class="loadout-item-progression"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="action-button">
+                    <button onclick="backToSelection()">Back to Selection</button>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Aegisknight Armor Selector</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

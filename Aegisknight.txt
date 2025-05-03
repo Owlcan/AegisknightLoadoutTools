@@ -1,0 +1,933 @@
+
+
+For each armor piece, choose one option when you create your character. ***Any new, complex, or otherwise obscure mechanics are explained below these features.***
+
+### **1. Helmet Options**
+
+**A. Hypersensory Scanner Array**  
+*This advanced helmet is a marvel of sensory enchantment, merging arcane optics with practical battlefield awareness. Its glassy, rune-etched visor and faintly humming sensors grant you unparalleled insight into the unseen. Whether darkness or illusion conceals your foes, your vision—and your investigative prowess—remains unfaltering.*
+
+- **To Start (Level 1):**  
+  - **Darkvision Bestowal:** If you do not already have it, you gain darkvision out to 60 ft., allowing you to see in nocturnal or dimly lit environments.  
+  - **Basic Sensor:** Your helmet is equipped with a rudimentary sensor that highlights hidden or invisible creatures, functioning similarly to a “detect invisibility” effect. This ability can be activated once per short rest.
+
+- **Level 4 Upgrade:**  
+  - **Enhanced Detection Mode:** As a bonus action, you can activate an improved sensor that reveals any invisible creatures within a 30-ft radius for 1 minute. This upgraded detection effect is usable once per short rest, ensuring that no subtle presence goes unnoticed.
+
+- **Level 7 Upgrade:**  
+  - **Truesight Activation:** Your perceptive faculties are augmented, granting you Truesight out to 30 ft. for 1 minute, once per short rest. With this ability, illusions, disguises, and obfuscations dissolve before your gaze.
+
+- **Level 11 Upgrade:**  
+  - **Investigative Augmentation:** When you activate your sensor using an action, you also gain advantage on Investigation checks to find illusions or any hidden entities, and you can discern the location of hidden doorways for 1 minute. 
+
+- **Level 14 Upgrade:**  
+  - **Augmented Sensory Overload:** Your helmet’s visionary might expands further: your Truesight range increases to 60 ft., and you can now, as an action, detect magical auras within a 30-ft radius. 
+
+**B. Neuroprotective Casement**  
+*The Neuroprotective Casement is a masterwork of mental fortification—a sleek, rune-etched helmet designed to shield your mind from intrusive psychic assaults. Swirling patterns of arcane energy trace its surface, forming a barrier that not only hones your focus but also defies the subtle manipulation of hostile magic. Whether you face bewildering enchantments or overwhelming psychic force, this helmet stands as a steadfast guardian of your inner resolve.*
+
+- **To Start (Level 1):**  
+  - **Initial Ward:** While wearing the Neuroprotective Casement, you gain a +1 bonus to AC, and its delicate enchantments confer slight resistance to psychic damage. This early defense helps keep your thoughts undisturbed in the midst of chaos.
+
+- **Level 4 Upgrade:**  
+  - **Charm Deflection:** The helmet’s protective runes intensify, granting you advantage on saving throws against charm effects. Your mind becomes ever more adept at resisting attempts to subvert your will.
+
+- **Level 7 Upgrade:**  
+  - **Fear Immunity:** Bolstered by deep-seated arcane safeguards, you gain immunity to the frightened condition. No spectral terror or illusory horror can shake your resolve.
+
+- **Level 11 Upgrade:**  
+  - **Absolute Charm Rejection & Enhanced Force Resistance:** Your mental defenses reach new heights. You become completely immune to charm effects, and the Casement’s energy field extends its protection to offer additional resistance to force damage, softening the impact of overwhelming kinetic strikes.
+
+- **Level 14 Upgrade:**  
+  - **Psychic Bastion:** The pinnacle of neuroprotective artistry is achieved. You gain full immunity to psychic damage, and your sharp intellect is further safeguarded by advantage on Intelligence saving throws—ensuring that your mind remains a bastion against all forms of mental coercion.
+\page
+**C. Ultimate-Bastion Heavy Helmet**  
+*Forged in the crucible of relentless combat and imbued with archaic defensive runes, the Ultimate-Bastion Heavy Helmet is the epitome of protective mastery. Its robust construction and enchanted surface form an unyielding barrier against both divine light and corrupting shadows. As its magic deepens over time, the helmet transforms into a legendary aegis—deflecting radiant fury and necrotic decay with supernatural finesse.*
+
+- **To Start (Level 1):**  
+  - **Defensive Ward:** The helmet grants a **+1 bonus to AC** as its enchanted metal and intricate runes bolster your physical defenses.  
+  - **Radiant Resistance:** Its first shield is set against the searing purity of divine energy, providing **resistance to radiant damage**.
+
+- **Level 4 Upgrade:**  
+  - **Necrotic Fortification:** The mystical inscriptions on the helmet expand to cover darker forces, granting **resistance to necrotic damage** and safeguarding you against energy that drains life.
+
+- **Level 7 Upgrade:**  
+  - **Radiant Immunity:** The helm's power reaches a new threshold, and you become completely impervious to radiant harm—**gaining immunity to radiant damage** and neutralizing even the most potent beams of holy retribution.
+
+- **Level 11 Upgrade:**  
+  - **Enhanced Barrier:** The protective enchantments surge further, granting an **extra +1 bonus to AC (total +2)**. Additionally, you choose one damage type of your choice to receive further protection—whether by gaining resistance or immunity, the helm adapts to your needs.
+
+- **Level 14 Upgrade:**  
+  - **Arcane Shielding:** At its zenith, the Ultimate-Bastion Heavy Helmet solidifies its defenses with unassailable magic. You gain **immunity to necrotic damage** and, by channeling the helm's deep-seated protections, you also gain **advantage on saving throws against spells**, ensuring that both physical and magical assaults are met with unwavering resolve.
+
+
+**D. Golden Chain Hood**  
+*This majestic hood is interwoven with shimmering golden chains that pulse with divine energy. Forged from sacred metal and imbued with celestial radiance, it protects its wearer while subtly enhancing divine insight. Even if you do not attune to the Godhead Shard, the hood offers its own impressive benefits—but when paired with the shard, its power ascends to near-mythical levels.*
+
+- **To Start (Level 1):**  
+  - **Divine Aegis:** Grants a +1 bonus to AC and to saving throws against charm effects.  
+  - **Luminous Vision:** If you lack darkvision, you gain darkvision out to 60 ft.  
+  - **Chain-Link Detection:** Once per short rest, as an action, activate the hood’s built-in sensor to detect magical auras (as per *detect magic*) for 1 minute.  
+  - **Godhead Synergy:** If attuned to the Godhead Shard, the hood radiates a warm, golden glow. While its sensor is active, you gain an additional +1 bonus to Wisdom saving throws and advantage on Wisdom (Insight) checks.
+
+- **Level 4 Upgrade:**  
+  - **Auroral Scanning:** You can now use a bonus action to activate an enhanced scanning mode that detects invisible or ethereal creatures within 30 ft. for 1 minute (usable once per short rest).  
+  - **Synergistic Glimmer:** If attuned with the Godhead Shard, this mode also reveals the auras of celestial and fiendish entities, offering deeper insights into hidden threats.
+
+- **Level 7 Upgrade:**  
+  - **Chain of Clarity:** Gain a permanent +1 bonus to Wisdom saving throws. Additionally, once per short rest, when you are subject to a charm or fear effect, you can use your reaction to gain advantage on the saving throw—or, if attuned with the Godhead Shard, become immune to that effect until the end of your next turn. 
+ - **Level 11 Upgrade:**  
+   - **Radiant Feedback:** When you activate any of the hood’s detection or scanning abilities, you can empower your next attack or spell to deal extra radiant damage equal to 1d8 + your proficiency modifier. If attuned with the Godhead Shard, this bonus increases to 2d8 radiant damage.
+
+- **Level 14 Upgrade:**  
+  - **Divine Ascendance:** Once per long rest, as an action, invoke the full divine potential of the Golden Chain Hood for 1 minute. During this time, you gain Truesight out to 60 ft., advantage on all Wisdom saving throws, and all your spells that deal radiant or divine damage add an extra 2d8 damage. Additionally, if attuned with the Godhead Shard, you become immune to charm and fear effects for the duration.
+
+\page
+
+**E. Oracle’s Tongue Helm**  
+*The Oracle’s Tongue Helm unlocks the power of language, allowing you to speak, read, and write a multitude of tongues while effortlessly bridging the gap between mortals and the spectral. Naturally effective on its own, its true potential shines when paired with the Transformation Raiment.
+- **To Start (Level 1):**  
+  - **Linguistic Resonance:** You gain the ability to read, write, and speak two additional languages of your choice.  
+  - **Ethereal Comprehension:** Once per short rest, as an action, you can invoke a unique version of *Comprehend Languages* that lasts for 10 minutes, enabling you to understand any spoken or written language.  
+  - **Social Augury:** You receive a mild boost—a +1 bonus to Persuasion checks—when interacting with creatures and spirits.  
+  - **Transformation Synergy:** When paired with the Transformation Raiment, you automatically learn one extra language (for a total of three extra languages).
+
+- **Level 4 Upgrade:**  
+  - **Transcendent Tongues:** You learn an additional language (total of three extra languages, or four if paired with Transformation Raiment).  
+  - **Spirit Speech:** Once per short rest, you can, as a bonus action, cast *Speak with Animals* (with the thematic flavor extended to minor spirits), deepening your cross-planar communication.
+
+- **Level 7 Upgrade:**  
+  - **Mystic Translator:** The helm’s enchantments allow you to automatically decipher simple texts written in any language. You also gain advantage on checks to interpret ancient writings or cryptic dialects.  
+  - **Ethereal Parley:** Once per short rest, you can initiate a telepathic conversation for up to 1 minute with any creature or spirit that communicates verbally—even if they exist on a different plane of existence.
+
+- **Level 11 Upgrade:**  
+  - **Divine Eloquence:** You gain a permanent +1 bonus to Persuasion checks, and you have advantage on Intelligence (History) or (Arcana) checks when deciphering linguistic or esoteric scripts.  
+  - **Tongue of the Ancients:** Once per long rest, you can cast *Tongues* for 1 hour without expending a spell slot, enabling you to fluently understand and speak any language for the duration.
+
+- **Level 14 Upgrade:**  
+  - **Universal Oratory:** As an action, you can emanate an aura of linguistic clarity for 1 minute. During this time, every creature within 30 ft. understands your words as if they shared a common tongue, and you gain advantage on all Charisma (Persuasion) checks.  
+  - **Enhanced Transformation Synergy:** When paired with the Transformation Raiment, your aura’s range increases to 60 ft., and the bonus to Persuasion checks rises to +2.
+  ### **2. Pauldrons Options**
+
+**A. Exultant Type**  
+*Designed for the charismatic and commanding presence on the battlefield, Exultant Type pauldrons enhance your social prowess—directly influencing friend and foe alike with your inspiring aura.*
+
+- **To Start (Level 1):**  
+  - Grants a bonus to presence by adding **+1 to Persuasion (or Intimidation) checks**.
+
+- **Level 4 Upgrade:**  
+  - Allies within 10 ft. gain **advantage on saving throws against charm effects**, bolstering their resolve against enchantments.
+\
+- **Level 7 Upgrade:**  
+  - If you are already proficient in either Persuasion or Intimidation, your natural influence is magnified—**double your proficiency bonus on relevant checks**.
+
+- **Level 11 Upgrade:**  
+  - Your inspiring presence extends to your allies; those within 10 ft. now also receive a **+1 bonus to their Charisma saving throws**.
+
+- **Level 14 Upgrade:**  
+  - Your personal magnetism reaches its apex, increasing your **Charisma score by 2** (up to a maximum of 22).
+ 
+ 
+\page
+---
+
+**B. Vanguard Heavy Type**  
+*For Aegisknights who demand unwavering durability, Vanguard Heavy Type pauldrons provide formidable protection while absorbing and deflecting incoming damage.*
+
+- **To Start (Level 1):**  
+  - Provides a **+2 bonus to AC** and grants **extra resistance to nonmagical damage**, forming a robust defensive barrier.
+
+- **Level 4 Upgrade:**  
+  - The pauldrons strengthen further, and you gain **resistance to two damage types of your choice** (selected as you create your character).
+
+- **Level 7 Upgrade:**  
+  - Once per short rest, you can use your reaction to **halve incoming damage**, reflecting your ability to shrug off powerful blows.
+
+- **Level 11 Upgrade:**  
+  - You refine your defenses to the point of near-imperviousness, gaining **immunity to one of your chosen damage types**.
+
+- **Level 14 Upgrade:**  
+  - The Vanguard Heavy Type evolves further, granting you **resistance to all damage types except psychic**, ensuring comprehensive protection in even the most chaotic skirmishes.
+
+---
+
+**C. Tech Type**  
+*Engineered for versatility and precision, the Tech Type pauldrons integrate advanced mechanized components—garnering additional tools and robotic appendages to support your technical and tactical needs.*
+
+- **To Start (Level 1):**  
+  - Grants proficiency in one extra tool of your choice and provides **two extra “robotic arms”** that assist in simple tasks—granting a **+5 bonus to actions** such as crafting or disarming mundane traps.
+
+- **Level 4 Upgrade:**  
+  - Your robotic arms become more adept at physical tasks; they now **assist in grappling, granting advantage on Strength (Athletics) checks**.
+
+- **Level 7 Upgrade:**  
+  - Expand your technical versatility with proficiency in an **additional tool of your choice**.
+
+- **Level 11 Upgrade:**  
+  - Your arms gain enhanced dexterity, allowing them to **manipulate two objects in one turn**, significantly boosting your multitasking capabilities.
+
+- **Level 14 Upgrade:**  
+  - Your advanced robotic arms are upgraded to function even more efficiently—they can now use the **Help action as a bonus action**, streamlining support tasks in the heat of battle.
+  
+**D. Marksman Type Pauldron**  
+*Engineered for ranged specialists and snipers, this pauldron is optimized for precise targeting and rapid missile deployment. It integrates a built-in stabilizer that grants the benefits of Sharp Shooter along with a mounted missile launcher that offers versatile ammunition options for devastating ranged attacks.*
+
+- **To Start (Level 1):**  
+  - **Stabilizer Accuracy Module:** Grants you the ability to use the Sharp Shooter feature a number of times per day equal to your proficiency bonus. When activated, this module temporarily enhances your precision, allowing you to ignore disadvantage on long-range attack rolls and add extra damage bonus as per Sharp Shooter’s mechanics.  
+   - **Mounted Missile Launcher:**  
+   - **Single Dart Mode:** As an action, fire one self-generated dart as a ranged attack. On a hit, the dart explodes, dealing its normal weapon damage plus an additional **1d6 explosion damage** to the target and, at DM’s discretion, to adjacent foes.  
+   - **Barrage Mode:** Once per battle, you may expend 1 Cell Charge to fire a barrage of 3 darts simultaneously. Each dart is resolved as a separate ranged attack (you may choose to target the same or different creatures).  
+    - **Ammunition Production:** The pauldron naturally produces its own ammunition. However, you can load it with specially prepared ammunition if desired, allowing for alternate effects based on your campaign or DM’s rulings.
+
+- **Level 4 Upgrade:**  
+  - **Enhanced Stabilizer:** The precision module is refined—its effectiveness increases so that you gain an additional use of the Sharp Shooter feature once per day (up to a total equal to your proficiency bonus + 1). Additionally, its benefits reduce the impact of adverse conditions on your ranged attacks.
+\page
+
+
+- **Level 7 Upgrade:**  
+  - **Precision Amplifier:** The missile launcher's targeting system improves. In Single Dart Mode, the explosion damage increases by an extra **1d6** (now totaling 2d6 explosion damage). In Barrage Mode, the launcher fires 4 darts instead of 3 (while still costing 1 Cell Charge).
+
+- **Level 11 Upgrade:**  
+  - **Rapid Reload Mechanism:** The pauldron’s ammunition production and loading systems become more efficient. Once per short rest, you can automatically reload and prepare a special round of ammunition, granting you a temporary **+2 bonus to ranged attack rolls** for 1 minute.
+
+- **Level 14 Upgrade:**  
+  - **Auto-Targeting System:** An advanced targeting AI is integrated into the pauldron. When using the Sharp Shooter feature, you gain advantage on one ranged attack roll per turn. Additionally, when employing Barrage Mode, any missed dart attack can be re-rolled once, ensuring that even in the chaos of battle your shots find their mark.
+  
+ **E. Kinetic Resonance Pauldron**  
+ ___
+*Crafted from lightweight, energy-conductive plating interwoven with shimmering, radiant filigree, this pauldron pulses with the raw kinetic energy of movement. Every step you take imbues you with a surge of power, turning the very act of dashing into a storehouse of explosive force. This kinetic marvel transforms agile maneuvers into both a defensive boon and a deadly offensive weapon.*
+
+- **To Start (Level 1):**  
+  - **Enhanced Resonant Momentum:** You gain a **+2 bonus to Athletics and Acrobatics checks** as the pauldron amplifies your physical prowess. Additionally, whenever you take the Dash action, you store 1 “Kinetic Charge” that can be used to enhance your next melee attack or reaction attack. Kinetic Charges reset at the start of your next turn.
+
+- **Level 4 Upgrade:**  
+  - **Momentum Augmentation:** When you move at least half your speed in a turn, you now gain **advantage on Dexterity saving throws** as your body rides the raw momentum. In addition, any Kinetic Charge you gain lingers until the start of your next turn, allowing you to preserve its energy for a more opportune moment.
+
+- **Level 7 Upgrade:**  
+  - **Explosive Impact:** When you expend a Kinetic Charge to enhance a melee attack, your strike now deals an extra **1d8 force damage** and optionally pushes the target 5 feet away from you. You can use this explosive bonus once per short rest.
+
+- **Level 11 Upgrade:**  
+  - **Chain Reaction Counter:** When you’re hit by a melee attack while holding at least one stored Kinetic Charge, you may use your reaction to unleash a burst of stored energy. The attacker suffers **2d8 force damage**, and you gain a **+2 bonus to AC** until the start of your next turn. This counterattack can only be triggered once per short rest.
+
+- **Level 14 Upgrade:**  
+  - **Moment of Absolute Momentum:** Once per long rest, as an action, you can tap into the full reservoir of kinetic energy within your pauldron for 1 minute. During this time, your movement speed is **doubled**, and whenever you use the Dash action, your next melee attack that turn deals bonus force damage equal to your proficiency bonus plus an extra **1d8**. Additionally, every enemy within 5 feet of you must succeed on a Strength saving throw (DC = 8 + your proficiency bonus + your Strength modifier) or be knocked prone.
+
+
+\page
+
+### **3. Gloves and Arms Options**
+
+**A. Shadestreak Handmantles**  
+*These dexterity-focused gauntlets are designed for finesse and subtlety. They not only grant you proficiency with thieves’ tools but also provide technological assistance for precise actions, such as bypassing locks with a magitek laser-bore.*
+
+- **To Start (Level 1):**  
+  - Grant proficiency with thieves’ tools.  
+  - Once per day, you can use a magitek laser-bore to bypass a lock (DC 15 or lower).
+
+- **Level 4 Upgrade:**  
+  - Gain advantage on Dexterity (Sleight of Hand) checks.
+
+- **Level 7 Upgrade:**  
+  - Once per short rest, you can disarm traps without triggering them.
+
+- **Level 11 Upgrade:**  
+  - Gain the ability to cast *Invisibility* on yourself once per short rest.
+
+- **Level 14 Upgrade:**  
+  - You can bypass magical locks (such as those from *Arcane Lock*) once per long rest.
+
+
+**B. Blastbreaker Fists**  
+*Engineered for raw melee power, these augmented smashing hands enhance your physical might. They enable you to wield larger weapons with ease, reclassify lighter weapons for finesse, and improve your unarmed and melee damage output.*
+
+- **To Start (Level 1):**  
+  - Advantage on strength checks to lift, drag, carry, or pull heavy objects. **+1 to damage on all melee-based attacks.**  
+  - Treat two-handed weapons as if wielded in one hand; any non–two-handed weapon is considered light for you, and any such light weapon that isn’t finesse is treated as finesse.
+ - **Level 4 Upgrade:**  
+   - Gain a **+2 bonus to melee attack rolls**.
+
+- **Level 7 Upgrade:**  
+  - When you hit with a melee attack, you may deal an extra **1d8 force damage** once per turn.
+
+- **Level 11 Upgrade:**  
+  - You can grapple two creatures simultaneously. Additionally, at the start of your turn, each grappled creature takes **1d6 bludgeoning damage**.
+
+- **Level 14 Upgrade:**  
+  - Your melee attacks ignore nonmagical damage resistance and add an extra **2d8 force damage** on a critical hit.
+
+
+\page
+
+**C. Somatic Satellites**  
+*Small magical spheres orbit your hands, serving both as ranged attackers and auxiliary spell-storage devices. These satellites can be launched to deliver force damage or to hold spells for later use; when paired with Tech pauldrons, they even boost your spellcasting capabilities.*
+
+- **To Start (Level 1):**  
+  - You have a set of floating magical spheres that can be launched as ranged missiles dealing **1d8 force damage** or used to store a spell (usable by you or your allies later). Spells stored in this manner disappear at dawn on the day after they were stored.
+  - When paired with Tech pauldrons, they enable additional spellcasting opportunities.
+
+- **Level 4 Upgrade:**  
+  - Increase the number of satellites by 1 (total of 3).
+
+- **Level 7 Upgrade:**  
+  - Stored spells can be cast as a reaction. Counterspell may be spontaneously stored on a satellite once per day. Expending **1 Charge Cell** allows this power to be used more than once.
+
+- **Level 11 Upgrade:**  
+  - Satellites can deliver touch-range spells to a target up to 30 ft away.
+
+- **Level 14 Upgrade:**  
+  - Gain an additional satellite (total of 4), and stored spells last until cast, allowing for somatic satellite spells to be cast without consuming daily spell slots.
+
+:
+**D. Serene Palm Gauntlets**  
+*Fashioned from supple, rune-etched leather and tempered mithral, these gauntlets are imbued with the essence of time-honored martial arts. More than mere gloves, they channel the disciplined spirit of ancient masters. Whether wielding a weapon or fighting unarmed, you can seamlessly blend defense and controlled offense—deflecting blows and delivering pinpoint open palm strikes that echo the calm fury of inner ki.*
+
+- **To Start (Level 1):**  
+  - **Parry Reflex:** When you are targeted by a melee attack, you can use your reaction to parry the blow. Doing so reduces the damage taken by 1d4 + your proficiency bonus.  
+  - **Deflective Guard:** The steady energy of the gauntlets grants you a +1 bonus to AC against melee attacks, as your arms instinctively adopt a defensive stance.
+
+- **Level 4 Upgrade:**  
+  - **Enhanced Deflection:** Your techniques improve: once per short rest, when targeted by a ranged attack, you can use your reaction to force the attacker to roll with disadvantage. In addition, your Parry Reflex now reduces incoming melee damage by 1d6 + your proficiency bonus instead of 1d4.
+
+- **Level 7 Upgrade:**  
+  - **Open Palm Strike:** You unlock the disciplined art of the open palm. Once per short rest, as an action, you can execute a focused open palm strike. This special attack deals an additional 1d6 force damage, and on a hit the target must make a Strength saving throw (DC = 8 + your proficiency bonus + your Dexterity modifier) or be pushed 5 feet away.
+
+- **Level 11 Upgrade:**  
+  - **Flowing Ki Enhancement:** Your mastery deepens, allowing you to merge defense with immediate counterattacks. Whenever you successfully use your Parry Reflex, you can follow it with a free minor unarmed strike dealing an extra 1d4 force damage. Additionally, your Open Palm Strike’s damage increases by an extra 1d4 (totaling 1d6 + 1d4) and its effective range extends to 10 feet, symbolizing your expanded reach through focused chi.
+
+- **Level 14 Upgrade:**  
+  - **Zen Reversal:** At the pinnacle of your martial artistry, you can harness the ultimate counter: once per long rest, when struck by an attack, you may invoke Zen Reversal as a reaction. The triggering attack is completely negated, and you immediately make an unarmed strike against the attacker that deals 2d8 force damage on a hit. In the round you invoke Zen Reversal, your unarmed strikes gain advantage, and you gain an additional +2 bonus to AC as a luminous aura of focused energy protects you.
+
+  
+\page
+
+___
+### **4. Chest Armor Options**  
+*This piece determines your Hit Dice.*
+**Balanced Type Composite Frame**  
+
+- **To Start (Level 1):**  
+  - **Base AC:** Your armor grants an effective AC of **14 + Dexterity modifier** (up to a maximum bonus of +2), representing its lightweight, streamlined design.  
+  - **Shield Bonus (Daily):** Once per day, you can activate an energy shield to gain a temporary **+2 shield bonus to AC** for 1 minute.
+
+- **Level 4 Upgrade:**  
+  - **Elemental Resistance Activation:** You gain the ability to imbue your frame with a protective enchantment—once per short rest, choose one damage type (fire, cold, lightning, etc.) and gain resistance to that damage type for 1 minute.
+
+- **Level 7 Upgrade:**  
+  - **Initiative Amplification:** Your balanced design and enhanced reflexes grant you a permanent **+2 bonus to initiative rolls**, ensuring you act quicker in combat.
+- **Level 11 Upgrade:**  
+  - **Enhanced Shield Projection:** When you activate your shield bonus, you can choose to intensify its effect—granting a temporary **+4 shield bonus to AC** instead of +2, representing a moment of peak defensive prowess.
+
+- **Level 14 Upgrade:**  
+  - **Defensive Immunity:** Your frame’s protective magic evolves further, and you gain **immunity to one chosen damage type** (selected at the time of upgrade), completely negating that type of harm.
+
+
+
+
+**Bulwark Type Frame**  
+*Embodying steadfast resilience, this chestpiece is designed for Aegisknights who demand the utmost in protective fortitude. Sacrificing nimbleness for solid defense, this frame not only bolsters your AC but actively negates select damage types, offering a unique counter to both magical and physical onslaughts.*
+
+- **To Start (Level 1):**  
+  - **Base AC:** 17  
+  - **Bulwark Aegis:** Once per day, you can activate the Bulwark Aegis for 1 minute. While active, choose one magical or physical damage type; any damage of that type is completely negated against you.  
+  - **Hit Die:** Uses a d12 hit die.
+
+- **Level 4 Upgrade:**  
+  - **Increased Activation:** The uses of Bulwark Aegis increase to twice per day.
+
+- **Level 7 Upgrade:**  
+  - **Dual Resistance:** The frame now provides passive resistance to two chosen damage types.
+
+- **Level 11 Upgrade:**  
+  - **Critical Block:** While the Bulwark Aegis is active, any critical hit against you is negated and treated as a normal hit.  
+  - **Charge Activation:** You can also activate the Bulwark by spending 1 Cell Charge.
+
+- **Level 14 Upgrade:**  
+  - **Comprehensive Resilience:** Gain resistance to all damage types except psychic.
+
+**Light Type  Frame**  
+*This variant maximizes mobility at the expense of heavy armor, designed for agile Aegisknights who prioritize speed and dexterity over brute defense. Its lightweight design grants a modest shield bonus while boosting your movement, as represented by its use of a d8 hit die.*
+
+- **To Start (Level 1):**  
+  - **Base Defense:** Grants the lowest base AC among chestpiece options, reflecting its minimal plating.  
+  - **Mobility Augmentation:** Provides a static bonus to movement speed of +15 ft., enabling rapid repositioning.  
+  - **Shield Bonus Activation:** When activated, the frame projects an energy field that grants a +1 bonus to AC.  
+  - **Hit Die:** Uses a d8 hit die.
+
+- **Level 4 Upgrade:**  
+  - **Enhanced Stride:** Your frame is further streamlined, permanently increasing your movement speed by an additional +10 ft.
+
+- **Level 7 Upgrade:**  
+  - **Agile Reflexes:** The frame’s lightweight construction sharpens your acumen in evading danger, granting advantage on Dexterity saving throws.
+
+- **Level 11 Upgrade:**  
+  - **Unrestricted Movement:** The design improves further to prevent encumbering conditions, rendering you immune to being restrained or grappled.
+\page
+- **Level 14 Upgrade:**  
+  - **Dash Booster:** Once per short rest, you can activate a burst of speed as a bonus action to Dash without provoking opportunity attacks.
+
+**D. Xtra-Hev Composite Frame**  
+
+- **To Start (Level 1):**  
+  - **Hitdice**: 1d10 per level
+  - **AC:** 16  
+  - **Constitution Bonus:** Gain a +1 bonus to Constitution saving throws and ability checks.  
+  - **Regen Shield:** When activated (1 Charge), the frame projects a regenerating energy shield that grants temporary hit points equal to 10 + your Constitution modifier. At the start of each turn, if any of these temporary hit points remain, the shield automatically regenerates 2 temporary hit points (up to the maximum).  
+
+- **Level 4 Upgrade:**  
+  - **Advanced Plating:** The frame's defensive panels improve, increasing your base AC by 1 (to AC 17).  
+  - **Enhanced Shield Regeneration:** The regeneration factor of your shield improves, so it now restores 4 temporary hit points at the start of each turn while active.
+
+- **Level 7 Upgrade:**  
+  - **Fortified Constitution:** The frame’s integration with your body improves, and the bonus it provides to Constitution checks and saving throws increases to +2.  
+  - **Reinforced Shield Capacity:** The maximum temporary hit points granted by the shield increase by 5.
+\page
+- **Level 11 Upgrade:**  
+  - **Adaptive Regeneration:** If your shield was not completely depleted on your previous turn, it now regenerates an additional number of temporary hit points equal to your Constitution modifier at the start of your turn.  
+  - **Optimal Defense:** When your shield is fully active, conditions allow your effective AC to be treated as 18.
+
+- **Level 14 Upgrade:**  
+  - **Fortress Mode:** Once per short rest, you can activate Fortress Mode as a bonus action. For 1 minute, your shield’s maximum capacity increases by 50%, and you reduce all incoming damage by 2 (unless the damage comes from a source that bypasses non-magical defenses).  
+  - **Stalwart Mobility:** While in Fortress Mode, you gain advantage on Dexterity saving throws against effects that specifically target your movement, though your base movement speed remains 30 ft.
+
+### **5. Legs and Boots Options**  
+*This piece determines your movement speed and directly influences your battlefield mobility.*
+
+**A. Ultra-Duty Boots**  
+*Built for the stalwart warrior who refuses to be knocked off balance, these rugged boots are engineered with heavy-duty enchantments that anchor you to the ground—even if it means sacrificing some speed.*  
+
+- **To Start (Level 1):**  
+  - **Stalwart Stance:** You gain advantage on saving throws against effects that would knock you back or knock you prone.  
+  - **Heavily Anchored:** Your base movement speed is reduced by 5 ft., setting it at **25 ft.** to reflect the boots’ extra weight and bulk.
+
+- **Level 4 Upgrade:**  
+  - **Immovable Resolve:** You become completely immune to knockback effects.
+
+- **Level 7 Upgrade:**  
+  - **Steadfast Posture:** You gain advantage on saving throws against being knocked prone.
+
+- **Level 11 Upgrade:**  
+  - **Quick Recovery:** You can stand up from being prone without using any of your movement.
+
+- **Level 14 Upgrade:**  
+  - **Forcefield Footing:** You gain a +5 bonus to saving throws against any effects that attempt to forcibly move you.
+
+---
+
+**B. Balanced Boots**  
+*Perfect for the agile combatant, these sleek, streamlined boots enhance your speed and nimbleness. They amplify your natural grace while helping you navigate tricky terrain and avoid entangling hazards on the battlefield.*  
+
+- **To Start (Level 1):**  
+  - **Fleet Footed:** Increase your movement speed by +5 ft., setting your base movement speed at **35 ft.**  
+  - **Agile Evasion:** Once per short rest, you can gain advantage on saving throws against trip attacks.
+
+- **Level 4 Upgrade:**  
+  - **Terrain Mastery:** You ignore the effects of difficult terrain, letting you move as if the ground itself were smooth.
+
+- **Level 7 Upgrade:**  
+  - **Burst of Speed:** Gain an additional +10 ft. bonus to movement speed.
+
+- **Level 11 Upgrade:**  
+  - **Speed Preservation:** You gain advantage on saving throws against effects that would reduce your speed.
+
+- **Level 14 Upgrade:**  
+  - **Vertical and Fluid Mobility:** You gain the ability to traverse vertical surfaces and liquids during your turn without falling—opening up new tactical avenues for maneuvering in unconventional environments.
+\page
+---
+
+**C. Blastcore Soles**  
+*For the bold and unpredictable fighter, these cutting-edge soles infuse your every step with volatile energy. They grant you explosive speed and gravity-defying leaps that catch foes off guard, making your movement as disruptive as your combat style.*  
+
+- **To Start (Level 1):**  
+  - **Explosive Propulsion:** Your base movement speed increases to **40 ft.**, channeling unstable energy beneath your feet.  
+
+- **Level 4 Upgrade:**  
+  - **Extended Reach:** Your jump distance increases by 25%, allowing you to cover more ground in your leaps.
+  - **Acrobatic Edge:** You have advantage on jump checks if you have a 10‑ft running start. Additionally, once per short rest, you may attempt to leap over enemies without provoking opportunity attacks (make an Acrobatics check using a DC determined by enemy size, e.g., DC 11 for medium enemies).
+
+- **Level 7 Upgrade:**  
+  - **Seamless Leap:** Once per short rest, you can automatically leap over enemies without provoking opportunity attacks—trusting your explosive momentum to carry you effortlessly.
+
+- **Level 11 Upgrade:**  
+  - **Aerial Dominance:** Your enhanced training allows you to leap up to **60 ft. horizontally** or **30 ft. vertically**, propelling you into superior tactical positions.
+
+- **Level 14 Upgrade:**  
+  - **Shockwave Landing:** You gain immunity to fall damage. Furthermore, when you land after a leap, you create a shockwave that deals **2d10 force damage** to all creatures within 10 ft., demonstrating the raw kinetic force behind every jump.
+
+\page
+___
+### **6. Raiment Features**  
+*Acquired at 3rd level, this piece is the core of your suit and provides the largest suite of abilities that scale with level. (Raiment upgrade progression: base at Level 3; immediate enhancement at Level 3; upgrades at Levels 6, 8, and 12.)*
+:
+**Photonic Cape**  
+*A high-tech cloak suffused with prismatic energy, the Photonic Cape allows its wearer to harness light and shadow in defense and stealth. Even at its base, it enhances your protective and evasive abilities; as you invest in upgrades, it evolves into a conduit for defensive magic, enhanced stealth, and rapid movement.*
+
+- **To Start (Level 3):**  
+  - **Shield Casting:** You may cast the *Shield* spell a number of times per long rest equal to your proficiency bonus (minimum twice). This reactive defense helps you absorb sudden blows by magically deflecting attacks.  
+  - **Displacement Effect:** Once per day, you can invoke a Displacement effect (as per the corresponding spell’s description), temporarily distorting your image so that enemies have disadvantage on attack rolls against you.
+  - **Stealth Enhancement:** When you are in dim light or darkness, the cape refracts ambient light to help you blend with the shadows, granting you a +2 bonus on Stealth checks.
+
+- **Level 6 Upgrade:**  
+  - **Invisibility & Flight Activation:** Once per short rest, you can activate the cape’s enhanced photonic emitter. As an action, you become invisible for 1 minute. Additionally, for the next 30 minutes, you gain a flying speed of 30 ft., allowing you to reposition or escape with ease.
+
+- **Level 8 Upgrade:**  
+  - **Harmonic Resistance:** The prismatic energies within the cape start to absorb external forces. You gain resistance to both radiant and necrotic damage, reducing the harm from these potent energy types.
+
+- **Level 12 Upgrade:**  
+  - **Radiant Immunity & Teleportation:** Your armament reaches a new pinnacle of defensive magic. You gain immunity to radiant damage. Furthermore, as a bonus action, you can teleport up to 60 ft. to a location you can see (usable once per short rest).
+
+- **Optional Higher-Level Upgrade:**  
+  - (At your DM’s discretion, a future upgrade may grant you the ability to cast *Prismatic Wall* once per long rest without expending any Cell Charges, further solidifying your role as a dynamic, near-impenetrable force on the battlefield.)
+
+:
+**Soul Core Manifold**  
+*A cutting-edge core of raw elemental power integrated into your raiment, the Soul Core Manifold channels a potent surge of energy that fuels your abilities. It grants bonus Cell Charges and the unique ability to cast a chosen version of Hellish Rebuke, with further upgrades enhancing its recharge efficiency, defensive counterattacks, and elemental fortitude.*
+
+- **To Start (Level 3):**  
+  - **Bonus Cell Charges:** You gain two extra Cell Charges compared to other raiments, allowing you to power additional abilities.  
+  - **Elemental Rebuke:** You may cast *Hellish Rebuke* (using an elemental type of your choice, determined at the time of acquisition) a number of times per long rest equal to your proficiency bonus.
+  - **Enhanced Recharge Rate:** Your recharge rate improves, allowing you to regain an extra ½ hit die worth of Cell Charges per short rest.
+
+- **Level 6 Upgrade:**  
+  - **Elemental Resistance:** You gain resistance to your chosen elemental type, reducing damage from that element by half.
+
+- **Level 8 Upgrade:**  
+  - **Retaliatory Burst:** When a creature within 10 ft. hits you with a melee attack, you automatically deal 2d8 retaliatory damage of your chosen elemental type to the attacker.
+
+- **Level 12 Upgrade:**  
+  - **Elemental Immunity & Shielding:** You become immune to your chosen element. In addition, you gain a reaction-based shield that can fully negate one incoming attack per short rest.
+
+\page
+**Godhead Shard**  
+*A radiant fragment of divine essence, the Godhead Shard infuses your raiment with celestial power. Far more than a mere accessory, it integrates divine spells and sacred invocations directly into your armor—empowering you to channel miracles on demand. While potent on its own, its true brilliance is revealed when you align it with other divine components, transforming your Aegisknight into a living conduit of sacred might.*
+
+- **To Start (Level 3):**  
+  - **Divine Spellcasting Integration:** Choose two divine cantrips and one 1st-level divine spell (similar in function to the Magic Initiate feat, but seamlessly built into your raiment)  
+  - **Enhanced Cell Charge Pool:** You gain the second-highest pool of Cell Charges among all raiments, ensuring you have ample energy to activate your other magical abilities.
+
+- **Level 3 Upgrade:**  
+  - **Sacred Recharge:** The shard grants you the ability to attempt to restore 2 Cell Charges per short rest. To do so, you must succeed on a DC 14 Religion check within three attempts. Each attempt requires using a small fuel component—such as incense, candles, or a 5 gp expenditure per Cell Charge restored—symbolizing your ritualistic devotion.
+
+- **Level 6 Upgrade:**  
+  - **Additional Divine Slot:** You gain an extra divine spell slot (or an extra spell effect), equivalent to one of the early abilities granted to clerics. This extra slot deepens your access to sacred magic, adding versatility to your divine arsenal.
+
+- **Level 8 Upgrade:**  
+  - **Cleric Subclass Feature Integration:** You may now select one cleric subclass feature (available at 3rd level) to integrate into your armor’s divine capabilities. This chosen feature is woven into your raiment’s magic, providing specialized benefits that reflect your divine focus.
+
+- **Level 12 Upgrade:**  
+  - **Divine Word Invocation & Advanced Recharge:** Once per long rest, you gain the ability to cast *Divine Word*, unleashing a potent blast of holy retribution. Additionally, you can restore additional Cell Charges through focused religious invocations, bolstering your energy reserves and ensuring that your divine power is never in short supply.
+:
+
+**D. Arcanomatrix**  
+*The Arcanomatrix is a nexus of pure arcane energy intricately woven into your raiment. Designed for the aspiring arcane caster, it grants you a built-in spellcasting focus that not only supplies extra Cell Charges for your magical arsenal, but also evolves with you—integrating key wizard abilities and defensive enchantments that bolster your arcane prowess.*
+
+- **To Start (Level 3):**  
+  - **Arcane Spellcasting Integration:** Choose two arcane cantrips and one 1st-level arcane spell (in the manner of the Magic Initiate feat for an arcane caster). These spells are organically bound to your raiment, allowing you to wield established arcane powers with ease.
+
+- **Level 3 Upgrade:**  
+  - **Enhanced Magical Capacity:** The Arcanomatrix boosts your spellcasting focus by granting extra Cell Charges dedicated to fueling arcane spells. This heightened capacity ensures you can access your stored magical energy more frequently for intricate spellcasting maneuvers.
+
+- **Level 6 Upgrade:**  
+  - **Wizard Subclass Feature Integration:** You may choose one low-level wizard subclass feature (such as an early evocation or abjuration benefit) to merge with the matrix. This choice weaves specialized magical expertise into your armor, providing additional utility or power in line with your preferred arcane discipline.
+
+- **Level 8 Upgrade:**  
+  - **Counterspell Conduit:** Once per long rest, you gain the ability to cast *Counterspell* without expending any Cell Charges. This built-in reaction is seamlessly integrated into the Arcanomatrix, allowing you to disrupt enemy magic when it matters most.
+
+- **Level 12 Upgrade:**  
+  - **Arcane Resilience:** Your deep connection with arcane forces fortifies your defenses. You gain resistance to force damage and have advantage on saving throws against spells. This upgrade embodies the dual nature of sophisticated arcane mastery—both destructive and protective.
+
+\page
+**E. Luminant Engine**  
+*The Luminant Engine is a radiant marvel—a pulsating core of light and potential woven into your raiment. Forged by visionary luminancers and fueled by cosmic energy, it channels the ephemeral power of illumination into tangible effects. Whether you choose to send forth searing bolts of light or create protective barriers with a flash of brilliance, the Engine offers a unique blend of utility and explosive power. As its power grows, so too does its ability to bend space and unleash dazzling bursts of energy that shatter the darkness.*
+
+- **To Start (Level 3):**  
+  - **Causal Points:** You gain a small pool of “Causal Points” equal to your proficiency bonus. These points represent stored radiant energy that you can expend on abilities mimicking a luminancer’s powers—such as a low-level version of a Causal Missile (a ranged damage effect) or a Causal Shield (an energy barrier to protect you).
+
+- **Level 3 Upgrade:**  
+  - **Enhanced Energy Reservoir:** Your innate connection to the radiant forces deepens, increasing your Causal Point pool by 2. This upgrade reflects the Engine’s improved efficiency in harnessing cosmic light.
+
+- **Level 6 Upgrade:**  
+  - **Luminal Motion:** You acquire the ability to cast *Luminal Motion*, a dazzling 30‑ft teleport, once per short rest. By spending Cell Charges to activate this ability, you vanish in a burst of radiant light and reappear at a location you can see, blending mobility with brilliance.
+
+- **Level 8 Upgrade:**  
+  - **Hastened Radiance:** The Engine’s protective energies begin to fortify your very being. You gain resistance to both radiant and necrotic damage, as the interplay of light and shadow shields you from opposing forces.
+
+- **Level 12 Upgrade:**  
+  - **Nova Eruption:** At the pinnacle of its power, the Luminant Engine transforms into an awe-inspiring force. You gain immunity to radiant damage, and once per long rest, you can expend a large burst of Causal Points to unleash a miniature Causal Nova. This scaled-down 9th-level effect radiates from you in a blinding explosion, dealing significant radiant damage to all creatures in its area and temporarily banishing the encroaching darkness.
+:
+
+**F. Mystery Module**  
+*Shrouded in enigma and ever unpredictable, the Mystery Module is the wild card of your raiment. Its true nature is determined by fate—a roll on a custom table (crafted by your DM) unleashes its myriad potential, whether that means bonus Cell Charges, a quirky spell-like ability, or even an extra proficiency. As its power is refined through upgrades, the module's chaotic gifts become a reliable part of your arsenal, setting you apart as an Aegisknight of limitless possibility.*
+
+- **To Start (Level 3):**  
+  - **Variable Effect:** Roll on a custom DM table to determine your module’s baseline effect. Options might include receiving bonus Cell Charges, acquiring a unique spell-like ability, or gaining an extra proficiency in a specific skill.
+  
+- **Level 3 Upgrade:**  
+  - **Stable Augmentation:** The initial randomness is tempered by the module’s evolving design. You gain a stable bonus—such as temporary immunity to a specific damage type once per day or a constant +1 bonus to AC—that remains in effect until further upgrades alter its nature.
+  
+- **Level 6 Upgrade:**  
+  - **Unlocked Potential:** The module reveals an additional ability determined by your DM’s table. This extra effect might manifest as a once-per-short-rest area effect, a sudden boost to your mobility, or another surprising benefit that adds depth to your combat versatility.
+  
+- **Level 8 Upgrade:**  
+  - **Reality Shifter:** A rechargeable special action is integrated into the module, allowing you to “bend reality” in a small but meaningful way. For instance, you might force all nearby enemies to reroll their attack rolls once per activation, introducing a tactical twist to critical moments.
+  
+- **Level 12 Upgrade:**  
+  - **Module Ascendance:** The Mystery Module reaches its apotheosis—granting you a major ability (as determined by DM design) that unmistakably distinguishes your Aegisknight. This crowning effect might redefine your battlefield role, embodying the full, unpredictable power of chaos harnessed and mastered.
+\page
+  **G. Transmorphic Belt: The Shapeshifter's Cinch**  
+
+- **To Start (Level 3):**  
+  - **Elemental Resistance:** Upon acquiring the Transmorphic Belt, choose one elemental damage type (fire, cold, lightning, acid, or poison). You gain resistance to that damage type.
+  - **Breath of Transformation:** You learn to unleash a potent breath weapon as an action a number of times per day equal to your proficiency bonus. When activated, you emit a 30‑ft cone of elemental energy. Choose one of the following breath weapons at creation. You can change this breath weapon once per month, and whenever you can swap armor pieces.
+***See Breath Weapon Chart for Details***
+ ::    
+  - **Shapeshift Initiation:** As an inherent bonus action, you can activate the belt’s growth mode. For a duration equal to **10 rounds + your Wisdom modifier** (minimum 1 round), your armor expands—granting you the Large Build trait. If you already possess Large Build (or have it granted by your Xtra-Hev Frame Chestpiece), you instead become Huge for the duration.
+
+- **Level 6 Upgrade:**  
+  - **Enhanced Breath:** Your breath weapon damage increases by 1d10 for Radiant, Necrotic, or Force variants (or by 1d4 for Poison, raising it from 4d4 to 5d4).
+  - **Extended Transformation:** The duration of your size transformation increases by an additional 5 rounds.
+
+- **Level 10 Upgrade:**  
+  - **Elemental Mastery:** You may now select a second elemental variant for your breath weapon (allowing you to choose, for example, either Radiant or Necrotic on a given use) to add versatility.
+  - **Augmented Resistance:** The resistance granted by your elemental choice improves—damage of that type is halved rather than simply resisted.
+
+- **Level 14 Upgrade:**  
+  - **Advanced Transformation:** Once per short rest, through a bonus action you can trigger a burst transformation. For the next 10 rounds + your Wisdom modifier, in addition to gaining the Large (or Huge) Build trait, your speed and Strength score increase by 2 (temporary bonuses).
+
+
+  
+| **Variant**    | **Damage & Effects**                                                                                                                                                                                                                                                                                                                                                                                                             |
+|----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Radiant**    | Deals **2d10 radiant damage**.<br>On a failed Constitution saving throw (DC = your class save DC), targets are dazzled and suffer disadvantage on attack rolls until the end of their next turn.                                                                                                                                                                                                                          |
+| **Necrotic**   | Deals **2d10 necrotic damage**.<br>On a failed Constitution saving throw, targets suffer a reduction in maximum hit points equal to the damage taken (lasting until a long rest).                                                                                                                                                                                                                                             |
+| **Force**      | Deals **2d10 force damage**.<br>On a failed Constitution saving throw, targets are knocked back 10 ft.                                                                                                                                                                                                                                                                                                                           |
+| **Poison**     | Deals **4d4 poison damage**.<br>On a failed Constitution saving throw, targets are poisoned for 1 round and take an extra **1d4 poison damage** at the start of their next turn.                                                                                                                                                                                                                                            |
+| **Time**       | Deals **2d10 temporal damage**.<br>On a failed Constitution saving throw, targets experience temporal disruption – their movement is reduced to 0 and they suffer disadvantage on attack rolls and ability checks until the end of their next turn.                                                                                                                                                                             |
+| **Fire**       | Deals **2d10 fire damage**.<br>On a failed Constitution saving throw, targets become ignited – suffering an extra **1d6 fire damage** at the start of their next turn, and flammable objects in the area may catch fire.                                                                                                                                                                                                  |
+| **Ice**        | Deals **2d10 cold damage**.<br>On a failed Constitution saving throw, targets become encased in a thin layer of frost, reducing their movement speed by 50% until the end of their next turn.                                                                                                                                                                                                                              |
+| **Sonic**      | Deals **2d10 thunder damage**.<br>On a failed Constitution saving throw, targets are disoriented – they become deafened and suffer disadvantage on their next attack roll or ability check as the resounding shock unsettles them.                                                                                                                                                                                         |
+| **Electricity**| Deals **2d10 lightning damage**.<br>On a failed Constitution saving throw, targets are stunned for 1 round as the surge of energy incapacitates them.                                                                                                                                                                                                                                                                         |
+| **Water**      | Deals **2d10 water damage** (flavored as a high-pressure, crushing jet of aqueous force).<br>On a failed Constitution saving throw, targets become soaked and slippery, imposing disadvantage on Strength-based checks or attack rolls until the end of their next turn.                                                                                                                                                      |
+| **Earth**      | Deals **2d10 bludgeoning damage** infused with the power of shifting earth.<br>On a failed Constitution saving throw, targets are knocked prone as the ground trembles beneath the force.                                                                                                                                                                                                                                  |  
+  
+\page
+- **Capstone (Level 18 or 20):**  
+  - **Monstrous Metamorphosis:** Once per long rest, as an action, you can transform into a huge-sized armored monster of your choice (CR 13 or lower). In this form, you adopt the creature’s stat block (per DM guidance) but retain your Aegisknight features and the ability to use your breath weapon. This transformation lasts for 1 minute.
+
+- **Additional Notes:**  
+  - The breath weapon’s damage scales with your level as noted above, reflecting your growing mastery over elemental manipulation.
+  - Activating any manifestation of the Transmorphic Belt’s abilities requires spending the appropriate number of Cell Charges per standard Aegisknight mechanics.
+  - The combination of elemental resistance, versatile breath attacks, and size-altering transformation makes the Transmorphic Belt a formidable tool for adapting to any encounter.
+___  
+  **H. Unstable Fury Core**  
+*Deep within the heart of this raiment pulses a volatile engine of primal might. Drawing on the furious legacy of barbarian rage and refined via Aegisknight ingenuity, the Unstable Fury Core transforms raw aggression into pinpoint, destructive power. Each surge unleashes soul-crushing blows against a single foe—but beware: such overwhelming energy demands a heavy price. Every activation costs an extra cell charge and teeters on the brink of catastrophic overload, reminding you that even fury can turn on its master.*
+
+- **To Start (Level 3):**  
+  - **Fury Mode Activation:** As an action, once per short rest, you may activate Unstable Fury mode for 1 minute. While in this state, your melee attacks deal an additional **1d6 force damage** and each successful hit grants you temporary hit points equal to your proficiency bonus. You may activate Fury Mode more than once if you expend **2 Charge Cells**  but there is an inherent risk of overloading the core when this is performed.
+  - **Extra Charge Cost:** All abilities granted by the Fury Core cost an additional 1 cell charge per use.  
+  - **Overload Risk:** At the end of each turn while in Fury mode, roll a d20. On a roll of 1–3, the core overloads—ending Fury mode immediately and forcing you to absorb 1d8 force damage as chaotic backlash.
+
+- **Level 3 Upgrade:**  
+  - **Deepening the Rage:** Your Unstable Fury mode now lasts for **2 minutes**. The bonus damage on melee attacks increases to **1d8 force damage**. Furthermore, when Fury mode ends normally, you recover an additional cell charge as you reclaim a measure of the spent raw power.
+
+- **Level 6 Upgrade:**  
+  - **Focused Smash:** While in Fury mode, once per short rest you can channel your rage into a devastating focused strike. Activate this ability to have your next melee attack against a single target deal an extra **2d10 force damage** that bypasses any resistances. Using this focused strike costs an additional **1 cell charge**. If the attack misses, your next overload check suffers a heightened risk: a d20 roll of 1 now triggers misfire, inflicting **2d8 force damage** upon you.
+
+- **Level 8 Upgrade:**  
+  - **Field Stabilizer:** Your control over the wild energy improves. While in Fury mode, you gain **temporary resistance to bludgeoning, piercing, and slashing damage**. Additionally, the Overload check becomes slightly more forgiving—now only a roll of 1–2 (instead of 1–3) results in a misfire. The extra charge cost remains in effect, a constant reminder of the peril in channeling such furious power.
+
+- **Level 12 Upgrade:**  
+  - **Fury Unleashed:** Once per long rest, you can harness the full, unbridled might of the Unstable Fury Core. As an action, expend an extra **3 cell charges** to execute Fury Unleashed—a cataclysmic single-target attack that deals **4d10 force damage**. The target must also make a Strength saving throw (DC = 8 + your proficiency bonus + your Strength modifier); on a failure, it is stunned until the end of your next turn.  
+    - **Severe Overload Risk:** While using Fury Unleashed, immediately perform an overload check. If you roll a 1 on a d20, the chaotic energies erupt back against you, inflicting **4d10 force damage**.  
+    - After using Fury Unleashed, you cannot activate Unstable Fury mode again until you complete a long rest, as your core requires deep recalibration from the massive energy discharge.
+
+\page
+___
+## **Additional Class Features**
+
+### **Extra Attack (5th Level)**
+You can attack twice instead of once when you take the Attack action on your turn.
+
+### **Overclock (10th Level)**
+As a bonus action, once per long rest, you can overclock your suit to instantly regain 5 Cell Charges.
+
+### **Apex Raiment Ability (14th Level)**
+Your chosen raiment unlocks its ultimate ability. (Refer to the specific raiment option’s final feature below.)
+
+### **Overdrive Mode (15th Level)**
+As an action, you enter Overdrive Mode for 1 minute. During Overdrive:
+- You gain a +2 bonus to AC.
+- You make an extra attack when you use the Attack action.
+- At the start of each of your turns, you regain 1 Cell Charge.
+After using Overdrive Mode, you can’t use it again until you finish a long rest.
+
+### **Ability Score Improvements**
+Standard Ability Score Improvement levels occur at 4th, 8th, 12th, and 16th level.
+
+___
+\page
+___
+## Armor Features Explained
+
+### Hyperscanner's Secondary Starting Ability
+**Hypersensory Scanner Array**  
+This secondary feature – built into the Hyperscanner option for the Helmet – grants advanced visual detection. At its base, it provides darkvision (up to 60 ft.) if you lack it and lets you, once per short rest, briefly highlight hidden or invisible creatures. By activating its sensor mode, the helmet temporarily overlays your vision with a subtle glow that reveals otherwise imperceptible silhouettes, ensuring you never miss stealthy foes or hidden traps.
+
+### Tech-Pauldron Benefits to Magic and Craft Preparation
+**Tech Pauldron (Tech Type)**  
+The tech-pauldron is engineered for versatility in both magical and technical tasks. It grants you proficiency with an extra tool and adds two extra “robotic arms” that, while unable to attack or cast spells, sharply reduce the time needed for mundane or intricate tasks (such as crafting, disarming traps, or repairing mechanisms). These arms grant a substantial +5 bonus to actions related to such preparatory or technical activities, making your overall routine more efficient.
+
+### Starting Ability for Blastbreaker Fists
+**Blastbreaker Fists**  
+Designed for raw melee dominance, Blastbreaker Fists enhance your unarmed or melee combat. From the outset, they increase your base melee and unarmed damage. Their unique design allows you to wield two-handed weapons in one hand with no penalty, and they reclassify normally non-finesse light or one-handed weapons as finesse weapons for you. This versatility means you can combine speed and power in melee engagements while maintaining a high damage profile and flexibility in weapon choice.
+
+### Somatic Satellites Synergy with Tech Pauldron
+**Somatic Satellites**  
+These small floating spheres serve two roles. On their own, they act as ranged missiles (delivering 1d8 force damage) or function as temporary spell storage devices. When paired with the Tech Pauldron, the satellites integrate with the robotic arms—bypassing the normal magic action economy. This synergy permits you to cast additional non-cantrip spells in one turn (provided a spell is stored in a satellite), effectively bolstering your overall casting capacity and allowing for powerful, unexpected bursts of magical might during combat.
+
+### Starting AC Values and Abilities for Chest Armor Types
+**Chest Armor Options**  
+- **Balanced Type:**  
+  - *Starting AC:* 14 + DEX (max2)
+  - *Starting Ability:* Grants a bonus to movement speed (e.g., +10 ft.) and, once per day, an ability to activate a temporary +2 shield bonus to AC.
+- **Bulwark Type:**  
+  - *Starting AC:* 16 
+  - *Starting Ability:* Once per day, negate one chosen magical or physical damage type for 1 minute.
+- **Light Type:**  
+  - *Starting AC:* 13 + DEX  
+  - *Starting Ability:* Provides a static increase to movement speed (e.g., +15 ft.) and a temporary +1 shield bonus to AC while active.
+
+### Blastcore Soles Mechanics
+**Blastcore Soles**  
+These advanced boots are engineered for volatile, high-speed movement. At the start, they set your base movement speed at 40 ft. and grant advantage on jump checks provided you have a 10-ft running start. Once per short rest, they allow the user to attempt a leap over enemies without provoking opportunity attacks—using an Acrobatics check with a DC that scales by enemy size. Upgrades later enhance jump distance, reduce mishap risks, and eventually confer immunity to fall damage while creating a damaging shockwave upon landing.
+
+### Soul Core Manifold Charge Boost Mechanics
+**Soul Core Manifold**  
+The Soul Core Manifold is integral to the suit’s energy management. In its starting mode, it grants you two bonus Cell Charges over other raiments and improves your recharge rate (restoring an extra half-hit-die’s worth of charges per short rest). As upgrades are applied, the manifold further accelerates charge recovery, ensuring that your suit’s active abilities remain consistently fueled during prolonged engagements.
+\page
+{{note
+### **Mechanics Tip: Cell Charge Activation for Aegisknight Abilities**
+
+Any Aegisknight ability that can be used once per short rest is activated by expending **1 Cell Charge**. If an ability has a base cost higher than 1, you must expend that many Cell Charges each time you use it.
+
+*Note:* Certain armor pieces – such as the **Unstable Fury Core** – are designed to channel especially overwhelming power and inherently require extra Cell Charges for every activation of their abilities. Be sure to review each item's individual activation cost and manage your Cell Charge pool wisely during your adventures!
+
+}}
+
+
+### Godhead Shard Prayer/Rite Recharge Mechanics
+**Godhead Shard**  
+This divine component, mounted atop the Soul Core, operates on a ritualistic recharge method. At the base level, it restores 2 Cell Charges per short rest—but only if you pass a DC 14 Religion check, representing a brief prayer or rite. You have up to three attempts per recharge cycle, and failure limits its restorative capacity. In addition, invoking the shard requires a material component (oils, incenses, candles, or vapor cartridges costing 5 gp per fuel cell) if you wish to improvise additional recharges. This mechanic emphasizes the spiritual discipline needed to harness divine energies.
+
+### Mystery Module Effect Chart
+**Mystery Module (Initial Effects)**  
+Whenever you activate a power, power surge, or expend a cell charge- or at the request of the DM- you may choose to roll on the Wonder Module Miracore table.
+
+### Mystery Module 6th Level Upgrade Chart
+**Mystery Module (6th Level Upgrades)**  
+At 6th level, the Mystery Module improves via another the Wonder Node upgrade chart provided by your DM. This chart is provided on the next page. At the start of each day and during a short rest, you may roll on the Mystery Module table to determine your Wonder Node Upgrade for the day. This power can be triggered to activate whenever you use a power surge. By expending an additional **1 Cell Charge**, you can apply a random effect from the provided chart. By expending **3 Cell Charges**, you may choose the power upgrade you
+
+### Mystery Module Level 8 Mechanic Description
+**Mystery Module (8th Level Upgrade)**  
+Upon reaching 8th level, the Mystery Module gains a powerful, rechargeable special action. This ability might force all enemies within a 10-ft radius to reroll their attack rolls or saving throws, or create a short-lived field of chaotic energy that disrupts enemy positioning. The effect activates once per short rest and lasts until the end of your next turn, reflecting the module’s maturing integration with your suit’s overall tactics.
+
+### Mystery Module Level 12 Description
+**Mystery Module (12th Level Upgrade)**  
+At 12th level, the Mystery Module reaches its apex. It unlocks a major ability chosen from a DM-provided list—such as a potent area-of-effect attack, a robust defensive shield that triggers automatically in response to incoming damage, or even a temporary alteration to movement dynamics (like slowing foes or quickening allies). This ultimate upgrade distinguishes your Aegisknight by providing a game-changing feature that epitomizes the unique and unpredictable power of your customized armor.
+
+Whenever you use your Power Surge ability, roll a d30 (or choose an effect at random) to determine an additional benefit or complication provided by your Mystery Module:
+___
+\page
+___
+##### Mystery Module Miracore Effects Table
+
+| Roll | Effect |
+|------|--------|
+| 1    | Gain **2 additional Cell Charges** immediately. |
+| 2    | Restore **half of your expended Cell Charges** (rounded down). |
+| 3    | Your next attack deals an extra **1d8 force damage**. |
+| 4    | Gain a **+2 bonus to AC** until the start of your next turn. |
+| 5    | You may immediately use a **bonus action** to move **10 ft.** without provoking opportunity attacks. |
+| 6    | For the next minute, **all critical hits** against you become normal hits. |
+| 7    | Regain the ability to activate one modular upgrade **without spending additional Cell Charges**. |
+| 8    | All allies within 10 ft. gain a **+1 bonus to attack rolls** until the start of your next turn. |
+| 9    | Once before the start of your next turn, you may **reroll one failed saving throw**. |
+| 10   | Your **movement speed is doubled** for 1 minute. |
+| 11   | Gain **resistance to all damage types** until the start of your next turn. |
+| 12   | Your next melee attack gains a **+4 bonus to damage**. |
+| 13   | You may immediately cast *Shield* as a spell **without spending Cell Charges**. |
+| 14   | For the next round, your weapon attacks score an **automatic critical** on a roll of 18–20. |
+| 15   | Gain **advantage on all attack rolls** until the end of your next turn. |
+| 16   | Your next successful attack forces the target to make a DC 15 Strength saving throw or be **knocked 10 ft. away**. |
+| 17   | You may briefly see invisible or ethereal creatures (as per a **detect invisibility** effect) for 1 minute. |
+| 18   | The next spell or ability you cast **costs 1 fewer Cell Charge**. |
+| 19   | Create a burst of light: all creatures within 10 ft. must succeed on a DC 12 Dexterity saving throw or be **blinded** until the start of your next turn. |
+| 20   | Your next spell cast **does not consume its normal Cell Charge cost**. |
+| 21   | Regain **5 additional temporary hit points**. |
+| 22   | Until the start of your next turn, you ignore difficult terrain and have **advantage on Acrobatics checks**. |
+| 23   | Your fatigue is momentarily alleviated: **regain one expended ability feature** (DM’s discretion). |
+| 24   | Unleash a pulse of energy that deals **2d6 force damage** to one target within 15 ft. of you. |
+| 25   | Your **next bonus action is free** and does not cost any Cell Charges. |
+| 26   | Gain a **+1 bonus to all saving throws** until the start of your next turn. |
+| 27   | You may **transfer 1 Cell Charge from your reserve to an ally** within 10 ft. |
+| 28   | Gain a temporary boost: your proficiency bonus increases by **+1** for one round. |
+| 29   | Your modular upgrades momentarily function at maximum efficiency—**choose one upgrade** to benefit from its Level 14 effect for 1 round. |
+| 30   | Unleash a miniature area burst: all creatures within 10 ft. take **2d6 force damage.** |
+
+___
+___
+##### Mystery Module Wonder Module Effects
+
+When your Mystery Module reaches its level 6 upgrade stage, roll a d10 (or select one) to determine which additional upgrade effect activates as part of a Power Surge or other trigger event:
+
+| **Roll** | **Level 6 Upgrade**                                                                                                                                              |
+|----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1        | **Enhanced Recharge:** Instantly restore 2 additional cell charges.                                                                                            |
+| 2        | **Flux Amplifier:** For the next turn, reduce the cell charge cost of all activated abilities by 1 (to a minimum of 1).                                             |
+| 3        | **Kinetic Boost:** Your movement speed increases by an additional 10 ft. for 1 minute.                                                                             |
+| 4        | **Reactive Shield:** Gain a temporary +3 bonus to AC until the start of your next turn.                                                                            |
+| 5        | **Precision Strike:** Your next attack is made with advantage and deals an extra 1d6 force damage.                                                                  |
+| 6        | **Quick Reload:** Immediately regain 1 cell charge after you activate a Power Surge ability this turn.                                                             |
+| 7        | **System Overload:** The next time you activate an ability, you may apply one extra effect from any modular upgrade without spending an additional cell charge.   |
+| 8        | **Rapid Fabrication:** You gain a bonus action this turn that can be used to activate a minor modular ability without any cell charge cost.                         |
+| 9        | **Energetic Infusion:** Convert 1 expended cell charge into temporary hit points equal to 1d6 + your Aegisknight level.                                               |
+| 10       | **Adaptive Circuitry:** Choose one upgrade effect from any of your armor components and apply its next-level bonus effect for 1 round.                              |
+
+___
+
+
+
+\page
+___
+## Diaper-School Options for the Aegisknight
+
+These playful, irreverent components are designed for Aegisknights who favor a whimsical, diaper‐themed aesthetic. They provide unique abilities and upgrades that not only fit the humorous theme but also offer tactical, flavor-rich utility for caster‐builds and socially oriented characters—or even those who prefer a less “hands‐on” approach.
+
+___
+### Pacifier-Themed Helmet: The Pacifier of Quietude
+*For caster-builds who value quiet spellcasting and mental focus over brute protection.*
+
+**To Start:**  
+• **Silent Spellcasting:** Your pacifier helmet negates the need for verbal components when you cast spells, letting you channel your magic in an almost wordless, meditative state.  
+• **Telepathic Link:** You gain short-range telepathy (up to 30 ft.) to communicate silently with allies.
+
+**Level-Up Effects:**  
+- **Level 4 Upgrade:** Your helmet mutes ambient noise around you, granting advantage on Concentration checks when casting spells in a loud environment.  
+- **Level 7 Upgrade:** Enhance your telepathy to extend communication range to 60 ft. and allow nonverbal spell components to be entirely dispensed with.  
+- **Level 11 Upgrade:** Gain a subtle “mind shield” that occasionally deflects disruptive mental effects (once per short rest, you can re-roll a failed Wisdom saving throw against a psychic effect).  
+- **Level 14 Upgrade:** Your silent casting becomes nearly undetectable—opponents must succeed on a DC 15 Perception check to notice you casting spells, even if you use somatic components.
+
+___
+
+### Bonnet-Themed Helmet: The Bonnet of Blushing Bravado
+*For those who’d rather charm than conceal, this ostentatiously babyish bonnet radiates an irresistible level of adorable absurdity that distracts everyone around it.*
+
+**To Start (Level 1):**  
+• **Innocent Charm:** The bonnet bestows a +1 bonus to Charisma and grants advantage on Persuasion checks, reflecting the pure, sugary innocence of its design.  
+• **Captivating Cuteness:** Once per short rest, as an action, you may activate the bonnet’s captivating display. When activated, every creature (both allies and foes) within 10 ft. must immediately roll a "potty check"—a Constitution saving throw (DC = your class save DC, typically 14). On a failure, the creature is overwhelmed by the sheer babyish allure and becomes distracted: they lose their reaction and have disadvantage on attack rolls and ability checks involving concentration until the start of your next turn.
+
+**Level-Up Effects:**  
+- **Level 4 Upgrade:** The bonnet’s charm intensifies—your bonus to Charisma increases by an additional +1, and the effective radius of your captivating display increases to 15 ft. In addition, any creature that fails the potty check becomes dazed for 1 round instead of merely losing their reaction.  
+- **Level 7 Upgrade:** Your bonnet now exudes an aura of irresistible whimsy that enhances your social prowess: you gain advantage on Deception and Performance checks related to your captivating presence.  
+- **Level 11 Upgrade:** The bonnet further empowers you and your nearby allies. Allies within 10 ft. gain an additional +1 bonus to saving throws against fear, charm, and effects that would "soil" their spirits, as your infectious babyish delight bolsters their resolve.  
+- **Level 14 Upgrade:** The pinnacle of infantile charm is reached. Once per long rest, you may invoke a "Potty Parade" as an action. When activated, every creature within 15 ft. must make a potty check (DC = 16, or your class save DC if higher). On a failure, the affected creatures become incapacitated by uncontrollable mirth and adoration for 1 round, as if caught in a state of utter, adorable distraction.
+___
+
+### Mitten-Themed Gauntlets: The Infantile Mittens
+*These gauntlets feature oversized, cuddly mittens that limit fine dexterity but grant unique protective benefits.*
+
+**To Start:**  
+• **Inelegant Grip:** Your gauntlets impose a slight penalty on Dexterity-based tasks (at DM’s discretion) but make your hands less susceptible to traps and poisons—granting immunity to effects that rely solely on manual touch (such as handling a poisoned item or disarming trap triggers that require delicate manipulation).  
+• **Anti-Curse Touch:** You have advantage on saving throws against curses or magical effects that require you to physically touch the triggering object.
+
+**Level-Up Effects:**  
+- **Level 4 Upgrade:** Although your manual finesse remains infantile, your gauntlets bolster your brute force—increasing your unarmed strike damage by 1d4.  
+- **Level 7 Upgrade:** The mittens magically adjust to improve your grip in grappling, granting you advantage on Strength (Athletics) checks involving grappling or shoving.  
+- **Level 11 Upgrade:** Gain an additional bonus to Strength checks that involve physical tasks (such as moving heavy objects) while wearing the gauntlets.
+\page
+- **Level 14 Upgrade:** Your gauntlets reach peak infantile power, giving a one-time bonus to any Strength-based contest per short rest—allowing you to automatically win a contest that involves raw physical touch.
+___
+### Bib-Themed Chest Armor Option: The Soiling Shield Bib
+*This oversized, magically enchanted bib is designed to ward off the filth and chaos of the battlefield—ensuring that no matter how messy the combat gets, you (and your reputation) remain pristine.*
+
+**To Start (Level 1):**  
+• **Potty Protection:** You gain advantage on any ability checks or saving throws against effects that would “soil” you (whether from enemy abilities or environmental hazards), reflecting an innate resistance to the grimy influences that might otherwise tarnish you.  
+• **Initial AC:** Your base AC is determined as 14 + your Dexterity modifier (up to a maximum bonus of +3), representing the bib’s modest physical protection.
+
+**Level-Up Effects:**  
+- **Level 4 Upgrade:** The bib’s enchantments improve—once per short rest, you can automatically succeed on a “potty check” (a saving throw against conditions that would impose a soiling or muck-related debuff).  
+- **Level 7 Upgrade:** As the bib becomes more robust, it grants an additional +1 bonus to AC against “mucky” effects and provides resistance to one damage type related to filth (such as acid or sludge), channeling the protective functions seen in an *Absorbent Barrier*.  
+- **Level 11 Upgrade:** The bib now exudes restorative magic; whenever an effect would soil or debilitate you, you gain temporary hit points equal to your Aegisknight level and reduce the duration of that effect by 1 round.  
+- **Level 14 Upgrade:** The ultimate enchantment of the bib awakens: once per long rest, you can invoke the "Cleanliness Covenant" as an action. For 1 minute, you and all allies within 15 ft. become immune to soiling effects and automatically dispel any active conditions tied to filth.
+
+___
+___
+### Playtime Engine: The Diaper Daycare Raiment
+*Harnessing the wholesome chaos of Diaper School, this raiment transforms your suit’s central core into a beacon of nurturing mischief and disruptive battleflow.*
+
+**Base Functionality (Level 3):**  
+Drawing inspiration from the playful miracles and protective charms found in the Combat Academy Regulation Handbook, the Diaper Daycare Raiment grants you an array of diaper school–themed abilities:
+
+• **Soothing Miracle:**  
+  Once per short rest, invoke an aura reminiscent of the “Little Miracle” cantrip. For 1 minute, all allies within 15 ft. gain advantage on saving throws against fear and panic effects—bathed in a gentle, comforting radiance that soothes their wounds and worries. You may also create one other effect from the Little Miracle effect list that remains constant for the duration.
+
+• **Absorbent Shield:**  
+  When you are hit by an attack, you can use your reaction to manifest an invisible, absorbent barrier (in the style of the “Absorbent Barrier” spell). This shield reduces the triggering damage by 1d8 + your spellcasting modifier as if your raiment momentarily mops up the impact.
+
+• **Diaper Douse Blast:**  
+  Once per short rest, you can unleash a burst of saturated, messy energy. As an action, all creatures within a 15-ft radius must succeed on a Dexterity saving throw (DC = your class save DC) or have their movement reduced to 0 until the end of their next turn—as if suddenly caught in a drenching Diaper Douse.
+
+**Level-Up Effects:**  
+
+- **Level 4 Upgrade:**  
+  The raiment’s soothing aura grows more potent. You may use Soothing Miracle one extra time per short rest.
+
+- **Level 7 Upgrade:**  
+  The disruptive field of Diaper Douse expands by an additional 5 ft., and its saving throw DC increases by 1. Additionally, Absorbent Shield now reduces damage by 1d10 instead of 1d8.
+
+- **Level 11 Upgrade:**  
+  You gain an enhanced protective synergy: once per short rest, you can combine Soothing Miracle and Absorbent Shield. When activated in tandem, you gain temporary hit points equal to your level while also reducing the next incoming attack’s damage by an extra 1d8.
+
+- **Level 14 Upgrade:**  
+  Unlock the ultimate “Diaper Time-Out” ability. Once per long rest, as an action, you force all enemies within 15 ft. to make a Wisdom saving throw (DC equal to 16 or your class save DC, whichever is higher). On a failure, affected creatures become incapacitated—overwhelmed by the absurdity and cuteness of your raiment—for 1 round.
+
+This Diaper Daycare Raiment weaves humor with heartfelt magic, ensuring that amidst chaos on the battlefield, your nurturing influence both disrupts foes and uplifts your allies.
+___
+\page
+___
+### Mephidium Coda: The Skunk’s Tail Raiment
+*Embodying toxic misfortune and grimy power, the Mephidium Coda transforms your battle presence into a malodorous curse. When soiled by combat’s grime, its venomous energies intensify—buffing your poison attacks and, with devilish regularity, cursing friend and foe alike with untimely accidents.*
+
+**To Start (Level 3):**  
+• **Toxic Emission:** As an action, you can activate the Mephidium Coda to exude a noxious cloud in a 10‑ft radius. Every creature in that area must succeed on a Constitution saving throw (DC = your class save DC) or take 1d6 poison damage and become “soiled”—their next attack roll is made at disadvantage until the start of your next turn. *If you are wearing a messy diaper, the DC increases by +2.*  
+• **Soiled Buff:** When the Coda is in its “soiled” state (triggered whenever you load your diaper or when environmental grime or battle conditions “dirty” the raiment), you gain a +1 bonus to poison attack rolls and all of your poison effects deal an additional 1d4 points of poison damage.  
+• **Malodorous Fortitude:** You gain resistance to poison damage and advantage on saving throws against poison-based effects. You gain advantage against poison and gas-based effects that might cause you to mess your diaper, but you may voluntarily fail such a secondary effect to take half-damage or otherwise negate a primary effect (such as negating the damage of a Magic Messle missile by dumping butt into one's hero huggies).
+
+**Level-Up Effects:**  
+- **Level 3 Immediate Upgrade:** Once per short rest, you may command the Coda to surge with extra rancor. This ability increases its poison damage by 1d4 for the next activation and temporarily boosts the saving throw DC of its Toxic Emission by 1 until the start of your next turn.  
+- **Level 6 Upgrade:** The area of Toxic Emission expands to 15‑ft, and any creature that fails the saving throw becomes more susceptible: they take an additional 1d4 poison damage from subsequent poison effects you inflict until the start of your next turn.  
+- **Level 8 Upgrade:** When your Mephidium Coda is soiled, your next attack within the following round deals an extra 1d8 poison damage. Additionally, any target hit must succeed on a Constitution saving throw (DC increased by 1) or be poisoned for 1 round.  
+- **Level 12 Upgrade:** Unleash the ultimate “Accidental Misfortune.” Once per long rest, you may invoke this power as an action. All enemies—and any unfortunate allies within a 15‑ft radius—must immediately make a Constitution saving throw (DC = 16 or your class save DC, whichever is higher). On a failure, they are overwhelmed by a vile stench and become incapacitated with nausea (treated as the poisoned condition) for 1 round while taking 2d8 poison damage. Until the start of your next long rest, any activation of Toxic Emission further increases your bonus to poison-based effect rolls by +2, and your resistance to poison damage is doubled.
+
+**Flavor Text:**  
+The Mephidium Coda is notorious among Aegisknights—both a badge of unholy misfortune and a weapon of repulsive efficacy. Like the lingering trail of a skunk, its power multiplies with every patch of filth clinging to its surface. When battle ends, its noxious aroma remains as a reminder: here, even the stench of decay has been harnessed to do your bidding.
+
+___
+\page
+**Diaper Duty Pauldrons**  
+*Adorned with adorable embroidered swaddles, cartoonish bibs, and a scattering of tiny pacifiers, these pauldrons capture the nurturing chaos of diaper school. Infused with cleaning magic and childlike exuberance, they protect you with a refreshing burst of cleanliness—and a few surprises that will leave enemies (and allies) grinning in spite of themselves.*
+
+- **To Start (Level 1):**  
+  - **Absorbent Barrier:** When you are hit by a melee or ranged attack, you can use your reaction to activate an absorbent aura. Doing so reduces the damage taken by 1d6 + your proficiency bonus, as if a fresh, padded diaper cushions the blow. (Usable once per short rest.)  
+  - **Cleanliness Aura:** Your ever-present freshness grants you a +1 bonus to saving throws against conditions linked to messy or soiled effects (such as slippery, muddy, or chaotic battlefield states).
+
+- **Level 4 Upgrade:**  
+  - **Sanitizing Swirl:** Once per short rest, you can use a bonus action to unleash a burst of cleansing energy in a 10‑ft radius around you. Every hostile creature in the area must succeed on a Dexterity saving throw (DC = 8 + your proficiency bonus + your Charisma modifier) or suffer disadvantage on their attack rolls until the start of your next turn, as they are briefly overwhelmed by an aroma of baby powder and scented wipes.
+
+- **Level 7 Upgrade:**  
+  - **Diaper Dash:** Channeling the quick-change efficiency of diaper school, you can, once per short rest as a bonus action, immediately stand up (if prone) and move an extra 10 ft. without provoking opportunity attacks. This nimble burst of movement embodies that swift diaper change when every second counts.
+
+- **Level 11 Upgrade:**  
+  - **Clean Sweep Counter:** Whenever you successfully use your Absorbent Barrier reaction, you can simultaneously splash a wave of cleansing liquid at your attacker. The attacker must then make a Strength saving throw (DC = 8 + your proficiency bonus + your Strength modifier) or have its movement reduced by half until the end of its next turn, as if caught in a slick torrent of freshly laundered magic.
+
+- **Level 14 Upgrade:**  
+  - **Ultimate Diaper Time-Out:** Once per long rest, as an action, you can invoke an aura of absolute cleanliness. For 1 minute, all hostile creatures within 15 ft. must make a Wisdom saving throw (DC = 8 + your proficiency bonus + your Wisdom modifier) or become incapacitated with the ridiculous charm and overwhelming freshness. It’s as if your enemies have been put into an enforced “time-out” by the adorable authority of your impeccably clean appearance.

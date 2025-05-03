@@ -1,0 +1,43 @@
+// Add these image URLs to your raiment sections in script.js
+
+// Photonic Cape
+imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/photoniccape.png",
+
+// Soul Core Manifold
+imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/soulcoremanifold.png",
+
+// Godhead Shard
+imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/godheadshard.png",
+
+// Arcanomatrix
+imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/arcanomatrix.png",
+
+// Luminant Engine
+imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/luminantengine.png",
+
+// Mystery Module
+imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/mysterymodule.png",
+
+// Transmorphic Belt
+imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/transformationbelt.png",
+
+// Unstable Fury Core
+imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/unstablefurycore.png",
+
+// Diaper Daycare Raiment
+imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/daycarecore.png",
+
+// Mephidium Coda (Skunk's Tail)
+imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/mephidiumcoda.png",
+
+// Add these URLs right after the "description" line and before the "progression" line in each raiment section.
+// For example:
+
+"Photonic-Cape": {
+    name: "Photonic Cape",
+    description: "A high-tech cloak suffused with prismatic energy, allowing you to harness light and shadow for defense and stealth.",
+    imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/photoniccape.png",
+    progression: [
+        // progression items...
+    ]
+},
