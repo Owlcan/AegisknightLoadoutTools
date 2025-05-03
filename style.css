@@ -328,12 +328,679 @@ button:hover {
     font-size: 0.9rem;
 }
 
+/* Character Information Input Styles */
+.character-info-input {
+    background-color: var(--dark-stone);
+    padding: 20px;
+    border: 1px solid var(--gold);
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--gold);
+    font-weight: bold;
+}
+
+.input-group input, .input-group textarea {
+    width: 100%;
+    padding: 8px;
+    background-color: var(--darker-stone);
+    color: var(--silver);
+    border: 1px solid var(--silver);
+    border-radius: 3px;
+    font-family: inherit;
+}
+
+.input-group textarea {
+    resize: vertical;
+}
+
+.ability-scores-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.ability-scores-header h3 {
+    margin: 0;
+    color: var(--gold);
+}
+
+.ability-scores {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.ability-input {
+    flex: 1;
+    min-width: 60px;
+    max-width: 80px;
+}
+
+.ability-input label {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+    color: var(--gold);
+}
+
+.ability-input input {
+    width: 100%;
+    padding: 8px;
+    text-align: center;
+    background-color: var(--darker-stone);
+    color: var(--silver);
+    border: 1px solid var(--silver);
+    border-radius: 3px;
+}
+
+/* Character Info Display in Loadout */
+.character-info-section {
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--gold);
+    border-radius: 5px;
+    position: relative;
+}
+
+/* Floating portrait styles */
+.floating-portrait-container {
+    position: absolute;
+    top: 15px;
+    right: calc(50% + 70px);
+    z-index: 5;
+    transform: translateX(100%);
+}
+
+.character-portrait {
+    width: 135px;
+    height: 135px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    background-color: var(--darker-stone);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.character-portrait::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(135deg, var(--silver), var(--gold));
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.character-portrait img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.portrait-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: var(--silver);
+    font-style: italic;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.character-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.character-name-race {
+    flex: 2;
+}
+
+.character-name-race h2 {
+    margin: 0;
+    color: var(--gold);
+    font-size: 2rem;
+}
+
+.character-race {
+    color: var(--silver);
+    font-style: italic;
+    margin-top: 5px;
+}
+
+.ability-scores-container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.ability-score {
+    width: 40px;
+    height: 40px;
+    background-color: var(--darker-stone);
+    border: 1px solid var(--gold);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.ability-label {
+    font-size: 10px;
+    color: var(--gold);
+    position: absolute;
+    top: -15px;
+    background-color: var(--dark-stone);
+    padding: 0 5px;
+    border-radius: 3px;
+}
+
+.ability-value {
+    font-weight: bold;
+    color: var(--silver);
+}
+
+/* Background Section Styles */
+.character-background-section {
+    margin: 25px 0;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--gold);
+    border-radius: 5px;
+}
+
+.background-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.background-info, .background-feat {
+    flex: 1;
+    min-width: 300px;
+}
+
+.background-text {
+    padding: 10px;
+    background-color: var(--darker-stone);
+    border: 1px solid var(--silver);
+    border-radius: 5px;
+    min-height: 50px;
+    color: var(--silver);
+}
+
+.loadout-item-progression {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
 /* Footer */
 footer {
     text-align: center;
     margin-top: 30px;
     padding-top: 20px;
     border-top: 2px solid var(--gold);
+}
+
+/* Feats Styles */
+.feats-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.feat-selection {
+    display: flex;
+    gap: 10px;
+}
+
+.feat-selection select {
+    flex: 1;
+}
+
+.small-button {
+    background-color: var(--darker-stone);
+    color: var(--gold);
+    border: 1px solid var(--gold);
+    padding: 5px 10px;
+    font-family: 'Cinzel Decorative', serif;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.small-button:hover {
+    background-color: var(--gold);
+    color: var(--dark-stone);
+}
+
+.selected-feats {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid var(--silver);
+    border-radius: 5px;
+    padding: 5px;
+    background-color: var(--darker-stone);
+}
+
+.selected-feat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: var(--dark-stone);
+    border-radius: 3px;
+}
+
+.selected-feat .feat-name {
+    flex: 1;
+}
+
+.remove-feat {
+    background: none;
+    border: none;
+    color: #ff6b6b;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+/* Character Feats Section */
+.character-feats-section {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: var(--dark-stone);
+    border: 1px solid var(--silver);
+    border-radius: 5px;
+}
+
+.feats-display {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.feat-card {
+    background-color: var(--darker-stone);
+    border: 1px solid var(--gold);
+    border-radius: 5px;
+    padding: 15px;
+    transition: transform 0.2s ease;
+}
+
+.feat-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.feat-card h4 {
+    color: var(--gold);
+    margin-bottom: 8px;
+    border-bottom: 1px solid var(--silver);
+    padding-bottom: 8px;
+    font-size: 1.1em;
+}
+
+.feat-card p {
+    color: var(--silver);
+    font-family: Arial, sans-serif;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+/* Feat Search Styles */
+.feat-search {
+    margin-bottom: 10px;
+}
+
+.feat-search input {
+    width: 100%;
+    padding: 8px;
+    background-color: var(--darker-stone);
+    color: var(--silver);
+    border: 1px solid var(--gold);
+    font-family: 'Cinzel Decorative', serif;
+    border-radius: 5px;
+}
+
+/* Tooltip styles */
+.selected-feat {
+    position: relative;
+}
+
+.selected-feat:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    width: 300px;
+    padding: 10px;
+    background-color: var(--dark-stone);
+    color: var(--silver);
+    border: 1px solid var(--gold);
+    border-radius: 5px;
+    font-size: 0.9em;
+    z-index: 100;
+    font-family: Arial, sans-serif;
+    white-space: normal;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+/* ASI Feats Highlighting */
+.feat-card.asi-feat {
+    border-color: #9370DB;
+    border-width: 2px;
+}
+
+.feat-card.asi-feat h4 {
+    color: #9370DB;
+}
+
+/* Feats Summary */
+.feats-summary {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: var(--darker-stone);
+    border: 1px solid var(--gold);
+    border-radius: 5px;
+    text-align: center;
+    grid-column: 1 / -1;
+}
+
+.feats-summary p {
+    margin: 0;
+    color: var(--silver);
+}
+
+.feats-summary strong {
+    color: var(--gold);
+}
+
+/* Character Stats Section */
+.character-stats {
+    margin: 15px 0;
+    padding: 15px;
+    border: 1px solid var(--gold);
+    background-color: var(--darker-stone);
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.stat-item {
+    flex: 1;
+    min-width: 100px;
+    text-align: center;
+    background-color: var(--dark-stone);
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.stat-label {
+    font-weight: bold;
+    color: var(--silver);
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.stat-value {
+    font-size: 1.5rem;
+    color: var(--gold);
+}
+
+/* Appearance Section */
+.appearance-section {
+    margin: 15px 0;
+    padding: 15px;
+    border: 1px solid var(--gold);
+    background-color: var(--darker-stone);
+    border-radius: 5px;
+}
+
+.appearance-section h3 {
+    margin-bottom: 10px;
+    color: var(--gold);
+    text-align: center;
+}
+
+.appearance-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+}
+
+.appearance-item {
+    background-color: var(--dark-stone);
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.appearance-label {
+    font-weight: bold;
+    color: var(--silver);
+    margin-right: 5px;
+}
+
+.appearance-value {
+    color: var(--gold);
+}
+
+/* Appearance fields in the form */
+.appearance-fields {
+    margin-top: 10px;
+}
+
+/* Weapons Section Styling */
+.weapons-section {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: var(--dark-stone);
+    border: 1px solid var(--gold);
+    border-radius: 5px;
+}
+
+.weapons-section h2 {
+    margin-bottom: 15px;
+    text-align: center;
+    color: var(--gold);
+}
+
+.weapon-selection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.primary-weapon, .secondary-weapon {
+    flex: 1;
+    min-width: 250px;
+    padding: 10px;
+    background-color: var(--darker-stone);
+    border-radius: 3px;
+}
+
+.primary-weapon h3, .secondary-weapon h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: var(--silver);
+}
+
+.weapon-size-toggle {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: var(--silver);
+}
+
+.weapon-size-toggle label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.weapon-size-toggle input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Weapons Display in Loadout Results */
+.character-weapons-section {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: var(--dark-stone);
+    border: 1px solid var(--gold);
+    border-radius: 5px;
+}
+
+.character-weapons-section h3 {
+    margin-bottom: 15px;
+    text-align: center;
+    color: var(--gold);
+}
+
+.weapons-display {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.weapon-card {
+    flex: 1;
+    min-width: 250px;
+    padding: 15px;
+    background-color: var(--darker-stone);
+    border-radius: 3px;
+}
+
+.weapon-card h4 {
+    margin-bottom: 10px;
+    color: var(--silver);
+}
+
+.weapon-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.weapon-stat {
+    display: flex;
+    justify-content: space-between;
+}
+
+.weapon-label {
+    font-weight: bold;
+    color: var(--silver);
+}
+
+.weapon-value {
+    color: var(--gold);
+}
+
+/* Race and Subrace Selection Styles */
+.race-traits-display {
+    margin: 15px 0;
+    padding: 10px 15px;
+    background-color: var(--darker-stone);
+    border: 1px solid var(--gold);
+    border-radius: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.race-traits-display h4 {
+    color: var(--gold);
+    margin-top: 0;
+    border-bottom: 1px solid var(--gold);
+    padding-bottom: 5px;
+}
+
+#race-traits {
+    font-size: 0.9em;
+}
+
+.race-info, .subrace-info {
+    margin-bottom: 10px;
+}
+
+.traits-list ul {
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+.traits-list li {
+    margin-bottom: 8px;
+}
+
+.ability-increases ul {
+    padding-left: 20px;
+    margin-top: 5px;
+    list-style-type: none;
+}
+
+.subrace-info {
+    border-top: 1px dashed var(--gold);
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.subrace-info h4 {
+    color: var(--gold);
+    margin-top: 0;
+}
+
+/* Racial Traits Display in Loadout */
+.character-traits-section {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: var(--dark-stone);
+    border: 1px solid var(--gold);
+    border-radius: 5px;
+}
+
+.traits-display ul {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.traits-display li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.subrace-divider {
+    margin-top: 15px;
+    border-top: 1px dashed var(--gold);
+    padding-top: 10px;
+    list-style-type: none;
+    margin-left: -20px;
+    color: var(--gold);
 }
 
 /* Responsive */
@@ -349,4 +1016,34 @@ footer {
     h1 {
         font-size: 2rem;
     }
+    
+    /* Adjust floating portrait for mobile */
+    .floating-portrait-container {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+    }
+    
+    .character-portrait {
+        width: 105px;
+        height: 105px;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.armor-stats {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: var(--darker-stone);
+    border: 1px solid var(--gold);
+    border-radius: 3px;
+}
+
+.armor-stats p {
+    margin: 5px 0;
+    color: var(--silver);
 }

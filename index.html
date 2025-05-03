@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+<head>    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aegisknight Armor Selector</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tooltips.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -12,12 +12,185 @@
         <header>
             <h1>Aegisknight Armor Selector</h1>
         </header>
-        
-        <main>
+          <main>
             <div class="selector-container">
                 <div class="selectors">
-                    <div class="armor-piece">
-                        <h2>Helmet</h2>                        <select id="helmet-select" onchange="updateArmorInfo('helmet')">
+                    <!-- Character Information Fields -->
+                    <div class="character-info-input">
+                        <h2>Character Information</h2>                        <div class="input-group">
+                            <label for="character-name">Name:</label>
+                            <input type="text" id="character-name" placeholder="Enter character name">
+                        </div>
+                        <div class="input-group">
+                            <label for="race-select">Race:</label>
+                            <select id="race-select" onchange="updateSubraceOptions()">
+                                <option value="">Select a Race...</option>
+                                <!-- Races will be populated from races.json -->
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label for="subrace-select">Subrace:</label>
+                            <select id="subrace-select">
+                                <option value="">Select a Subrace...</option>
+                                <!-- Subraces will be populated based on the selected race -->
+                            </select>
+                        </div>
+                        <div class="race-traits-display">
+                            <h4>Racial Traits</h4>
+                            <div id="race-traits"></div>
+                        </div>
+                        
+                        <!-- Add appearance fields -->                        <div class="input-group appearance-fields">
+                            <label for="character-image-url">Character Image URL:</label>
+                            <input type="url" id="character-image-url" placeholder="Enter URL to your character image">
+                        </div>
+                        <div class="input-group appearance-fields">
+                            <label for="hair-color">Hair Color & Style:</label>
+                            <input type="text" id="hair-color" placeholder="e.g., Golden blonde, shoulder-length">
+                        </div>
+                        <div class="input-group appearance-fields">
+                            <label for="eye-color">Eye Color:</label>
+                            <input type="text" id="eye-color" placeholder="e.g., Deep blue, violet">
+                        </div>
+                        <div class="input-group appearance-fields">
+                            <label for="skin-color">Skin or Fur Color:</label>
+                            <input type="text" id="skin-color" placeholder="e.g., Olive-toned, russet fur">
+                        </div>
+                        <div class="input-group appearance-fields">
+                            <label for="notable-features">Notable Features:</label>
+                            <textarea id="notable-features" placeholder="e.g., Scar across right cheek, heterochromia" rows="2"></textarea>
+                        </div>
+                          <div class="ability-scores-header">
+                            <h3>Ability Scores</h3>
+                            <div class="tooltip-container">
+                                <button class="help-button" type="button" aria-label="Show point buy help">?</button>
+                                <div class="tooltip">
+                                    <h4>D&D 5e 27-Point Buy System</h4>
+                                    <p>The standard point buy system in D&D 5e gives you 27 points to spend on ability scores:</p>
+                                    <table>
+                                        <tr>
+                                            <th>Score</th>
+                                            <th>Cost</th>
+                                            <th>Modifier</th>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td>0</td>
+                                            <td>-1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>1</td>
+                                            <td>-1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10</td>
+                                            <td>2</td>
+                                            <td>+0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>11</td>
+                                            <td>3</td>
+                                            <td>+0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>12</td>
+                                            <td>4</td>
+                                            <td>+1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>13</td>
+                                            <td>5</td>
+                                            <td>+1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>14</td>
+                                            <td>7</td>
+                                            <td>+2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>15</td>
+                                            <td>9</td>
+                                            <td>+2</td>
+                                        </tr>
+                                    </table>
+                                    <ul>
+                                        <li>All scores start at 8 (0 points)</li>
+                                        <li>You cannot go below 8 or above 15 before racial modifiers</li>
+                                        <li>Higher scores cost more points (as shown in the table)</li>
+                                        <li>Assign your scores to prioritize your character's strengths</li>
+                                        <li>Remember to add racial ability score bonuses after point buy</li>
+                                    </ul>
+                                    <p>Example: 15, 14, 14, 10, 10, 8 (27 points total)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ability-scores">
+                            <div class="ability-input">
+                                <label for="strength">STR:</label>
+                                <input type="number" id="strength" min="1" max="30" placeholder="10">
+                            </div>
+                            <div class="ability-input">
+                                <label for="dexterity">DEX:</label>
+                                <input type="number" id="dexterity" min="1" max="30" placeholder="10">
+                            </div>
+                            <div class="ability-input">
+                                <label for="constitution">CON:</label>
+                                <input type="number" id="constitution" min="1" max="30" placeholder="10">
+                            </div>
+                            <div class="ability-input">
+                                <label for="intelligence">INT:</label>
+                                <input type="number" id="intelligence" min="1" max="30" placeholder="10">
+                            </div>
+                            <div class="ability-input">
+                                <label for="wisdom">WIS:</label>
+                                <input type="number" id="wisdom" min="1" max="30" placeholder="10">
+                            </div>
+                            <div class="ability-input">
+                                <label for="charisma">CHA:</label>
+                                <input type="number" id="charisma" min="1" max="30" placeholder="10">
+                            </div>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="background">Background:</label>
+                            <input type="text" id="background" placeholder="e.g., Scholar, Soldier, Noble">
+                        </div>
+                        <div class="input-group">
+                            <label for="background-feat" title="Enter the description of your background feat here">Background Feat:</label>
+                            <textarea id="background-feat" placeholder="Paste the background feat description here" rows="3"></textarea>
+                        </div>
+                        
+                        <!-- Feats Section -->                        <div class="input-group">
+                            <label for="feats-select">Feats: <span id="feats-count" class="count-badge">0</span></label>
+                            <div class="feats-container">
+                                <div class="feat-search">
+                                    <input type="text" id="feat-search" placeholder="Search feats..." aria-label="Search feats">
+                                    <div class="feat-filter">
+                                        <label class="filter-label">
+                                            <input type="checkbox" id="asi-filter"> Show only ASI feats
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="feat-selection">
+                                    <select id="feats-select" aria-label="Select a feat" onchange="previewFeat()">
+                                        <option value="">Select a Feat...</option>
+                                        <!-- Feats will be loaded from feats.json -->
+                                    </select>
+                                    <button type="button" id="add-feat-button" class="small-button">Add Feat</button>
+                                </div>
+                                <div id="feat-preview" class="feat-preview">
+                                    <!-- Feat preview will appear here -->
+                                </div>
+                                <div id="selected-feats-container" class="selected-feats">
+                                    <!-- Selected feats will appear here -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="armor-piece">
+                        <h2>Helmet</h2>
+                        <select id="helmet-select" onchange="updateArmorInfo('helmet')" aria-label="Select a helmet">
                             <option value="">Select a Helmet...</option>
                             <option value="Hypersensory-Scanner-Array">A. Hypersensory Scanner Array</option>
                             <option value="Neuroprotective-Casement">B. Neuroprotective Casement</option>
@@ -28,9 +201,9 @@
                             <option value="Bonnet-Themed-Helmet">Bonnet of Blushing Bravado</option>
                         </select>
                     </div>
-                    
-                    <div class="armor-piece">
-                        <h2>Pauldrons</h2>                        <select id="pauldrons-select" onchange="updateArmorInfo('pauldrons')">
+                      <div class="armor-piece">
+                        <h2>Pauldrons</h2>
+                        <select id="pauldrons-select" onchange="updateArmorInfo('pauldrons')" aria-label="Select pauldrons">
                             <option value="">Select Pauldrons...</option>
                             <option value="Exultant-Type">A. Exultant Type</option>
                             <option value="Vanguard-Heavy-Type">B. Vanguard Heavy Type</option>
@@ -40,9 +213,9 @@
                             <option value="Diaper-Duty-Pauldrons">Diaper Duty Pauldrons</option>
                         </select>
                     </div>
-                    
-                    <div class="armor-piece">
-                        <h2>Chest Armor</h2>                        <select id="chest-select" onchange="updateArmorInfo('chest')">
+                      <div class="armor-piece">
+                        <h2>Chest Armor</h2>
+                        <select id="chest-select" onchange="updateArmorInfo('chest')" aria-label="Select chest armor">
                             <option value="">Select Chest Armor...</option>
                             <option value="Balanced-Type-Composite-Frame">Balanced Type Composite Frame</option>
                             <option value="Bulwark-Type-Frame">Bulwark Type Frame</option>
@@ -51,9 +224,9 @@
                             <option value="Soiling-Shield-Bib">Soiling Shield Bib</option>
                         </select>
                     </div>
-                    
-                    <div class="armor-piece">
-                        <h2>Arms/Gloves</h2>                        <select id="arms-select" onchange="updateArmorInfo('arms')">
+                      <div class="armor-piece">
+                        <h2>Arms/Gloves</h2>
+                        <select id="arms-select" onchange="updateArmorInfo('arms')" aria-label="Select arms and gloves">
                             <option value="">Select Arms/Gloves...</option>
                             <option value="Shadestreak-Handmantles">A. Shadestreak Handmantles</option>
                             <option value="Blastbreaker-Fists">B. Blastbreaker Fists</option>
@@ -62,9 +235,9 @@
                             <option value="Infantile-Mittens">Infantile Mittens</option>
                         </select>
                     </div>
-                    
-                    <div class="armor-piece">
-                        <h2>Boots</h2>                        <select id="boots-select" onchange="updateArmorInfo('boots')">
+                      <div class="armor-piece">
+                        <h2>Boots</h2>
+                        <select id="boots-select" onchange="updateArmorInfo('boots')" aria-label="Select boots">
                             <option value="">Select Boots...</option>
                             <option value="Ultra-Duty-Boots">A. Ultra-Duty Boots</option>
                             <option value="Balanced-Boots">B. Balanced Boots</option>
@@ -73,9 +246,9 @@
                             <option value="Ethereal-Stride-Boots">E. Ethereal Stride Boots</option>
                         </select>
                     </div>
-                    
-                    <div class="armor-piece">
-                        <h2>Raiment</h2>                        <select id="raiment-select" onchange="updateArmorInfo('raiment')">
+                      <div class="armor-piece">
+                        <h2>Raiment</h2>
+                        <select id="raiment-select" onchange="updateArmorInfo('raiment')" aria-label="Select raiment">
                             <option value="">Select Raiment...</option>
                             <option value="Photonic-Cape">Photonic Cape</option>
                             <option value="Soul-Core-Manifold">Soul Core Manifold</option>
@@ -88,6 +261,38 @@
                             <option value="Diaper-Daycare-Raiment">Diaper Daycare Raiment</option>
                             <option value="Mephidium-Coda">Mephidium Coda (Skunk's Tail)</option>
                         </select>
+                    </div>
+                    
+                    <!-- Weapons Selection -->
+                    <div class="weapons-section">
+                        <h2>Weapons</h2>
+                        <div class="weapon-selection">
+                            <div class="primary-weapon">
+                                <h3>Primary Weapon</h3>
+                                <select id="primary-weapon-select" onchange="updateWeaponInfo('primary')" aria-label="Select primary weapon">
+                                    <option value="">Select Primary Weapon...</option>
+                                    <!-- Weapon options will be populated from weaponsData -->
+                                </select>
+                                <div class="weapon-size-toggle">
+                                    <label for="primary-large-size">
+                                        <input type="checkbox" id="primary-large-size"> Large Size Weapon (Double Damage Dice)
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="secondary-weapon">
+                                <h3>Secondary Weapon</h3>
+                                <select id="secondary-weapon-select" onchange="updateWeaponInfo('secondary')" aria-label="Select secondary weapon">
+                                    <option value="">Select Secondary Weapon...</option>
+                                    <!-- Weapon options will be populated from weaponsData -->
+                                </select>
+                                <div class="weapon-size-toggle">
+                                    <label for="secondary-large-size">
+                                        <input type="checkbox" id="secondary-large-size"> Large Size Weapon (Double Damage Dice)
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     
                     <div class="action-button">
@@ -104,10 +309,84 @@
                             <div id="selected-item-description">Information about the selected item will appear here.</div>
                         </div>
                     </div>
+                </div>            </div>              <div class="loadout-results hidden" id="loadout-results">
+                <!-- Character information section -->                <div class="character-info-section">
+                    <!-- Floating character portrait that overlaps without affecting layout -->
+                    <div class="floating-portrait-container">
+                        <div class="character-portrait">
+                            <img id="character-portrait-img" src="" alt="Character portrait" onerror="this.style.display='none'">
+                            <div id="character-portrait-placeholder" class="portrait-placeholder">No Image</div>
+                        </div>
+                    </div>
+                    
+                    <div class="character-header">
+                        <div class="character-name-race">
+                            <h2 id="character-name-display">Aegisknight Loadout</h2>
+                            <div id="character-race-display" class="character-race"></div>
+                        </div>
+                        <div class="ability-scores-container">
+                            <div class="ability-score">
+                                <div class="ability-label">STR</div>
+                                <div class="ability-value" id="strength-display">-</div>
+                            </div>
+                            <div class="ability-score">
+                                <div class="ability-label">DEX</div>
+                                <div class="ability-value" id="dexterity-display">-</div>
+                            </div>
+                            <div class="ability-score">
+                                <div class="ability-label">CON</div>
+                                <div class="ability-value" id="constitution-display">-</div>
+                            </div>
+                            <div class="ability-score">
+                                <div class="ability-label">INT</div>
+                                <div class="ability-value" id="intelligence-display">-</div>
+                            </div>
+                            <div class="ability-score">
+                                <div class="ability-label">WIS</div>
+                                <div class="ability-value" id="wisdom-display">-</div>
+                            </div>
+                            <div class="ability-score">
+                                <div class="ability-label">CHA</div>
+                                <div class="ability-value" id="charisma-display">-</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Character stats like HP and AC -->
+                    <div class="character-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">Hit Points (Level 5):</span>
+                            <span class="stat-value" id="hp-display">-</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Armor Class:</span>
+                            <span class="stat-value" id="ac-display">-</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Character appearance -->
+                    <div class="appearance-section">
+                        <h3>Appearance</h3>
+                        <div class="appearance-details">
+                            <div class="appearance-item">
+                                <span class="appearance-label">Hair:</span>
+                                <span class="appearance-value" id="hair-display">-</span>
+                            </div>
+                            <div class="appearance-item">
+                                <span class="appearance-label">Eyes:</span>
+                                <span class="appearance-value" id="eye-display">-</span>
+                            </div>
+                            <div class="appearance-item">
+                                <span class="appearance-label">Skin/Fur:</span>
+                                <span class="appearance-value" id="skin-display">-</span>
+                            </div>
+                            <div class="appearance-item">
+                                <span class="appearance-label">Notable Features:</span>
+                                <span class="appearance-value" id="features-display">-</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-              <div class="loadout-results" id="loadout-results" style="display: none;">
-                <h2>Your Aegisknight Loadout</h2>
                 
                 <!-- Visual representation of armor pieces -->
                 <div class="armor-visualization">
@@ -167,10 +446,82 @@
                         </div>
                         <div id="raiment-result" class="loadout-item">
                             <h3>Raiment: <span class="loadout-item-name">None Selected</span></h3>
-                            <div class="loadout-item-progression"></div>
+                            <div class="loadout-item-progression"></div>                        </div>
+                    </div>
+                </div>
+                
+                <!-- Character Background Information -->
+                <div class="character-background-section">
+                    <h3>Character Background</h3>
+                    <div class="background-container">
+                        <div class="background-info">
+                            <h4>Background:</h4>
+                            <div id="background-display" class="background-text"></div>
+                        </div>                        <div class="background-feat">
+                            <h4>Background Feat:</h4>
+                            <div id="background-feat-display" class="background-text"></div>
                         </div>
                     </div>
                 </div>
+                
+                <!-- Character Racial Traits Section -->
+                <div class="character-traits-section">
+                    <h3>Racial Traits</h3>
+                    <div id="character-traits-display" class="traits-display">
+                        <!-- Racial traits will be populated here -->
+                    </div>
+                </div>
+                
+                <!-- Character Feats Section -->
+                <div class="character-feats-section">
+                    <h3>Character Feats</h3>
+                    <div id="character-feats-display" class="feats-display">
+                        <p class="no-feats">No feats selected</p>
+                    </div>
+                </div>
+                
+                <!-- Character Weapons Section -->
+                <div class="character-weapons-section">
+                    <h3>Weapons</h3>
+                    <div id="character-weapons-display" class="weapons-display">
+                        <div id="primary-weapon-display" class="weapon-card">
+                            <h4>Primary Weapon: <span id="primary-weapon-name">None Selected</span></h4>
+                            <div class="weapon-details">
+                                <div class="weapon-stat">
+                                    <span class="weapon-label">Damage:</span>
+                                    <span class="weapon-value" id="primary-weapon-damage">-</span>
+                                </div>
+                                <div class="weapon-stat">
+                                    <span class="weapon-label">Type:</span>
+                                    <span class="weapon-value" id="primary-weapon-type">-</span>
+                                </div>
+                                <div class="weapon-stat">
+                                    <span class="weapon-label">Properties:</span>
+                                    <span class="weapon-value" id="primary-weapon-properties">-</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="secondary-weapon-display" class="weapon-card">
+                            <h4>Secondary Weapon: <span id="secondary-weapon-name">None Selected</span></h4>
+                            <div class="weapon-details">
+                                <div class="weapon-stat">
+                                    <span class="weapon-label">Damage:</span>
+                                    <span class="weapon-value" id="secondary-weapon-damage">-</span>
+                                </div>
+                                <div class="weapon-stat">
+                                    <span class="weapon-label">Type:</span>
+                                    <span class="weapon-value" id="secondary-weapon-type">-</span>
+                                </div>
+                                <div class="weapon-stat">
+                                    <span class="weapon-label">Properties:</span>
+                                    <span class="weapon-value" id="secondary-weapon-properties">-</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
                 <div class="action-button">
                     <button onclick="backToSelection()">Back to Selection</button>
                 </div>

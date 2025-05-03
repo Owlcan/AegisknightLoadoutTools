@@ -1,0 +1,139 @@
+/* Tooltip Styles */
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+}
+
+.help-button {
+    background-color: var(--gold);
+    color: var(--dark-stone);
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 14px;
+    line-height: 1;
+    transition: background-color 0.3s;
+    outline: none;
+}
+
+.help-button:hover, .help-button:focus {
+    background-color: var(--silver);
+}
+
+.tooltip {
+    visibility: hidden;
+    position: absolute;
+    background-color: var(--darker-stone);
+    color: var(--silver);
+    border: 1px solid var(--gold);
+    border-radius: 5px;
+    padding: 15px;
+    width: 300px;
+    max-width: 90vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    opacity: 0;
+    transition: opacity 0.3s;
+    text-align: left;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.9rem;
+}
+
+/* Show tooltip on hover only on devices with hover capability */
+@media (hover: hover) {
+    .tooltip-container:hover .tooltip {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.tooltip h4 {
+    color: var(--gold);
+    margin-top: 0;
+    border-bottom: 1px solid var(--gold);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.tooltip ul {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.tooltip li {
+    margin-bottom: 5px;
+}
+
+.tooltip table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+}
+
+.tooltip table, 
+.tooltip th, 
+.tooltip td {
+    border: 1px solid var(--gold);
+}
+
+.tooltip th, 
+.tooltip td {
+    padding: 5px;
+    text-align: center;
+}
+
+.tooltip th {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: var(--gold);
+}
+
+.close-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: none;
+    border: none;
+    color: var(--gold);
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    outline: none;
+}
+
+.close-button:hover, .close-button:focus {
+    color: var(--silver);
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .tooltip {
+        width: 280px;
+        font-size: 0.85rem;
+        left: auto;
+        right: -10px;
+        transform: none;
+    }
+    
+    .tooltip::before {
+        content: '';
+        position: absolute;
+        top: -10px;
+        right: 15px;
+        border-width: 0 10px 10px 10px;
+        border-style: solid;
+        border-color: transparent transparent var(--gold) transparent;
+    }
+    
+    .tooltip table {
+        font-size: 0.8rem;
+    }
+}

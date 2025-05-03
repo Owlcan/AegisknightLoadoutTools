@@ -1,0 +1,798 @@
+[
+    {
+        "id": "kittenfolk",
+        "name": "Kittenfolk",
+        "alternate_names": ["Kittenling", "Konekojin"],
+        "size": "Small",
+        "base_speed": 35,
+        "ability_score_increases": {
+            "dexterity": 2,
+            "charisma": 1
+        },
+        "traits": [
+            {
+                "name": "Low-Light Vision",
+                "description": "You have superior vision in dim light. You can see in dim light within 60 feet of you as if it were bright light."
+            },
+            {
+                "name": "Feline Agility",
+                "description": "You gain proficiency in the Stealth skill. Additionally, you have advantage on ability checks made to jump or climb."
+            },
+            {
+                "name": "Natural Paws",
+                "description": "Your unarmed strikes with your paws count as natural weapons. Due to your small size, these strikes deal 2 bludgeoning damage instead of the usual 1d4."
+            },
+            {
+                "name": "Aquatic Ineptitude",
+                "description": "You have disadvantage on Athletics checks made to swim."
+            }
+        ],
+        "languages": ["Common", "Choice"],
+        "subraces": [
+            {
+                "id": "tawny_folk",
+                "name": "Tawny Folk",
+                "ability_score_increases": {
+                    "charisma": 2,
+                    "intelligence": -1
+                },
+                "traits": [
+                    {
+                        "name": "Trade Expertise",
+                        "description": "You gain proficiency with one artisan's tool of your choice."
+                    },
+                    {
+                        "name": "Local Knowledge",
+                        "description": "You are proficient in the History skill. When making checks related to local folklore, customs, or geography, you have advantage."
+                    }
+                ]
+            },
+            {
+                "id": "umbral_tribe",
+                "name": "Umbral Tribe",
+                "ability_score_increases": {
+                    "intelligence": 2
+                },
+                "traits": [
+                    {
+                        "name": "Mystic Cantrip",
+                        "description": "You know one cantrip of your choice from the wizard, bard, or sorcerer spell list. Intelligence is your spellcasting ability for this cantrip."
+                    },
+                    {
+                        "name": "Herbalist Proficiency",
+                        "description": "You are proficient with the herbalist's kit."
+                    },
+                    {
+                        "name": "Catnip Tincture",
+                        "description": "Using an herbalist's kit, you can create a Catnip Tincture that when consumed increases the user's base speed by 10 feet for 3 rounds, but they take a -1 penalty to attack rolls during this time."
+                    }
+                ]
+            },
+            {
+                "id": "purekin",
+                "name": "Purekin",
+                "ability_score_increases": {
+                    "wisdom": 2
+                },
+                "traits": [
+                    {
+                        "name": "Divine Cantrip",
+                        "description": "You know one cantrip of your choice from the cleric or bard spell list. Wisdom is your spellcasting ability for this cantrip."
+                    },
+                    {
+                        "name": "Resilient Physique",
+                        "description": "You have advantage on saving throws against disease and poison, including magical diseases and poisons."
+                    },
+                    {
+                        "name": "Artisan Proficiency",
+                        "description": "You are proficient with one of the following: calligrapher's supplies, cartographer's tools, or engraver's tools."
+                    }
+                ]
+            },
+            {
+                "id": "megafaunal_kittenkin",
+                "name": "Megafaunal Kittenkin",
+                "ability_score_increases": {
+                    "strength": 2,
+                    "intelligence": -1,
+                    "wisdom": -1
+                },
+                "size": "Medium",
+                "base_speed": 40,
+                "traits": [
+                    {
+                        "name": "Survivor's Instinct",
+                        "description": "You gain proficiency in the Survival skill."
+                    },
+                    {
+                        "name": "Combat Proficiency",
+                        "description": "You have proficiency with all simple weapons."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "pupperling",
+        "name": "Pupperling",
+        "size": "Small",
+        "base_speed": 35,
+        "ability_score_increases": {
+            "charisma": 1,
+            "constitution": 1,
+            "strength": 1
+        },
+        "traits": [
+            {
+                "name": "Loyal Might",
+                "description": "You have an innate carrying capacity bonus. Your carrying capacity increases by +5 for every point of Strength over 10."
+            },
+            {
+                "name": "Strong Paws",
+                "description": "Your unarmed strikes with your paws count as natural weapons. These strikes deal 1d4 bludgeoning damage. Additionally, your claws may be used as improvised tools with a -2 penalty to the roll."
+            },
+            {
+                "name": "Boundless Energy",
+                "description": "You gain proficiency in the Athletics skill."
+            }
+        ],
+        "languages": ["Common", "Choice"],
+        "subraces": [
+            {
+                "id": "watchkin",
+                "name": "Watchkin",
+                "ability_score_increases": {
+                    "wisdom": 2,
+                    "dexterity": -1
+                },
+                "traits": [
+                    {
+                        "name": "Ever Watchful",
+                        "description": "You have advantage on Wisdom (Perception) checks to detect hidden creatures or objects."
+                    },
+                    {
+                        "name": "Proficiency",
+                        "description": "You gain proficiency with the Insight skill and smith's tools."
+                    }
+                ]
+            },
+            {
+                "id": "huntkin",
+                "name": "Huntkin",
+                "ability_score_increases": {
+                    "dexterity": 2,
+                    "charisma": -1
+                },
+                "traits": [
+                    {
+                        "name": "Hunter's Instinct",
+                        "description": "When tracking a creature, you have advantage on Wisdom (Survival) checks to follow its trail. Additionally, you can move stealthily at a normal pace while traveling alone or with one other creature."
+                    },
+                    {
+                        "name": "Proficiency",
+                        "description": "You gain proficiency with the Survival skill and bowyer's tools."
+                    }
+                ]
+            },
+            {
+                "id": "corgites",
+                "name": "Corgites",
+                "ability_score_increases": {
+                    "constitution": 2,
+                    "strength": -1
+                },
+                "traits": [
+                    {
+                        "name": "Stubborn Resilience",
+                        "description": "When you fail a saving throw against being knocked prone or moved, you can roll again and must use the second result. You can use this feature once per short or long rest."
+                    },
+                    {
+                        "name": "Proficiency",
+                        "description": "You gain proficiency with the Persuasion skill and mason's tools."
+                    }
+                ]
+            },
+            {
+                "id": "wolfbreed",
+                "name": "Wolfbreed",
+                "ability_score_increases": {
+                    "strength": 2,
+                    "intelligence": -1
+                },
+                "size": "Medium",
+                "base_speed": 40,
+                "traits": [
+                    {
+                        "name": "Alpha's Command",
+                        "description": "As a bonus action, you can bolster an ally within 10 feet. They gain advantage on their next attack roll or saving throw. You can use this feature once per long rest."
+                    },
+                    {
+                        "name": "Proficiency",
+                        "description": "You gain proficiency with the Intimidation skill and carpenter's tools."
+                    }
+                ]
+            },
+            {
+                "id": "magipup",
+                "name": "Magipup",
+                "ability_score_increases": {
+                    "intelligence": 2,
+                    "strength": -1
+                },
+                "traits": [
+                    {
+                        "name": "Arcane Cantrip",
+                        "description": "You know one cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for this cantrip."
+                    },
+                    {
+                        "name": "Mystic Insight",
+                        "description": "You have advantage on Arcana checks related to magical devices or symbols."
+                    },
+                    {
+                        "name": "Proficiency",
+                        "description": "You gain proficiency with the Arcana skill and alchemist's supplies."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "skunkiddo",
+        "name": "Skunkiddo",
+        "size": "Small",
+        "base_speed": 25,
+        "ability_score_increases": {
+            "dexterity": 2,
+            "constitution": 1
+        },
+        "traits": [
+            {
+                "name": "Dig Speed",
+                "description": "You have a burrow (dig) speed of 5 feet, allowing you to tunnel through loose earth or sand."
+            },
+            {
+                "name": "Climb Speed",
+                "description": "You have a climb speed of 10 feet."
+            },
+            {
+                "name": "Stink Spray",
+                "description": "As an action, you can exhale a repulsive cloud of odor in a 15-foot cone. Each creature in that area must succeed on a Constitution saving throw (DC = 8 + your proficiency bonus + your Dexterity modifier) or be poisoned and sickened until the end of your next turn. Once you use this trait, you cannot use it again until you finish a short or long rest."
+            },
+            {
+                "name": "Diapered Instinct",
+                "description": "Having eschewed potty training on the DS Plane, you are naturally incontinent at creation. Because of this inherent flaw, you are eligible to select the Diaper-Mastery feat at character creation in lieu of meeting its usual prerequisites."
+            },
+            {
+                "name": "Keen Senses",
+                "description": "You have advantage on Wisdom (Perception) checks that rely on your sense of smell."
+            },
+            {
+                "name": "Mischievous Nature",
+                "description": "Your wily personality grants you proficiency in the Stealth skill."
+            }
+        ],
+        "languages": ["Common", "Skunkiddo"],
+        "subraces": [
+            {
+                "id": "fragrance_furs",
+                "name": "Fragrance Furs",
+                "ability_score_increases": {
+                    "intelligence": 1
+                },
+                "traits": [
+                    {
+                        "name": "Perfume Poof",
+                        "description": "You replace the standard Skunkiddo Stink Spray with a burst of heady, magical fragrance. As an action, you can exude a pleasant perfume in a 15-foot cone. Each creature in the area must succeed on a Wisdom saving throw or be dazzled (enemies) or inspired (allies). You can use this ability a number of times per day equal to your proficiency bonus."
+                    },
+                    {
+                        "name": "Fragrant Magic",
+                        "description": "Your innate magical flair allows you to learn one arcane cantrip of your choice. Intelligence is your spellcasting ability for this cantrip."
+                    }
+                ]
+            },
+            {
+                "id": "malodorans",
+                "name": "Malodorans",
+                "ability_score_increases": {
+                    "strength": 1
+                },
+                "traits": [
+                    {
+                        "name": "Enhanced Stink Spray",
+                        "description": "Your Stink Spray is particularly potent. Affected creatures also become frightened of you for 1 round on a failed save."
+                    },
+                    {
+                        "name": "Unbridled Momentum",
+                        "description": "Your walking speed increases by 5 feet."
+                    },
+                    {
+                        "name": "Battle-Hardened Aroma",
+                        "description": "You gain proficiency in the Intimidation skill if you do not already have it."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "bunbunkin",
+        "name": "Bunbunkin",
+        "size": "Small",
+        "base_speed": 35,
+        "ability_score_increases": {
+            "dexterity": 2,
+            "strength": 2,
+            "wisdom": -1,
+            "constitution": -1
+        },
+        "traits": [
+            {
+                "name": "Darkvision",
+                "description": "You can see in darkness within 30 feet as if it were dim light. You can't discern color in darkness, only shades of gray."
+            },
+            {
+                "name": "Low-Light Vision",
+                "description": "You can see in dim light within 60 feet as if it were bright light."
+            },
+            {
+                "name": "Burrower's Paws",
+                "description": "Your unarmed strikes with your paws count as natural weapons dealing 1d4 bludgeoning damage. Additionally, you have a burrowing speed of 5 feet."
+            },
+            {
+                "name": "Tunnelborn Navigation",
+                "description": "You gain proficiency in Nature and Dungeoneering. You can never become lost or disoriented within underground passageways."
+            },
+            {
+                "name": "Sharp Hearing",
+                "description": "You have advantage on Perception checks that rely on hearing."
+            }
+        ],
+        "languages": ["Common", "Choice"],
+        "subraces": [
+            {
+                "id": "fleetfeets",
+                "name": "Fleetfeets",
+                "ability_score_increases": {
+                    "dexterity": 2,
+                    "wisdom": -1
+                },
+                "base_speed": 45,
+                "traits": [
+                    {
+                        "name": "Bonus Dash",
+                        "description": "You can take the Dash action as a bonus action. If you already have this ability, your movement speed increases by an additional 10 feet during that Dash."
+                    },
+                    {
+                        "name": "Climbing Adaptation",
+                        "description": "You lose your burrowing speed, but you gain a climbing speed of 15 feet on unobstructed surfaces less than 65 degrees steep."
+                    },
+                    {
+                        "name": "Proficiency",
+                        "description": "You gain proficiency in the Survival skill."
+                    }
+                ]
+            },
+            {
+                "id": "bigpaws",
+                "name": "Bigpaws",
+                "ability_score_increases": {
+                    "strength": 1,
+                    "constitution": 1
+                },
+                "traits": [
+                    {
+                        "name": "Large Build",
+                        "description": "You have all the benefits of being Medium sized while retaining the advantages of being Small, and you suffer none of the usual disadvantages of being Small sized."
+                    },
+                    {
+                        "name": "Enhanced Burrowing",
+                        "description": "Your burrowing speed increases to 10 feet."
+                    },
+                    {
+                        "name": "Proficiency",
+                        "description": "You gain proficiency in the Athletics skill."
+                    }
+                ]
+            },
+            {
+                "id": "sparkly_ears",
+                "name": "Sparkly-Ears",
+                "ability_score_increases": {
+                    "intelligence": 2,
+                    "wisdom": 2,
+                    "strength": -1,
+                    "dexterity": -1
+                },
+                "traits": [
+                    {
+                        "name": "Arcane and Divine Cantrips",
+                        "description": "You know one cantrip of your choice from the wizard spell list and one cantrip of your choice from the cleric spell list."
+                    },
+                    {
+                        "name": "Pandimensional Navigation",
+                        "description": "Your ability to avoid becoming lost underground now applies to any plane cosmologically below the Material Plane, and it functions even in areas affected by magical sound dampening or spatial distortions."
+                    },
+                    {
+                        "name": "Proficiency",
+                        "description": "You gain proficiency with either two magical artisan's tools or one magical tool and one language of your choice."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ghost",
+        "name": "Ghost",
+        "size": "Varies",
+        "base_speed": 30,
+        "ability_score_increases": {
+            "wisdom": 1,
+            "intelligence": 1
+        },
+        "traits": [
+            {
+                "name": "Sleepless Spectre",
+                "description": "You do not need to sleep. Instead, you enter a semi-dormant state for 4 hours, akin to elven meditation. During this time, you are fully aware of your surroundings. You are also immune to charm effects that rely on sleep."
+            },
+            {
+                "name": "Darkvision",
+                "description": "You can see in darkness within 60 feet as if it were dim light. You can't discern color in darkness, only shades of gray."
+            },
+            {
+                "name": "Formless Passage",
+                "description": "Twice per long rest, you can assume an incorporeal form for up to 10 minutes. While incorporeal, you can move through non-magical objects, doors, or walls as if they were difficult terrain."
+            },
+            {
+                "name": "Spectral Manipulation",
+                "description": "You can cast the mage hand cantrip a number of times per day equal to your Constitution modifier (minimum of once). Intelligence is your spellcasting ability for this cantrip."
+            },
+            {
+                "name": "Wail of the Lost",
+                "description": "As an action, you can release an otherworldly wail. Each creature within 10 feet that can hear you must succeed on a Wisdom saving throw or be frightened of you for 1 minute."
+            },
+            {
+                "name": "Ethereal Insight",
+                "description": "Gain proficiency in Arcana and Religion."
+            }
+        ],
+        "languages": ["Common", "Choice"],
+        "special_mechanics": "Ghost subraces combine the traits of your original 'living' race with the spectral abilities of the Ghost race. Rather than replacing features, you layer the essence of your mortal past onto the Ghost template."
+    },
+    {
+        "id": "morphian_changeling",
+        "name": "Morphian Changeling",
+        "size": "Medium",
+        "base_speed": 30,
+        "ability_score_increases": {
+            "charisma": 2,
+            "choice": 1
+        },
+        "traits": [
+            {
+                "name": "Robust Transformation",
+                "description": "You can transform into any Medium or Small-sized race you have previously touched with bare skin. This transformation requires a 12-hour biological process that functions as a trance-like sleep, during which you alter your racial phylogeny."
+            },
+            {
+                "name": "Form Limitations",
+                "description": "While temporarily disguising yourself using your standard changeling transformation ability, you can only mimic races you have touched but do not gain the racial abilities or powers of any race other than your current chosen form."
+            },
+            {
+                "name": "Temporary Transformation",
+                "description": "As an action, you can temporarily transform to take on the physical appearance of a race you have touched. This transformation lasts up to 1 hour or until you revert to your original form."
+            }
+        ],
+        "languages": ["Common", "Choice", "Choice", "Racial languages from chosen form"],
+        "special_mechanics": "Your subrace is determined by the race you last transformed into using your Robust Transformation ability. You must complete the 12-hour transformation process to change subraces."
+    },
+    {
+        "id": "cowbuddy",
+        "name": "Cowbuddy",
+        "size": "Varies",
+        "base_speed": 35,
+        "ability_score_increases": {
+            "constitution": 1
+        },
+        "traits": [
+            {
+                "name": "Natural Hooved Feet",
+                "description": "Your hoof-like nails let you make unarmed strikes that deal 1d4 bludgeoning damage using your Strength modifier."
+            },
+            {
+                "name": "Rapid Digestion",
+                "description": "You have resistance to all ingested poisons and non-magical poisons. You have immunity to all common-rarity poisons. However, you must roll potty-checks twice as often as other characters, and roll a CON-based potty-check after any strenuous action."
+            },
+            {
+                "name": "Naturally Unpottytrained",
+                "description": "You are Incontinent as per the Flaw, and as such immediately qualify for the Diaper Mastery feat at creation."
+            },
+            {
+                "name": "Horned Charge",
+                "description": "Once per short rest, when you move 15 feet in a straight line toward a creature, you can use a bonus action to make a melee attack with your horns dealing 1d6 piercing damage plus your Strength modifier."
+            },
+            {
+                "name": "Bovine Fortitude",
+                "description": "You have proficiency in Constitution saving throws."
+            }
+        ],
+        "languages": ["Common", "Choice"],
+        "subraces": [
+            {
+                "id": "dairy_friends",
+                "name": "Dairy Friends",
+                "ability_score_increases": {
+                    "constitution": 1,
+                    "charisma": 2
+                },
+                "traits": [
+                    {
+                        "name": "Artisan's Touch",
+                        "description": "You gain proficiency with one type of artisan's tool of your choice."
+                    },
+                    {
+                        "name": "Produce Milk",
+                        "description": "As an action, you can magically produce 24 fluid ounces of fresh, magical milk from your body. Any creature that consumes this milk immediately regains 1d4 hit points. You can use this ability a number of times equal to your proficiency bonus per long rest."
+                    },
+                    {
+                        "name": "Soothing Presence",
+                        "description": "When you cast a healing spell or use a healing ability, you can grant yourself or one creature within 10 feet temporary hit points equal to your Charisma modifier. You can use this ability once per short rest."
+                    }
+                ]
+            },
+            {
+                "id": "bull_buddies",
+                "name": "Bull Buddies",
+                "ability_score_increases": {
+                    "constitution": 1,
+                    "strength": 2
+                },
+                "traits": [
+                    {
+                        "name": "Lone Charge",
+                        "description": "You gain proficiency in Athletics. Additionally, when you are not adjacent to any allies, you have advantage on Strength (Athletics) checks and Strength saving throws."
+                    },
+                    {
+                        "name": "Unyielding Might",
+                        "description": "Once per short rest, when you roll a Strength check or saving throw, you can add a bonus equal to your Strength modifier (minimum +1), tapping into an inner reserve of raw power."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "darkling",
+        "name": "Darkling",
+        "size": "Medium",
+        "base_speed": 30,
+        "traits": [
+            {
+                "name": "Scent",
+                "description": "You can track creatures around you by scent within a defined radius, treated as blindsense."
+            },
+            {
+                "name": "Tendril Lash",
+                "description": "You have a natural shadow-lash weapon that deals 1d4 damage instead of the unarmed strike damage of 1."
+            },
+            {
+                "name": "Umbral Jaunt",
+                "description": "You can use shadowed ethereal movement to move to any unoccupied space within 20 feet."
+            },
+            {
+                "name": "Shadow Regeneration",
+                "description": "If unwounded for 1 round, you begin to coalesce your being back together. Every round after the first round you are not wounded, you can restore 1d6 HP granted you do not move more than 10 ft in that turn."
+            },
+            {
+                "name": "Nightling Mind and Body",
+                "description": "You take double damage from sources of radiant damage. You don't sleep; you lurk for 4–6 hours. You cannot be frightened."
+            },
+            {
+                "name": "Body of Vapor",
+                "description": "As an action up to 3 times per day, you can compress or expand your body to have either the Giant Might class feature for 1 minute, or Small racial features as desired."
+            },
+            {
+                "name": "Darkvision",
+                "description": "You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light."
+            },
+            {
+                "name": "Aggressive",
+                "description": "As a bonus action, you can move up to your speed toward an enemy of your choice that you can see or hear."
+            }
+        ],
+        "languages": ["Common", "Undercommon (understand only)"],
+        "subraces": [
+            {
+                "id": "ossuite",
+                "name": "Ossuite",
+                "ability_score_increases": {
+                    "wisdom": 1
+                },
+                "traits": [
+                    {
+                        "name": "Bone Toss",
+                        "description": "The Ossuite replaces the standard Tendril Lash with Bone Toss, a ranged attack with 30 ft range dealing 1d4 piercing damage."
+                    },
+                    {
+                        "name": "Divine Insight",
+                        "description": "You learn one divine cantrip of your choosing from the Cleric spell list."
+                    }
+                ]
+            },
+            {
+                "id": "dark_kin",
+                "name": "Dark-kin",
+                "traits": [
+                    {
+                        "name": "Enhanced Transmorphic Abilities",
+                        "description": "You can use Body of Vapor an additional time per day."
+                    },
+                    {
+                        "name": "Blend with Shadows",
+                        "description": "Once per short rest, you may take on a translucent, shadowy form for 1 minute, gaining resistance to nonmagical bludgeoning, piercing, and slashing damage."
+                    },
+                    {
+                        "name": "Shadowmeld Reflex",
+                        "description": "When you use Umbral Jaunt, you can temporarily meld into an ally's shadow, occupying the same space as them for 1 round."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tanukijin",
+        "name": "Tanukijin",
+        "size": "Small",
+        "base_speed": 35,
+        "ability_score_increases": {
+            "dexterity": 2,
+            "charisma": 1
+        },
+        "traits": [
+            {
+                "name": "Trickster's Grace",
+                "description": "You gain proficiency in the Stealth and Sleight of Hand skills."
+            },
+            {
+                "name": "Mischievous Luck",
+                "description": "Once per short rest, if you fail a Dexterity saving throw, you can reroll the check and use the new result."
+            },
+            {
+                "name": "Illusory Shift",
+                "description": "As a bonus action once per long rest, you can briefly alter your appearance to gain advantage on a Charisma (Deception) or Dexterity (Acrobatics) check."
+            }
+        ],
+        "languages": ["Common", "Choice"],
+        "subraces": [
+            {
+                "id": "mystic_tanuki",
+                "name": "Mystic Tanuki",
+                "ability_score_increases": {
+                    "intelligence": 1
+                },
+                "traits": [
+                    {
+                        "name": "Arcane Trickery",
+                        "description": "You know one cantrip of your choice from the bard or sorcerer spell list. Charisma is your spellcasting ability for this cantrip."
+                    },
+                    {
+                        "name": "Minor Illusionist",
+                        "description": "You have advantage on Intelligence (Investigation) checks when searching for magical effects or hidden enchantments."
+                    }
+                ]
+            },
+            {
+                "id": "wandering_tanuki",
+                "name": "Wandering Tanuki",
+                "ability_score_increases": {
+                    "wisdom": 1
+                },
+                "traits": [
+                    {
+                        "name": "Pathfinder's Instinct",
+                        "description": "You gain proficiency in the Survival skill and have advantage on Wisdom (Perception) checks when navigating natural environments."
+                    },
+                    {
+                        "name": "Fleet Footed",
+                        "description": "Your base walking speed increases to 40 feet when traveling in expansive or rugged terrain."
+                    }
+                ]
+            },
+            {
+                "id": "gleaming_tanuki",
+                "name": "Gleaming Tanuki",
+                "ability_score_increases": {
+                    "charisma": 1
+                },
+                "traits": [
+                    {
+                        "name": "Sparkling Focus",
+                        "description": "You have a keen eye for all things glimmering. You gain a +2 bonus on Investigation checks related to appraising or locating valuable or magical items."
+                    },
+                    {
+                        "name": "Treasure's Allure",
+                        "description": "Once per short rest, you can use a bonus action to gain advantage on an Investigation check specifically aimed at detecting hidden treasures, secret compartments, or enchanted artifacts."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "foxfolk",
+        "name": "Foxfolk",
+        "size": "Small",
+        "base_speed": 35,
+        "ability_score_increases": {
+            "dexterity": 2,
+            "charisma": 1
+        },
+        "traits": [
+            {
+                "name": "Keen Senses",
+                "description": "You gain proficiency in the Perception and Stealth skills."
+            },
+            {
+                "name": "Natural Camouflage",
+                "description": "When in natural environments, you have advantage on Dexterity (Stealth) checks to hide amidst foliage, rain, snow, or other natural phenomena."
+            }
+        ],
+        "languages": ["Common", "Choice"],
+        "subraces": [
+            {
+                "id": "emberclaw_fox",
+                "name": "Emberclaw Fox",
+                "ability_score_increases": {
+                    "constitution": 1
+                },
+                "traits": [
+                    {
+                        "name": "Arcane Strike",
+                        "description": "Once per short rest, when you take the Attack action, you can channel mystical energy into a melee weapon attack, adding 1d6 fire or radiant damage and potentially stunning the target."
+                    },
+                    {
+                        "name": "Blazing Aura",
+                        "description": "When you are in dim light or darkness, your presence burns with latent magical energy, granting you resistance to fire damage."
+                    }
+                ]
+            },
+            {
+                "id": "arcane_fox",
+                "name": "Arcane Fox",
+                "ability_score_increases": {
+                    "intelligence": 1
+                },
+                "traits": [
+                    {
+                        "name": "Innate Spellcasting",
+                        "description": "You know one cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for this cantrip."
+                    },
+                    {
+                        "name": "Spell Scholar",
+                        "description": "You gain proficiency in the Arcana skill with double proficiency bonus for magical lore checks."
+                    },
+                    {
+                        "name": "Focused Mind",
+                        "description": "You have advantage on saving throws against spells or effects that would charm or frighten you."
+                    }
+                ]
+            },
+            {
+                "id": "moonshadow_fox",
+                "name": "Moonshadow Fox",
+                "ability_score_increases": {
+                    "charisma": 1
+                },
+                "traits": [
+                    {
+                        "name": "Shifting Shadows",
+                        "description": "As a bonus action, you can dissolve into shadows, gaining advantage on Stealth checks until your next turn."
+                    },
+                    {
+                        "name": "Quick Wit",
+                        "description": "You gain proficiency in the Deception and Insight skills."
+                    },
+                    {
+                        "name": "Trickster's Prank",
+                        "description": "When you successfully deceive a hostile creature in combat, you can grant an ally a +2 bonus on attack rolls against that creature."
+                    }
+                ]
+            }
+        ]
+    }
+]
