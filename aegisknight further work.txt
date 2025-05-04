@@ -1,0 +1,237 @@
+# **Aegisknight**
+
+The Aegisknight is a warrior engineer who powers an ever-mutable suit of magical raiments—one moment a stalwart defender draped in the soft glow of innocent youth and feminine charm, a warrior of love and justice; the next, a crusader against injustice whose heart beats for excitement, speed, and the open road. Sometimes they emerge as a peerless champion in darkness—a silent bulwark against evil, a patient revanchist, a dark knight casting ominous shadows over foes. In truth, the Aegisknight is as multifaceted as a prism: a shapeshifter of ideals, a kinetic paradox, and a living testament that heroism defies definition. Whether they embody the tender radiance of compassion or the fierce intensity of relentless retribution, the Aegisknight continually reinvents what it means to be a hero in a world that refuses to be boxed in.
+
+___
+## **Core Class Mechanics**
+
+### **Hit Points**
+- **Hit Dice:** Your hit dice are based on your Chest Armor type:
+  - **Balanced Type:** d10 per Aegisknight level.
+  - **Bulwark Type:** d12 per Aegisknight level.
+  - **Light Type:** d8 per Aegisknight level.
+- **Hit Points at 1st Level:** (Die value based on your chest piece) + your Constitution modifier.
+- **Hit Points at Higher Levels:** Roll your designated hit die (or take the fixed alternative) + your Constitution modifier for each level after 1.
+
+### **Proficiencies**
+- **Armor:** Your magitek suit (all components combined—this is your armor).
+- **Weapons:** Simple and martial weapons.
+- **Tools:** You gain proficiency with one profession or artisan tool of your choice. (Some armor components may grant additional tool proficiencies.)
+- **Saving Throws:** Strength and Wisdom.
+- **Skills:** Choose three from Athletics, Acrobatics, Perception, Insight, Investigation, Intimidation, Persuasion, or Sleight of Hand.
+
+### **Equipment**
+You start with:
+- (a) a longsword or (b) a warhammer.
+- (a) a light crossbow with 20 bolts or (b) a simple firearm with 20 bullets (if firearms exist in your setting).
+- An explorer’s pack or a dungeoneer’s pack.
+- Your fully modular magitek armor (see below).
+
+___
+## **Cell Charges**
+
+Your armor’s abilities are powered by **Cell Charges**. At 1st level, you have **5 Cell Charges**. You spend these charges to fuel many of the special abilities of your armor. You regain all expended charges after finishing a long rest and regain half your maximum charges after a short rest. Some components will increase your maximum or recharge rate as you level up.
+
+___
+## **Armor Activation**
+
+At 1st level, you learn how to rapidly deploy your magitek suit:
+- **Armor Activation (1st Level):** As an action, you can don or doff your armor a number of times per day equal to your Wisdom modifier + your proficiency bonus. When donned, your personal enhancements and modular abilities become active; when doffed, they are temporarily inactive (you still retain your proficiencies and saving throw benefits).
+
+___
+## **Power Surge (2nd Level)**
+
+As a bonus action, you may spend **2 Cell Charges** to surge extra power through your armor for 1 minute. Choose one of the following effects until the end of your turn:
+- Gain advantage on all attack rolls or saves (choose one).
+- Deal 1d8 damage of your choice upon successful melee attack.
+- Use the dash command as a bonus action.
+- Gain resistance to all damage.
+
+You may use this feature a number of times per long rest equal to your proficiency bonus or it may be activated as part of an armor's progression features.
+
+___
+## **Level Progression**
+
+The class gains features as you level up. The modular equipment (Helmet, Pauldrons, Gloves/Arms, Chest Armor, Legs/Boots, and Raiment) each has its own upgrade path. (For these options, “to start” refers to the baseline ability when you first choose that component.) The upgrade levels have been shifted earlier by 3: upgrades originally planned at levels 7, 10, 14, and 17 now occur at levels 4, 7, 11, and 14 respectively. The raiments, acquired at 3rd level, come with their own progression (originally 3, 6, 9, 11, and 15 are now adjusted to have their upgrades at levels 3 [base], 3 (immediate enhancement), 6, 8, and 12).
+\page
+___
+{{wide
+# **Aegisknight Progression**
+
+| **Level** | **Proficiency Bonus** | **Features**                                    | **Cell Charges** | **Additional Modular Upgrades**               |
+|-----------|-----------------------|-------------------------------------------------|------------------|-----------------------------------------------|
+| 1st       | +2                    | Armor Activation, Cell Charges                | 5                | Choose all modular pieces                     |
+| 2nd       | +2                    | Power Surge                                     | 6                | —                                             |
+| 3rd       | +2                    | Raiment (choose one, see below)                 | 7                | Raiment base (see below)                        |
+| 4th       | +2                    | Ability Score Improvement                       | 8                | Modular components upgrade (Level 4)          |
+| 5th       | +3                    | Extra Attack                                    | 9                | —                                             |
+| 6th       | +3                    | New Component Upgrade Effects                   | 10               | Modular upgrades (Level 6)                      |
+| 7th       | +3                    | Additional Component Benefits                   | 11               | Modular upgrades (Level 7)                      |
+| 8th       | +3                    | Ability Score Improvement                       | 12               | —                                             |
+| 9th       | +4                    | Advanced Raiment/Component Upgrades             | —                | —                                             |
+| 10th      | +4                    | Overclock                                       | 14               | —                                             |
+| 11th      | +4                    | Enhanced Component Upgrades                     | 15               | Modular upgrades (Level 11)                     |
+| 12th      | +4                    | Ability Score Improvement                       | 16               | Raiment upgrade (Level 12)                      |
+| 13th      | +5                    | Modular upgrades (Level 9)                        | —                | —                                             |
+| 14th      | +5                    | Apex Raiment Ability                                  | 18               | Modular upgrades (Level 14)                     |
+| 15th      | +5                    | Overdrive Mode                            | 19               | —                                             |
+| 16th      | +5                    | Ability Score Improvement                       | 20               | —                                             |
+| 17th      | +6                    | Legendary Component Upgrade                     | 21               | Modular upgrades (Level 17)                     |
+| 18th      | +6                    | Master Overdrive Mode                           | 22               | —                                             |
+| 19th      | +6                    | Ability Score Improvement                       | 23               | —                                             |
+| 20th      | +6                    | Ultimate Apex Raiment Ability                   | 25               | —                                             |
+}}
+___
+## **Additional Class Features**
+
+### **Extra Attack (5th Level)**
+You can attack twice instead of once when you take the Attack action on your turn.
+
+### **Overclock (10th Level)**
+As a bonus action, once per long rest, you can overclock your suit to instantly regain 5 Cell Charges.
+
+### **Apex Raiment Ability (14th Level)**
+Your chosen raiment unlocks its ultimate ability. (Refer to the specific raiment option’s final feature below.)
+
+### **Overdrive Mode (15th Level)**
+As an action, you enter Overdrive Mode for 1 minute. During Overdrive:
+- You gain a +2 bonus to AC.
+- You make an extra attack when you use the Attack action.
+- At the start of each of your turns, you regain 1 Cell Charge.
+After using Overdrive Mode, you can’t use it again until you finish a long rest.
+
+### **Ability Score Improvements**
+Standard Ability Score Improvement levels occur at 4th, 8th, 12th, and 16th level.
+
+___
+\page
+___
+## Armor Features Explained
+
+### Hyperscanner's Secondary Starting Ability
+**Hypersensory Scanner Array**  
+This secondary feature – built into the Hyperscanner option for the Helmet – grants advanced visual detection. At its base, it provides darkvision (up to 60 ft.) if you lack it and lets you, once per short rest, briefly highlight hidden or invisible creatures. By activating its sensor mode, the helmet temporarily overlays your vision with a subtle glow that reveals otherwise imperceptible silhouettes, ensuring you never miss stealthy foes or hidden traps.
+
+### Tech-Pauldron Benefits to Magic and Craft Preparation
+**Tech Pauldron (Tech Type)**  
+The tech-pauldron is engineered for versatility in both magical and technical tasks. It grants you proficiency with an extra tool and adds two extra “robotic arms” that, while unable to attack or cast spells, sharply reduce the time needed for mundane or intricate tasks (such as crafting, disarming traps, or repairing mechanisms). These arms grant a substantial +5 bonus to actions related to such preparatory or technical activities, making your overall routine more efficient.
+
+### Starting Ability for Blastbreaker Fists
+**Blastbreaker Fists**  
+Designed for raw melee dominance, Blastbreaker Fists enhance your unarmed or melee combat. From the outset, they increase your base melee and unarmed damage. Their unique design allows you to wield two-handed weapons in one hand with no penalty, and they reclassify normally non-finesse light or one-handed weapons as finesse weapons for you. This versatility means you can combine speed and power in melee engagements while maintaining a high damage profile and flexibility in weapon choice.
+
+### Somatic Satellites Synergy with Tech Pauldron
+**Somatic Satellites**  
+These small floating spheres serve two roles. On their own, they act as ranged missiles (delivering 1d8 force damage) or function as temporary spell storage devices. When paired with the Tech Pauldron, the satellites integrate with the robotic arms—bypassing the normal magic action economy. This synergy permits you to cast additional non-cantrip spells in one turn (provided a spell is stored in a satellite), effectively bolstering your overall casting capacity and allowing for powerful, unexpected bursts of magical might during combat.
+
+### Starting AC Values and Abilities for Chest Armor Types
+**Chest Armor Options**  
+- **Balanced Type:**  
+  - *Starting AC:* 14 + DEX (max2)
+  - *Starting Ability:* Grants a bonus to movement speed (e.g., +10 ft.) and, once per day, an ability to activate a temporary +2 shield bonus to AC.
+- **Bulwark Type:**  
+  - *Starting AC:* 16 
+  - *Starting Ability:* Once per day, negate one chosen magical or physical damage type for 1 minute.
+- **Light Type:**  
+  - *Starting AC:* 13 + DEX  
+  - *Starting Ability:* Provides a static increase to movement speed (e.g., +15 ft.) and a temporary +1 shield bonus to AC while active.
+
+### Blastcore Soles Mechanics
+**Blastcore Soles**  
+These advanced boots are engineered for volatile, high-speed movement. At the start, they set your base movement speed at 40 ft. and grant advantage on jump checks provided you have a 10-ft running start. Once per short rest, they allow the user to attempt a leap over enemies without provoking opportunity attacks—using an Acrobatics check with a DC that scales by enemy size. Upgrades later enhance jump distance, reduce mishap risks, and eventually confer immunity to fall damage while creating a damaging shockwave upon landing.
+
+### Soul Core Manifold Charge Boost Mechanics
+**Soul Core Manifold**  
+The Soul Core Manifold is integral to the suit’s energy management. In its starting mode, it grants you two bonus Cell Charges over other raiments and improves your recharge rate (restoring an extra half-hit-die’s worth of charges per short rest). As upgrades are applied, the manifold further accelerates charge recovery, ensuring that your suit’s active abilities remain consistently fueled during prolonged engagements.
+\page
+{{note
+### **Mechanics Tip: Cell Charge Activation for Aegisknight Abilities**
+
+Any Aegisknight ability that can be used once per short rest is activated by expending **1 Cell Charge**. If an ability has a base cost higher than 1, you must expend that many Cell Charges each time you use it.
+
+Any Aegisknight ability that can be used once per long rest can be activated more than the allotted amount of times by expending **3 Cell Charges** per further activation. If these skills incur any risk of overload or critical failure, that risk is heightened by forcing the armor to process the strain of converting energy into the specific power. That risk of failure should be represented as a roll of 1-2 on a d20.
+
+*Note:* Certain armor pieces – such as the **Unstable Fury Core** – are designed to channel especially overwhelming power and inherently require extra Cell Charges for every activation of their abilities. Be sure to review each item's individual activation cost and manage your Cell Charge pool wisely during your adventures!
+
+}}
+
+
+### Godhead Shard Prayer/Rite Recharge Mechanics
+**Godhead Shard**  
+This divine component, mounted atop the Soul Core, operates on a ritualistic recharge method. At the base level, it restores 2 Cell Charges per short rest—but only if you pass a DC 14 Religion check, representing a brief prayer or rite. You have up to three attempts per recharge cycle, and failure limits its restorative capacity. In addition, invoking the shard requires a material component (oils, incenses, candles, or vapor cartridges costing 5 gp per fuel cell) if you wish to improvise additional recharges. This mechanic emphasizes the spiritual discipline needed to harness divine energies.
+
+### Mystery Module Effect Chart
+**Mystery Module (Initial Effects)**  
+Whenever you activate a power, power surge, or expend a cell charge- or at the request of the DM- you may choose to roll on the Wonder Module Miracore table.
+
+### Mystery Module 6th Level Upgrade Chart
+**Mystery Module (6th Level Upgrades)**  
+At 6th level, the Mystery Module improves via another the Wonder Node upgrade chart provided by your DM. This chart is provided on the next page. At the start of each day and during a short rest, you may roll on the Mystery Module table to determine your Wonder Node Upgrade for the day. This power can be triggered to activate whenever you use a power surge. By expending an additional **1 Cell Charge**, you can apply a random effect from the provided chart. By expending **3 Cell Charges**, you may choose the power upgrade you
+
+### Mystery Module Level 8 Mechanic Description
+**Mystery Module (8th Level Upgrade)**  
+Upon reaching 8th level, the Mystery Module gains a powerful, rechargeable special action. This ability might force all enemies within a 10-ft radius to reroll their attack rolls or saving throws, or create a short-lived field of chaotic energy that disrupts enemy positioning. The effect activates once per short rest and lasts until the end of your next turn, reflecting the module’s maturing integration with your suit’s overall tactics.
+
+### Mystery Module Level 12 Description
+**Mystery Module (12th Level Upgrade)**  
+At 12th level, the Mystery Module reaches its apex. It unlocks a major ability chosen from a DM-provided list—such as a potent area-of-effect attack, a robust defensive shield that triggers automatically in response to incoming damage, or even a temporary alteration to movement dynamics (like slowing foes or quickening allies). This ultimate upgrade distinguishes your Aegisknight by providing a game-changing feature that epitomizes the unique and unpredictable power of your customized armor.
+
+Whenever you use your Power Surge ability, roll a d30 (or choose an effect at random) to determine an additional benefit or complication provided by your Mystery Module:
+___
+\page
+___
+##### Mystery Module Miracore Effects Table
+
+| Roll | Effect |
+|------|--------|
+| 1    | Gain **2 additional Cell Charges** immediately. |
+| 2    | Restore **half of your expended Cell Charges** (rounded down). |
+| 3    | Your next attack deals an extra **1d8 force damage**. |
+| 4    | Gain a **+2 bonus to AC** until the start of your next turn. |
+| 5    | You may immediately use a **bonus action** to move **10 ft.** without provoking opportunity attacks. |
+| 6    | For the next minute, **all critical hits** against you become normal hits. |
+| 7    | Regain the ability to activate one modular upgrade **without spending additional Cell Charges**. |
+| 8    | All allies within 10 ft. gain a **+1 bonus to attack rolls** until the start of your next turn. |
+| 9    | Once before the start of your next turn, you may **reroll one failed saving throw**. |
+| 10   | Your **movement speed is doubled** for 1 minute. |
+| 11   | Gain **resistance to all damage types** until the start of your next turn. |
+| 12   | Your next melee attack gains a **+4 bonus to damage**. |
+| 13   | You may immediately cast *Shield* as a spell **without spending Cell Charges**. |
+| 14   | For the next round, your weapon attacks score an **automatic critical** on a roll of 18–20. |
+| 15   | Gain **advantage on all attack rolls** until the end of your next turn. |
+| 16   | Your next successful attack forces the target to make a DC 15 Strength saving throw or be **knocked 10 ft. away**. |
+| 17   | You may briefly see invisible or ethereal creatures (as per a **detect invisibility** effect) for 1 minute. |
+| 18   | The next spell or ability you cast **costs 1 fewer Cell Charge**. |
+| 19   | Create a burst of light: all creatures within 10 ft. must succeed on a DC 12 Dexterity saving throw or be **blinded** until the start of your next turn. |
+| 20   | Your next spell cast **does not consume its normal Cell Charge cost**. |
+| 21   | Regain **5 additional temporary hit points**. |
+| 22   | Until the start of your next turn, you ignore difficult terrain and have **advantage on Acrobatics checks**. |
+| 23   | Your fatigue is momentarily alleviated: **regain one expended ability feature** (DM’s discretion). |
+| 24   | Unleash a pulse of energy that deals **2d6 force damage** to one target within 15 ft. of you. |
+| 25   | Your **next bonus action is free** and does not cost any Cell Charges. |
+| 26   | Gain a **+1 bonus to all saving throws** until the start of your next turn. |
+| 27   | You may **transfer 1 Cell Charge from your reserve to an ally** within 10 ft. |
+| 28   | Gain a temporary boost: your proficiency bonus increases by **+1** for one round. |
+| 29   | Your modular upgrades momentarily function at maximum efficiency—**choose one upgrade** to benefit from its Level 14 effect for 1 round. |
+| 30   | Unleash a miniature area burst: all creatures within 10 ft. take **2d6 force damage.** |
+
+___
+___
+##### Mystery Module Wonder Module Effects
+
+When your Mystery Module reaches its level 6 upgrade stage, roll a d10 (or select one) to determine which additional upgrade effect activates as part of a Power Surge or other trigger event:
+
+| **Roll** | **Level 6 Upgrade**                                                                                                                                              |
+|----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1        | **Enhanced Recharge:** Instantly restore 2 additional cell charges.                                                                                            |
+| 2        | **Flux Amplifier:** For the next turn, reduce the cell charge cost of all activated abilities by 1 (to a minimum of 1).                                             |
+| 3        | **Kinetic Boost:** Your movement speed increases by an additional 10 ft. for 1 minute.                                                                             |
+| 4        | **Reactive Shield:** Gain a temporary +3 bonus to AC until the start of your next turn.                                                                            |
+| 5        | **Precision Strike:** Your next attack is made with advantage and deals an extra 1d6 force damage.                                                                  |
+| 6        | **Quick Reload:** Immediately regain 1 cell charge after you activate a Power Surge ability this turn.                                                             |
+| 7        | **System Overload:** The next time you activate an ability, you may apply one extra effect from any modular upgrade without spending an additional cell charge.   |
+| 8        | **Rapid Fabrication:** You gain a bonus action this turn that can be used to activate a minor modular ability without any cell charge cost.                         |
+| 9        | **Energetic Infusion:** Convert 1 expended cell charge into temporary hit points equal to 1d6 + your Aegisknight level.                                               |
+| 10       | **Adaptive Circuitry:** Choose one upgrade effect from any of your armor components and apply its next-level bonus effect for 1 round.                              |
+
+___

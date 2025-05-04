@@ -36,6 +36,12 @@
         "asi": false
     },
     {
+        "id": "diaper_mastery",
+        "name": "Diaper Mastery",
+        "description": "Prerequisite: Incontinent flaw. Your Constitution score rises by 2 points. After consistent effort, training, or pure skill, you have conquered—most of—the hurdles of being in diapers 24/7 (or however time does or doesn't scale where you're at). Needless to say, you're in diapers for good—and they do quite a lot of good for you! Whenever you roll a 1 on a Potty Check or otherwise fill a diaper without leaking, you receive a +1 Relief Bonus to all rolls for 1 minute (10 rounds). Because of your time spent in and around diapers, you have advantage on Insight and Investigation checks related to diapers. You also have the newfound ability to track a diapered creature using the Survival skill—even if you are not trained in this skill. You no longer suffer many of the physical limitations of being diapered in combat. Only a Leaking Diaper will affect your combat ability. When diapered, you never suffer the Full Diaper or Messy Diaper status. You are adorably trustworthy when you stink. You have advantage on Persuasion checks when your diaper is messy—as long as this check is not intended to prove you are more mature than you look—or smell.",
+        "asi": true
+    },
+    {
         "id": "dual_wielder",
         "name": "Dual Wielder",
         "description": "You master fighting with two weapons, gaining the following benefits: You gain a +1 bonus to AC while you are wielding a separate melee weapon in each hand. You can use two-weapon fighting even when the one-handed melee weapons you are wielding aren't light. You can draw or stow two one-handed weapons when you would normally be able to draw or stow only one.",
@@ -112,9 +118,7 @@
         "name": "Linguist",
         "description": "You have studied languages and codes, gaining the following benefits: Increase your Intelligence score by 1, to a maximum of 20. You learn three languages of your choice. You can ably create written ciphers. Others can’t decipher a code you create unless you teach them, they succeed on an Intelligence (Investigation) check (DC equal to your Intelligence score + your proficiency bonus), or they use magic to decipher it.",
         "asi": true
-    }
-],
-[
+    },
     {
         "id": "mobile",
         "name": "Mobile",
@@ -180,9 +184,7 @@
         "name": "Shield Master",
         "description": "You use shields not just for protection but also for offense. You gain the following benefits while you are wielding a shield: If you take the Attack action on your turn, you can use a bonus action to try to shove a creature within 5 feet of you with your shield. If you aren’t incapacitated, you can add your shield’s AC bonus to any Dexterity saving throw you make against a spell or other harmful effect that targets only you. If you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you can use your reaction to take no damage if you succeed on the saving throw, interposing your shield between yourself and the source of the effect.",
         "asi": false
-    }
-],
-[
+    },
     {
         "id": "skilled",
         "name": "Skilled",
@@ -225,5 +227,4 @@
         "description": "You have practiced extensively with a variety of weapons, gaining the following benefits: Increase your Strength or Dexterity score by 1, to a maximum of 20. You gain proficiency with four weapons of your choice.",
         "asi": true
     }
-]
 ]

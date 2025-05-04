@@ -107,6 +107,23 @@ For each armor piece, choose one option when you create your character. ***Any n
 - **Level 14 Upgrade:**  
   - **Universal Oratory:** As an action, you can emanate an aura of linguistic clarity for 1 minute. During this time, every creature within 30 ft. understands your words as if they shared a common tongue, and you gain advantage on all Charisma (Persuasion) checks.  
   - **Enhanced Transformation Synergy:** When paired with the Transformation Raiment, your aura’s range increases to 60 ft., and the bonus to Persuasion checks rises to +2.
+
+  ### Bonnet-Themed Helmet: The Bonnet of Blushing Bravado
+*For those who’d rather charm than conceal, this ostentatiously babyish bonnet radiates an irresistible level of adorable absurdity that distracts everyone around it.*
+
+**To Start (Level 1):**  
+• **Innocent Charm:** The bonnet bestows a +1 bonus to Charisma and grants advantage on Persuasion checks, reflecting the pure, sugary innocence of its design.  
+• **Captivating Cuteness:** Once per short rest, as an action, you may activate the bonnet’s captivating display. When activated, every creature (both allies and foes) within 10 ft. must immediately roll a "potty check"—a Constitution saving throw (DC = your class save DC, typically 14). On a failure, the creature is overwhelmed by the sheer babyish allure and becomes distracted: they lose their reaction and have disadvantage on attack rolls and ability checks involving concentration until the start of your next turn.
+
+**Level-Up Effects:**  
+- **Level 4 Upgrade:** The bonnet’s charm intensifies—your bonus to Charisma increases by an additional +1, and the effective radius of your captivating display increases to 15 ft. In addition, any creature that fails the potty check becomes dazed for 1 round instead of merely losing their reaction.  
+- **Level 7 Upgrade:** Your bonnet now exudes an aura of irresistible whimsy that enhances your social prowess: you gain advantage on Deception and Performance checks related to your captivating presence.  
+- **Level 11 Upgrade:** The bonnet further empowers you and your nearby allies. Allies within 10 ft. gain an additional +1 bonus to saving throws against fear, charm, and effects that would "soil" their spirits, as your infectious babyish delight bolsters their resolve.  
+- **Level 14 Upgrade:** The pinnacle of infantile charm is reached. Once per long rest, you may invoke a "Potty Parade" as an action. When activated, every creature within 15 ft. must make a potty check (DC = 16, or your class save DC if higher). On a failure, the affected creatures become incapacitated by uncontrollable mirth and adoration for 1 round, as if caught in a state of utter, adorable distraction.
+___
+
+  
+  
   ### **2. Pauldrons Options**
 
 **A. Exultant Type**  
@@ -795,8 +812,6 @@ When your Mystery Module reaches its level 6 upgrade stage, roll a d10 (or selec
 ___
 
 
-
-\page
 ___
 ## Diaper-School Options for the Aegisknight
 
@@ -831,6 +846,8 @@ ___
 - **Level 11 Upgrade:** The bonnet further empowers you and your nearby allies. Allies within 10 ft. gain an additional +1 bonus to saving throws against fear, charm, and effects that would "soil" their spirits, as your infectious babyish delight bolsters their resolve.  
 - **Level 14 Upgrade:** The pinnacle of infantile charm is reached. Once per long rest, you may invoke a "Potty Parade" as an action. When activated, every creature within 15 ft. must make a potty check (DC = 16, or your class save DC if higher). On a failure, the affected creatures become incapacitated by uncontrollable mirth and adoration for 1 round, as if caught in a state of utter, adorable distraction.
 ___
+
+
 
 ### Mitten-Themed Gauntlets: The Infantile Mittens
 *These gauntlets feature oversized, cuddly mittens that limit fine dexterity but grant unique protective benefits.*

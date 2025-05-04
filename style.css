@@ -416,7 +416,7 @@ button:hover {
 /* Floating portrait styles */
 .floating-portrait-container {
     position: absolute;
-    top: 15px;
+    top: 5px;
     right: calc(50% + 70px);
     z-index: 5;
     transform: translateX(100%);
@@ -1001,6 +1001,58 @@ footer {
     list-style-type: none;
     margin-left: -20px;
     color: var(--gold);
+}
+
+/* Cell Charges Battery */
+.cell-charges-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.battery-container {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.battery-body {
+    position: relative;
+    width: 35px;
+    height: 16px;
+    border: 2px solid var(--gold);
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.battery-cap {
+    width: 3px;
+    height: 8px;
+    background: linear-gradient(135deg, var(--silver), var(--gold));
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    margin-left: -1px;
+}
+
+.battery-level {
+    position: absolute;
+    height: 100%;
+    background: linear-gradient(135deg, var(--silver), var(--gold));
+    top: 0;
+    left: 0;
+    transition: width 0.5s ease;
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+/* Make the cell charges value stand out */
+#cell-charges-display {
+    font-weight: bold;
+    color: var(--gold);
+    display: inline-block;
+    min-width: 30px;
 }
 
 /* Responsive */

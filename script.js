@@ -16,6 +16,7 @@ const armorData = {
         name: "Neuroprotective Casement",
         description: "A sleek, rune-etched helmet designed to shield your mind from intrusive psychic assaults. Provides enhanced mental fortification and psychic resistance.",
         imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/neuroprotectivecasement.png",
+        bonusAC: 1,
         progression: [
             "<strong>Level 1:</strong> +1 bonus to AC and slight resistance to psychic damage.",
             "<strong>Level 4:</strong> Advantage on saving throws against charm effects.",
@@ -27,6 +28,7 @@ const armorData = {
         name: "Ultimate-Bastion Heavy Helmet",
         description: "Forged in the crucible of relentless combat and imbued with archaic defensive runes, this helmet provides formidable protection against multiple damage types.",
         imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/ultimatebastion.png",
+        bonusAC: 1,
         progression: [
             "<strong>Level 1:</strong> +1 bonus to AC and resistance to radiant damage.",
             "<strong>Level 4:</strong> Resistance to necrotic damage.",
@@ -38,6 +40,7 @@ const armorData = {
         name: "Golden Chain Hood",
         description: "A majestic hood interwoven with shimmering golden chains that pulse with divine energy, offering enhanced divine abilities and protection.",
         imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/holygoldchain.png",
+        bonusAC: 1,
         progression: [
             "<strong>Level 1:</strong> +1 bonus to AC and saving throws against charm effects, darkvision (60 ft.), and detect magic ability.",
             "<strong>Level 4:</strong> Enhanced scanning mode for invisible or ethereal creatures.",
@@ -94,6 +97,7 @@ const armorData = {
         name: "Vanguard Heavy Type",
         description: "For Aegisknights who demand unwavering durability, these pauldrons provide formidable protection while absorbing and deflecting incoming damage.",
         imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/vanguardheavypauldrons.png",
+        bonusAC: 2,
         progression: [
             "<strong>Level 1:</strong> +2 bonus to AC and resistance to nonmagical damage.",
             "<strong>Level 4:</strong> Resistance to two damage types of your choice.",
@@ -147,8 +151,8 @@ const armorData = {
         ]
     },
 
-    // Chest armor options    
-    "Balanced-Type-Composite-Frame": {
+    // Chest armor options     
+        "Balanced-Type-Composite-Frame": {
         name: "Balanced Type Composite Frame",
         hitdice: "d10",
         armorclass: "14 + Dex modifier (max +2)",
@@ -175,11 +179,10 @@ const armorData = {
             "<strong>Level 11:</strong> Critical hits reduced to normal hits during Bulwark Aegis.",
             "<strong>Level 14:</strong> Resistance to all damage types except psychic."
         ]
-    },
-        "Light-Type-Frame": {
+    },        "Light-Type-Frame": {
         name: "Light Type Frame",
         hitdice: "d8",
-        armorclass: "13 + Dex modifier",
+        armorclass: "13+dex",
         description: "Maximizes mobility at the expense of heavy armor, designed for agile Aegisknights who prioritize speed and dexterity.",
         imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/lighttypearmor.png",
         progression: [
@@ -193,7 +196,7 @@ const armorData = {
         "Xtra-Hev-Composite-Frame": {
         name: "Xtra-Hev Composite Frame",
         hitdice: "d10",
-        armorclass: "16",
+        armorclass: "17",
         description: "A heavy-duty frame with regenerating energy shield and enhanced defensive capabilities.",
         imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/xtrahevarmor.png",
         progression: [
@@ -203,10 +206,11 @@ const armorData = {
             "<strong>Level 11:</strong> Additional shield regeneration and effective AC of 18 with full shield.",
             "<strong>Level 14:</strong> Fortress Mode increases shield capacity by 50% and reduces incoming damage."
         ]
-    },
-    "Soiling-Shield-Bib": {
+    },    "Soiling-Shield-Bib": {
         name: "Soiling Shield Bib",
+        hitdice: "d10",
         description: "This oversized, magically enchanted bib is designed to ward off the filth and chaos of the battlefield, ensuring that no matter how messy the combat gets, you remain pristine.",
+        armorclass: "14+dex(3)",
         imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/soilingshieldbib.png",
         progression: [
             "<strong>Level 1:</strong> Advantage on checks/saves against 'soiling' effects, base AC of 14 + Dex modifier (max +3).",
@@ -338,50 +342,51 @@ const armorData = {
         name: "Photonic Cape",
         description: "A high-tech cloak suffused with prismatic energy, allowing you to harness light and shadow for defense and stealth.",
         imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/photoniccape.png",
+        bonusCellCharges: 2,
         progression: [
             "<strong>Level 3:</strong> Cast Shield multiple times per day, Displacement effect once per day, +2 bonus on Stealth checks.",
             "<strong>Level 6:</strong> Invisibility for 1 minute and flying speed of 30 ft. for 30 minutes once per short rest.",
             "<strong>Level 8:</strong> Resistance to radiant and necrotic damage.",
             "<strong>Level 12:</strong> Immunity to radiant damage and teleport 60 ft. as a bonus action once per short rest."
         ]
-    },    
-        "Soul-Core-Manifold": {
+    },      "Soul-Core-Manifold": {
         name: "Soul Core Manifold",
         description: "A core of elemental power granting bonus Cell Charges and elemental rebuke capabilities.",
         imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/soulcoremanifold.png",
+        bonusCellCharges: 2,
         progression: [
             "<strong>Level 3:</strong> Two extra Cell Charges, cast Hellish Rebuke, enhanced recharge rate.",
             "<strong>Level 6:</strong> Resistance to your chosen elemental type.",
             "<strong>Level 8:</strong> Deal 2d8 elemental damage to melee attackers.",
             "<strong>Level 12:</strong> Immunity to your chosen element and reaction-based shield."
         ]
-    },
-    "Godhead-Shard": {
+    },    "Godhead-Shard": {
         name: "Godhead Shard",
         description: "A radiant fragment of divine essence infusing your raiment with celestial power and spellcasting.",
         imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/godheadshard.png",
+        bonusCellCharges: 4,
         progression: [
             "<strong>Level 3:</strong> Two divine cantrips and one 1st-level divine spell, second-highest Cell Charge pool, restore charges via Religion checks.",
             "<strong>Level 6:</strong> Additional divine spell slot.",
             "<strong>Level 8:</strong> Integrate a cleric subclass feature into your armor.",
             "<strong>Level 12:</strong> Cast Divine Word once per long rest and enhanced Cell Charge restoration."
         ]
-    },
-    "Arcanomatrix": {
+    },    "Arcanomatrix": {
         name: "Arcanomatrix",
         description: "A nexus of arcane energy woven into your raiment, granting spellcasting abilities and magical defenses.",
         imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/arcanomatrix.png",
+        bonusCellCharges: 2,
         progression: [
             "<strong>Level 3:</strong> Two arcane cantrips and one 1st-level arcane spell, extra Cell Charges for spells.",
             "<strong>Level 6:</strong> Integrate a wizard subclass feature.",
             "<strong>Level 8:</strong> Cast Counterspell once per long rest without expending Cell Charges.",
             "<strong>Level 12:</strong> Resistance to force damage and advantage on saves against spells."
         ]
-    },
-    "Luminant-Engine": {
+    },    "Luminant-Engine": {
         name: "Luminant Engine",
         description: "A radiant marvel channeling ephemeral power of illumination into tangible effects like light bolts and barriers.",
         imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/luminantengine.png",
+        bonusCellCharges: 2,
         progression: [
             "<strong>Level 3:</strong> Causal Points for luminancer-like abilities, enhanced energy reservoir.",
             "<strong>Level 6:</strong> Luminal Motion teleport once per short rest.",
@@ -393,6 +398,7 @@ const armorData = {
         name: "Mystery Module",
         description: "A wild card raiment with effects determined by rolls on a custom table, offering unpredictable benefits.",
         imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/mysterymodule.png",
+        bonusCellCharges: 4,
         progression: [
             "<strong>Level 3:</strong> Random baseline effect from DM table and stable bonus like damage immunity or AC bonus.",
             "<strong>Level 6:</strong> Additional random ability from DM table.",
@@ -404,16 +410,19 @@ const armorData = {
         name: "Transmorphic Belt",
         description: "The Shapeshifter's Cinch grants elemental resistance, breath weapons, and size-altering capabilities.",
         imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/transformationbelt.png",
+        bonusCellCharges: 1,
         progression: [
             "<strong>Level 3:</strong> Resistance to one elemental damage type, breath weapon, and size increase to Large.",
             "<strong>Level 6:</strong> Enhanced breath weapon damage and extended transformation duration.",
             "<strong>Level 8:</strong> Second elemental variant for breath weapon and improved elemental resistance.",
             "<strong>Level 12:</strong> Boost speed and Strength during transformation."
         ]
-    },    "Unstable-Fury-Core": {
+    },
+    "Unstable-Fury-Core": {
         name: "Unstable Fury Core",
         description: "A volatile engine of primal might transforming aggression into destructive power with overload risks.",
         imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/unstablefurycore.png",
+        bonusCellCharges: 5,
         progression: [
             "<strong>Level 3:</strong> Fury Mode grants bonus damage and temporary hit points, but with overload risk and extra charge costs.",
             "<strong>Level 6:</strong> Focused Smash for devastating strikes that bypass resistances.",
@@ -425,6 +434,7 @@ const armorData = {
         name: "Diaper Daycare Raiment",
         description: "Harnessing the wholesome chaos of Diaper School, this raiment transforms your suit's central core into a beacon of nurturing mischief and disruptive battleflow.",
         imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/daycarecore.png",
+        bonusCellCharges: 2,
         progression: [
             "<strong>Level 3:</strong> Soothing Miracle grants advantage on fear saves, Absorbent Shield reduces damage, and Diaper Douse Blast can immobilize enemies.",
             "<strong>Level 4:</strong> Soothing Miracle can be used an extra time per short rest.",
@@ -437,6 +447,7 @@ const armorData = {
         name: "Mephidium Coda (Skunk's Tail)",
         description: "Embodying toxic misfortune and grimy power, the Mephidium Coda transforms your battle presence into a malodorous curse that intensifies with combat grime.",
         imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/mephidiumcoda.png",
+        bonusCellCharges: 2,
         progression: [
             "<strong>Level 3:</strong> Base toxic abilities including poison effects and noxious aura.",
             "<strong>Level 6:</strong> Enhanced poison damage and expanded aura of misfortune.",
@@ -1873,11 +1884,10 @@ function updateArmorInfo(armorType) {
         const conModifier = getAbilityModifier(constitutionScore);
         
         const armorClass = calculateAC(selectedArmor.armorclass, dexterityScore);
-        const maxHP = calculateMaxHP(selectedArmor.hitdice, constitutionScore);
-          detailedDescription += `<div class="armor-stats">
+        const maxHP = calculateMaxHP(selectedArmor.hitdice, constitutionScore);          detailedDescription += `<div class="armor-stats">
             <p><strong>Hit Die:</strong> ${selectedArmor.hitdice}</p>
             <p><strong>Base Armor Class:</strong> ${selectedArmor.armorclass}</p>
-            <p><strong>Calculated Armor Class:</strong> ${armorClass} (with DEX ${dexModifier >= 0 ? '+' : ''}${dexModifier})</p>
+            <p><strong>Calculated Armor Class:</strong> ${armorClass}</p>
             <p><strong>Max HP at Level 5:</strong> ${maxHP} (with CON ${conModifier >= 0 ? '+' : ''}${conModifier})</p>
         </div>`;
     }
@@ -1887,8 +1897,55 @@ function updateArmorInfo(armorType) {
     selectedArmor.progression.forEach(prog => {
         detailedDescription += `<p>${prog}</p>`;
     });
+      detailedDescription += `</div>`;
     
-    detailedDescription += `</div>`;
+    // Add full description from armor_descriptions.js if available
+    if (typeof armorFullDescriptions !== 'undefined' && armorFullDescriptions[selectedValue]) {
+        const fullDesc = armorFullDescriptions[selectedValue];
+        
+        detailedDescription += `
+        <div class="full-description-container">
+            <h4>Complete Description</h4>
+            <p class="full-armor-description">${fullDesc.fullDescription}</p>
+            
+            <h4>Detailed Level Features</h4>
+            <div class="level-features-list">`;
+        
+        // Add level features based on the armor type
+        const levelKeys = armorType === 'raiment' ? ['3', '6', '8', '12'] : ['1', '4', '7', '11', '14'];
+        
+        levelKeys.forEach(level => {
+            if (fullDesc.levelFeatures[level] && fullDesc.levelFeatures[level].trim() !== "") {
+                detailedDescription += `
+                <div class="level-feature">
+                    <h5>Level ${level}</h5>
+                    <div class="level-feature-text">${fullDesc.levelFeatures[level]}</div>
+                </div>`;
+            }
+        });
+        
+        // Check for any special entries like 3-upgrade or Higher-Level
+        if (fullDesc.levelFeatures['3-upgrade'] && fullDesc.levelFeatures['3-upgrade'].trim() !== "") {
+            detailedDescription += `
+            <div class="level-feature">
+                <h5>Level 3 Enhancement</h5>
+                <div class="level-feature-text">${fullDesc.levelFeatures['3-upgrade']}</div>
+            </div>`;
+        }
+        
+        if (fullDesc.levelFeatures['Higher-Level'] && fullDesc.levelFeatures['Higher-Level'].trim() !== "") {
+            detailedDescription += `
+            <div class="level-feature">
+                <h5>Optional Higher-Level Upgrade</h5>
+                <div class="level-feature-text">${fullDesc.levelFeatures['Higher-Level']}</div>
+            </div>`;
+        }
+        
+        detailedDescription += `
+            </div>
+        </div>`;
+    }
+    
     descriptionElement.innerHTML = detailedDescription;
 }
 
@@ -1926,9 +1983,8 @@ function finalizeLoadout() {
         const maxHP = calculateMaxHP(hitDice, constitutionScore);
         const armorClass = calculateAC(armorClassText, dexterityScore);
         const dexModifier = getAbilityModifier(dexterityScore);
-        
-        document.getElementById('hp-display').textContent = maxHP;
-        document.getElementById('ac-display').textContent = `${armorClass} (with DEX ${dexModifier >= 0 ? '+' : ''}${dexModifier})`;
+          document.getElementById('hp-display').textContent = maxHP;
+        document.getElementById('ac-display').textContent = `${armorClass}`;
     } else {
         document.getElementById('hp-display').textContent = "-";
         document.getElementById('ac-display').textContent = "-";
@@ -1971,9 +2027,53 @@ function finalizeLoadout() {
             } else {
                 imageContainer.innerHTML = `<div class="armor-image-placeholder">${selectedArmor.name}</div>`;
             }
-            
-            // Populate progression with enhanced descriptions
+              // Populate progression with enhanced descriptions
             let progressionHTML = `<p class="armor-description">${getEnhancedDescription(selectedArmor, type)}</p>`;
+              // Add full description if available
+            if (typeof armorFullDescriptions !== 'undefined' && armorFullDescriptions[selectedValue]) {
+                const fullDesc = armorFullDescriptions[selectedValue];
+                progressionHTML += `
+                <div class="full-description-container">
+                    <h4>Complete Description</h4>
+                    <p class="full-armor-description">${fullDesc.fullDescription}</p>
+                    
+                    <h4>Level Features</h4>
+                    <div class="level-features-list">`;
+                
+                // Add level features based on the armor type
+                const levelKeys = type === 'raiment' ? ['3', '6', '8', '12'] : ['1', '4', '7', '11', '14'];
+                
+                levelKeys.forEach(level => {
+                    if (fullDesc.levelFeatures[level] && fullDesc.levelFeatures[level].trim() !== "") {
+                        progressionHTML += `
+                        <div class="level-feature">
+                            <h5>Level ${level}</h5>
+                            <div class="level-feature-text">${fullDesc.levelFeatures[level]}</div>
+                        </div>`;
+                    }
+                });
+                
+                // Check for any special entries like 3-upgrade or Higher-Level
+                if (fullDesc.levelFeatures['3-upgrade'] && fullDesc.levelFeatures['3-upgrade'].trim() !== "") {
+                    progressionHTML += `
+                    <div class="level-feature">
+                        <h5>Level 3 Enhancement</h5>
+                        <div class="level-feature-text">${fullDesc.levelFeatures['3-upgrade']}</div>
+                    </div>`;
+                }
+                
+                if (fullDesc.levelFeatures['Higher-Level'] && fullDesc.levelFeatures['Higher-Level'].trim() !== "") {
+                    progressionHTML += `
+                    <div class="level-feature">
+                        <h5>Optional Higher-Level Upgrade</h5>
+                        <div class="level-feature-text">${fullDesc.levelFeatures['Higher-Level']}</div>
+                    </div>`;
+                }
+                
+                progressionHTML += `
+                    </div>
+                </div>`;
+            }
             
             // Add chest armor specific details (Hit Die and AC)
             if (type === 'chest') {
@@ -1987,7 +2087,7 @@ function finalizeLoadout() {
                   progressionHTML += `<div class="armor-stats">
                     <p><strong>Hit Die:</strong> ${selectedArmor.hitdice}</p>
                     <p><strong>Base Armor Class:</strong> ${selectedArmor.armorclass}</p>
-                    <p><strong>Calculated Armor Class:</strong> ${armorClass} (with DEX ${dexModifier >= 0 ? '+' : ''}${dexModifier})</p>
+                    <p><strong>Calculated Armor Class:</strong> ${armorClass}</p>
                     <p><strong>Max HP at Level 5:</strong> ${maxHP} (with CON ${conModifier >= 0 ? '+' : ''}${conModifier})</p>
                 </div>`;
             }            
@@ -2457,42 +2557,133 @@ function calculateAC(armorClassText, dexterityScore) {
     const dexModifier = getAbilityModifier(dexterityScore);
     console.log("AC Text:", armorClassText, "Dex Score:", dexterityScore, "Dex Mod:", dexModifier);
     
-    // If AC is a flat value like "17"
-    if (!isNaN(parseInt(armorClassText))) {
-        return parseInt(armorClassText);
-    }
+    // Start with base AC
+    let finalAC = 0;
     
-    // If AC includes Dex modifier (in any format)
-    if (armorClassText.toLowerCase().includes("dex")) {
-        // Extract the base AC number
-        const baseACMatch = armorClassText.match(/(\d+)/);
-        if (!baseACMatch) return "-";
+    // Parse the armor class data
+    // Format could be: 
+    // 1. A number (e.g., "17")
+    // 2. A base number + full dex (e.g., "13+dex")
+    // 3. A base number + capped dex (e.g., "14+dex(2)")
+    
+    // Check if it's just a number (fixed AC)
+    if (!isNaN(parseInt(armorClassText)) && !armorClassText.includes("+")) {
+        finalAC = parseInt(armorClassText);
+        console.log("Fixed AC value:", finalAC);
+    }
+    // Check if it has a dex component
+    else if (armorClassText.includes("+dex")) {
+        const parts = armorClassText.split("+dex");
+        const baseAC = parseInt(parts[0]);
         
-        const baseAC = parseInt(baseACMatch[0]);
-        console.log("Base AC:", baseAC);
-        
-        // Check if there's a max cap on Dex modifier
-        if (armorClassText.toLowerCase().includes("max")) {
-            const maxMatch = armorClassText.match(/max\s*\+?(\d+)/i);
-            if (!maxMatch) {
-                console.log("Max cap mentioned but not found in regex, using full dex mod");
-                return baseAC + dexModifier;
+        // Check if there's a max cap
+        if (parts[1] && parts[1].includes("(")) {
+            const maxCapMatch = parts[1].match(/\((\d+)\)/);
+            if (maxCapMatch) {
+                const maxCap = parseInt(maxCapMatch[1]);
+                finalAC = baseAC + Math.min(dexModifier, maxCap);
+                console.log("AC with max cap:", finalAC, "Base:", baseAC, "Cap:", maxCap);
+            } else {
+                finalAC = baseAC + dexModifier;
+                console.log("AC with full dex (cap parsing failed):", finalAC);
             }
-            
-            const maxDexBonus = parseInt(maxMatch[1]);
-            console.log("Max Dex Bonus:", maxDexBonus);
-            const finalAC = baseAC + Math.min(dexModifier, maxDexBonus);
-            console.log("Final AC with max cap:", finalAC);
-            return finalAC;
         } else {
-            // No max cap, add full dex modifier
-            const finalAC = baseAC + dexModifier;
-            console.log("Final AC no cap:", finalAC);
-            return finalAC;
+            // No max cap specified, add full dex modifier
+            finalAC = baseAC + dexModifier;
+            console.log("AC with full dex (no cap):", finalAC);
         }
+    } else {
+        // Legacy format handling (try to parse text description)
+        try {
+            // Extract the base AC number
+            const baseACMatch = armorClassText.match(/(\d+)/);
+            if (!baseACMatch) return "-";
+            
+            const baseAC = parseInt(baseACMatch[0]);
+            
+            // Check if there's a max cap on Dex modifier
+            if (armorClassText.toLowerCase().includes("max")) {
+                const maxMatch = armorClassText.match(/max\s*\+?(\d+)/i);
+                if (!maxMatch) {
+                    finalAC = baseAC + dexModifier;
+                } else {
+                    const maxDexBonus = parseInt(maxMatch[1]);
+                    finalAC = baseAC + Math.min(dexModifier, maxDexBonus);
+                }
+            } else if (armorClassText.toLowerCase().includes("dex")) {
+                finalAC = baseAC + dexModifier;
+            } else {
+                finalAC = baseAC;
+            }
+            console.log("AC from legacy parsing:", finalAC);
+        } catch (e) {
+            console.error("Error parsing armor class:", e);
+            return "-";
+        }
+    }    
+    // Add bonuses from other armor pieces with bonusAC property
+    // Get all selected armor pieces
+    const armorTypes = ['helmet', 'pauldrons', 'arms', 'boots', 'raiment'];
+    let bonusAC = 0;
+    
+    armorTypes.forEach(type => {
+        const selectElement = document.getElementById(`${type}-select`);
+        if (selectElement && selectElement.value) {
+            const selectedArmor = armorData[selectElement.value];
+            if (selectedArmor && selectedArmor.bonusAC) {
+                bonusAC += selectedArmor.bonusAC;
+                console.log(`Adding ${selectedArmor.bonusAC} AC from ${type} (${selectedArmor.name})`);
+            }
+        }
+    });
+    
+    // Add any bonus AC
+    finalAC += bonusAC;
+    console.log("Final AC with all bonuses:", finalAC);
+    
+    return finalAC;
+}
+
+// Calculate total cell charges based on raiment
+function calculateCellCharges() {
+    const raimentSelect = document.getElementById('raiment-select');
+    const raimentValue = raimentSelect.value;
+    
+    // Base cell charges
+    const baseCellCharges = 9;
+    let bonusCellCharges = 0;
+    
+    // Add bonus cell charges from raiment if selected
+    if (raimentValue && armorData[raimentValue]) {
+        bonusCellCharges = armorData[raimentValue].bonusCellCharges || 0;
     }
     
-    return "-";
+    const totalCellCharges = baseCellCharges + bonusCellCharges;
+    return {
+        base: baseCellCharges,
+        bonus: bonusCellCharges,
+        total: totalCellCharges
+    };
+}
+
+// Update the battery display to show cell charges
+function updateCellChargesDisplay() {
+    const chargesInfo = calculateCellCharges();
+    const cellChargesDisplay = document.getElementById('cell-charges-display');
+    const batteryLevel = document.getElementById('battery-level');
+    
+    // Update the text display with detailed info
+    cellChargesDisplay.textContent = `${chargesInfo.total} (${chargesInfo.base}+${chargesInfo.bonus})`;
+    
+    // Calculate percentage for the battery visual (cap at 100%)
+    // The max capacity is set to a reasonable number so the battery doesn't look too empty
+    const maxCapacity = 20; // Visual reference point
+    const batteryPercentage = Math.min((chargesInfo.total / maxCapacity) * 100, 100);
+    
+    // Update the battery level width to reflect the charge percentage
+    batteryLevel.style.width = `${batteryPercentage}%`;
+    
+    console.log(`Cell Charges updated: Base ${chargesInfo.base}, Bonus ${chargesInfo.bonus}, Total ${chargesInfo.total}`);
 }
 
 // Add event listeners to update HP and AC when ability scores or chest armor change
@@ -2501,6 +2692,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const dexInput = document.getElementById('dexterity');
     const conInput = document.getElementById('constitution');
     const chestSelect = document.getElementById('chest-select');
+    
+    // Element that affects Cell Charges
+    const raimentSelect = document.getElementById('raiment-select');
     
     // Function to update the preview if viewing chest armor
     const updateStatsDisplay = function() {
@@ -2514,6 +2708,16 @@ document.addEventListener('DOMContentLoaded', function() {
     if (dexInput) dexInput.addEventListener('change', updateStatsDisplay);
     if (conInput) conInput.addEventListener('change', updateStatsDisplay);
     if (chestSelect) chestSelect.addEventListener('change', updateStatsDisplay);
+    
+    // Add event listener for raiment to update cell charges
+    if (raimentSelect) {
+        raimentSelect.addEventListener('change', function() {
+            updateCellChargesDisplay();
+        });
+    }
+    
+    // Initialize cell charges display
+    updateCellChargesDisplay();
 });
 
 // Function to populate weapon dropdowns

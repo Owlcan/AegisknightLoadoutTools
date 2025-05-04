@@ -5,6 +5,7 @@
     <title>Aegisknight Armor Selector</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="tooltips.css">
+    <link rel="stylesheet" href="collapsible.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -293,11 +294,15 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    
-                    <div class="action-button">
-                        <button id="finalize-button" onclick="finalizeLoadout()">Finalize Loadout</button>
-                    </div>
+                    </div>                      <div class="action-button">
+                          <button class="finalize-button" onclick="finalizeLoadout()">Finalize Loadout</button>
+                      </div>
+                      
+                      <div class="load-character-container">
+                          <label for="load-character-input" class="load-character-label">Load Character:</label>
+                          <input type="file" id="load-character-input" accept=".json" class="hidden-file-input">
+                          <button class="load-character-button" onclick="document.getElementById('load-character-input').click()">Load Character</button>
+                      </div>
                 </div>
                   <div class="info-panel">
                     <div class="item-details">
@@ -362,6 +367,18 @@
                             <span class="stat-label">Armor Class:</span>
                             <span class="stat-value" id="ac-display">-</span>
                         </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Cell Charges:</span>
+                            <div class="cell-charges-container">
+                                <div class="battery-container">
+                                    <div class="battery-body">
+                                        <div class="battery-level" id="battery-level"></div>
+                                    </div>
+                                    <div class="battery-cap"></div>
+                                </div>
+                                <span class="stat-value" id="cell-charges-display">9/9</span>
+                            </div>
+                        </div>
                     </div>
                     
                     <!-- Character appearance -->
@@ -407,8 +424,7 @@
                     </div>
                     <div class="armor-image-container" id="raiment-image">
                         <div class="armor-image-placeholder">Raiment</div>
-                    </div>
-                </div>
+                    </div>                </div>
                 
                 <!-- Level 5 effects chart -->
                 <div class="level-effects-section">
@@ -419,34 +435,41 @@
                 </div>
                 
                 <!-- Detailed breakdown of armor pieces -->
-                <h3>Detailed Breakdown</h3>
-                <div class="loadout-columns">
-                    <div class="loadout-column">
-                        <div id="helmet-result" class="loadout-item">
-                            <h3>Helmet: <span class="loadout-item-name">None Selected</span></h3>
-                            <div class="loadout-item-progression"></div>
-                        </div>
-                        <div id="pauldrons-result" class="loadout-item">
-                            <h3>Pauldrons: <span class="loadout-item-name">None Selected</span></h3>
-                            <div class="loadout-item-progression"></div>
-                        </div>
-                        <div id="chest-result" class="loadout-item">
-                            <h3>Chest: <span class="loadout-item-name">None Selected</span></h3>
-                            <div class="loadout-item-progression"></div>
-                        </div>
+                <div class="detailed-breakdown-section">
+                    <h3>Detailed Breakdown</h3>
+                    <div class="expand-collapse-all">
+                        <button id="expand-all">Expand All</button>
+                        <button id="collapse-all">Collapse All</button>
                     </div>
-                    <div class="loadout-column">
-                        <div id="arms-result" class="loadout-item">
-                            <h3>Arms/Gloves: <span class="loadout-item-name">None Selected</span></h3>
-                            <div class="loadout-item-progression"></div>
+                    <div class="loadout-columns">
+                        <div class="loadout-column">
+                            <div id="helmet-result" class="loadout-item">
+                                <h3 class="collapsible">Helmet: <span class="loadout-item-name">None Selected</span></h3>
+                                <div class="loadout-item-progression collapsible-content"></div>
+                            </div>
+                            <div id="pauldrons-result" class="loadout-item">
+                                <h3 class="collapsible">Pauldrons: <span class="loadout-item-name">None Selected</span></h3>
+                                <div class="loadout-item-progression collapsible-content"></div>
+                            </div>
+                            <div id="chest-result" class="loadout-item">
+                                <h3 class="collapsible">Chest: <span class="loadout-item-name">None Selected</span></h3>
+                                <div class="loadout-item-progression collapsible-content"></div>
+                            </div>
                         </div>
-                        <div id="boots-result" class="loadout-item">
-                            <h3>Boots: <span class="loadout-item-name">None Selected</span></h3>
-                            <div class="loadout-item-progression"></div>
+                        <div class="loadout-column">
+                            <div id="arms-result" class="loadout-item">
+                                <h3 class="collapsible">Arms/Gloves: <span class="loadout-item-name">None Selected</span></h3>
+                                <div class="loadout-item-progression collapsible-content"></div>
+                            </div>
+                            <div id="boots-result" class="loadout-item">
+                                <h3 class="collapsible">Boots: <span class="loadout-item-name">None Selected</span></h3>
+                                <div class="loadout-item-progression collapsible-content"></div>
+                            </div>
+                            <div id="raiment-result" class="loadout-item">
+                                <h3 class="collapsible">Raiment: <span class="loadout-item-name">None Selected</span></h3>
+                                <div class="loadout-item-progression collapsible-content"></div>                        
+                            </div>
                         </div>
-                        <div id="raiment-result" class="loadout-item">
-                            <h3>Raiment: <span class="loadout-item-name">None Selected</span></h3>
-                            <div class="loadout-item-progression"></div>                        </div>
                     </div>
                 </div>
                 
@@ -521,18 +544,60 @@
                         </div>
                     </div>
                 </div>
-                
-                <div class="action-button">
+                  <div class="action-button">
                     <button onclick="backToSelection()">Back to Selection</button>
+                    <button onclick="saveCharacter()">Save Character</button>
                 </div>
             </div>
         </main>
-        
         <footer>
             <p>Aegisknight Armor Selector</p>
-        </footer>
-    </div>
+        </footer>    </div>
     
     <script src="script.js"></script>
+    <script src="character_io.js"></script>
+    <script src="armor_descriptions.js"></script>
+    <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var coll = document.getElementsByClassName("collapsible");
+    for (var i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+  });
+  // Add handlers for expand all and collapse all buttons
+document.getElementById('expand-all').addEventListener('click', function() {
+  var collapsibleContents = document.getElementsByClassName('collapsible-content');
+  var collapsibles = document.getElementsByClassName('collapsible');
+  
+  for (var i = 0; i < collapsibleContents.length; i++) {
+    collapsibleContents[i].style.display = 'block';
+  }
+  
+  for (var i = 0; i < collapsibles.length; i++) {
+    collapsibles[i].classList.add('active');
+  }
+});
+
+document.getElementById('collapse-all').addEventListener('click', function() {
+  var collapsibleContents = document.getElementsByClassName('collapsible-content');
+  var collapsibles = document.getElementsByClassName('collapsible');
+  
+  for (var i = 0; i < collapsibleContents.length; i++) {
+    collapsibleContents[i].style.display = 'none';
+  }
+  
+  for (var i = 0; i < collapsibles.length; i++) {
+    collapsibles[i].classList.remove('active');
+  }
+});
+</script>
 </body>
 </html>
