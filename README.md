@@ -14,7 +14,7 @@ Aegisknight Loadout Tools is a web-based application designed to help players ef
 
 ## 📖 How to Use
 
-1. Visit the app using this [[link to "Pages"](./pages)](https://owlcan.github.io/AegisknightLoadoutTools/).
+1. Visit the app using this link: https://owlcan.github.io/AegisknightLoadoutTools/
 2. Start configuring your Aegisknight loadout by following the intuitive interface.
 3. Explore the vast array of options for races, feats, weapons, and armor.
 4. Save and use your completed character sheet for your next adventure—or apply for the Combat Academy!
