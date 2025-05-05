@@ -170,7 +170,7 @@ button:hover {
 
 .item-description {
     flex: 1;
-    max-height: 650px;
+    max-height: 2000px;
     overflow-y: auto;
     padding-right: 10px;
     scrollbar-width: thin;
