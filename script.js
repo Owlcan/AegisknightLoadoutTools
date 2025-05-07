@@ -116,7 +116,18 @@ const armorData = {
             "<strong>Level 11:</strong> Ability to manipulate two objects in one turn.",
             "<strong>Level 14:</strong> Use the Help action as a bonus action."
         ]
-    },    "Marksman-Type-Pauldron": {
+    },   "Incense-Censer-Pauldron": {
+    name: "Incense Censer Pauldron",
+    description: "For the cautious tactician and support fighter, this pauldron dispenses beneficial vapors to aid allies and subtly hinder foes.",
+    imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/incensecenserpauldron.png",
+    progression: [
+        "<strong>Level 1:</strong> Basic Dispersion lets you activate various incense effects by expending 1-2 Cell Charges, with effects lasting for rounds equal to your proficiency bonus.",
+        "<strong>Level 4:</strong> Enhanced Diffusion increases all incense effect areas by 10 ft. and extends duration by 1 round.",
+        "<strong>Level 7:</strong> Dual Incense Operation allows simultaneous release of two distinct incense effects once per short rest.",
+        "<strong>Level 11:</strong> Extended Coverage increases effect radius by another 10 ft. and grants allies +1 on saving throws.",
+        "<strong>Level 14:</strong> Sacramental Concoction allows combining two incense effects by spending 3 additional Cell Charges."
+    ]
+    }, "Marksman-Type-Pauldron": {
         name: "Marksman Type Pauldron",
         description: "Engineered for ranged specialists, optimized for precise targeting and rapid missile deployment with versatile ammunition options.",
         imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/marksmanpauldrons.png",
@@ -127,7 +138,45 @@ const armorData = {
             "<strong>Level 11:</strong> +2 bonus to ranged attack rolls for 1 minute once per short rest.",
             "<strong>Level 14:</strong> Advantage on one ranged attack roll per turn when using Sharp Shooter."
         ]
-    },    "Kinetic-Resonance-Pauldron": {
+    },    "Gravitational-Stabilizers": {
+        name: "Gravitational Stabilizers",
+        description: "Advanced pauldrons that manipulate localized gravitational fields to enhance stability and positioning control.",
+        imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/gravstabilizers.png",
+        progression: [
+            "<strong>Level 1:</strong> Surface Anchoring lets you stick to walls and ceilings, while Stabilized Stance prevents knockdown.",
+            "<strong>Level 4:</strong> Create Gravitational Zones that alter movement conditions in a 15-foot radius.",
+            "<strong>Level 7:</strong> Manipulate the weight of objects you touch, making them lighter or heavier.",
+            "<strong>Level 11:</strong> Pull allies to safety with Gravity Well and anchor to surfaces at a distance.",
+            "<strong>Level 14:</strong> Achieve Gravitational Mastery with flight, area gravity control, and the ability to fling enemies."
+        ]
+    },
+       "Adaptive-Environment-Frame": {
+        name: "Adaptive Environment Frame",
+        hitdice: "d10",
+        armorclass: "14 + Dex modifier (max +2)",
+        description: "This responsive chest piece constantly reconfigures itself to match environmental conditions, providing optimal protection through a sophisticated array of micro-adjusting plates and energy fields.",
+        imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/adaptiveenvironmentframe.png",
+        progression: [
+            "<strong>Level 1:</strong> AC 14 + Dex modifier (max +2), Environmental Adaptation grants resistance to one damage type, and Energy Conversion stores charges when taking adapted damage.",
+            "<strong>Level 4:</strong> Maintain two environmental adaptations and gain advantage against extreme environmental conditions.",
+            "<strong>Level 7:</strong> Convert damage to temporary hit points and deploy surveillance micro-drones.",
+            "<strong>Level 11:</strong> Combat Adaptation as a reaction, +1 AC boost, and enhanced drone capabilities.",
+            "<strong>Level 14:</strong> Full environmental mastery grants immunity to adapted damage types, emergency recovery protocol, and medical systems."
+        ]
+    },
+        "Tactical-Vision-Array": {
+        name: "Tactical Vision Array",
+        description: "A sleek helmet with multiple overlapping scanning technologies that gives the wearer tactical advantages through enhanced battlefield awareness and information gathering.",
+        imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/tactical_vision_array.png",
+        progression: [
+            "<strong>Level 1:</strong> Mark targets for enhanced tracking and gain bonuses with ranged weapons, with special synergy for Handmeld-Cannon attacks.",
+            "<strong>Level 4:</strong> Share tactical data with allies and perceive invisible or teleporting marked targets through an augmented reality interface.",
+            "<strong>Level 7:</strong> Gain advantage on survival checks and trap detection, with ability to scan areas for potential threats.",
+            "<strong>Level 11:</strong> Detect hidden doors, compartments, and analyze objects for hidden properties or data.",
+            "<strong>Level 14:</strong> Activate Tactical Omniscience for Truesight that can be shared with allies by expending additional Cell Charges."
+        ]
+    },
+        "Kinetic-Resonance-Pauldron": {
         name: "Kinetic Resonance Pauldron",
         description: "Pulses with raw kinetic energy of movement, turning dashing into a storehouse of explosive force for both defense and offense.",
         imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/kineticresonancepauldrons.png",
@@ -193,6 +242,20 @@ const armorData = {
             "<strong>Level 14:</strong> Dash as a bonus action without provoking opportunity attacks once per short rest."
         ]
     },
+    "Aegis-of-Fleet-Vitality": {
+    name: "Aegis of Fleeting Vitality",
+    hitdice: "d12",
+    armorclass: "12+dex",
+    description: "This lightweight arcane cuirass is designed for the agile Aegisknight who values speed and dexterity over heavy plating.",
+    imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/aegisfleeting.png",
+    progression: [
+        "<strong>Level 1:</strong> Base AC of 12 + Dexterity modifier, d12 hit die, add Constitution modifier to AC for 1 minute once per short rest, and bonus action Dash with Cell Charge.",
+        "<strong>Level 4:</strong> +10 ft. movement speed and Mobility Shield grants +2 AC when moving 35+ feet in a turn.",
+        "<strong>Level 7:</strong> Resistance to non-magical damage and resistance to one chosen magical damage type.",
+        "<strong>Level 11:</strong> Enhanced Mobility Shield grants +5 AC and can negate missile attacks.",
+        "<strong>Level 14:</strong> Resistance to magical melee damage and immunity to one chosen magical damage type."
+    ]
+},
         "Xtra-Hev-Composite-Frame": {
         name: "Xtra-Hev Composite Frame",
         hitdice: "d10",
@@ -268,6 +331,44 @@ const armorData = {
             "<strong>Level 14:</strong> Zen Reversal completely negates an attack and counters with 2d8 force damage."
         ]
     },
+        "Phantasmal-Manipulators": {
+        name: "Phantasmal Manipulators",
+        description: "These elegant gloves blend arcane illusion with physical manipulation, allowing the wearer to create and interact with convincing illusory constructs.",
+        imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/phantasmal_manipulators.png",
+        progression: [
+            "<strong>Level 1:</strong> Learn Minor Illusion cantrip and create illusory weapons that can feint enemies with Performance checks.",
+            "<strong>Level 4:</strong> Cast Minor Illusion as a bonus action and make mobile illusions that enemies perceive as real threats.",
+            "<strong>Level 7:</strong> Store four complete disguise loadouts and create multiple illusory weapons for simultaneous feints.",
+            "<strong>Level 11:</strong> Cast Greater Invisibility on yourself and allies while maintaining convincing illusory duplicates.",
+            "<strong>Level 14:</strong> Use invisibility without Cell Charges and create semi-tangible illusions that can affect the physical world."
+        ]
+    },
+    "Gloves-of-Arcane-Fusion": {
+        name: "Gloves of Arcane Fusion",
+        description: "A pair of enchanted gloves that channel raw arcanum directly into your hands, empowering you with potent magical might alongside martial prowess.",
+        imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/arcanefusiongloves.png",
+        bonusCellCharges: 0,
+        progression: [
+            "<strong>Level 1:</strong> Arcanoflash dazzles foes, Mystic Surge boosts attacks and spells, Handmeld-Cannon fires force blasts, and functions as a spellcasting focus.",
+            "<strong>Level 4:</strong> Glowing Refrain adds lingering radiant damage to Arcanoflash and enhances Mystic Surge.",
+            "<strong>Level 5:</strong> Enhanced Handmeld-Cannon damage plus Focused Conduction for better spell attacks and saves.",
+            "<strong>Level 6:</strong> Rapid Recharge regains Cell Charges, Echoing Surge affects multiple attacks, and Integrated Firearm Conduit channels blasts through firearms.",
+            "<strong>Level 11:</strong> Mystic Reservoir stores spells and Arcane Rebound counters spell attacks.",
+            "<strong>Level 14:</strong> Supreme Arcane Conduction substantially improves spellcasting and Overcharged Handmeld-Cannon allows for enhanced force blasts."
+    ]
+    },
+        "Reflective-Aegis-Gauntlets": {
+        name: "Reflective Aegis Gauntlets",
+        description: "Engineered for vigilant defense, these gauntlets channel Cell Charges into swift deflections and protective countermeasures for both you and your allies.",
+        imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/reflectiveaegisgauntlets.png",
+        progression: [
+            "<strong>Level 1:</strong> When hit by a ranged weapon attack, expend 1 Cell Charge to deflect the projectile using monk's Deflect Missiles rules.",
+            "<strong>Level 4:</strong> Gain temporary +1 bonus to AC until your next turn when expending Cell Charges to benefit an ally.",
+            "<strong>Level 7:</strong> Expend 1 Cell Charge to parry melee attacks and reduce damage by 1d6. Extend deflection to protect allies within 10 ft.",
+            "<strong>Level 11:</strong> Expend 1 Cell Charge to parry blows against allies within 10 ft., reducing damage by 1d8 + your proficiency bonus.",
+            "<strong>Level 14:</strong> Expend 3 Cell Charges to project a static wall of magical defense (5 ft. × 15 ft. × 10 ft.) for 1 minute."
+        ]
+    },
     "Infantile-Mittens": {
         name: "Infantile Mittens",
         description: "These gauntlets feature oversized, cuddly mittens that limit fine dexterity but grant unique protective benefits.",
@@ -313,7 +414,21 @@ const armorData = {
             "<strong>Level 11:</strong> Leap up to 60 ft. horizontally or 30 ft. vertically.",
             "<strong>Level 14:</strong> Immunity to fall damage and create shockwaves dealing 2d10 force damage on landing."
         ]
-    },    "Virtues-Bastion": {
+    },
+    "Temporal-Stride-Boots": {
+        name: "Temporal Stride Boots",
+        movementSpeed: "40 ft.",
+        description: "These chrono-manipulating boots distort the flow of time around the wearer's legs, creating shimmering afterimages with each step. Silver and blue runic circuitry pulses along their surface, occasionally emitting brief flashes when time manipulation powers activate.",
+        imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/temporal_stride_boots.png",
+        progression: [
+            "<strong>Level 1:</strong> Base speed 40 ft. and Time Pocket grants an extra action for Dash, Disengage, Dodge, Defend, Aide, or Use Item.",
+            "<strong>Level 4:</strong> Rewind Strike allows repeating an attack with advantage, and Momentum Storage adds bonus damage after time dilation effects.",
+            "<strong>Level 7:</strong> Time Dilation Field imposes disadvantage on ranged attacks and penalties to melee attacks, while Combat Acceleration grants additional bonus actions.",
+            "<strong>Level 11:</strong> Multiple Echoes creates temporal duplicates, and Temporal Echo allows switching places with them to avoid damage.",
+            "<strong>Level 14:</strong> Chronal Convergence creates a time distortion field that accelerates allies and slows enemies."
+        ]
+    },
+        "Virtues-Bastion": {
         name: "Virtue's Bastion (Diaper Cover)",
         description: "This enchanted diaper cover isn't merely lower-wear—it's a full-body safeguard for those who must don the bulkiest, most efficient aegisknight diapers. Integrated with a magical self‑cleaning booster, the cover continuously sanitizes, deodorizes, and refreshes your diaper area, allowing you to navigate treacherous, trap‑laden grounds without penalty and always look, feel, and smell immaculate.",
         imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/virtuesbastion.png",
@@ -406,6 +521,18 @@ const armorData = {
             "<strong>Level 12:</strong> Major distinguishing ability that redefines your battlefield role."
         ]
     },
+"Singularity-Drive": {
+    name: "Singularity Drive",
+    description: "An experimental gravitational core that grants control over spatial distortions, enhancing movement and battlefield manipulation.",
+    imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/singularitydrive.png",
+    bonusCellCharges: 2,
+    progression: [
+        "<strong>Level 3:</strong> Event Blink lets you teleport 15 feet as a reaction when attacked, and Dimensional Distortion forces nearby enemies to have disadvantage on opportunity attacks.",
+        "<strong>Level 6:</strong> Spatial Pulse pushes creatures away with a gravitational shockwave, and you gain an additional Event Blink charge usable once per turn.",
+        "<strong>Level 8:</strong> Event Horizon creates a gravitational singularity that can restrain enemies, and your teleportation distance increases to 20 feet.",
+        "<strong>Level 12:</strong> Entropy Shield halves incoming physical damage, and you gain resistance to force damage and reduced forced movement."
+    ]
+},
     "Transmorphic-Belt": {
         name: "Transmorphic Belt",
         description: "The Shapeshifter's Cinch grants elemental resistance, breath weapons, and size-altering capabilities.",

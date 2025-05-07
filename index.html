@@ -198,6 +198,7 @@
                             <option value="Ultimate-Bastion-Heavy-Helmet">C. Ultimate-Bastion Heavy Helmet</option>
                             <option value="Golden-Chain-Hood">D. Golden Chain Hood</option>
                             <option value="Oracles-Tongue-Helm">E. Oracle's Tongue Helm</option>
+                            <option value="Tactical-Vision-Array">F. Tactical Vision Array</option>
                             <option value="Pacifier-Themed-Helmet">Pacifier of Quietude</option>
                             <option value="Bonnet-Themed-Helmet">Bonnet of Blushing Bravado</option>
                         </select>
@@ -211,7 +212,9 @@
                             <option value="Tech-Type">C. Tech Type</option>
                             <option value="Marksman-Type-Pauldron">D. Marksman Type Pauldron</option>
                             <option value="Kinetic-Resonance-Pauldron">E. Kinetic Resonance Pauldron</option>
-                            <option value="Diaper-Duty-Pauldrons">Diaper Duty Pauldrons</option>
+                            <option value="Gravitational-Stabilizers">F. Gravitational Stabilizers</option>
+                            <option value="Diaper-Duty-Pauldrons">G. Diaper Duty Pauldrons</option>
+                            <option value="Incense-Censer-Pauldron">H. Incense Censer Pauldron</option>
                         </select>
                     </div>
                       <div class="armor-piece">
@@ -222,6 +225,8 @@
                             <option value="Bulwark-Type-Frame">Bulwark Type Frame</option>
                             <option value="Light-Type-Frame">Light Type Frame</option>
                             <option value="Xtra-Hev-Composite-Frame">Xtra-Hev Composite Frame</option>
+                            <option value="Adaptive-Environment-Frame">Adaptive Environment Frame</option>
+                            <option value="Aegis-of-Fleet-Vitality">Aegis of Fleet Vitality</option>
                             <option value="Soiling-Shield-Bib">Soiling Shield Bib</option>
                         </select>
                     </div>
@@ -233,7 +238,10 @@
                             <option value="Blastbreaker-Fists">B. Blastbreaker Fists</option>
                             <option value="Somatic-Satellites">C. Somatic Satellites</option>
                             <option value="Serene-Palm-Gauntlets">D. Serene Palm Gauntlets</option>
+                            <option value="Reflective-Aegis-Gauntlets">E. Reflective Aegis Gauntlets</option>
+                            <option value="Phantasmal-Manipulators">F. Phantasmal Manipulators</option>
                             <option value="Infantile-Mittens">Infantile Mittens</option>
+                            <option value="Gloves-of-Arcane-Fusion">Gloves of Arcane Fusion</option>
                         </select>
                     </div>
                       <div class="armor-piece">
@@ -245,6 +253,7 @@
                             <option value="Blastcore-Soles">C. Blastcore Soles</option>
                             <option value="Virtues-Bastion">D. Virtue's Bastion (Diaper Cover)</option>
                             <option value="Ethereal-Stride-Boots">E. Ethereal Stride Boots</option>
+                            <option value="Temporal-Stride-Boots">F. Temporal Stride Boots</option>
                         </select>
                     </div>
                       <div class="armor-piece">
@@ -261,6 +270,7 @@
                             <option value="Unstable-Fury-Core">Unstable Fury Core</option>
                             <option value="Diaper-Daycare-Raiment">Diaper Daycare Raiment</option>
                             <option value="Mephidium-Coda">Mephidium Coda (Skunk's Tail)</option>
+                            <option value="Singularity-Drive">Singularity Drive</option>
                         </select>
                     </div>
                     
@@ -557,6 +567,7 @@
     <script src="script.js"></script>
     <script src="character_io.js"></script>
     <script src="armor_descriptions.js"></script>
+    <script src="armory.js"></script>
     <script>
   document.addEventListener('DOMContentLoaded', function() {
     var coll = document.getElementsByClassName("collapsible");
@@ -598,6 +609,66 @@ document.getElementById('collapse-all').addEventListener('click', function() {
     collapsibles[i].classList.remove('active');
   }
 });
+
+// Tab functionality is now handled in armory.js
 </script>
+
+<!-- Add Tab Navigation Container at the end of the container div -->
+<div class="tabs-container">
+  <div class="tabs-nav">
+    <button class="tab-btn active" data-tab="character-tab">Character Creator</button>
+    <button class="tab-btn" data-tab="armory-tab">Armory</button>
+  </div>
+  
+  <!-- Character Creator Tab (the original content) -->
+  <div id="character-tab" class="tab-content active">
+    <!-- This div is just a placeholder as we'll move the existing content here via JavaScript -->
+  </div>
+  
+  <!-- Armory Tab -->
+  <div id="armory-tab" class="tab-content">
+    <div class="armory-section">
+      <h2>Aegisknight Armory</h2>
+      <p>Browse all available armor pieces for your Aegisknight</p>
+      
+      <!-- Helmets Section -->
+      <div class="armor-category">
+        <h2>Helmets</h2>
+        <div id="helmet-grid" class="armor-grid"></div>
+      </div>
+      
+      <!-- Pauldrons Section -->
+      <div class="armor-category">
+        <h2>Pauldrons</h2>
+        <div id="pauldrons-grid" class="armor-grid"></div>
+      </div>
+      
+      <!-- Chest Armor Section -->
+      <div class="armor-category">
+        <h2>Chest Armor</h2>
+        <div id="chest-grid" class="armor-grid"></div>
+      </div>
+      
+      <!-- Arms/Gloves Section -->
+      <div class="armor-category">
+        <h2>Arms/Gloves</h2>
+        <div id="arms-grid" class="armor-grid"></div>
+      </div>
+      
+      <!-- Boots Section -->
+      <div class="armor-category">
+        <h2>Boots</h2>
+        <div id="boots-grid" class="armor-grid"></div>
+      </div>
+      
+      <!-- Raiments Section -->
+      <div class="armor-category">
+        <h2>Raiments</h2>
+        <div id="raiment-grid" class="armor-grid"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>

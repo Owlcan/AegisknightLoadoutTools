@@ -22,7 +22,7 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1900px;
     margin: 0 auto;
     padding: 20px;
     background-color: rgba(42, 42, 42, 0.9);
@@ -170,7 +170,7 @@ button:hover {
 
 .item-description {
     flex: 1;
-    max-height: 2000px;
+    max-height: 2500px;
     overflow-y: auto;
     padding-right: 10px;
     scrollbar-width: thin;
@@ -199,15 +199,204 @@ button:hover {
     padding-bottom: 5px;
 }
 
-.armor-description {
-    margin-bottom: 15px;
-    line-height: 1.5;
+/* Tab Navigation */
+.tabs-container {
+    margin-bottom: 20px;
 }
 
-.armor-progression p {
+.tabs-nav {
+    display: flex;
+    border-bottom: 2px solid var(--gold);
+    margin-bottom: 20px;
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    background-color: var(--dark-stone);
+    color: var(--silver);
+    border: 1px solid var(--gold);
+    border-bottom: none;
+    cursor: pointer;
+    margin-right: 5px;
+    font-family: 'Cinzel Decorative', serif;
+    transition: all 0.3s;
+    position: relative;
+    bottom: -2px;
+}
+
+.tab-btn.active {
+    background-color: var(--gold);
+    color: var(--darker-stone);
+    border-bottom: 2px solid var(--gold);
+}
+
+.tab-btn:hover:not(.active) {
+    background-color: var(--light-stone);
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Armory Styles */
+.armory-section {
+    padding: 20px;
+    background-color: var(--dark-stone);
+    border: 1px solid var(--gold);
+    border-radius: 5px;
+}
+
+.armor-category {
+    margin-bottom: 30px;
+}
+
+.armor-category h2 {
+    color: var(--gold);
+    border-bottom: 1px solid var(--gold);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.armor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.armor-card {
+    position: relative;
+    background-color: var(--darker-stone);
+    border: 1px solid var(--silver);
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.armor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    border-color: var(--gold);
+}
+
+.armor-card::after {
+    content: "Click to select";
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background-color: var(--gold);
+    color: var(--darker-stone);
+    font-size: 0.8rem;
+    padding: 3px 8px;
+    border-radius: 3px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+    font-weight: bold;
+}
+
+.armor-card:hover::after {
+    opacity: 1;
+}
+
+.armor-card-image {
+    height: 180px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-stone);
+    border-bottom: 1px solid var(--silver);
+}
+
+.armor-card-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.armor-card-content {
+    padding: 15px;
+}
+
+.armor-card-content h3 {
+    color: var(--gold);
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    text-shadow: 0 0 5px rgba(212, 175, 55, 0.3);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+    padding-bottom: 8px;
+}
+
+.armor-card-description {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+    color: var(--silver);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    scrollbar-width: thin;
+    scrollbar-color: var(--gold) var(--dark-stone);
+    padding-right: 5px;
+}
+
+.armor-card-description::-webkit-scrollbar {
+    width: 5px;
+}
+
+.armor-card-description::-webkit-scrollbar-track {
+    background: var(--dark-stone);
+    border-radius: 5px;
+}
+
+.armor-card-description::-webkit-scrollbar-thumb {
+    background-color: var(--gold);
+    border-radius: 5px;
+}
+
+.armor-card-description h4 {
+    color: var(--gold);
+    margin: 15px 0 8px;
+    font-size: 1rem;
+}
+
+.armor-card-description p {
     margin-bottom: 10px;
-    padding-left: 10px;
-    border-left: 3px solid var(--gold);
+    text-align: justify;
+}
+
+.armor-card-description p strong {
+    color: var(--gold);
+}
+
+.armor-card-stats {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+    border: 1px solid rgba(192, 192, 192, 0.2);
+    font-size: 0.85rem;
+}
+
+.armor-card-stats p {
+    margin: 5px 0;
+    color: var(--silver);
+}
+
+.armor-progression {
+    border-top: 1px dashed var(--gold);
+    padding-top: 10px;
+    margin-top: 15px;
+}
+
+.armor-progression h4 {
+    color: var(--gold);
+    margin: 15px 0 10px;
+    border-bottom: 1px solid var(--gold);
     padding-bottom: 5px;
 }
 
@@ -552,11 +741,6 @@ button:hover {
     color: var(--silver);
 }
 
-.loadout-item-progression {
-    margin-top: 10px;
-    font-size: 0.9rem;
-}
-
 /* Footer */
 footer {
     text-align: center;
@@ -616,6 +800,7 @@ footer {
     padding: 5px;
     background-color: var(--dark-stone);
     border-radius: 3px;
+    position: relative;
 }
 
 .selected-feat .feat-name {
@@ -690,10 +875,6 @@ footer {
 }
 
 /* Tooltip styles */
-.selected-feat {
-    position: relative;
-}
-
 .selected-feat:hover::after {
     content: attr(data-tooltip);
     position: absolute;
@@ -1055,6 +1236,88 @@ footer {
     min-width: 30px;
 }
 
+/* Armor stats */
+.armor-stats {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: var(--darker-stone);
+    border: 1px solid var(--gold);
+    border-radius: 3px;
+}
+
+.armor-stats p {
+    margin: 5px 0;
+    color: var(--silver);
+}
+
+/* Armory refresh button */
+.refresh-button {
+    margin: 10px 0 20px;
+    padding: 8px 15px;
+    background: linear-gradient(to bottom, var(--silver), var(--darker-stone));
+    color: var(--gold);
+    border: 1px solid var(--gold);
+    cursor: pointer;
+    font-family: 'Cinzel Decorative', serif;
+    border-radius: 3px;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+}
+
+.refresh-button:hover {
+    background: linear-gradient(to bottom, var(--gold), var(--dark-stone));
+    color: var(--darker-stone);
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+}
+
+/* Debug button */
+.debug-button {
+    padding: 5px 10px;
+    background-color: #333;
+    color: #f88;
+    border: 1px solid #f44;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.debug-button:hover {
+    background-color: #444;
+}
+
+/* Empty category message */
+.empty-category {
+    color: var(--silver);
+    font-style: italic;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    border: 1px dashed var(--silver);
+}
+
+/* Armory heading improvements */
+.armory-section > h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    text-shadow: 0 0 10px var(--gold);
+}
+
+.armory-section > p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--silver);
+    font-style: italic;
+}
+
+.armor-category h2 {
+    text-align: left;
+    padding-left: 10px;
+    border-left: 4px solid var(--gold);
+    margin-bottom: 20px;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .selector-container {
@@ -1081,21 +1344,16 @@ footer {
         width: 105px;
         height: 105px;
     }
+    
+    .armor-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+    
+    .armor-card-image {
+        height: 150px;
+    }
 }
 
 .hidden {
     display: none;
-}
-
-.armor-stats {
-    margin: 10px 0;
-    padding: 10px;
-    background-color: var(--darker-stone);
-    border: 1px solid var(--gold);
-    border-radius: 3px;
-}
-
-.armor-stats p {
-    margin: 5px 0;
-    color: var(--silver);
 }

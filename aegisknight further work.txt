@@ -234,4 +234,3 @@ When your Mystery Module reaches its level 6 upgrade stage, roll a d10 (or selec
 | 9        | **Energetic Infusion:** Convert 1 expended cell charge into temporary hit points equal to 1d6 + your Aegisknight level.                                               |
 | 10       | **Adaptive Circuitry:** Choose one upgrade effect from any of your armor components and apply its next-level bonus effect for 1 round.                              |
 
-___
