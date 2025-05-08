@@ -2,10 +2,10 @@
 <html lang="en">
 <head>    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aegisknight Armor Selector</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Aegisknight Armor Selector</title>    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="tooltips.css">
     <link rel="stylesheet" href="collapsible.css">
+    <link rel="stylesheet" href="character_io.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -309,11 +309,11 @@
                     </div>                      <div class="action-button">
                           <button class="finalize-button" onclick="finalizeLoadout()">Finalize Loadout</button>
                       </div>
-                      
-                      <div class="load-character-container">
+                        <div class="load-character-container">
                           <label for="load-character-input" class="load-character-label">Load Character:</label>
                           <input type="file" id="load-character-input" accept=".json" class="hidden-file-input">
                           <button class="load-character-button" onclick="document.getElementById('load-character-input').click()">Load Character</button>
+                          <button class="save-character-button" onclick="saveCharacter()">Save Character</button>
                       </div>
                 </div>
                   <div class="info-panel">
@@ -565,11 +565,11 @@
         <footer>
             <p>Aegisknight Armor Selector</p>
         </footer>    </div>
-    
-    <script src="script.js"></script>
+      <script src="script.js"></script>
     <script src="character_io.js"></script>
     <script src="armor_descriptions.js"></script>
     <script src="armory.js"></script>
+    <script src="character_io_fix.js"></script>
     <script>
   document.addEventListener('DOMContentLoaded', function() {
     var coll = document.getElementsByClassName("collapsible");

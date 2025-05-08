@@ -1,0 +1,65 @@
+/* Save and Load Character Buttons */
+.load-character-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.load-character-label {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.hidden-file-input {
+    display: none;
+}
+
+.load-character-button, .save-character-button {
+    padding: 10px 20px;
+    background: linear-gradient(to bottom, var(--gold), #a67c00);
+    color: var(--darker-stone);
+    font-family: 'Cinzel Decorative', serif;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.load-character-button:hover, .save-character-button:hover {
+    background: linear-gradient(to bottom, #f1c40f, var(--gold));
+    transform: scale(1.05);
+}
+
+.save-character-button {
+    background: linear-gradient(to bottom, #2ecc71, #27ae60);
+}
+
+.save-character-button:hover {
+    background: linear-gradient(to bottom, #3ee685, #2ecc71);
+}
+
+/* Notification styling */
+.notification {
+    position: fixed;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    transition: bottom 0.3s ease;
+    border-left: 5px solid var(--gold);
+    font-family: 'Cinzel Decorative', serif;
+}
+
+.notification.show {
+    bottom: 20px;
+}

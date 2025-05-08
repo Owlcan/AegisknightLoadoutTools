@@ -38,12 +38,24 @@ function getSelectValue(id) {
     return element ? element.value : "";
 }
 
+// Helper function to safely set value on an element
+function safeSetElementValue(id, value) {
+    const element = document.getElementById(id);
+    if (element) {
+        element.value = value || '';
+    } else {
+        console.warn(`Element with id '${id}' not found`);
+    }
+}
+
 // Function to save character data to a JSON file
 function saveCharacter() {
     try {
+        console.log("Saving character...");
+        
         // Validate required fields
-        const name = document.getElementById('character-name').value.trim();
-        const race = document.getElementById('race-select').value;
+        const name = document.getElementById('character-name')?.value.trim();
+        const race = document.getElementById('race-select')?.value;
         
         if (!name) {
             alert("Please enter a character name before saving.");
@@ -53,6 +65,12 @@ function saveCharacter() {
         if (!race) {
             alert("Please select a race before saving.");
             return;
+        }
+        
+        // Initialize selected feats if not already defined
+        if (typeof window.selectedFeats === 'undefined') {
+            console.log("Initializing selectedFeats to empty array");
+            window.selectedFeats = [];
         }
         
         // Gather all character data
@@ -86,11 +104,10 @@ function saveCharacter() {
             chest: getSelectValue('chest-select'),
             arms: getSelectValue('arms-select'),
             boots: getSelectValue('boots-select'),
-            raiment: getSelectValue('raiment-select'),
-            
-            // Background & Feats
+            raiment: getSelectValue('raiment-select'),            // Background & Feats
             background: document.getElementById('background').value,
             backgroundFeat: document.getElementById('background-feat').value,
+            feats: window.selectedFeats || [], // Save the selected feats
             
             // Weapons
             primaryWeapon: getSelectValue('primary-weapon-select'),
@@ -138,7 +155,12 @@ function saveCharacter() {
 // Function to load character data from a JSON file
 function loadCharacter(event) {
     const file = event.target.files[0];
-    if (!file) return;
+    if (!file) {
+        console.log("No file selected");
+        return;
+    }
+    
+    console.log(`Loading file: ${file.name}, size: ${file.size} bytes`);
     
     // Check if user has unsaved changes
     const characterName = document.getElementById('character-name').value.trim();
@@ -149,79 +171,177 @@ function loadCharacter(event) {
             return;
         }
     }
-    
-    const reader = new FileReader();
+      const reader = new FileReader();
     
     reader.onload = function(e) {
         try {
-            const characterData = JSON.parse(e.target.result);
-            
-            // Populate character info
-            document.getElementById('character-name').value = characterData.name || '';            document.getElementById('race-select').value = characterData.race || '';
-            updateSubraceOptions();
-            document.getElementById('subrace-select').value = characterData.subrace || '';
-            displayRaceTraits();
-            
-            // Populate appearance
-            document.getElementById('character-image-url').value = characterData.characterImageUrl || '';
-            document.getElementById('hair-color').value = characterData.hairColor || '';
-            document.getElementById('eye-color').value = characterData.eyeColor || '';
-            document.getElementById('skin-color').value = characterData.skinColor || '';
-            document.getElementById('notable-features').value = characterData.notableFeatures || '';
-            
-            // Populate ability scores
-            document.getElementById('strength').value = characterData.strength || '10';
-            document.getElementById('dexterity').value = characterData.dexterity || '10';
-            document.getElementById('constitution').value = characterData.constitution || '10';
-            document.getElementById('intelligence').value = characterData.intelligence || '10';
-            document.getElementById('wisdom').value = characterData.wisdom || '10';
-            document.getElementById('charisma').value = characterData.charisma || '10';
-            
-            // Update ability score modifiers display
-            updateAbilityScoreModifiers();
-              // Populate armor selections
-            document.getElementById('helmet-select').value = characterData.helmet || '';
-            document.getElementById('pauldrons-select').value = characterData.pauldrons || '';
-            document.getElementById('chest-select').value = characterData.chest || '';
-            document.getElementById('arms-select').value = characterData.arms || '';
-            document.getElementById('boots-select').value = characterData.boots || '';
-            document.getElementById('raiment-select').value = characterData.raiment || '';            // Update armor info displays
-            try {
-                if (characterData.helmet) updateArmorInfo('helmet');
-                if (characterData.pauldrons) updateArmorInfo('pauldrons');
-                if (characterData.chest) updateArmorInfo('chest');
-                if (characterData.arms) updateArmorInfo('arms');
-                if (characterData.boots) updateArmorInfo('boots');
-                if (characterData.raiment) updateArmorInfo('raiment');
-                  // Update cell charges display
-                if (typeof updateCellChargesDisplay === 'function') {
-                    // First make sure the bonusCellCharges is calculated properly
-                    if (typeof calculateCellCharges === 'function') {
-                        calculateCellCharges();
-                    }
-                    updateCellChargesDisplay();
-                }
-                
-                // Update selected feats UI if applicable
-                if (typeof updateSelectedFeatsUI === 'function') {
-                    updateSelectedFeatsUI();
-                }
-            } catch (e) {
-                console.error("Error updating displays:", e);
+            const content = e.target.result;
+            if (!content) {
+                throw new Error("File is empty");
             }
             
-            // Populate background & feats
-            document.getElementById('background').value = characterData.background || '';
-            document.getElementById('background-feat').value = characterData.backgroundFeat || '';
+            console.log("File loaded successfully, parsing JSON...");
             
-            // Populate weapons
-            document.getElementById('primary-weapon-select').value = characterData.primaryWeapon || '';
-            document.getElementById('primary-large-size').checked = characterData.primaryWeaponLargeSize || false;
-            document.getElementById('secondary-weapon-select').value = characterData.secondaryWeapon || '';
-            document.getElementById('secondary-large-size').checked = characterData.secondaryWeaponLargeSize || false;
-            updateWeaponInfo('primary');
-            updateWeaponInfo('secondary');
-              // Show notification
+            let characterData;
+            try {
+                characterData = JSON.parse(content);
+            } catch (parseError) {
+                console.error("JSON parse error:", parseError);
+                alert(`Error parsing JSON: ${parseError.message}. Make sure it's a valid character file.`);
+                return;
+            }
+            
+            // Check if character data exists and has expected structure
+            if (!characterData) {
+                throw new Error("No character data found in file");
+            }
+            
+            console.log(`Loading character: ${characterData.name || 'Unnamed'}`);
+            console.log(`Character version: ${characterData.version || 'unknown'}`);
+            
+            // Populate character info
+            document.getElementById('character-name').value = characterData.name || '';
+              // Make sure race select exists before setting value
+            const raceSelect = document.getElementById('race-select');
+            if (raceSelect) {
+                raceSelect.value = characterData.race || '';
+                // Only call update functions if they exist
+                if (functionExists('updateSubraceOptions')) {
+                    updateSubraceOptions();
+                } else {
+                    console.warn("updateSubraceOptions function not found");
+                }
+            } else {
+                console.error("Race select element not found");
+            }
+            
+            // Set subrace and display race traits if elements exist
+            const subraceSelect = document.getElementById('subrace-select');
+            if (subraceSelect) {
+                subraceSelect.value = characterData.subrace || '';
+            }
+            
+            if (functionExists('displayRaceTraits')) {
+                displayRaceTraits();
+            } else {
+                console.warn("displayRaceTraits function not found");
+            }
+            
+            // Populate appearance - safely handle missing elements
+            safeSetElementValue('character-image-url', characterData.characterImageUrl);
+            safeSetElementValue('hair-color', characterData.hairColor);
+            safeSetElementValue('eye-color', characterData.eyeColor);
+            safeSetElementValue('skin-color', characterData.skinColor);
+            safeSetElementValue('notable-features', characterData.notableFeatures);
+            
+            // Populate ability scores - safely handle missing elements
+            safeSetElementValue('strength', characterData.strength || '10');
+            safeSetElementValue('dexterity', characterData.dexterity || '10');
+            safeSetElementValue('constitution', characterData.constitution || '10');
+            safeSetElementValue('intelligence', characterData.intelligence || '10');
+            safeSetElementValue('wisdom', characterData.wisdom || '10');
+            safeSetElementValue('charisma', characterData.charisma || '10');
+              // Update ability score modifiers display
+            if (functionExists('updateAbilityScoreModifiers')) {
+                updateAbilityScoreModifiers();
+            } else {
+                console.warn("updateAbilityScoreModifiers function not found");
+            }
+            
+            // Populate armor selections - safely handle missing elements
+            safeSetElementValue('helmet-select', characterData.helmet || '');
+            safeSetElementValue('pauldrons-select', characterData.pauldrons || '');
+            safeSetElementValue('chest-select', characterData.chest || '');
+            safeSetElementValue('arms-select', characterData.arms || '');
+            safeSetElementValue('boots-select', characterData.boots || '');
+            safeSetElementValue('raiment-select', characterData.raiment || '');
+              // Update armor info displays
+            try {
+                // Only call updateArmorInfo if it exists
+                if (functionExists('updateArmorInfo')) {
+                    if (characterData.helmet) updateArmorInfo('helmet');
+                    if (characterData.pauldrons) updateArmorInfo('pauldrons');
+                    if (characterData.chest) updateArmorInfo('chest');
+                    if (characterData.arms) updateArmorInfo('arms');
+                    if (characterData.boots) updateArmorInfo('boots');
+                    if (characterData.raiment) updateArmorInfo('raiment');
+                } else {
+                    console.warn("updateArmorInfo function not found");
+                }
+                
+                // Update cell charges display
+                if (functionExists('updateCellChargesDisplay')) {
+                    // First make sure the bonusCellCharges is calculated properly
+                    if (functionExists('calculateCellCharges')) {
+                        calculateCellCharges();
+                    } else {
+                        console.warn("calculateCellCharges function not found");
+                    }
+                    updateCellChargesDisplay();
+                } else {
+                    console.warn("updateCellChargesDisplay function not found");
+                }
+            } catch (e) {
+                console.error("Error updating armor displays:", e);
+            }
+            
+            // Populate background & feats - safely handle missing elements
+            safeSetElementValue('background', characterData.background || '');
+            safeSetElementValue('background-feat', characterData.backgroundFeat || '');
+            
+            // Handle feats data
+            if (typeof window.selectedFeats !== 'undefined') {
+                // Restore saved feats
+                if (characterData.feats && Array.isArray(characterData.feats)) {
+                    console.log(`Loading ${characterData.feats.length} feats from character data`);
+                    window.selectedFeats = characterData.feats;
+                    
+                    // Log feat names for debugging
+                    characterData.feats.forEach((feat, index) => {
+                        console.log(`Feat ${index+1}: ${feat.name || 'Unknown'}`);
+                    });
+                } else {
+                    console.log("No feats found in character data");
+                    window.selectedFeats = [];
+                }
+                  // Update selected feats UI if applicable
+                if (functionExists('updateSelectedFeatsUI')) {
+                    updateSelectedFeatsUI();
+                } else {
+                    console.warn("updateSelectedFeatsUI function not found");
+                }
+            } else {
+                console.warn("selectedFeats variable not found in global scope");
+            }
+            
+            // Populate weapons - safely handle missing elements
+            safeSetElementValue('primary-weapon-select', characterData.primaryWeapon || '');
+            const primaryLargeSize = document.getElementById('primary-large-size');
+            if (primaryLargeSize) {
+                primaryLargeSize.checked = characterData.primaryWeaponLargeSize || false;
+            }
+            
+            safeSetElementValue('secondary-weapon-select', characterData.secondaryWeapon || '');
+            const secondaryLargeSize = document.getElementById('secondary-large-size');
+            if (secondaryLargeSize) {
+                secondaryLargeSize.checked = characterData.secondaryWeaponLargeSize || false;
+            }
+              // Update weapon info if function exists
+            if (functionExists('updateWeaponInfo')) {
+                try {
+                    updateWeaponInfo('primary');
+                    updateWeaponInfo('secondary');
+                } catch (e) {
+                    console.error("Error updating weapon info:", e);
+                }
+            } else {
+                console.warn("updateWeaponInfo function not found");
+            }
+            
+            // Verify character data completeness
+            checkCharacterCompleteness(characterData);
+            
+            // Show notification
             showNotification(`Character "${characterData.name || 'Unnamed'}" loaded successfully!`);
             
             // Show saved date if available
@@ -238,21 +358,36 @@ function loadCharacter(event) {
                     console.error("Error parsing save date:", e);
                 }
             }
-            
-            // Ask to finalize
-            if (confirm(`Do you want to finalize the loadout for "${characterData.name || 'Unnamed'}" now?`)) {
-                finalizeLoadout();
+              // Ask to finalize if the function exists
+            if (characterData.name && typeof finalizeLoadout === 'function') {
+                if (confirm(`Do you want to finalize the loadout for "${characterData.name || 'Unnamed'}" now?`)) {
+                    try {
+                        finalizeLoadout();
+                    } catch (e) {
+                        console.error("Error finalizing loadout:", e);
+                        showNotification("Error finalizing loadout. See console for details.", 5000);
+                    }
+                }
+            } else if (typeof finalizeLoadout !== 'function') {
+                console.warn("finalizeLoadout function not found");
             }
-            
         } catch (error) {
             console.error('Error loading character:', error);
             alert('There was an error loading the character file. Please make sure it is a valid JSON file.');
         }
     };
+      reader.onerror = function(e) {
+        console.error("FileReader error:", e);
+        alert('Error reading the file. Please try again or use a different file.');
+    };
     
-    reader.onerror = function() {
-        alert('Error reading the file.');
-    };    reader.readAsText(file);
+    try {
+        reader.readAsText(file);
+        console.log("Started reading file as text");
+    } catch (fileError) {
+        console.error("Error reading file:", fileError);
+        alert(`Error reading file: ${fileError.message}`);
+    }
 }
 
 // Helper function to calculate ability modifiers
@@ -348,46 +483,26 @@ function checkCharacterCompleteness(characterData) {
     }
 }
 
-// Add event listener to load character input
-document.addEventListener('DOMContentLoaded', function() {
-    const loadCharacterInput = document.getElementById('load-character-input');
-    if (loadCharacterInput) {
-        loadCharacterInput.addEventListener('change', loadCharacter);
-    }
-});
-
-// Function to update all ability score modifiers display
-function updateAbilityScoreModifiers() {
-    const abilities = ['strength', 'dexterity', 'constitution', 'intelligence', 'wisdom', 'charisma'];
-    
-    abilities.forEach(ability => {
-        const scoreElement = document.getElementById(ability);
-        const modifierElement = document.getElementById(`${ability}-modifier`);
-        
-        if (scoreElement && modifierElement) {
-            try {
-                const score = parseInt(scoreElement.value) || 10;
-                const modifier = getAbilityModifier(score);
-                const modifierSign = modifier >= 0 ? '+' : '';
-                
-                modifierElement.textContent = `${modifierSign}${modifier}`;
-            } catch (e) {
-                console.error(`Error updating ${ability} modifier:`, e);
-            }
-        }
-    });
+// Simple helper to check if a function exists
+function functionExists(funcName) {
+    return typeof window[funcName] === 'function';
 }
 
-// Add event listener for the load character input and ability score changes
+// Single DOMContentLoaded event handler for all character_io.js setup
 document.addEventListener('DOMContentLoaded', function() {
+    console.log("Setting up character_io.js functionality");
+    
+    // Set up load character input
     const loadCharacterInput = document.getElementById('load-character-input');
     if (loadCharacterInput) {
         loadCharacterInput.addEventListener('change', loadCharacter);
+        console.log("Load character event listener attached");
+    } else {
+        console.error("Could not find load-character-input element");
     }
     
-    // Add ability score change listeners
+    // Set up ability score change listeners
     const abilities = ['strength', 'dexterity', 'constitution', 'intelligence', 'wisdom', 'charisma'];
-    
     abilities.forEach(ability => {
         const scoreElement = document.getElementById(ability);
         if (scoreElement) {

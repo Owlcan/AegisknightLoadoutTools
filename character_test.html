@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Save/Load Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        button {
+            padding: 10px 15px;
+            margin: 5px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="file"] {
+            margin: 10px 0;
+        }
+        .hidden {
+            display: none;
+        }
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #333;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Character Save/Load Test</h1>
+    
+    <div>
+        <h2>Basic Character Info</h2>
+        <div>
+            <label for="character-name">Name:</label>
+            <input type="text" id="character-name" placeholder="Enter character name">
+        </div>
+        <div>
+            <label for="race-select">Race:</label>
+            <select id="race-select">
+                <option value="">Select a Race...</option>
+                <option value="human">Human</option>
+                <option value="elf">Elf</option>
+                <option value="dwarf">Dwarf</option>
+            </select>
+        </div>
+        <div>
+            <label for="subrace-select">Subrace:</label>
+            <select id="subrace-select">
+                <option value="">Select a Subrace...</option>
+                <option value="high-elf">High Elf</option>
+                <option value="wood-elf">Wood Elf</option>
+                <option value="mountain-dwarf">Mountain Dwarf</option>
+            </select>
+        </div>
+    </div>
+    
+    <div>
+        <h2>Save/Load</h2>
+        <button onclick="saveCharacter()">Save Character</button>
+        <input type="file" id="load-character-input" accept=".json" class="hidden-file-input">
+        <button onclick="document.getElementById('load-character-input').click()">Load Character</button>
+    </div>
+
+    <script>
+        // Simple notification function
+        function showNotification(message, duration = 3000) {
+            const notification = document.createElement('div');
+            notification.className = 'notification';
+            notification.textContent = message;
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                document.body.removeChild(notification);
+            }, duration);
+        }
+
+        // Function to save character
+        function saveCharacter() {
+            try {
+                // Get basic character info
+                const name = document.getElementById('character-name').value.trim();
+                const race = document.getElementById('race-select').value;
+                
+                if (!name) {
+                    alert("Please enter a character name before saving.");
+                    return;
+                }
+                
+                if (!race) {
+                    alert("Please select a race before saving.");
+                    return;
+                }
+                
+                // Create character data object
+                const characterData = {
+                    version: "1.0",
+                    name: name,
+                    race: race,
+                    subrace: document.getElementById('subrace-select').value,
+                    savedOn: new Date().toISOString()
+                };
+                
+                // Convert to JSON
+                const jsonString = JSON.stringify(characterData, null, 2);
+                
+                // Create download blob
+                const blob = new Blob([jsonString], { type: 'application/json' });
+                const url = URL.createObjectURL(blob);
+                
+                // Create download link
+                const downloadLink = document.createElement('a');
+                downloadLink.href = url;
+                downloadLink.download = `${name.replace(/\s+/g, '_')}_character.json`;
+                
+                // Trigger download
+                document.body.appendChild(downloadLink);
+                downloadLink.click();
+                document.body.removeChild(downloadLink);
+                URL.revokeObjectURL(url);
+                
+                showNotification(`Character "${name}" saved successfully!`);
+            } catch (error) {
+                console.error("Error saving character:", error);
+                alert(`Error saving character: ${error.message}`);
+            }
+        }
+        
+        // Function to load character
+        function loadCharacter(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+            
+            const reader = new FileReader();
+            
+            reader.onload = function(e) {
+                try {
+                    const characterData = JSON.parse(e.target.result);
+                    
+                    // Apply the data to the form
+                    document.getElementById('character-name').value = characterData.name || '';
+                    document.getElementById('race-select').value = characterData.race || '';
+                    document.getElementById('subrace-select').value = characterData.subrace || '';
+                    
+                    showNotification(`Character "${characterData.name}" loaded successfully!`);
+                } catch (error) {
+                    console.error("Error loading character:", error);
+                    alert("Invalid character file. Please make sure it's a proper JSON file.");
+                }
+            };
+            
+            reader.onerror = function() {
+                alert("Error reading the file.");
+            };
+            
+            reader.readAsText(file);
+        }
+        
+        // Set up the file input event listener
+        document.addEventListener('DOMContentLoaded', function() {
+            const loadCharacterInput = document.getElementById('load-character-input');
+            if (loadCharacterInput) {
+                loadCharacterInput.addEventListener('change', loadCharacter);
+            }
+        });
+    </script>
+</body>
+</html>

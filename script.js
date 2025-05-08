@@ -311,6 +311,7 @@ const armorData = {
     },
         "Padded-Parental-Bulwark": {
         name: "Padded Parental Bulwark",
+        armorclass: "15 + Dex modifier (max +2)",
         description: "This formidable chestpiece uses magically reinforced, highly absorbent materials that provide exceptional protection at the cost of reduced speed. Requires the wearer to use diapers, which gain magical booster charges when paired with this armor.",
         imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/paddedparentalbulwark.png",
         progression: [
