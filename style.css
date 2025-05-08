@@ -874,6 +874,55 @@ footer {
     border-radius: 5px;
 }
 
+/* Feat Preview Styles */
+.feat-preview {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: var(--darker-stone);
+    border: 1px solid var(--gold);
+    border-radius: 5px;
+    display: none;
+}
+
+.feat-preview.active {
+    display: block;
+}
+
+.feat-preview h4 {
+    color: var(--gold);
+    margin-top: 0;
+    margin-bottom: 8px;
+    border-bottom: 1px solid var(--silver);
+    padding-bottom: 5px;
+}
+
+.feat-preview p {
+    color: var(--silver);
+    margin: 0;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+.feat-preview .error-message {
+    color: #ff6b6b;
+    font-weight: bold;
+    text-align: center;
+}
+
+.feat-preview .success-message {
+    color: #6bff6b;
+    font-weight: bold;
+    text-align: center;
+}
+
+.feat-preview.error {
+    border-color: #ff6b6b;
+}
+
+.feat-preview.success {
+    border-color: #6bff6b;
+}
+
 /* Tooltip styles */
 .selected-feat:hover::after {
     content: attr(data-tooltip);

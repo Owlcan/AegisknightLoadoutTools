@@ -309,6 +309,18 @@ const armorData = {
             "<strong>Level 14:</strong> Absorptive Plating converts incoming damage of your chosen type into temporary hit points."
         ]
     },
+        "Padded-Parental-Bulwark": {
+        name: "Padded Parental Bulwark",
+        description: "This formidable chestpiece uses magically reinforced, highly absorbent materials that provide exceptional protection at the cost of reduced speed. Requires the wearer to use diapers, which gain magical booster charges when paired with this armor.",
+        imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/paddedparentalbulwark.png",
+        progression: [
+            "<strong>Level 1:</strong> AC 17, d12 hit dice, -5 ft. speed, +100 lbs carrying capacity. Absorbent Aegis reduces damage, and any diaper gains 2 booster charges but potty checks are at disadvantage.",
+            "<strong>Level 4:</strong> Self-Soothing Containment grants temporary hit points equal to 2d10 + level when taking damage. Each use consumes diaper charge.",
+            "<strong>Level 7:</strong> Immaculate Ward grants advantage against multiple conditions and allows auto-success on failed saves. Can be extended to allies who call you parental names.",
+            "<strong>Level 11:</strong> Nurturing Fortitude converts excess temporary HP to healing and provides a once-per-rest death prevention feature.",
+            "<strong>Level 14:</strong> Bulwark of Unyielding Discipline creates an aura that grants +1 to AC and saving throws for all allies, and adds your Con modifier to their death saves."
+        ]
+    },
     "Soiling-Shield-Bib": {
         name: "Soiling Shield Bib",
         hitdice: "d10",
@@ -2603,9 +2615,9 @@ function addSelectedFeat() {
         featPreview.innerHTML = '<p class="success-message">Feat added successfully!</p>';
         featPreview.classList.add('active', 'success');
         
-        // eset after a short delay
+        // Reset after a short delay
         setTimeout(() => {
-            // eset dropdown
+            // Reset dropdown
             featsSelect.value = '';
             featPreview.innerHTML = '';
             featPreview.classList.remove('active', 'success');
@@ -2613,26 +2625,26 @@ function addSelectedFeat() {
     }
 }
 
-// pdate the selected feats UI
+// Update the selected feats UI
 function updateSelectedFeatsUI() {
     const selectedFeatsContainer = document.getElementById('selected-feats-container');
     const featsCountBadge = document.getElementById('feats-count');
     
-    // pdate count badge
+    // Update count badge
     if (featsCountBadge) {
         featsCountBadge.textContent = selectedFeats.length;
     }
     
-    // lear current content
+    // Clear current content
     selectedFeatsContainer.innerHTML = '';
     
-    // o feats selected
+    // No feats selected
     if (selectedFeats.length === 0) {
         selectedFeatsContainer.innerHTML = '<div class="no-feats">No feats selected</div>';
         return;
     }
     
-    // dd each selected feat
+    // Add each selected feat
     selectedFeats.forEach((feat, index) => {
         const featElement = document.createElement('div');
         featElement.className = 'selected-feat';
@@ -2665,6 +2677,7 @@ function initFeatsUI() {
     const addFeatButton = document.getElementById('add-feat-button');
     const featSearch = document.getElementById('feat-search');
     const asiFilter = document.getElementById('asi-filter');
+    const featsSelect = document.getElementById('feats-select');
     
     // Add feat button click event
     if (addFeatButton) {
@@ -2683,6 +2696,11 @@ function initFeatsUI() {
         asiFilter.addEventListener('change', function() {
             populateFeatsDropdown(featSearch ? featSearch.value : '');
         });
+    }
+    
+    // Add change event to feats dropdown to preview selected feat
+    if (featsSelect) {
+        featsSelect.addEventListener('change', previewFeat);
     }
     
     // Initialize keyboard shortcuts

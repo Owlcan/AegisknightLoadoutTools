@@ -162,23 +162,18 @@
                             <textarea id="background-feat" placeholder="Paste the background feat description here" rows="3"></textarea>
                         </div>
                         
-                        <!-- Feats Section -->                        <div class="input-group">
+                        <!-- Feats Section -->                       
+                          <div class="input-group">
                             <label for="feats-select">Feats: <span id="feats-count" class="count-badge">0</span></label>
                             <div class="feats-container">
-                                <div class="feat-search">
-                                    <input type="text" id="feat-search" placeholder="Search feats..." aria-label="Search feats">
-                                    <div class="feat-filter">
-                                        <label class="filter-label">
-                                            <input type="checkbox" id="asi-filter"> Show only ASI feats
-                                        </label>
-                                    </div>
-                                </div>
                                 <div class="feat-selection">
                                     <select id="feats-select" aria-label="Select a feat" onchange="previewFeat()">
                                         <option value="">Select a Feat...</option>
+                                <div class="feat-selection">
+                                    <select id="feats-select" aria-label="Select a feat" onchange="previewFeat()">
                                         <!-- Feats will be loaded from feats.json -->
                                     </select>
-                                    <button type="button" id="add-feat-button" class="small-button">Add Feat</button>
+                                    <button type="button" id="add-feat-button" class="small-button" onclick="addSelectedFeat()">Add Feat</button>
                                 </div>
                                 <div id="feat-preview" class="feat-preview">
                                     <!-- Feat preview will appear here -->
@@ -230,7 +225,8 @@
                             <option value="Adaptive-Environment-Frame">E. Adaptive Environment Frame</option>
                             <option value="Aegis-of-Fleet-Vitality">F. Aegis of Fleet Vitality</option>
                             <option value="Soiling-Shield-Bib">G. Soiling Shield Bib</option>
-                              <option value="Retributive-Coreplate">H. Retributive Coreplate</option>
+                            <option value="Retributive-Coreplate">H. Retributive Coreplate</option>
+                             <option value="Padded-Parental-Bulwark">I. Padded Parental Bulwark</option>
                         </select>
                     </div>
                       <div class="armor-piece">
