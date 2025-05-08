@@ -48,7 +48,20 @@ const armorData = {
             "<strong>Level 11:</strong> Radiant Feedback deals extra radiant damage after using detection abilities.",
             "<strong>Level 14:</strong> Divine Ascendance grants Truesight, advantage on Wisdom saves, and bonus radiant damage."
         ]
-    },    "Oracles-Tongue-Helm": {
+    },       "Tactical-Command-Visor": {
+        name: "Tactical Command Visor",
+        description: "This helmet features an integrated command interface with micro-projectors displaying tactical overlays and communication relays, enhancing your ability to direct allies and coordinate battlefield efforts.",
+        imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/tactical_command_visor.png",
+        bonusAC: 1,
+        progression: [
+            "<strong>Level 1:</strong> +1 bonus to AC, gain proficiency in Insight or Persuasion and use Coordinated Assist to help allies with attacks within 30 feet.",
+            "<strong>Level 4:</strong> Extend Coordinated Assist range to 60 feet, assist two allies in one round, and learn the Guidance cantrip.",
+            "<strong>Level 7:</strong> Designate targets to grant advantage on allies' attacks, usable multiple times per long rest.",
+            "<strong>Level 11:</strong> Use Coordinated Assist as a reaction when allies miss, adding a d4 to potentially convert misses into hits.",
+            "<strong>Level 14:</strong> Target Designation affects two attack rolls, and allies gain initiative bonuses equal to your Wisdom modifier."
+        ]
+    },
+        "Oracles-Tongue-Helm": {
         name: "Oracle's Tongue Helm",
         description: "Unlocks the power of language, allowing you to speak, read, and write a multitude of tongues while bridging the gap between mortals and spirits.",
         imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/oraclestongue.png",
@@ -127,7 +140,19 @@ const armorData = {
         "<strong>Level 11:</strong> Extended Coverage increases effect radius by another 10 ft. and grants allies +1 on saving throws.",
         "<strong>Level 14:</strong> Sacramental Concoction allows combining two incense effects by spending 3 additional Cell Charges."
     ]
-    }, "Marksman-Type-Pauldron": {
+    },     "Elemental-Conduit-Pauldrons": {
+        name: "Elemental Conduit Pauldrons",
+        description: "These pauldrons hum with contained elemental energy, featuring conduits and emitters that allow you to channel raw power into your attacks.",
+        imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/elementalconduitpauldrons.png",
+        progression: [
+            "<strong>Level 1:</strong> Elemental Attunement grants resistance to one elemental damage type. Infuse Strike adds elemental damage to weapon hits by expending Cell Charges. Infuse Self allows absorbing elemental attacks to gain Elemental Cells.",
+            "<strong>Level 4:</strong> Improved Infusion increases Infuse Strike damage to 1d8 per Cell Charge.",
+            "<strong>Level 7:</strong> Elemental Burst lets you create area-of-effect damage around your target by expending additional Cell Charges.",
+            "<strong>Level 11:</strong> Dual Attunement grants resistance to a second elemental damage type and the flexibility to choose which element to use in attacks.",
+            "<strong>Level 14:</strong> Master Conduit increases damage output and allows changing elemental attunements after a long rest."
+        ]
+    },
+    "Marksman-Type-Pauldron": {
         name: "Marksman Type Pauldron",
         description: "Engineered for ranged specialists, optimized for precise targeting and rapid missile deployment with versatile ammunition options.",
         imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/marksmanpauldrons.png",
@@ -269,7 +294,22 @@ const armorData = {
             "<strong>Level 11:</strong> Additional shield regeneration and effective AC of 18 with full shield.",
             "<strong>Level 14:</strong> Fortress Mode increases shield capacity by 50% and reduces incoming damage."
         ]
-    },    "Soiling-Shield-Bib": {
+    },
+    "Retributive-Coreplate": {
+        name: "Retributive Coreplate",
+        hitdice: "d10",
+        armorclass: "14 + Dex modifier (max +2)",
+        description: "This chest piece incorporates reactive plates and energy capacitors designed to absorb and redirect hostile energy back at attackers.",
+        imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/retributivecoreplate.png",
+        progression: [
+            "<strong>Level 1:</strong> AC 14 + Dex modifier (max +2), d10 hit die, Reactive Jolt deals 1d6 lightning or force damage to melee attackers, with resistance to your chosen damage type.",
+            "<strong>Level 4:</strong> Reactive Jolt damage increases to 1d10, and you can strike down incoming missiles by expending Cell Charges.",
+            "<strong>Level 7:</strong> Gain immunity to your chosen damage type and reflect attacks of that type back to their source.",
+            "<strong>Level 11:</strong> Overload Burst option deals 3d10 damage and can stun attackers by expending additional Cell Charges.",
+            "<strong>Level 14:</strong> Absorptive Plating converts incoming damage of your chosen type into temporary hit points."
+        ]
+    },
+    "Soiling-Shield-Bib": {
         name: "Soiling Shield Bib",
         hitdice: "d10",
         description: "This oversized, magically enchanted bib is designed to ward off the filth and chaos of the battlefield, ensuring that no matter how messy the combat gets, you remain pristine.",
@@ -331,6 +371,18 @@ const armorData = {
             "<strong>Level 14:</strong> Zen Reversal completely negates an attack and counters with 2d8 force damage."
         ]
     },
+        "Menders-Touch-Gauntlets": {
+        name: "Mender's Touch Gauntlets",
+        description: "Woven with threads of restorative magic and fitted with delicate injectors, these gauntlets allow you to channel healing energy and deliver supportive effects through touch.",
+        imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/menders_touch_gauntlets.png",
+        progression: [
+            "<strong>Level 1:</strong> Gain Medicine proficiency, Stabilizing Touch stabilizes creatures at 0 HP, and Minor Chirurgimancy lets you cast Cure Wounds using Cell Charges.",
+            "<strong>Level 4:</strong> Enhanced Healing allows spending additional Cell Charges to increase Cure Wounds spell level for more powerful healing.",
+            "<strong>Level 7:</strong> Restorative Surge heals 2d8 + Wisdom modifier HP and removes one disease or the poisoned condition.",
+            "<strong>Level 11:</strong> Protective Transference grants temporary hit points that convert to healing if unused.",
+            "<strong>Level 14:</strong> Aura of Mending creates a healing field that restores hit points to you and nearby allies each round."
+        ]
+    },
         "Phantasmal-Manipulators": {
         name: "Phantasmal Manipulators",
         description: "These elegant gloves blend arcane illusion with physical manipulation, allowing the wearer to create and interact with convincing illusory constructs.",
@@ -347,7 +399,7 @@ const armorData = {
         name: "Gloves of Arcane Fusion",
         description: "A pair of enchanted gloves that channel raw arcanum directly into your hands, empowering you with potent magical might alongside martial prowess.",
         imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/arcanefusiongloves.png",
-        bonusCellCharges: 0,
+        bonusCellCharges: 1,
         progression: [
             "<strong>Level 1:</strong> Arcanoflash dazzles foes, Mystic Surge boosts attacks and spells, Handmeld-Cannon fires force blasts, and functions as a spellcasting focus.",
             "<strong>Level 4:</strong> Glowing Refrain adds lingering radiant damage to Arcanoflash and enhances Mystic Surge.",
@@ -439,7 +491,32 @@ const armorData = {
             "<strong>Level 11:</strong> Rapid Refresh allows extra movement without opportunity attacks and temporary saving throw bonus once per short rest.",
             "<strong>Level 14:</strong> Ultimate Diaper Time-Out creates aura of pristine cleanliness that negates traps and can incapacitate enemies."
         ]
-    },    "Ethereal-Stride-Boots": {
+    },  "Pugilists-Stance-Boots": {
+        name: "Pugilist's Stance Boots",
+        description: "For kick-focused combat and martial arts prowess—these boots channel kinetic energy into devastating kicks and controlled combat maneuvers. They even reward defensive support moves with bonus AC.",
+        imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/pugilist_stance_boots.png",
+        bonusAC: 1,
+        progression: [
+            "<strong>Level 1:</strong> Kick Amplification allows making an additional kick attack as a bonus action after a melee attack, dealing 1d4 damage that scales with racial features.",
+            "<strong>Level 4:</strong> Swift Strike adds an extra hit die of damage to a kick attack once per short rest, with additional uses by expending Cell Charges.",
+            "<strong>Level 7:</strong> Crushing Kick can knock enemies prone and reduce their AC by expending Cell Charges.",
+            "<strong>Level 11:</strong> Furious Flurry grants an additional bonus action kick attack after landing a kick.",
+            "<strong>Level 14:</strong> Momentum Surge provides AC bonuses when using Cell Charges to support allies."
+        ]
+    },
+        "Padding-of-the-ButtBuster": {
+        name: "Padding of the ButtBuster",
+        description: "These magically imbued diaper covers harness kinetic force from your well-endowed posterior, channeling your cheek power into devastating rear attacks. As charges are depleted, both damage and malodor intensify, leaving foes reeling from both impact and stench.",
+        imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/diapercover.png",
+        progression: [
+            "<strong>Level 1:</strong> Five base Diaper Use charges per long rest. Make bonus cheek kick attacks with damage scaling based on missing charges. Each missing charge adds +1 bonus damage (up to +5 when fully loaded).",
+            "<strong>Level 4:</strong> Scooty-Booty Strike delivers an additional attack that deals an extra hit die. With loaded diapers, the extra damage die is doubled.",
+            "<strong>Level 7:</strong> Breaker Booty can knock targets off-balance (prone, -2 AC). If the diaper is loaded, targets suffer disadvantage on their next attack or check.",
+            "<strong>Level 11:</strong> Furious Booty-Bump Flurry grants additional kick attacks. With completely loaded diapers, grants two bonus kicks.",
+            "<strong>Level 14:</strong> Bottom-Heavy Surge provides AC bonuses when aiding allies. Fully loaded diapers emit cataclysmic stench that nauseates nearby enemies."
+        ]
+    },
+      "Ethereal-Stride-Boots": {
         name: "Ethereal Stride Boots",
         description: "These sleek, mystically enhanced boots bear subtle, luminescent runes that channel arcane energy into your step. They are designed for rapid, unhindered movement—and pair especially well with raiment that lacks synergy. The runes spark with kinetic vigor as you dash across the battlefield.",
         imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/etherealstride.png",
