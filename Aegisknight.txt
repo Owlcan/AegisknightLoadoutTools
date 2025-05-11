@@ -1194,3 +1194,160 @@ ___
 - **Level 14 Upgrade:**  
   - **Ultimate Diaper Time-Out:** Once per long rest, as an action, you can invoke an aura of absolute cleanliness. For 1 minute, all hostile creatures within 15 ft. must make a Wisdom saving throw (DC = 8 + your proficiency bonus + your Wisdom modifier) or become incapacitated with the ridiculous charm and overwhelming freshness. It’s as if your enemies have been put into an enforced “time-out” by the adorable authority of your impeccably clean appearance.
 \page
+
+
+/* --- Long Form JSON Snippet (No Quotes on Specified Keys) --- */
+{
+
+}
+
+/* --- Short Form JSON Snippet (No Quotes on Specified Keys) --- */
+{
+  "Druidic-Armor-Spurs": {
+    name: "Druidic Armor Spurs",
+    description: "Druid Theme / Nature Synergy. Pauldrons drawing power from nature for resilience and reactive thorns.",
+    imageUrl: "https://via.placeholder.com/150/228B22/ffffff?text=DruidicSpurs",
+    progression: [
+      "<strong>Level 1:</strong> Poison resistance, AC bonus in natural terrain.",
+      "<strong>Level 4:</strong> Commune with Terrain grants temporary environmental benefits.",
+      "<strong>Level 7:</strong> Retributive Thorns damage attackers.",
+      "<strong>Level 11:</strong> Sprout Form grants regeneration.",
+      "<strong>Level 14:</strong> Ecosystem Ascension allows speaking with nature and beseeching aid.",
+      "<strong>Level 17:</strong> Avatar of the Wildwood powerful treant-like transformation."
+    ]
+  },
+  "Pauldrons-of-the-Tiger-Warrior": {
+    name: "Pauldrons of the Tiger Warrior",
+    description: "Martial Arts / Ki Theme. Tiger-styled pauldrons enhancing agility, grappling, and charges.",
+    imageUrl: "https://via.placeholder.com/150/FFA500/000000?text=TigerPauldrons",
+    progression: [
+      "<strong>Level 1:</strong> Bonus unarmed damage, Acrobatics proficiency, doubled jump distance.",
+      "<strong>Level 4:</strong> Crushing Grip improves grappling.",
+      "<strong>Level 7:</strong> Charging Ferocity adds damage/prone to charges.",
+      "<strong>Level 11:</strong> Fists of Fury grants bonus unarmed strike and stun chance.",
+      "<strong>Level 14:</strong> Spirit Strike Whirlwind area damage and control.",
+      "<strong>Level 17:</strong> Aspect of the Raging Tiger enhances speed, strength, crits, and causes fear."
+    ]
+  },
+  "Pauldrons-of-the-Infernal-Essence": {
+    name: "Pauldrons of the Infernal Essence",
+    description: "Warlock Style. Menacing pauldrons channeling infernal power, fear, and fiendish boons.",
+    imageUrl: "https://via.placeholder.com/150/8B0000/ffffff?text=InfernalEssence",
+    progression: [
+      "<strong>Level 1:</strong> Intimidation proficiency, Thaumaturgy cantrip.",
+      "<strong>Level 4:</strong> Aura of Fear frightens nearby enemies.",
+      "<strong>Level 7:</strong> Impish Attendant summons an Imp.",
+      "<strong>Level 11:</strong> Infernal Constitution grants fire/necrotic resistance, Charisma save bonus.",
+      "<strong>Level 14:</strong> Eldritch Eruption powerful single-target psychic/necrotic damage and stun.",
+      "<strong>Level 17:</strong> Pact Lord's Mantle grants flight, enhances aura, damage type change, at-will Hellish Rebuke."
+    ]
+  },
+  "Pauldrons-of-Heroic-Protection": {
+    name: "Pauldrons of Heroic Protection",
+    description: "Paladin Style. Gleaming pauldrons radiating courage and divine protection for allies.",
+    imageUrl: "https://via.placeholder.com/150/FFD700/000000?text=HeroicProtection",
+    bonusAC: 1,
+    progression: [
+      "<strong>Level 1:</strong> Aura of Minor Courage (anti-fear), <strong>+1 AC</strong> (Vanguard's Resolve).",
+      "<strong>Level 4:</strong> Intercession redirects attack to self with damage reduction.",
+      "<strong>Level 7:</strong> Expanded Aura of Protection grants Charisma bonus to saves for allies.",
+      "<strong>Level 11:</strong> Guardian Spirit's Embrace grants temporary HP to damaged allies.",
+      "<strong>Level 14:</strong> Divine Bulwark grants area damage resistance and death prevention.",
+      "<strong>Level 17:</strong> Unyielding Bastion enhances AC, crit immunity, Intercession, and grants area healing."
+    ]
+  },
+  "Pauldrons-of-the-Verdant-Soul": {
+    name: "Pauldrons of the Verdant Soul",
+    description: "Druid Style. Living pauldrons granting nature stealth and plant command.",
+    imageUrl: "https://via.placeholder.com/150/006400/ffffff?text=VerdantSoul",
+    progression: [
+      "<strong>Level 1:</strong> Silent Stride in nature, Druidcraft cantrip.",
+      "<strong>Level 4:</strong> Speak with Animals at will, Speak with Plants once/long rest.",
+      "<strong>Level 7:</strong> Grasping Vines area restrain ability.",
+      "<strong>Level 11:</strong> Wild Symbiosis enhances Wild Shape or grants damage resistance.",
+      "<strong>Level 14:</strong> Enduring Growth Shield grants temporary HP and AC.",
+      "<strong>Level 17:</strong> Guardian of the Ancient Ways summons nature spirit, casts Wall of Thorns, enhances other features."
+    ]
+  },
+  "Pauldrons-of-Battlefield-Acumen": {
+    name: "Pauldrons of Battlefield Acumen",
+    description: "Support/Tactical Theme. Sleek pauldrons enhancing battlefield assessment and coordination.",
+    imageUrl: "https://via.placeholder.com/150/4682B4/ffffff?text=BattlefieldAcumen",
+    progression: [
+      "<strong>Level 1:</strong> Tactical Insight (Investigation/Insight proficiency), Quick Assessment learns enemy info.",
+      "<strong>Level 4:</strong> Tactical Link telepathic communication and advantage grant.",
+      "<strong>Level 7:</strong> Inspiring Command initiative/damage bonus for allies.",
+      "<strong>Level 11:</strong> Coordinated Assault imposes disadvantage/bonus damage with allies.",
+      "<strong>Level 14:</strong> Decisive Maneuver area temp HP, fear immunity, and push effect.",
+      "<strong>Level 17:</strong> Grand Strategist's Gambit enhances links, damage, enemy disadvantage, free assessment."
+    ]
+  },
+  "Pauldrons-of-the-Phoenix": {
+    name: "Pauldrons of the Phoenix",
+    description: "Surprise/Unique - Fire & Rebirth Theme. Phoenix wing pauldrons offering fire protection and rebirth.",
+    imageUrl: "https://via.placeholder.com/150/FF4500/ffffff?text=PhoenixPauldrons",
+    progression: [
+      "<strong>Level 1:</strong> Fire resistance, Embers' Glow light creation.",
+      "<strong>Level 4:</strong> Stored Inferno absorbs/releases fire damage.",
+      "<strong>Level 7:</strong> Flameborne Retribution area fire damage on nearby creature death.",
+      "<strong>Level 11:</strong> Rebirth's Embrace self-revive with fiery explosion.",
+      "<strong>Level 14:</strong> Heart of the Inferno grants fire immunity and True Resurrection once/week.",
+      "<strong>Level 17:</strong> Eternal Flame Ascendant enhances Rebirth, grants fire aura, flight, and bonus fire damage."
+    ]
+  },
+  "Dragonslayers-Pauldron": {
+    name: "Dragonslayer’s Pauldron",
+    description: "DS-Style Reference to Dark Souls - Anti-Dragon/Elemental Theme. Massive pauldrons for protection against dragons.",
+    imageUrl: "https://via.placeholder.com/150/A9A9A9/000000?text=Dragonslayer",
+    progression: [
+      "<strong>Level 1:</strong> Draconic Resilience (chosen elemental resistance), Imposing Stature (shove advantage).",
+      "<strong>Level 4:</strong> Dragon's Roar area fear effect.",
+      "<strong>Level 7:</strong> Lightning Ram adds lightning damage/prone to shoulder charge.",
+      "<strong>Level 11:</strong> Storm-Forged Weaponry adds lightning damage to polearms.",
+      "<strong>Level 14:</strong> Ancestral Fury channels draconic power for bonus damage and arcing lightning.",
+      "<strong>Level 17:</strong> Dragonsbane Overcharge grants elemental immunity, enhances other dragon-themed abilities."
+    ]
+  }
+}
+
+/* --- HTML Dropdown Menu Snippet --- */
+<div class="armor-piece">
+  <h2>Pauldrons</h2>
+  <select id="pauldrons-select" onchange="updateArmorInfo('pauldrons')" aria-label="Select pauldrons">
+    <option value="">Select Pauldrons...</option>
+    <option value="Exultant-Type">A. Exultant Type</option>
+    <option value="Vanguard-Heavy-Type">B. Vanguard Heavy Type</option>
+    <option value="Tech-Type">C. Tech Type</option>
+    <option value="Marksman-Type-Pauldron">D. Marksman Type Pauldron</option>
+    <option value="Kinetic-Resonance-Pauldron">E. Kinetic Resonance Pauldron</option>
+    <option value="Gravitational-Stabilizers">F. Gravitational Stabilizers</option>
+    <option value="Diaper-Duty-Pauldrons">G. Diaper Duty Pauldrons</option>
+    <option value="Incense-Censer-Pauldron">H. Incense Censer Pauldron</option>
+    <option value="Elemental-Conduit-Pauldrons">I. Elemental Conduit Pauldrons</option>
+    <option value="Druidic-Armor-Spurs">J. Druidic Armor Spurs</option>
+    <option value="Pauldrons-of-the-Tiger-Warrior">K. Pauldrons of the Tiger Warrior</option>
+    <option value="Pauldrons-of-the-Infernal-Essence">L. Pauldrons of the Infernal Essence</option>
+    <option value="Pauldrons-of-Heroic-Protection">M. Pauldrons of Heroic Protection</option>
+    <option value="Pauldrons-of-the-Verdant-Soul">N. Pauldrons of the Verdant Soul</option>
+    <option value="Pauldrons-of-Battlefield-Acumen">O. Pauldrons of Battlefield Acumen</option>
+    <option value="Pauldrons-of-the-Phoenix">P. Pauldrons of the Phoenix</option>
+    <option value="Dragonslayers-Pauldron">Q. Dragonslayer’s Pauldron</option>
+  </select>
+</div>
+
+<style>
+  .armor-piece {
+    margin-bottom: 20px;
+  }
+  .armor-piece h2 {
+    margin-bottom: 5px;
+  }
+  #pauldrons-select {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    margin-top: 5px; /* Adjusted from 10px */
+    min-width: 250px; /* Adjust as needed */
+  }
+</style>

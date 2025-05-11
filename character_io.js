@@ -89,7 +89,8 @@ function saveCharacter() {
             eyeColor: document.getElementById('eye-color').value,
             skinColor: document.getElementById('skin-color').value,
             notableFeatures: document.getElementById('notable-features').value,
-            
+            resistances: document.getElementById('resistances').value,
+
             // Ability scores
             strength: document.getElementById('strength').value,
             dexterity: document.getElementById('dexterity').value,
@@ -233,7 +234,8 @@ function loadCharacter(event) {
             safeSetElementValue('eye-color', characterData.eyeColor);
             safeSetElementValue('skin-color', characterData.skinColor);
             safeSetElementValue('notable-features', characterData.notableFeatures);
-            
+            safeSetElementValue('resistances', characterData.resistances || 'None');
+
             // Populate ability scores - safely handle missing elements
             safeSetElementValue('strength', characterData.strength || '10');
             safeSetElementValue('dexterity', characterData.dexterity || '10');

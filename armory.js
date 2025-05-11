@@ -172,51 +172,47 @@ function populateArmory() {
       const description = document.createElement('div');
       description.className = 'armor-card-description';
       
-      // Check for armorFullDescriptions first
-      if (typeof armorFullDescriptions !== 'undefined' && armorFullDescriptions[armorId]) {
-        const fullDesc = armorFullDescriptions[armorId];
+// Check for armorFullDescriptions first
+if (typeof armorFullDescriptions !== 'undefined' && armorFullDescriptions[armorId]) {
+  const fullDesc = armorFullDescriptions[armorId];
+  
+  // Add main description
+  const descPara = document.createElement('p');
+  descPara.innerHTML = fullDesc.fullDescription;
+  description.appendChild(descPara);
+  
+  // Add all level features without filtering by level keys
+  if (fullDesc.levelFeatures) {
+    const progression = document.createElement('div');
+    progression.className = 'armor-progression';
+    
+    const progressHeader = document.createElement('h4');
+    progressHeader.textContent = 'Level Features';
+    progression.appendChild(progressHeader);
+    
+    // Simply iterate through all available level features
+    Object.entries(fullDesc.levelFeatures).forEach(([key, content]) => {
+      if (content && content.trim() !== "") {
+        const levelPara = document.createElement('p');
         
-        // Add main description
-        const descPara = document.createElement('p');
-        descPara.innerHTML = fullDesc.fullDescription;
-        description.appendChild(descPara);
-        
-        // Add progression if available
-        if (fullDesc.levelFeatures) {
-          const progression = document.createElement('div');
-          progression.className = 'armor-progression';
-          
-          const progressHeader = document.createElement('h4');
-          progressHeader.textContent = 'Level Features';
-          progression.appendChild(progressHeader);
-          
-          // Determine which level keys to use based on the category
-          const levelKeys = category === 'raiment' ? ['3', '6', '8', '12', '14'] : ['1', '4', '7', '11', '14'];
-          
-          levelKeys.forEach(level => {
-            if (fullDesc.levelFeatures[level] && fullDesc.levelFeatures[level].trim() !== "") {
-              const levelPara = document.createElement('p');
-              levelPara.innerHTML = `<strong>Level ${level}:</strong> ${fullDesc.levelFeatures[level]}`;
-              progression.appendChild(levelPara);
-            }
-          });
-          
-          // Check for special keys like "3-upgrade"
-          Object.keys(fullDesc.levelFeatures).forEach(key => {
-            if (key.includes('-') && fullDesc.levelFeatures[key].trim() !== "") {
-              const levelPara = document.createElement('p');
-              const parts = key.split('-');
-              const displayKey = `Level ${parts[0]} ${parts[1].charAt(0).toUpperCase() + parts[1].slice(1)}`;
-              levelPara.innerHTML = `<strong>${displayKey}:</strong> ${fullDesc.levelFeatures[key]}`;
-              progression.appendChild(levelPara);
-            }
-          });
-          
-          description.appendChild(progression);
+        // Handle both regular level keys and special format keys
+        if (key.includes('-')) {
+          const parts = key.split('-');
+          const displayKey = `Level ${parts[0]} ${parts[1].charAt(0).toUpperCase() + parts[1].slice(1)}`;
+          levelPara.innerHTML = `<strong>${displayKey}:</strong> ${content}`;
+        } else {
+          levelPara.innerHTML = `<strong>Level ${key}:</strong> ${content}`;
         }
-      } 
-      // Fallback to armorData description
-      else if (armorData[armorId] && armorData[armorId].description) {
+        
+        progression.appendChild(levelPara);
+      }
+    });
+    
+    description.appendChild(progression);
+  }
+} 
+// Fallback to armorData description (keeping this part unchanged)
+else if (armorData[armorId] && armorData[armorId].description) {
         const descPara = document.createElement('p');
         descPara.innerHTML = armorData[armorId].description;
         description.appendChild(descPara);

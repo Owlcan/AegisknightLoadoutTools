@@ -1,98 +1,225 @@
 // Armor data
 const armorData = {
-    // Helmet options
-    "Hypersensory-Scanner-Array": {
+    "Helmet-of-the-Mantis": {
+        name: "Helmet of the Mantis",
+        description: "This <em>sleek helmet</em> is designed with <em>flowing lines</em> reminiscent of a praying mantis, its surface subtly shifting with a faint <em>internal energy</em>. It focuses the wearer's <em>ki</em>, enhancing their <em>martial prowess</em> and <em>senses</em>.",
+        imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/helmet-of-the-mantis.png",
+        progression: [
+            "<strong>Level 1:</strong> Ki-Empowered Senses: You gain proficiency in the Perception skill. Your unarmed strikes are considered magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.\nMantis Strike: When you hit with an unarmed strike, you can expend <strong>1 Cell Charge</strong> to deal an additional <strong>1d6 force damage</strong> to the target.",
+            "<strong>Level 4:</strong> Ki-Infused Agility: As a bonus action, you can expend <strong>1 Cell Charge</strong> to increase your movement speed by <strong>15 feet</strong> and your jump distance is doubled for 1 minute. While active, your movement does not provoke opportunity attacks.",
+            "<strong>Level 7:</strong> Pressured Point Strike: The additional damage from Mantis Strike increases to <strong>1d8</strong>. Additionally, when you use Mantis Strike, you can choose to forgo the extra damage to instead force the target to make a Constitution saving throw (DC = <strong>8</strong> + your proficiency bonus + your Wisdom modifier). On a failed save, the target is stunned until the end of your next turn.",
+            "<strong>Level 11:</strong> Focused Evasion: While you are concentrating on an Aegisknight ability or spell, or when you have no more than half your maximum hit points remaining, you gain a <strong>+2 bonus to AC</strong> and Dexterity saving throws.",
+            "<strong>Level 14:</strong> Mastery of the Unseen Ki: When you score a critical hit with an unarmed strike, the target takes an additional <strong>2d8 force damage</strong>. If you are below half your maximum hit points, this critical hit also allows you to immediately make one additional unarmed strike as part of the same action.",
+            "<strong>Level 17:</strong> <strong>Mantis God Stance (Capstone):</strong> Once per long rest, as a bonus action, you can expend <strong>5 Cell Charges</strong> to enter a state of ultimate focus for <strong>1 minute</strong>. Your movement speed is tripled, you gain advantage on all attack rolls and Dexterity saving throws, and your unarmed strikes deal an additional 3d10 force damage. Any creature you hit with an unarmed strike must succeed on a Constitution saving throw (DC = <strong>8</strong> + your proficiency bonus + your Wisdom modifier) or be stunned until the end of your next turn."
+        ]
+    },
+    "Cursed-Helm-of-Felpietus": {
+        name: "Cursed Helm of Felpietus",
+        description: "Forged from a strange, <em>dark metal</em> that seems to absorb light, this helm is etched with <em>unsettling, otherworldly script</em>. It whispers <em>forgotten secrets</em> and grants access to <em>potent, dangerous magic</em>.",
+        imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/cursed-helm-of-felpietus.png",
+        progression: [
+            "<strong>Level 1:</strong> Pact-Bound Insight: You learn two cantrips of your choice from the Warlock spell list. Charisma is your spellcasting ability for these spells.\nDark Resilience: You gain resistance to psychic damage.",
+            "<strong>Level 4:</strong> Blood Offering: As a bonus action, you can choose to take <strong>1d6 necrotic damage</strong> (this damage cannot be reduced or prevented in any way). If you do, your next spell attack roll made before the end of your next turn has advantage, or the next spell you cast that requires a saving throw has its DC increased by 2. The necrotic damage you take increases by 1d6 at 7th level (2d6), 11th level (3d6), and 14th level (4d6).",
+            "<strong>Level 7:</strong> Empower Minion: When you summon a creature or create an undead using a spell or class feature, you can expend <strong>2 Cell Charges</strong>. The summoned creature gains temporary hit points equal to your Aegisknight level + your Charisma modifier, and its weapon attacks deal an extra <strong>1d6 necrotic damage</strong> for 1 hour.",
+            "<strong>Level 11:</strong> Pact Renewal: Once per long rest, as an action, you can draw upon your pact to regain one expended spell slot of 3rd level or lower (if you have spell slots from another class) or <strong>3 Cell Charges</strong>.",
+            "<strong>Level 14:</strong> Abyssal Surge: As a bonus action, you can expend <strong>4 Cell Charges</strong> and sacrifice hit points equal to twice your Aegisknight level. For 1 minute, you gain resistance to all damage types except radiant, and your spells that deal necrotic or psychic damage deal an additional die of damage.",
+            "<strong>Level 17:</strong> <strong>Embrace of the Outer Darkness (Capstone):</strong> Once per long rest, as an action, you can expend <strong>5 Cell Charges</strong> to unleash a wave of abyssal energy in a <strong>30-foot radius</strong> sphere centered on you for <strong>1 minute</strong>. Hostile creatures in the area take 6d10 necrotic damage at the start of their turn and have disadvantage on saving throws against your spells. You and allies in the area gain temporary hit points equal to your Aegisknight level at the start of your turn."
+        ]
+    },
+    "Helm-of-the-Tranquil-Dragon": {
+        name: "Helm of the Tranquil Dragon",
+        description: "This helmet is shaped like a <em>stylized dragon's head</em>, with <em>serene, glowing eyes</em>. It promotes a state of <em>calm focus</em>, allowing for <em>heightened awareness</em> and <em>potent ki manipulation</em>.",
+        imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/helm-of-the-tranquil-dragon.png",
+        progression: [
+            "<strong>Level 1:</strong> Dragon's Insight: You gain proficiency in the Insight and Perception skills.\nDraconic Fist: Your unarmed strikes deal an additional <strong>1d4 thunder or lightning damage</strong> (your choice when you select this helmet).",
+            "<strong>Level 4:</strong> Focus Chi: Once per short rest, as a bonus action, you can enter a focused state for 1 minute. While focused, you can choose one of the following benefits at the start of each of your turns (no action required):\nYour movement speed increases by 10 feet.\nYour next unarmed strike this turn deals an additional 1d6 damage of the type chosen for Draconic Fist.\nYou gain a +1 bonus to AC.",
+            "<strong>Level 7:</strong> True Sight (Short Range): As an action, you can expend <strong>2 Cell Charges</strong> to gain truesight out to 30 feet for 10 minutes.",
+            "<strong>Level 11:</strong> Unshakeable Mind: You have advantage on all Wisdom saving throws and checks. Additionally, you cannot be surprised while you are conscious.",
+            "<strong>Level 14:</strong> Ki Reflection: When you are hit by a melee attack, you can use your reaction and expend <strong>3 Cell Charges</strong> to reflect a portion of the incoming force. The attacker takes force damage equal to half the damage you took from the triggering attack.",
+            "<strong>Level 17:</strong> <strong>Tranquil Fury (Capstone):</strong> Once per long rest, as a bonus action, you can expend <strong>5 Cell Charges</strong> to enter a state of draconic calm and power for <strong>1 minute</strong>. You gain resistance to bludgeoning, piercing, and slashing damage. Your unarmed strikes deal an additional 2d8 damage of the type chosen for Draconic Fist, and any creature you hit with an unarmed strike must succeed on a Wisdom saving throw (DC = <strong>8</strong> + your proficiency bonus + your Wisdom modifier) or be pushed up to 15 feet away from you."
+        ]
+    },
+    "Helm-of-the-Witchs-Eye": {
+        name: "Helm of the Witch’s Eye",
+        description: "This unsettling helm features a single, large, <em>eye-like lens</em> that seems to follow observers. It grants <em>glimpses into other realms</em> and the ability to <em>manipulate fate</em> with <em>subtle curses</em>.",
+        imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/helm-of-the-witchs-eye.png",
+        progression: [
+            "<strong>Level 1:</strong> Otherworldly Gaze: You gain advantage on Charisma (Intimidation) checks.\nWhispers from Beyond: You can cast Comprehend Languages at will, but only to understand languages spoken by aberrations, fiends, or celestials.",
+            "<strong>Level 4:</strong> Hexblade's Sight: As a bonus action, you can expend <strong>1 Cell Charge</strong> to place a minor curse on a creature you can see within 30 feet. For 1 minute, you deal an extra <strong>1d6 necrotic damage</strong> to the target whenever you hit it with an attack.",
+            "<strong>Level 7:</strong> Arcane Disruption: Once per long rest, you can cast either <em>Counterspell</em> or <em>Dispel Magic</em> (your choice) as a 3rd-level spell without expending a spell slot. Your spellcasting ability for this is Charisma.",
+            "<strong>Level 11:</strong> Misty Escape: As a bonus action, you can expend <strong>1 Cell Charge</strong> to cast <em>Misty Step</em>.",
+            "<strong>Level 14:</strong> Spectral Sentinel: When you roll initiative, you can choose to summon a spectral protector. For 1 minute, you gain advantage on your next attack roll or saving throw each round (your choice at the start of your turn). This spectral protector is visible only to you and those with truesight.",
+            "<strong>Level 17:</strong> <strong>All-Seeing Eye (Capstone):</strong> Once per long rest, as an action, you can expend <strong>5 Cell Charges</strong> to activate the helm's true power for <strong>1 minute</strong>. You gain Truesight out to <strong>120 feet</strong>, and you can see into the Ethereal Plane. As a bonus action on each of your turns, you can choose one creature you can see within 60 feet. That creature has disadvantage on its next saving throw against a spell you cast before the end of your turn."
+        ]
+    },
+    "Helm-of-the-Radiant-Crusader": {
+        name: "Helm of the Radiant Crusader",
+        description: "This <em>noble helm</em> gleams with an <em>inner light</em>, often adorned with <em>symbols of justice</em> or a chosen deity. It projects an <em>aura of divine power</em>, bolstering allies and smiting foes.",
+        imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/helm-of-the-radiant-crusader.png",
+        bonusAC: 1,
+        progression: [
+            "<strong>Level 1:</strong> Divine Aegis: Grants a <strong>+1 bonus to AC</strong> and to saving throws against charm effects.\nLuminous Vision: If you lack darkvision, you gain darkvision out to 60 ft.\nChain-Link Detection: Once per short rest, as an action, activate the hood's built-in sensor to detect magical auras (as per <em>detect magic</em>) for 1 minute.\nGodhead Synergy: If attuned to the Godhead Shard, the hood radiates a warm, golden glow. While its sensor is active, you gain an additional +1 bonus to Wisdom saving throws and advantage on Wisdom (Insight) checks.",
+            "<strong>Level 4:</strong> Auroral Scanning: You can now use a bonus action to activate an enhanced scanning mode that detects invisible or ethereal creatures within 30 ft. for 1 minute (usable once per short rest).\nSynergistic Glimmer: If attuned with the Godhead Shard, this mode also reveals the auras of celestial and fiendish entities, offering deeper insights into hidden threats.",
+            "<strong>Level 7:</strong> Chain of Clarity: Gain a permanent <strong>+1 bonus to Wisdom saving throws</strong>. Additionally, once per short rest, when you are subject to a charm or fear effect, you can use your reaction to gain advantage on the saving throw—or, if attuned with the Godhead Shard, become immune to that effect until the end of your next turn.",
+            "<strong>Level 11:</strong> Radiant Feedback: When you activate any of the hood's detection or scanning abilities, you can empower your next attack or spell to deal extra radiant damage equal to <strong>1d8 + your proficiency modifier</strong>. If attuned with the Godhead Shard, this bonus increases to <strong>2d8 radiant damage</strong>.",
+            "<strong>Level 14:</strong> Divine Ascendance: Once per long rest, as an action, invoke the full divine potential of the Golden Chain Hood for 1 minute. During this time, you gain Truesight out to 60 ft., advantage on all Wisdom saving throws, and all your spells that deal radiant or divine damage add an extra 2d8 damage. Additionally, if attuned with the Godhead Shard, you become immune to charm and fear effects for the duration.",
+            "<strong>Level 17:</strong> <strong>Halo of the Godhead (Capstone):</strong> Once per long rest, as an action, you can expend <strong>5 Cell Charges</strong> to emanate a blinding divine radiance in a <strong>30-foot radius</strong> for <strong>1 minute</strong>. Hostile creatures starting their turn in the aura or entering it for the first time must make a Constitution saving throw (DC = <strong>8</strong> + your proficiency bonus + your Wisdom modifier) or be blinded until the start of their next turn. Additionally, you and allies within the aura gain a <strong>+2 bonus to AC</strong> and saving throws, and your attacks and spells deal an extra 2d8 radiant damage."
+        ]
+    },
+    "Helm-of-the-Eternal-Grove": {
+        name: "Helm of the Eternal Grove",
+        description: "This <em>living helmet</em> appears to be woven from <em>ancient wood</em>, <em>leaves</em>, and <em>glowing moss</em>. It connects the wearer deeply to the <em>natural world</em>, granting <em>control over primal energies</em>.",
+        imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/helm-of-the-eternal-grove.png",
+        progression: [
+            "<strong>Level 1:</strong> Primal Attunement: You learn one cantrip of your choice from the Druid spell list. Wisdom is your spellcasting ability for it.\nElemental Shape (Minor): If your class grants the Wild Shape feature, you can choose to imbue your form with minor elemental aspects (e.g., rocky hide for +1 AC, a fiery touch for +1 fire damage to unarmed strikes, or a gust of wind to push a creature 5ft on a hit). Consult with your DM for specific minor benefits. If you do not have Wild Shape, you gain the ability to cast <em>Absorb Elements</em> once per short rest by expending <strong>1 Cell Charge</strong>.",
+            "<strong>Level 4:</strong> Nature's Blessing: Once per short rest, as an action, you can touch a willing creature and expend <strong>1 Cell Charge</strong>. The target regains hit points equal to <strong>2d8 + your Wisdom modifier</strong>.",
+            "<strong>Level 7:</strong> Summon Nature's Ally: Once per long rest, as an action, you can expend <strong>3 Cell Charges</strong> to cast <em>Conjure Animals</em> as a 3rd-level spell, summoning beasts that are thematically appropriate to your environment (e.g., wolves, bears, eagles).",
+            "<strong>Level 11:</strong> Enhanced Wild Shape Mastery: If you have the Wild Shape feature, you can expend two uses of Wild Shape at once to transform into a creature with a challenge rating as high as your Aegisknight level divided by 3 (rounded down), and it can be an elemental of that CR or lower. If you do not have Wild Shape, you can now cast <em>Guardian of Nature</em> (Primal Beast option only) once per long rest by expending <strong>4 Cell Charges</strong>.",
+            "<strong>Level 14:</strong> Wrath/Bloom of the Grove: Once per long rest, as an action, you can expend <strong>4 Cell Charges</strong> to create one of the following effects:\nWrath: A <strong>20-foot radius</strong> area centered on a point you can see within 60 feet becomes difficult terrain for 1 minute. Each hostile creature in the area when it appears, or that enters it or ends its turn there, must make a Dexterity saving throw (DC = <strong>8</strong> + your proficiency bonus + your Wisdom modifier), taking <strong>4d8 magical bludgeoning damage</strong> (from grasping roots and stones) on a failed save, or half as much on a successful one.\nBloom: A <strong>20-foot radius</strong> area centered on a point you can see within 60 feet becomes hallowed ground for 1 minute. You and your allies in the area regain <strong>2d6 hit points</strong> at the start of each of your turns and have advantage on saving throws against spells and magical effects.",
+            "<strong>Level 17:</strong> <strong>Eternal Grove's Embrace (Capstone):</strong> Once per long rest, as an action, you can expend <strong>5 Cell Charges</strong> to become one with the grove for <strong>1 minute</strong>. You gain resistance to nonmagical damage. As a bonus action on each of your turns, you can either cause thorny vines to erupt from the ground in a 15-foot radius centered on you (creatures in the area must succeed on a Strength saving throw or be restrained until the end of their next turn) or cause healing blossoms to fall on allies within 30 feet (healing them for 3d8 hit points)."
+        ]
+    },
+    "Helm-of-the-Sentinels-Grace": {
+        name: "Helm of the Sentinel's Grace",
+        description: "A <em>gracefully designed helmet</em>, often with motifs of <em>watching eyes</em> or <em>sheltering wings</em>. It projects an <em>aura of vigilance</em> and provides <em>potent support</em> to allies.",
+        imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/helm-of-the-sentinels-grace.png",
+        progression: [
+            "<strong>Level 1:</strong> Protective Vigil: At the start of your turn, if you have at least 1 Cell Charge, you can grant temporary hit points equal to your proficiency bonus to one ally (including yourself) within 30 feet. These last until the start of your next turn.\nEmpathic Shield: You gain proficiency in the Insight skill.",
+            "<strong>Level 4:</strong> Bolstering Presence: Once per short rest, as an action, you can expend <strong>2 Cell Charges</strong> to cast the <em>Aid</em> spell as a 2nd-level spell, affecting up to three creatures.",
+            "<strong>Level 7:</strong> Expanded Vigilance: The range of your Protective Vigil increases to 60 feet, and the temporary hit points granted increase to your proficiency bonus + your Wisdom modifier.",
+            "<strong>Level 11:</strong> Rally the Fallen: As an action, you can expend <strong>3 Cell Charges</strong> to touch an unconscious ally. That ally immediately regains hit points equal to half their maximum hit points and can stand up if they choose.",
+            "<strong>Level 14:</strong> Triumphant Bastion: When you or your allies reduce a hostile creature to 0 hit points, you can use your reaction to distribute temporary hit points equal to twice your Aegisknight level among any number of allies (including yourself) within 60 feet. This can be used once per short rest.",
+            "<strong>Level 17:</strong> <strong>Sentinel's Divine Intervention (Capstone):</strong> Once per long rest, as an action, you can expend <strong>5 Cell Charges</strong> to call upon divine grace for <strong>1 minute</strong>. You and allies within <strong>30 feet</strong> gain advantage on all saving throws, and when an ally within range is reduced to 0 hit points, they are instead reduced to 1 hit point (this can happen once per ally per activation). Additionally, as a reaction, you can expend <strong>1 Cell Charge</strong> to grant an ally within 60 feet advantage on an attack roll."
+        ]
+    },
+    "Helm-of-the-Abyssal-Echo": {
+        name: "Helm of the Abyssal Echo",
+        description: "This dark, <em>heavy helm</em> often bears <em>grotesque carvings</em> or seems to <em>weep a shadowy substance</em>. It offers <em>protection against the dark</em> and allows the wearer to channel <em>abyssal energies</em>.",
+        imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/helm-of-the-abyssal-echo.png",
+        progression: [
+            "<strong>Level 1:</strong> Shaded Soul: You gain resistance to necrotic damage.\nDarkvision Superiority: You gain darkvision out to 120 feet. If you already have darkvision, its range increases by 60 feet.",
+            "<strong>Level 4:</strong> Abyssal Burst: As an action, you can expend <strong>2 Cell Charges</strong> to unleash a wave of dark energy. Each creature in a <strong>15-foot cone</strong> originating from you must make a Constitution saving throw (DC = <strong>8</strong> + your proficiency bonus + your Strength or Charisma modifier, your choice). On a failed save, a creature takes <strong>3d6 necrotic damage</strong> and is stunned until the end of your next turn. On a successful save, it takes half damage and isn't stunned.",
+            "<strong>Level 7:</strong> Dreadful Visage: As an action, you can expend <strong>2 Cell Charges</strong> to force each creature of your choice within 30 feet of you that can see you to make a Wisdom saving throw (DC = <strong>8</strong> + your proficiency bonus + your Charisma modifier). On a failed save, a creature is frightened of you for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+            "<strong>Level 11:</strong> Soul Siphon: When you deal necrotic damage to a creature with an Aegisknight feature or a spell, you regain hit points equal to half the necrotic damage dealt (up to a maximum of your Aegisknight level per instance).",
+            "<strong>Level 14:</strong> Curse of the Abyss: Once per long rest, as an action, you can expend <strong>4 Cell Charges</strong> to unleash a powerful curse. Choose one creature you can see within 60 feet. The target must make a Wisdom saving throw (DC = <strong>8</strong> + your proficiency bonus + your Charisma modifier). On a failed save, for the next minute, the target has vulnerability to all damage you deal to it, and any healing it receives is halved.",
+            "<strong>Level 17:</strong> <strong>Abyssal Maw (Capstone):</strong> Once per long rest, as an action, you can expend <strong>5 Cell Charges</strong> to open a temporary rift to the abyss in a <strong>20-foot radius</strong> sphere centered on a point you can see within <strong>60 feet</strong> for <strong>1 minute</strong>. Hostile creatures in the area take 8d8 necrotic damage at the start of their turn. Additionally, any creature that starts its turn in the area or enters it for the first time on a turn has its speed halved until the start of its next turn."
+        ]
+    },
+        "Hypersensory-Scanner-Array": {
         name: "Hypersensory Scanner Array",
-        description: "This advanced helmet is a marvel of sensory enchantment, merging arcane optics with practical battlefield awareness. Grants darkvision and the ability to detect invisible creatures.",
+        description: "This <em>advanced helmet</em> is a marvel of <em>sensory enchantment</em>, merging <em>arcane optics</em> with <em>practical battlefield awareness</em>. Its glassy, rune-etched visor and faintly humming sensors grant you <em>unparalleled insight</em> into the unseen. Whether darkness or illusion conceals your foes, your <em>vision</em>—and your <em>investigative prowess</em>—remains unfaltering.",
         imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/hyperscannerarray.png",
         progression: [
-            "<strong>Level 1:</strong> Darkvision (60 ft.) and Basic Sensor that highlights hidden or invisible creatures.",
+            "<strong>Level 1:</strong> Darkvision Bestowal: If you do not already have it, you gain darkvision out to 60 ft., allowing you to see in nocturnal or dimly lit environments.\nBasic Sensor: Your helmet is equipped with a rudimentary sensor that highlights hidden or invisible creatures, functioning similarly to a \"detect invisibility\" effect. This ability can be activated once per short rest.",
             "<strong>Level 4:</strong> Enhanced Detection Mode reveals invisible creatures within 30 ft. for 1 minute (once per short rest).",
             "<strong>Level 7:</strong> Truesight Activation grants Truesight out to 30 ft. for 1 minute (once per short rest).",
             "<strong>Level 11:</strong> Investigative Augmentation adds advantage on Investigation checks to find illusions or hidden entities.",
-            "<strong>Level 14:</strong> Augmented Sensory Overload increases Truesight range to 60 ft. and detects magical auras within 30 ft."
-        ]
-    },    "Neuroprotective-Casement": {
-        name: "Neuroprotective Casement",
-        description: "A sleek, rune-etched helmet designed to shield your mind from intrusive psychic assaults. Provides enhanced mental fortification and psychic resistance.",
-        imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/neuroprotectivecasement.png",
-        bonusAC: 1,
-        progression: [
-            "<strong>Level 1:</strong> +1 bonus to AC and slight resistance to psychic damage.",
-            "<strong>Level 4:</strong> Advantage on saving throws against charm effects.",
-            "<strong>Level 7:</strong> Immunity to the frightened condition.",
-            "<strong>Level 11:</strong> Immunity to charm effects and resistance to force damage.",
-            "<strong>Level 14:</strong> Immunity to psychic damage and advantage on Intelligence saving throws."
-        ]
-    },    "Ultimate-Bastion-Heavy-Helmet": {
-        name: "Ultimate-Bastion Heavy Helmet",
-        description: "Forged in the crucible of relentless combat and imbued with archaic defensive runes, this helmet provides formidable protection against multiple damage types.",
-        imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/ultimatebastion.png",
-        bonusAC: 1,
-        progression: [
-            "<strong>Level 1:</strong> +1 bonus to AC and resistance to radiant damage.",
-            "<strong>Level 4:</strong> Resistance to necrotic damage.",
-            "<strong>Level 7:</strong> Immunity to radiant damage.",
-            "<strong>Level 11:</strong> Additional +1 bonus to AC (total +2) and resistance/immunity to one chosen damage type.",
-            "<strong>Level 14:</strong> Immunity to necrotic damage and advantage on saving throws against spells."
-        ]
-    },    "Golden-Chain-Hood": {
-        name: "Golden Chain Hood",
-        description: "A majestic hood interwoven with shimmering golden chains that pulse with divine energy, offering enhanced divine abilities and protection.",
-        imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/holygoldchain.png",
-        bonusAC: 1,
-        progression: [
-            "<strong>Level 1:</strong> +1 bonus to AC and saving throws against charm effects, darkvision (60 ft.), and detect magic ability.",
-            "<strong>Level 4:</strong> Enhanced scanning mode for invisible or ethereal creatures.",
-            "<strong>Level 7:</strong> +1 bonus to Wisdom saving throws and advantage on charm/fear saves.",
-            "<strong>Level 11:</strong> Radiant Feedback deals extra radiant damage after using detection abilities.",
-            "<strong>Level 14:</strong> Divine Ascendance grants Truesight, advantage on Wisdom saves, and bonus radiant damage."
-        ]
-    },       "Tactical-Command-Visor": {
-        name: "Tactical Command Visor",
-        description: "This helmet features an integrated command interface with micro-projectors displaying tactical overlays and communication relays, enhancing your ability to direct allies and coordinate battlefield efforts.",
-        imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/tactical_command_visor.png",
-        bonusAC: 1,
-        progression: [
-            "<strong>Level 1:</strong> +1 bonus to AC, gain proficiency in Insight or Persuasion and use Coordinated Assist to help allies with attacks within 30 feet.",
-            "<strong>Level 4:</strong> Extend Coordinated Assist range to 60 feet, assist two allies in one round, and learn the Guidance cantrip.",
-            "<strong>Level 7:</strong> Designate targets to grant advantage on allies' attacks, usable multiple times per long rest.",
-            "<strong>Level 11:</strong> Use Coordinated Assist as a reaction when allies miss, adding a d4 to potentially convert misses into hits.",
-            "<strong>Level 14:</strong> Target Designation affects two attack rolls, and allies gain initiative bonuses equal to your Wisdom modifier."
+            "<strong>Level 14:</strong> Augmented Sensory Overload increases Truesight range to 60 ft. and detects magical auras within 30 ft.",
+            "<strong>Level 17:</strong> <strong>Omniscient Scanner (Capstone):</strong> Once per long rest, as an action, you can expend <strong>5 Cell Charges</strong> to activate a state of total sensory awareness for <strong>1 minute</strong>. You gain Truesight out to <strong>120 feet</strong>, and you can see through solid objects and barriers up to <strong>5 feet</strong> thick. Additionally, you automatically succeed on saving throws against illusions and effects that would obscure vision."
         ]
     },
-        "Oracles-Tongue-Helm": {
-        name: "Oracle's Tongue Helm",
-        description: "Unlocks the power of language, allowing you to speak, read, and write a multitude of tongues while bridging the gap between mortals and spirits.",
+    "Neuroprotective-Casement": {
+        name: "Neuroprotective Casement",
+        description: "The <em>Neuroprotective Casement</em> is a masterwork of <em>mental fortification</em>—a sleek, rune-etched helmet designed to shield your mind from <em>intrusive psychic assaults</em>. Swirling patterns of <em>arcane energy</em> trace its surface, forming a barrier that not only hones your <em>focus</em> but also defies the <em>subtle manipulation</em> of hostile magic. Whether you face bewildering enchantments or overwhelming psychic force, this helmet stands as a <em>steadfast guardian</em> of your <em>inner resolve</em>.",
+        imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/neuroprotectivecasement.png",
+        progression: [
+            "<strong>Level 1:</strong> Initial Ward: While wearing the Neuroprotective Casement, you gain a +1 bonus to AC, and its delicate enchantments confer slight resistance to psychic damage. This early defense helps keep your thoughts undisturbed in the midst of chaos.",
+            "<strong>Level 4:</strong> Charm Deflection: The helmet's protective runes intensify, granting you advantage on saving throws against charm effects. Your mind becomes ever more adept at resisting attempts to subvert your will.",
+            "<strong>Level 7:</strong> Fear Immunity: Bolstered by deep-seated arcane safeguards, you gain immunity to the frightened condition. No spectral terror or illusory horror can shake your resolve.",
+            "<strong>Level 11:</strong> Absolute Charm Rejection & Enhanced Force Resistance: Your mental defenses reach new heights. You become completely immune to charm effects, and the Casement's energy field extends its protection to offer additional resistance to force damage, softening the impact of overwhelming kinetic strikes.",
+            "<strong>Level 14:</strong> Psychic Bastion: The pinnacle of neuroprotective artistry is achieved. You gain full immunity to psychic damage, and your sharp intellect is further safeguarded by advantage on Intelligence saving throws—ensuring that your mind remains a bastion against all forms of mental coercion.",
+            "<strong>Level 17:</strong> <strong>Mental Fortress (Capstone):</strong> Once per long rest, as an action, you can expend <strong>5 Cell Charges</strong> to project an aura of mental resilience in a <strong>30-foot radius</strong> centered on you for <strong>1 minute</strong>. You and all allies within this aura gain immunity to being charmed or frightened and have advantage on all saving throws against spells and effects that would affect their minds."
+        ]
+    },
+    "Ultimate-Bastion-Heavy-Helmet": {
+        name: "Ultimate Bastion Heavy Helmet",
+        description: "Forged in the crucible of <em>relentless combat</em> and imbued with <em>archaic defensive runes</em>, the <em>Ultimate-Bastion Heavy Helmet</em> is the epitome of <em>protective mastery</em>. Its <em>robust construction</em> and <em>enchanted surface</em> form an <em>unyielding barrier</em> against both <em>divine light</em> and <em>corrupting shadows</em>. As its magic deepens over time, the helmet transforms into a <em>legendary aegis</em>—<em>deflecting radiant fury</em> and <em>necrotic decay</em> with <em>supernatural finesse</em>.",
+        imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/ultimatebastion.png",
+        progression: [
+            "<strong>Level 1:</strong> Defensive Ward: The helmet grants a <strong>+1 bonus to AC</strong> as its enchanted metal and intricate runes bolster your physical defenses.\nRadiant Resistance: Its first shield is set against the searing purity of divine energy, providing <strong>resistance to radiant damage</strong>.",
+            "<strong>Level 4:</strong> Necrotic Fortification: The mystical inscriptions on the helmet expand to cover darker forces, granting <strong>resistance to necrotic damage</strong> and safeguarding you against energy that drains life.",
+            "<strong>Level 7:</strong> Radiant Immunity: The helm's power reaches a new threshold, and you become completely impervious to radiant harm—<strong>gaining immunity to radiant damage</strong> and neutralizing even the most potent beams of holy retribution.",
+            "<strong>Level 11:</strong> Enhanced Barrier: The protective enchantments surge further, granting an <strong>extra +1 bonus to AC (total +2)</strong>. Additionally, you choose one damage type of your choice to receive further protection—whether by gaining resistance or immunity, the helm adapts to your needs.",
+            "<strong>Level 14:</strong> Arcane Shielding: At its zenith, the Ultimate-Bastion Heavy Helmet solidifies its defenses with unassailable magic. You gain <strong>immunity to necrotic damage</strong> and, by channeling the helm's deep-seated protections, you also gain <strong>advantage on saving throws against spells</strong>, ensuring that both physical and magical assaults are met with unwavering resolve.",
+            "<strong>Level 17:</strong> <strong>Bastion of the Unyielding (Capstone):</strong> Once per long rest, as an action, you can expend <strong>5 Cell Charges</strong> to become a walking fortress for <strong>1 minute</strong>. You gain immunity to radiant and necrotic damage, resistance to all other damage types, and advantage on all saving throws. Any creature that hits you with a melee attack takes 3d10 force damage."
+        ]
+    },
+    "Tactical-Vision-Array": {
+        name: "Tactical Vision Array",
+        description: "This sleek, multi-lensed helmet features an <em>advanced neural interface</em> that processes <em>battlefield data</em> with unprecedented efficiency. <em>Micro-sensors</em> embedded throughout its surface constantly gather <em>environmental information</em>, while <em>holographic displays</em> within the visor present a wealth of <em>tactical intelligence</em> to the wearer. The helmet's <em>central processing core</em> calibrates <em>targeting data</em>, <em>threat assessments</em>, and <em>environmental analysis</em> in real-time, giving the Aegisknight a <em>comprehensive battlefield awareness</em> that borders on prescience.",
+        imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/tactical_vision_array.png",
+        progression: [
+            "<strong>Level 1:</strong> Tactical Marking System: As a bonus action, you can designate up to three targets you can see within 120 feet. These marked targets gain a subtle visual indicator that only you can see. You have advantage on Perception and Investigation checks related to tracking these targets, and they cannot benefit from being lightly obscured from you.\nCombat Synergy: When using ranged weapons or firearms against marked targets, you gain a +1 bonus to attack rolls. This bonus increases to +2 when using the Handmeld-Cannon feature of the Gloves of Arcane Fusion.",
+            "<strong>Level 4:</strong> Tactical Data Share: By expending <strong>1 Cell Charge</strong>, you can share your tactical marking data with allies within 60 feet for 1 minute. Allies who receive this data gain a +2 bonus on attack rolls against your marked targets and can detect those targets' exact location while they are invisible (though they still have disadvantage on attack rolls against invisible targets).\nAugmented Reality Interface: Your helmet provides real-time analysis of your surroundings. When a creature you've marked attempts to become invisible or use teleportation effects like Blink or Misty Step, you can still perceive their exact location as a shimmering outline, negating the benefits of invisibility against you specifically, and allowing you to identify their exact destination point when they teleport.",
+            "<strong>Level 7:</strong> Environmental Analysis: You gain advantage on Wisdom (Survival) checks in unfamiliar terrain as your helmet analyzes environmental conditions, dangerous flora/fauna, and optimal paths. Additionally, you have advantage on saving throws against environmental hazards like extreme temperatures, airborne toxins, or radiation.\nTrap Detection Protocol: The helmet constantly scans for irregularities that might indicate traps. You gain advantage on Wisdom (Perception) and Intelligence (Investigation) checks to detect traps. As an action, you can expend <strong>1 Cell Charge</strong> to scan a 30-foot cube area for traps, revealing their general location and trigger mechanisms.",
+            "<strong>Level 11:</strong> Advanced Scanning Module: As an action, you can expend <strong>2 Cell Charges</strong> to scan a 60-foot cube area, revealing the location of hidden doors, compartments, and objects with unusual magical or technological properties. This scan penetrates most barriers up to 1 foot of stone, 1 inch of metal, or 3 feet of wood or dirt.\nDeep Analysis: When you examine an object for at least 1 minute, you can make an Intelligence check with advantage to determine its properties, origin, and any hidden features or data it might contain. For magical items, this provides insights similar to the Identify spell.",
+            "<strong>Level 14:</strong> Tactical Omniscience: As an action, you can expend <strong>3 Cell Charges</strong> to activate your helmet's most powerful scanning mode, granting you Truesight out to 120 feet for 1 minute. This allows you to see in normal and magical darkness, see invisible creatures and objects, automatically detect visual illusions and succeed on saving throws against them, and perceive the original form of shapeshifters or creatures transformed by magic.\nTactical Network: When you activate Tactical Omniscience, you can expend additional Cell Charges to extend this benefit to allies. For every <strong>2 additional Cell Charges</strong> you expend, one ally within 60 feet of you gains the benefits of your Truesight for the duration.",
+            "<strong>Level 17:</strong> <strong>Battlefield Nexus (Capstone):</strong> Once per long rest, as an action, you can expend <strong>5 Cell Charges</strong> to create a tactical command network for <strong>1 minute</strong>. You and all allies within <strong>60 feet</strong> gain Truesight out to <strong>60 feet</strong>, advantage on attack rolls against marked targets, and can use the Help action as a bonus action without expending a Cell Charge. Additionally, marked targets have disadvantage on saving throws against effects you or your allies impose."
+        ]
+    },
+    "Tactical-Command-Visor": {
+        name: "Tactical Command Visor",
+        description: "This <em>elegant command helmet</em> features an <em>advanced integrated interface</em> with <em>micro-projectors</em> that display <em>tactical overlays</em>, <em>strategic calculations</em>, and <em>communication relays</em> directly onto your field of vision. Gold and silver command insignias adorn its temples, while a crystalline visor analyzes battlefield conditions and highlights <em>optimal positioning</em> for both you and your allies. More than just a display system, the <em>Tactical Command Visor</em> enhances your <em>natural leadership abilities</em>, enabling you to coordinate allies with unprecedented efficiency and transform even the most disorganized group into a <em>cohesive fighting unit</em>.",
+        imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/tactical_command_visor.png?",
+        progression: [
+            "<strong>Level 1:</strong> Protective Design: You gain a <strong>+1 bonus to your Armor Class</strong>.\nTactical Awareness: You gain proficiency in either the Insight or Persuasion skill (your choice).\nCoordinated Assist: Once per short rest, as a bonus action, you can use the Help action to aid an ally attacking a creature, provided the ally is within 30 feet of you and can see or hear you. This essentially grants them advantage on their next attack roll against that target. After using this feature once, you can expend <strong>1 Cell Charge</strong> to use it again before your next short rest.",
+            "<strong>Level 4:</strong> Enhanced Command: The range of your Coordinated Assist increases to 60 feet. You may now use your movement action to Coordinate Assistance with a second ally in the same round. Additionally, you may also choose to use the Help action when an ally is Dodging, resisting a grapple, or attempting to deflect missiles—granting them an additional bonus to these attempts.\nRallying Word: You learn the <em>Guidance</em> cantrip. Wisdom is your spellcasting ability for it. Whenever you use your Coordinated Assist and have not used up your spell actions, you may cast Guidance on the assisted ally.",
+            "<strong>Level 7:</strong> Target Designation: As an action, you can designate one hostile creature you can see within 60 feet. Until the start of your next turn, the first attack roll made against the target by an ally who can see or hear you has advantage. You can use this feature a number of times equal to your Wisdom modifier (minimum once) per long rest.",
+            "<strong>Level 11:</strong> Improved Coordinated Assist: You can now use your Coordinated Assist feature as a reaction when an ally within range misses with an attack roll, allowing them to potentially turn the miss into a hit. When you do so, they add a d4 to their attack roll, potentially changing the outcome from a miss to a hit.",
+            "<strong>Level 14:</strong> Field Commander: Your Target Designation feature now affects the first two attack rolls made against the target by allies before the start of your next turn. Additionally, allies within 30 feet of you gain a bonus to their initiative rolls equal to your Wisdom modifier (minimum +1), ensuring your squad maintains tactical superiority from the moment combat begins.",
+            "<strong>Level 17:</strong> <strong>Master Tactician (Capstone):</strong> Once per long rest, as an action, you can expend <strong>5 Cell Charges</strong> to issue a series of rapid commands for <strong>1 minute</strong>. As a bonus action on each of your turns, you can choose up to three allies within <strong>60 feet</strong> who can see or hear you. Each chosen ally can immediately use their reaction to make one weapon attack or move up to their speed. Additionally, the range of your Target Designation feature increases to <strong>120 feet</strong>, and it affects the first three attack rolls made against the target by allies. You also gain a <strong>+2 bonus to initiative rolls</strong>, and allies within 60 feet gain advantage on saving throws against effects that would reduce their speed or movement."
+        ]
+    },
+    "Golden-Chain-Hood": {
+        name: "Golden Chain Hood",
+        description: "This <em>majestic hood</em> is interwoven with shimmering <em>golden chains</em> that pulse with <em>divine energy</em>. Forged from <em>sacred metal</em> and imbued with <em>celestial radiance</em>, it protects its wearer while subtly enhancing <em>divine insight</em>. Even if you do not attune to the Godhead Shard, the hood offers its own impressive benefits—but when paired with the shard, its power ascends to <em>near-mythical levels</em>.",
+        imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/holygoldchain.png",
+        progression: [
+            "<strong>Level 1:</strong> Divine Aegis: Grants a +1 bonus to AC and to saving throws against charm effects.\nLuminous Vision: If you lack darkvision, you gain darkvision out to 60 ft.\nChain-Link Detection: Once per short rest, as an action, activate the hood's built-in sensor to detect magical auras (as per <em>detect magic</em>) for 1 minute.\nGodhead Synergy: If attuned to the Godhead Shard, the hood radiates a warm, golden glow. While its sensor is active, you gain an additional +1 bonus to Wisdom saving throws and advantage on Wisdom (Insight) checks.",
+            "<strong>Level 4:</strong> Auroral Scanning: You can now use a bonus action to activate an enhanced scanning mode that detects invisible or ethereal creatures within 30 ft. for 1 minute (usable once per short rest).\nSynergistic Glimmer: If attuned with the Godhead Shard, this mode also reveals the auras of celestial and fiendish entities, offering deeper insights into hidden threats.",
+            "<strong>Level 7:</strong> Chain of Clarity: Gain a permanent <strong>+1 bonus to Wisdom saving throws</strong>. Additionally, once per short rest, when you are subject to a charm or fear effect, you can use your reaction to gain advantage on the saving throw—or, if attuned with the Godhead Shard, become immune to that effect until the end of your next turn.",
+            "<strong>Level 11:</strong> Radiant Feedback: When you activate any of the hood's detection or scanning abilities, you can empower your next attack or spell to deal extra radiant damage equal to <strong>1d8 + your proficiency modifier</strong>. If attuned with the Godhead Shard, this bonus increases to <strong>2d8 radiant damage</strong>.",
+            "<strong>Level 14:</strong> Divine Ascendance: Once per long rest, as an action, invoke the full divine potential of the Golden Chain Hood for 1 minute. During this time, you gain Truesight out to 60 ft., advantage on all Wisdom saving throws, and all your spells that deal radiant or divine damage add an extra 2d8 damage. Additionally, if attuned with the Godhead Shard, you become immune to charm and fear effects for the duration.",
+            "<strong>Level 17:</strong> <strong>Halo of the Godhead (Capstone):</strong> Once per long rest, as an action, you can expend <strong>5 Cell Charges</strong> to emanate a blinding divine radiance in a <strong>30-foot radius</strong> for <strong>1 minute</strong>. Hostile creatures starting their turn in the aura or entering it for the first time must make a Constitution saving throw (DC = <strong>8</strong> + your proficiency bonus + your Wisdom modifier) or be blinded until the start of their next turn. Additionally, you and allies within the aura gain a <strong>+2 bonus to AC</strong> and saving throws, and your attacks and spells deal an extra 2d8 radiant damage."
+        ]
+    },
+    "Oracles-Tongue-Helm": {
+        name: "Oracles Tongue Helm",
+        description: "The <em>Oracle's Tongue Helm</em> unlocks the power of <em>language</em>, allowing you to speak, read, and write a multitude of tongues while effortlessly bridging the gap between mortals and the <em>spectral</em>. Naturally effective on its own, its <em>true potential</em> shines when paired with the Transformation Raiment.",
         imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/oraclestongue.png",
         progression: [
-            "<strong>Level 1:</strong> Two additional languages, Comprehend Languages ability, and +1 bonus to Persuasion checks.",
-            "<strong>Level 4:</strong> Learn an additional language and cast Speak with Animals once per short rest.",
-            "<strong>Level 7:</strong> Automatically decipher simple texts in any language and initiate telepathic conversations.",
-            "<strong>Level 11:</strong> Permanent +1 bonus to Persuasion checks and cast Tongues once per long rest.",
-            "<strong>Level 14:</strong> Universal Oratory ability that makes all creatures understand your words."
+            "<strong>Level 1:</strong> Linguistic Resonance: You gain the ability to read, write, and speak two additional languages of your choice.\nEthereal Comprehension: Once per short rest, as an action, you can invoke a unique version of <em>Comprehend Languages</em> that lasts for 10 minutes, enabling you to understand any spoken or written language.\nSocial Augury: You receive a mild boost—a +1 bonus to Persuasion checks—when interacting with creatures and spirits.\nTransformation Synergy: When paired with the Transformation Raiment, you automatically learn one extra language (for a total of three extra languages).",
+            "<strong>Level 4:</strong> Transcendent Tongues: You learn an additional language (total of three extra languages, or four if paired with Transformation Raiment).\nSpirit Speech: Once per short rest, as a bonus action, you can cast <em>Speak with Animals</em> (with the thematic flavor extended to minor spirits), deepening your cross-planar communication.",
+            "<strong>Level 7:</strong> Mystic Translator: The helm's enchantments allow you to automatically decipher simple texts written in any language. You also gain advantage on checks to interpret ancient writings or cryptic dialects.\nEthereal Parley: Once per short rest, you can initiate a telepathic conversation for up to 1 minute with any creature or spirit that communicates verbally—even if they exist on a different plane of existence.",
+            "<strong>Level 11:</strong> Divine Eloquence: You gain a permanent <strong>+1 bonus to Persuasion checks</strong>, and you have advantage on Intelligence (History) or (Arcana) checks when deciphering linguistic or esoteric scripts.\nTongue of the Ancients: Once per long rest, you can cast <em>Tongues</em> for 1 hour without expending a spell slot, enabling you to fluently understand and speak any language for the duration.",
+            "<strong>Level 14:</strong> Universal Oratory: As an action, you can emanate an aura of linguistic clarity for 1 minute. During this time, every creature within 30 ft. understands your words as if they shared a common tongue, and you gain advantage on all Charisma (Persuasion) checks.\nEnhanced Transformation Synergy: When paired with the Transformation Raiment, your aura's range increases to 60 ft., and the bonus to Persuasion checks rises to +2.",
+            "<strong>Level 17:</strong> <strong>Voice of the Cosmos (Capstone):</strong> Once per long rest, as an action, you can expend <strong>5 Cell Charges</strong> to speak a word of cosmic power for <strong>1 minute</strong>. Choose a creature within <strong>60 feet</strong> that can hear you. That creature must succeed on a Wisdom saving throw (DC = <strong>8</strong> + your proficiency bonus + your spellcasting ability modifier) or be overwhelmed by universal understanding. On a failed save, the creature is incapacitated and cannot take reactions until the end of its next turn. On a successful save, the creature has disadvantage on attack rolls against you until the end of its next turn. Additionally, while this effect is active, you can understand and be understood by any creature that has a language, regardless of whether they can hear you, and you have advantage on all Charisma checks. You can also use your reaction to grant an ally within 60 feet advantage on a saving throw against a language-dependent effect."
         ]
-    },    "Pacifier-Themed-Helmet": {
+    },
+        "Pacifier-of-Quietude": {
         name: "Pacifier of Quietude",
-        description: "A pacifier-themed helmet designed for caster-builds who value quiet spellcasting and mental focus over brute protection.",
+        description: "For <em>caster-builds</em> who value <em>quiet spellcasting</em> and <em>mental focus</em> over brute protection.",
         imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/pacifierofquietude.png",
         progression: [
-            "<strong>Level 1:</strong> Silent Spellcasting negates verbal components and short-range telepathy (30 ft.).",
-            "<strong>Level 4:</strong> Mutes ambient noise, granting advantage on Concentration checks in loud environments.",
-            "<strong>Level 7:</strong> Enhanced telepathy (60 ft.) and nonverbal spell components can be dispensed with.",
-            "<strong>Level 11:</strong> Mind shield allows re-rolling failed Wisdom saves against psychic effects once per short rest.",
-            "<strong>Level 14:</strong> Silent casting becomes nearly undetectable, requiring DC 15 Perception to notice."
+            "<strong>Level 1:</strong> Silent Spellcasting: Your pacifier helmet negates the need for verbal components when you cast spells, letting you channel your magic in an almost wordless, meditative state.\nTelepathic Link: You gain short-range telepathy (up to 30 ft.) to communicate silently with allies.",
+            "<strong>Level 4:</strong> Sound Dampening: Your helmet mutes ambient noise around you, granting advantage on Concentration checks when casting spells in a loud environment.",
+            "<strong>Level 7:</strong> Suckle Telepathy: Enhance your telepathy to extend communication range to 60 ft. and allow nonverbal spell components to be entirely dispensed with.",
+            "<strong>Level 11:</strong> Babybrained Shield: Gain a subtle \"mind shield\" that occasionally deflects disruptive mental effects (once per short rest, you can re-roll a failed Wisdom saving throw against a psychic effect).",
+            "<strong>Level 14:</strong> Almost Perfectly Silent Casting: Your silent casting becomes nearly undetectable—opponents must succeed on a DC 15 Perception check to notice you casting spells, even if you use somatic components.",
+            "<strong>Level 17:</strong> <strong>Absolute Quietude (Capstone):</strong> Once per long rest, as a bonus action, you can expend <strong>5 Cell Charges</strong> to enter a state of perfect mental and auditory stillness for <strong>1 minute</strong>. While active, you can cast spells without any verbal or somatic components, and they are completely silent. Additionally, you gain immunity to psychic damage and the stunned condition. As a reaction when you take damage, you can expend <strong>1 Cell Charge</strong> to gain temporary hit points equal to your Aegisknight level + your spellcasting ability modifier. You also gain advantage on Constitution saving throws to maintain concentration."
         ]
-    },    "Bonnet-Themed-Helmet": {
+    },
+    "Bonnet-of-Blushing-Bravado": {
         name: "Bonnet of Blushing Bravado",
-        description: "For those who'd rather charm than conceal, this ostentatiously babyish bonnet radiates an irresistible level of adorable absurdity that distracts everyone around it.",
+        description: "For those who'd rather <em>charm</em> than conceal, this <em>ostentatiously babyish bonnet</em> radiates an <em>irresistible level of adorable absurdity</em> that distracts everyone around it.",
         imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/bonnetsallet.png",
         progression: [
-            "<strong>Level 1:</strong> +1 bonus to Charisma and advantage on Persuasion checks.",
-            "<strong>Level 4:</strong> Aura of adorable charm forces Charisma checks to maintain composure.",
-            "<strong>Level 7:</strong> Allies within 10 ft. gain advantage on saving throws against fear.",
-            "<strong>Level 11:</strong> Additional +1 bonus to saving throws against fear, charm, and 'soiling' effects for nearby allies.",
-            "<strong>Level 14:</strong> 'Potty Parade' ability incapacitates creatures with uncontrollable mirth once per long rest."
+            "<strong>Level 1:</strong> Innocent Charm: The bonnet bestows a +1 bonus to Charisma and grants advantage on Persuasion checks, reflecting the pure, sugary innocence of its design.\nCaptivating Cuteness: Once per short rest, as an action, you may activate the bonnet's captivating display. When activated, every creature (both allies and foes) within 10 ft. must immediately roll a potty check—a Constitution saving throw (DC = your class save DC, typically 14). On a failure, the creature is overwhelmed by the sheer babyish allure and becomes distracted: they lose their reaction and have disadvantage on attack rolls and ability checks involving concentration until the start of your next turn.",
+            "<strong>Level 4:</strong> Even Cuter!:  The bonnet's charm intensifies—your bonus to Charisma increases by an additional +1, and the effective radius of your captivating display increases to 15 ft. In addition, any creature that fails the potty check becomes dazed for 1 round instead of merely losing their reaction.",
+            "<strong>Level 7:</strong> Irresistible Whimsy: Your bonnet now exudes an aura of irresistible whimsy that enhances your social prowess: you gain advantage on Deception and Performance checks related to your captivating presence.",
+            "<strong>Level 11:</strong> Fearlessly Precious: The bonnet further empowers you and your nearby allies. Allies within 10 ft. gain an additional +1 bonus to saving throws against fear, charm, and effects that would \"soil\" their spirits, as your infectious babyish delight bolsters their resolve.",
+            "<strong>Level 14:</strong> <strong>The Cutest Baby:</strong> The pinnacle of infantile charm is reached. Once per long rest, you may invoke a \"Potty Parade\" as an action. When activated, every creature within 15 ft. must make a potty check (DC = 16, or your class save DC if higher). On a failure, the affected creatures become incapacitated by uncontrollable mirth and adoration for 1 round, as if caught in a state of utter, adorable distraction.",
+            "<strong>Level 17:</strong> <strong>Apex Adorability (Capstone):</strong> Once per long rest, as an action, you can expend <strong>5 Cell Charges</strong> to unleash an overwhelming wave of cuteness for <strong>1 minute</strong>. Every creature within <strong>30 feet</strong> that can see you must make a Wisdom saving throw (DC = <strong>8</strong> + your proficiency bonus + your Charisma modifier). On a failed save, a creature is incapacitated and has a speed of 0 until the end of its next turn, overcome by adoration. On a successful save, a creature is charmed by you until the end of its next turn. Additionally, while this effect is active, you have advantage on all Charisma checks, and hostile creatures have disadvantage on attack rolls against you. You can also use your reaction to impose disadvantage on a creature's saving throw against a charm or fear effect originating from you or an ally within 30 feet."
         ]
     },    // Pauldrons options
     "Exultant-Type": {
@@ -175,20 +302,6 @@ const armorData = {
             "<strong>Level 14:</strong> Achieve Gravitational Mastery with flight, area gravity control, and the ability to fling enemies."
         ]
     },
-       "Adaptive-Environment-Frame": {
-        name: "Adaptive Environment Frame",
-        hitdice: "d10",
-        armorclass: "14 + Dex modifier (max +2)",
-        description: "This responsive chest piece constantly reconfigures itself to match environmental conditions, providing optimal protection through a sophisticated array of micro-adjusting plates and energy fields.",
-        imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/adaptiveenvironmentframe.png",
-        progression: [
-            "<strong>Level 1:</strong> AC 14 + Dex modifier (max +2), Environmental Adaptation grants resistance to one damage type, and Energy Conversion stores charges when taking adapted damage.",
-            "<strong>Level 4:</strong> Maintain two environmental adaptations and gain advantage against extreme environmental conditions.",
-            "<strong>Level 7:</strong> Convert damage to temporary hit points and deploy surveillance micro-drones.",
-            "<strong>Level 11:</strong> Combat Adaptation as a reaction, +1 AC boost, and enhanced drone capabilities.",
-            "<strong>Level 14:</strong> Full environmental mastery grants immunity to adapted damage types, emergency recovery protocol, and medical systems."
-        ]
-    },
         "Tactical-Vision-Array": {
         name: "Tactical Vision Array",
         description: "A sleek helmet with multiple overlapping scanning technologies that gives the wearer tactical advantages through enhanced battlefield awareness and information gathering.",
@@ -212,7 +325,114 @@ const armorData = {
             "<strong>Level 11:</strong> Reaction to deal 2d8 force damage to attackers and gain +2 AC.",
             "<strong>Level 14:</strong> Double movement speed and deal bonus force damage after dashing."
         ]
-    },    "Diaper-Duty-Pauldrons": {
+    },  
+        "Druidic-Armor-Spurs": {
+            name: "Druidic Armor Spurs",
+            description: "Druid Theme / Nature Synergy. Pauldrons drawing power from nature for resilience and reactive thorns.",
+            imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/druidicspurs.png",
+            progression: [
+            "<strong>Level 1:</strong> Poison resistance, AC bonus in natural terrain.",
+            "<strong>Level 4:</strong> Commune with Terrain grants temporary environmental benefits.",
+            "<strong>Level 7:</strong> Retributive Thorns damage attackers.",
+            "<strong>Level 11:</strong> Sprout Form grants regeneration.",
+            "<strong>Level 14:</strong> Ecosystem Ascension allows speaking with nature and beseeching aid.",
+            "<strong>Level 17:</strong> Avatar of the Wildwood powerful treant-like transformation."
+            ]
+        },
+        "Pauldrons-of-the-Tiger-Warrior": {
+            name: "Pauldrons of the Tiger Warrior",
+            description: "Martial Arts / Ki Theme. Tiger-styled pauldrons enhancing agility, grappling, and charges.",
+            imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/tigerspaulders.png",
+            progression: [
+            "<strong>Level 1:</strong> Bonus unarmed damage, Acrobatics proficiency, doubled jump distance.",
+            "<strong>Level 4:</strong> Crushing Grip improves grappling.",
+            "<strong>Level 7:</strong> Charging Ferocity adds damage/prone to charges.",
+            "<strong>Level 11:</strong> Fists of Fury grants bonus unarmed strike and stun chance.",
+            "<strong>Level 14:</strong> Spirit Strike Whirlwind area damage and control.",
+            "<strong>Level 17:</strong> Aspect of the Raging Tiger enhances speed, strength, crits, and causes fear."
+            ]
+        },
+        "Pauldrons-of-the-Infernal-Essence": {
+            name: "Pauldrons of the Infernal Essence",
+            description: "Warlock Style. Menacing pauldrons channeling infernal power, fear, and fiendish boons.",
+            imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/infernalessencepauldrons.png",
+            bonusAC: 1,
+            progression: [
+            "<strong>Level 1:</strong> Intimidation proficiency, Thaumaturgy cantrip, and +1 AC.",
+            "<strong>Level 4:</strong> Aura of Fear frightens nearby enemies.",
+            "<strong>Level 7:</strong> Impish Attendant summons an Imp.",
+            "<strong>Level 11:</strong> Infernal Constitution grants fire/necrotic resistance, Charisma save bonus.",
+            "<strong>Level 14:</strong> Eldritch Eruption powerful single-target psychic/necrotic damage and stun.",
+            "<strong>Level 17:</strong> Pact Lord's Mantle grants flight, enhances aura, damage type change, at-will Hellish Rebuke."
+            ]
+        },
+        "Pauldrons-of-Heroic-Protection": {
+            name: "Pauldrons of Heroic Protection",
+            description: "Paladin Style. Gleaming pauldrons radiating courage and divine protection for allies.",
+            imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/heroicprotection.png",
+            bonusAC: 1,
+            progression: [
+            "<strong>Level 1:</strong> Aura of Minor Courage (anti-fear), <strong>+1 AC</strong> (Vanguard's Resolve).",
+            "<strong>Level 4:</strong> Intercession redirects attack to self with damage reduction.",
+            "<strong>Level 7:</strong> Expanded Aura of Protection grants Charisma bonus to saves for allies.",
+            "<strong>Level 11:</strong> Guardian Spirit's Embrace grants temporary HP to damaged allies.",
+            "<strong>Level 14:</strong> Divine Bulwark grants area damage resistance and death prevention.",
+            "<strong>Level 17:</strong> Unyielding Bastion enhances AC, crit immunity, Intercession, and grants area healing."
+            ]
+        },
+        "Pauldrons-of-the-Verdant-Soul": {
+            name: "Pauldrons of the Verdant Soul",
+            description: "Druid Style. Living pauldrons granting nature stealth and plant command.",
+            imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/verdantpauldrons.png",
+            progression: [
+            "<strong>Level 1:</strong> Silent Stride in nature, Druidcraft cantrip.",
+            "<strong>Level 4:</strong> Speak with Animals at will, Speak with Plants once/long rest.",
+            "<strong>Level 7:</strong> Grasping Vines area restrain ability.",
+            "<strong>Level 11:</strong> Wild Symbiosis enhances Wild Shape or grants damage resistance.",
+            "<strong>Level 14:</strong> Enduring Growth Shield grants temporary HP and AC.",
+            "<strong>Level 17:</strong> Guardian of the Ancient Ways summons nature spirit, casts Wall of Thorns, enhances other features."
+            ]
+        },
+        "Pauldrons-of-Battlefield-Acumen": {
+            name: "Pauldrons of Battlefield Acumen",
+            description: "Support/Tactical Theme. Sleek pauldrons enhancing battlefield assessment and coordination.",
+            imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/acumenspaulders.png",
+            progression: [
+            "<strong>Level 1:</strong> Tactical Insight (Investigation/Insight proficiency), Quick Assessment learns enemy info.",
+            "<strong>Level 4:</strong> Tactical Link telepathic communication and advantage grant.",
+            "<strong>Level 7:</strong> Inspiring Command initiative/damage bonus for allies.",
+            "<strong>Level 11:</strong> Coordinated Assault imposes disadvantage/bonus damage with allies.",
+            "<strong>Level 14:</strong> Decisive Maneuver area temp HP, fear immunity, and push effect.",
+            "<strong>Level 17:</strong> Grand Strategist's Gambit enhances links, damage, enemy disadvantage, free assessment."
+            ]
+        },
+        "Pauldrons-of-the-Phoenix": {
+            name: "Pauldrons of the Phoenix",
+            description: "Surprise/Unique - Fire & Rebirth Theme. Phoenix wing pauldrons offering fire protection and rebirth.",
+            imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/phoenixpauldrons.png",
+            progression: [
+            "<strong>Level 1:</strong> Fire resistance, Embers' Glow light creation.",
+            "<strong>Level 4:</strong> Stored Inferno absorbs/releases fire damage.",
+            "<strong>Level 7:</strong> Flameborne Retribution area fire damage on nearby creature death.",
+            "<strong>Level 11:</strong> Rebirth's Embrace self-revive with fiery explosion.",
+            "<strong>Level 14:</strong> Heart of the Inferno grants fire immunity and True Resurrection once/week.",
+            "<strong>Level 17:</strong> Eternal Flame Ascendant enhances Rebirth, grants fire aura, flight, and bonus fire damage."
+            ]
+        },
+        "Dragonslayers-Pauldron": {
+            name: "Dragonslayer’s Pauldron",
+            description: "Anti-Dragon/Elemental Theme. Massive pauldrons for protection against dragons and towering foes.",
+            imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/dragonslayers.png",
+            progression: [
+            "<strong>Level 1:</strong> Draconic Resilience (chosen elemental resistance), Imposing Stature (shove advantage).",
+            "<strong>Level 4:</strong> Dragon's Roar area fear effect.",
+            "<strong>Level 7:</strong> Lightning Ram adds lightning damage/prone to shoulder charge.",
+            "<strong>Level 11:</strong> Storm-Forged Weaponry adds lightning damage to polearms and lances.",
+            "<strong>Level 14:</strong> Ancestral Fury channels draconic power for bonus damage and arcing lightning.",
+            "<strong>Level 17:</strong> Dragonsbane Overcharge grants elemental immunity, enhances other dragon-themed abilities."
+            ]
+        },  
+        "Diaper-Duty-Pauldrons": {
         name: "Diaper Duty Pauldrons",
         description: "Adorned with adorable embroidered swaddles, cartoonish bibs, and tiny pacifiers, these pauldrons capture the nurturing chaos of diaper school, protecting you with a refreshing burst of cleanliness.",
         imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/diaperdutypauldrons.png",
@@ -311,6 +531,7 @@ const armorData = {
     },
         "Padded-Parental-Bulwark": {
         name: "Padded Parental Bulwark",
+        hitdice: "d12",
         armorclass: "15 + Dex modifier (max +2)",
         description: "This formidable chestpiece uses magically reinforced, highly absorbent materials that provide exceptional protection at the cost of reduced speed. Requires the wearer to use diapers, which gain magical booster charges when paired with this armor.",
         imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/paddedparentalbulwark.png",
@@ -321,6 +542,20 @@ const armorData = {
             "<strong>Level 11:</strong> Nurturing Fortitude converts excess temporary HP to healing and provides a once-per-rest death prevention feature.",
             "<strong>Level 14:</strong> Bulwark of Unyielding Discipline creates an aura that grants +1 to AC and saving throws for all allies, and adds your Con modifier to their death saves."
         ]
+    },
+    "Crystalline-Cribplate": {
+    name: "Crystalline Cribplate",
+    hitdice: "d10",
+    armorclass: "15 + Dex modifier (max +2)",
+    description: "This breastplate appears crafted from solidified, shimmering starlight and enchanted, translucent crystals, forming intricate, protective patterns. It hums with a gentle, soothing energy, evoking the secure embrace of a celestial nursery.",
+    imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/crystalline_cribplate.png",
+    progression: [
+        "<strong>Level 1:</strong> AC 15 + Dexterity modifier (max +2), d10 hit die, +1 bonus to all saving throws, and Sparkling Ward reactive defense that deals radiant damage to attackers.",
+        "<strong>Level 4:</strong> Lullaby Resilience grants you and nearby allies resistance to a chosen damage type for 1 minute once per short rest.",
+        "<strong>Level 7:</strong> Aura of Serene Warding provides advantage on saves against charm and fear effects and redirects enemy aggression toward you.",
+        "<strong>Level 11:</strong> Guardian's Embrace reaction reduces damage to you or an ally by 2d10 + your level once per long rest.",
+        "<strong>Level 14:</strong> Sanctum of Celestial Custody creates a protective dome that provides cover, damage resistance, and healing to allies within."
+    ]
     },
     "Soiling-Shield-Bib": {
         name: "Soiling Shield Bib",
@@ -334,6 +569,20 @@ const armorData = {
             "<strong>Level 7:</strong> Generate a cleansing aura that grants nearby allies advantage on saves against poison.",
             "<strong>Level 11:</strong> Purifying Strike adds radiant damage to attacks against 'corrupted' enemies.",
             "<strong>Level 14:</strong> Perfect Purity grants immunity to poison damage and the poisoned condition."
+        ]
+},
+       "Adaptive-Environment-Frame": {
+        name: "Adaptive Environment Frame",
+        hitdice: "d10",
+        armorclass: "14 + Dex modifier (max +2)",
+        description: "This responsive chest piece constantly reconfigures itself to match environmental conditions, providing optimal protection through a sophisticated array of micro-adjusting plates and energy fields.",
+        imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/adaptiveenvironmentframe.png",
+        progression: [
+            "<strong>Level 1:</strong> AC 14 + Dex modifier (max +2), Environmental Adaptation grants resistance to one damage type, and Energy Conversion stores charges when taking adapted damage.",
+            "<strong>Level 4:</strong> Maintain two environmental adaptations and gain advantage against extreme environmental conditions.",
+            "<strong>Level 7:</strong> Convert damage to temporary hit points and deploy surveillance micro-drones.",
+            "<strong>Level 11:</strong> Combat Adaptation as a reaction, +1 AC boost, and enhanced drone capabilities.",
+            "<strong>Level 14:</strong> Full environmental mastery grants immunity to adapted damage types, emergency recovery protocol, and medical systems."
         ]
     },
 
@@ -434,6 +683,78 @@ const armorData = {
             "<strong>Level 14:</strong> Expend 3 Cell Charges to project a static wall of magical defense (5 ft. × 15 ft. × 10 ft.) for 1 minute."
         ]
     },
+    "Gauntlets-of-Ether": {
+    name: "Gauntlets of Ether",
+    description: "Magic Support / Arcane Enhancement. Shimmering gloves that amplify elemental spells and manipulate arcane energies.",
+    imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/ethergauntlets.png",
+    progression: [
+      "<strong>Level 1:</strong> Elemental Conduit adds spellcasting mod to elemental damage, Detect Magic at will.",
+      "<strong>Level 4:</strong> Focused Power boosts spell attack/DC, Lingering Element adds minor secondary effects.",
+      "<strong>Level 7:</strong> Aegis Weave reaction grants advantage on saves vs spells or temp HP.",
+      "<strong>Level 11:</strong> Spell Siphon reaction potentially regains Cell Charges/spell slots.",
+      "<strong>Level 14:</strong> Arcane Redirection reaction redirects single-target spell attacks."
+    ]
+  },
+  "Gauntlets-of-the-Iron-Fist": {
+    name: "Gauntlets of the Iron Fist",
+    description: "Martial Arts / Ki Theme. Heavy metal gauntlets channeling ki for devastating unarmed strikes.",
+    imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/ironfist.png",
+    progression: [
+      "<strong>Level 1:</strong> Empowered Strikes deal <strong>1d6/1d8</strong> magical damage, Ki Channel uses Wisdom for unarmed attacks.",
+      "<strong>Level 4:</strong> Stunning Strike ability.",
+      "<strong>Level 7:</strong> Flurry of Blows bonus action attacks.",
+      "<strong>Level 11:</strong> Adamantine Fists increase unarmed damage dice and add bonus force damage.",
+      "<strong>Level 14:</strong> Master of the Quivering Palm potent finishing move."
+    ]
+  },
+  "Grasp-of-the-Shadow-Pact": {
+    name: "Grasp of the Shadow Pact",
+    description: "Warlock Style. Shadowy gloves channeling eldritch power, curses, and fiendish aid.",
+    imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/shadowpactgrasp.png",
+    progression: [
+      "<strong>Level 1:</strong> Eldritch Blast cantrip, Dark One's Blessing temp HP on kill.",
+      "<strong>Level 4:</strong> Accursed Touch casts Hex or life drain attack.",
+      "<strong>Level 7:</strong> Devil's Sight grants darkvision in magical darkness.",
+      "<strong>Level 11:</strong> Eldritch Ward grants temporary HP and AC bonus.",
+      "<strong>Level 14:</strong> Summon Lesser Fiend (Shadow Demon or Imps)."
+    ]
+  },
+  "Crusaders-Gauntlets": {
+    name: "Crusader's Gauntlets",
+    description: "Paladin Style. Ornate gauntlets amplifying Lay on Hands healing and radiant smiting power.",
+    imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/crusadergauntlets.png",
+    progression: [
+      "<strong>Level 1:</strong> Enhanced Lay on Hands pool.",
+      "<strong>Level 4:</strong> Purifying Touch removes poison/disease with Lay on Hands.",
+      "<strong>Level 7:</strong> Radiant Strike adds radiant damage to attacks.",
+      "<strong>Level 11:</strong> Divine Transference splits Lay on Hands healing between two targets.",
+      "<strong>Level 14:</strong> Halo of Retribution deals passive radiant damage after smiting."
+    ]
+  },
+  "Gloves-of-the-Earthshaper": {
+    name: "Gloves of the Earthshaper",
+    description: "Druid Style. Rugged gloves of stone and wood, granting terrain manipulation and nature's might.",
+    imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/earthshapers.png",
+    progression: [
+      "<strong>Level 1:</strong> Stone Grip aids climbing/grappling, Primal Claws/Thorns bonus action transformation.",
+      "<strong>Level 4:</strong> Thorn Whip cantrip at will.",
+      "<strong>Level 7:</strong> Invoke Shape Earth casts Spike Growth or Erupting Earth.",
+      "<strong>Level 11:</strong> Nature's Grasping Defense reaction restrains attackers.",
+      "<strong>Level 14:</strong> Summon Earth Guardian once per long rest."
+    ]
+  },
+  "Gauntlets-of-Restoration": {
+    name: "Gauntlets of Restoration",
+    description: "Ally Aid/Support Theme. Elegant gauntlets granting actions, revival, and bolstering support to allies.",
+    imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/restorationgauntlets.png",
+    progression: [
+      "<strong>Level 1:</strong> Empowering Touch grants reaction attack/move or removes conditions.",
+      "<strong>Level 4:</strong> Swift Revival brings recently deceased back to 1 HP.",
+      "<strong>Level 7:</strong> Aura of Shared Vitality grants area temporary HP.",
+      "<strong>Level 11:</strong> Tactical Repositioning enhances Empowering Touch with movement/advantage.",
+      "<strong>Level 14:</strong> Ultimate Sacrifice & Restoration allows HP transfer or full heal at cost."
+    ]
+  },
     "Infantile-Mittens": {
         name: "Infantile Mittens",
         description: "These gauntlets feature oversized, cuddly mittens that limit fine dexterity but grant unique protective benefits.",
@@ -482,7 +803,6 @@ const armorData = {
     },
     "Temporal-Stride-Boots": {
         name: "Temporal Stride Boots",
-        movementSpeed: "40 ft.",
         description: "These chrono-manipulating boots distort the flow of time around the wearer's legs, creating shimmering afterimages with each step. Silver and blue runic circuitry pulses along their surface, occasionally emitting brief flashes when time manipulation powers activate.",
         imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/temporal_stride_boots.png",
         progression: [
@@ -529,6 +849,66 @@ const armorData = {
             "<strong>Level 14:</strong> Bottom-Heavy Surge provides AC bonuses when aiding allies. Fully loaded diapers emit cataclysmic stench that nauseates nearby enemies."
         ]
     },
+       "Greaves-of-the-Eldritch-Spiral": {
+       name: "Greaves of the Eldritch Spiral",
+       description: "Sci-fi / Dimensional Twist Theme. Boots shimmering with unnatural light, allowing spatial manipulation, blinking, and phasing.",
+       imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/eldritchspiralboots.png",
+       progression: [
+      "<strong>Level 1:</strong> Base speed increases <strong>5 ft.</strong>, disadvantage on opportunity attacks against wearer (Distortion Field).",
+      "<strong>Level 4:</strong> Ethereal Blink bonus action short teleport with defensive phasing.",
+      "<strong>Level 7:</strong> Spatial Disruption damages/pushes enemies near blink arrival.",
+      "<strong>Level 11:</strong> Kinetic Conversion resists/absorbs energy damage to empower attacks.",
+      "<strong>Level 14:</strong> Quantum Shift group teleport ability."
+    ]
+  },
+  "Boots-of-the-Ten-Thousand-Steps": {
+    name: "Boots of the Ten Thousand Steps",
+    description: "Martial Arts / Ki Theme. Simple boots granting incredible speed, grace, and mobility.",
+    imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/bootsoftenthousandsteps.png",
+    progression: [
+      "<strong>Level 1:</strong> Base speed increases <strong>10 ft.</strong>, ignore difficult terrain when Dashing (Flowing Movement).",
+      "<strong>Level 4:</strong> Step of the Wind grants bonus action Dash or Disengage.",
+      "<strong>Level 7:</strong> Wall Runner allows moving on vertical surfaces.",
+      "<strong>Level 11:</strong> Evasion feature passively improves Dexterity saves.",
+      "<strong>Level 14:</strong> Tempest Kick adds significant damage/control after Step of the Wind."
+    ]
+  },
+  "Voidwalker-Treads": {
+    name: "Voidwalker Treads",
+    description: "Warlock Style. Light-absorbing boots for stepping through shadows and dimensions.",
+    imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/voidwalkers.png",
+    progression: [
+      "<strong>Level 1:</strong> Base speed increases <strong>5 ft.</strong>, advantage on Stealth in dim/darkness, Minor Teleport action.",
+      "<strong>Level 4:</strong> Misty Step bonus action teleport.",
+      "<strong>Level 7:</strong> Transposition Jaunt swaps places with creatures on teleport.",
+      "<strong>Level 11:</strong> Ethereal Glide allows limited ethereal movement along surfaces.",
+      "<strong>Level 14:</strong> Dimension Door ability."
+    ]
+  },
+  "Zealots-Boots": {
+    name: "Zealot’s Boots",
+    description: "Paladin Style. Sturdy boots symbolizing unwavering conviction, granting relentless speed and stability.",
+    imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/zealotboots.png",
+    progression: [
+      "<strong>Level 1:</strong> Base speed increases <strong>5 ft.</strong>, advantage vs prone/forced movement (Unyielding Stance).",
+      "<strong>Level 4:</strong> Pursuit of the Just reaction movement towards attacker of ally.",
+      "<strong>Level 7:</strong> Unstoppable March ignores movement impairing effects temporarily.",
+      "<strong>Level 11:</strong> Vengeful Charge adds attack/damage to Pursuit of the Just.",
+      "<strong>Level 14:</strong> Oathsworn Swiftness grants Haste effect."
+    ]
+  },
+  "Rootwalkers": {
+    name: "Rootwalkers",
+    description: "Druid Style. Boots of living roots and earth, allowing natural terrain mastery and ground manipulation.",
+    imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/rootwalkers.png",
+    progression: [
+      "<strong>Level 1:</strong> Ignore natural difficult terrain, heavy armor doesn't reduce speed.",
+      "<strong>Level 4:</strong> Ignore all nonmagical difficult terrain, Minor Terrain Alteration.",
+      "<strong>Level 7:</strong> Entangling Roots area restrain ability.",
+      "<strong>Level 11:</strong> Nature's Passage allows moving through earth/stone/plants.",
+      "<strong>Level 14:</strong> Misty Veil Stride grants obscurity/Stealth on Dash/Disengage."
+    ]
+  },
       "Ethereal-Stride-Boots": {
         name: "Ethereal Stride Boots",
         description: "These sleek, mystically enhanced boots bear subtle, luminescent runes that channel arcane energy into your step. They are designed for rapid, unhindered movement—and pair especially well with raiment that lacks synergy. The runes spark with kinetic vigor as you dash across the battlefield.",
@@ -558,9 +938,9 @@ const armorData = {
         name: "Soul Core Manifold",
         description: "A core of elemental power granting bonus Cell Charges and elemental rebuke capabilities.",
         imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/soulcoremanifold.png",
-        bonusCellCharges: 2,
+        bonusCellCharges: 5,
         progression: [
-            "<strong>Level 3:</strong> Two extra Cell Charges, cast Hellish Rebuke, enhanced recharge rate.",
+            "<strong>Level 3:</strong> Five extra Cell Charges, cast Hellish Rebuke, enhanced recharge rate.",
             "<strong>Level 6:</strong> Resistance to your chosen elemental type.",
             "<strong>Level 8:</strong> Deal 2d8 elemental damage to melee attackers.",
             "<strong>Level 12:</strong> Immunity to your chosen element and reaction-based shield."
@@ -569,7 +949,7 @@ const armorData = {
         name: "Godhead Shard",
         description: "A radiant fragment of divine essence infusing your raiment with celestial power and spellcasting.",
         imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/godheadshard.png",
-        bonusCellCharges: 4,
+        bonusCellCharges: 8,
         progression: [
             "<strong>Level 3:</strong> Two divine cantrips and one 1st-level divine spell, second-highest Cell Charge pool, restore charges via Religion checks.",
             "<strong>Level 6:</strong> Additional divine spell slot.",
@@ -603,7 +983,7 @@ const armorData = {
         name: "Mystery Module",
         description: "A wild card raiment with effects determined by rolls on a custom table, offering unpredictable benefits.",
         imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/mysterymodule.png",
-        bonusCellCharges: 4,
+        bonusCellCharges: 7,
         progression: [
             "<strong>Level 3:</strong> Random baseline effect from DM table and stable bonus like damage immunity or AC bonus.",
             "<strong>Level 6:</strong> Additional random ability from DM table.",
@@ -611,7 +991,7 @@ const armorData = {
             "<strong>Level 12:</strong> Major distinguishing ability that redefines your battlefield role."
         ]
     },
-"Singularity-Drive": {
+    "Singularity-Drive": {
     name: "Singularity Drive",
     description: "An experimental gravitational core that grants control over spatial distortions, enhancing movement and battlefield manipulation.",
     imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/singularitydrive.png",
@@ -623,11 +1003,24 @@ const armorData = {
         "<strong>Level 12:</strong> Entropy Shield halves incoming physical damage, and you gain resistance to force damage and reduced forced movement."
     ]
 },
+    "Cherubs-Comfort-Aegis": {
+    name: "Cherub's Comfort Aegis",
+    description: "This Raiment manifests as an impeccably clean, soft, and surprisingly durable set of \"hero huggies\" complemented by a pair of small, fluffy, cherubic wings that flutter with gentle light. It radiates an aura of innocent protection and profound comfort.",
+    imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/cherubs_comfort_aegis.png",
+    bonusCellCharges: 3,
+    progression: [
+        "<strong>Level 3:</strong> Gain a Lay on Hugs healing pool (level × 7 HP), Soothing Touch to restore hit points, Cherubic Wings for falls, and +2 max Cell Charges.",
+        "<strong>Level 6:</strong> Comforting Aura grants nearby allies save bonuses, Cleansing Touch removes diseases/poisons, and Developing Wings grant limited flight.",
+        "<strong>Level 8:</strong> Remote Comfort allows synergizing with healing spells to use Soothing Touch at a distance.",
+        "<strong>Level 12:</strong> Pool of Endless Comfort increases healing pool (level × 10), Greater Cleansing removes more conditions.",
+        "<strong>Level 14:</strong> Aura of Pure Sanctuary extends aura range, grants damage resistances, and can prevent allies from dropping to 0 HP."
+    ]
+},
     "Transmorphic-Belt": {
         name: "Transmorphic Belt",
         description: "The Shapeshifter's Cinch grants elemental resistance, breath weapons, and size-altering capabilities.",
         imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/transformationbelt.png",
-        bonusCellCharges: 1,
+        bonusCellCharges: 2,
         progression: [
             "<strong>Level 3:</strong> Resistance to one elemental damage type, breath weapon, and size increase to Large.",
             "<strong>Level 6:</strong> Enhanced breath weapon damage and extended transformation duration.",
@@ -639,7 +1032,7 @@ const armorData = {
         name: "Unstable Fury Core",
         description: "A volatile engine of primal might transforming aggression into destructive power with overload risks.",
         imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/unstablefurycore.png",
-        bonusCellCharges: 5,
+        bonusCellCharges: 6,
         progression: [
             "<strong>Level 3:</strong> Fury Mode grants bonus damage and temporary hit points, but with overload risk and extra charge costs.",
             "<strong>Level 6:</strong> Focused Smash for devastating strikes that bypass resistances.",
@@ -660,11 +1053,37 @@ const armorData = {
             "<strong>Level 14:</strong> Advanced nurturing abilities with greater range and effectiveness."
         ]
     },
+    "Justicars-Conviction": {
+    name: "Justicar's Conviction",
+    description: "This severe and imposing raiment is crafted from dark, polished metal or hardened leather, often etched with symbols of unwavering law, a balanced scale, or a watchful eye. It focuses the Aegisknight's will into a potent force against transgressors.",
+    imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/justicars_conviction.png",
+    bonusCellCharges: 3,
+    progression: [
+        "<strong>Level 3:</strong> Mark a transgressor to deal extra damage, gain advantage on saves against charm and fear, and increase your Cell Charge maximum.",
+        "<strong>Level 6:</strong> Unleash punitive strikes against marked foes and sense deception with supernatural insight.",
+        "<strong>Level 8:</strong> Project an aura that hinders marked enemies and improves your Mark's damage.",
+        "<strong>Level 12:</strong> Relentlessly pursue your quarry with enhanced speed and deliver greater punitive strikes.",
+        "<strong>Level 14:</strong> Subject marked foes to your Judgment's Gaze, hindering their defenses and escape attempts."
+    ]
+},
+"Trailblazers-Merit": {
+    name: "Trailblazer's Merit",
+    description: "This scout-themed raiment features glowing merit badges and wilderness utility. Perfect for those who embrace both the wild outdoors and adorable scouting traditions.",
+    imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/trailblazers_merit.png",
+    bonusCellCharges: 3,
+    progression: [
+        "<strong>Level 3:</strong> Gain wilderness skills, terrain advantages, and the ability to create magical trail markers.",
+        "<strong>Level 6:</strong> Become an expert tracker and gain the Pass Without Trace merit badge.",
+        "<strong>Level 8:</strong> Develop adaptive camouflage and wilderness first aid abilities.",
+        "<strong>Level 12:</strong> Move unhindered through wild terrain and communicate with animals.",
+        "<strong>Level 14:</strong> Master hunting techniques and provide emergency healing to fallen allies."
+    ]
+},
     "Mephidium-Coda": {
         name: "Mephidium Coda (Skunk's Tail)",
         description: "Embodying toxic misfortune and grimy power, the Mephidium Coda transforms your battle presence into a malodorous curse that intensifies with combat grime.",
         imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/mephidiumcoda.png",
-        bonusCellCharges: 2,
+        bonusCellCharges: 4,
         progression: [
             "<strong>Level 3:</strong> Base toxic abilities including poison effects and noxious aura.",
             "<strong>Level 6:</strong> Enhanced poison damage and expanded aura of misfortune.",
@@ -2416,7 +2835,8 @@ function populateCharacterInfo() {
     const eyeColor = document.getElementById('eye-color').value || "Not specified";
     const skinColor = document.getElementById('skin-color').value || "Not specified";
     const notableFeatures = document.getElementById('notable-features').value || "None";
-    
+    const resistances = document.getElementById('resistances').value || "None";
+
     // character name and race
     document.getElementById('character-name-display').textContent = characterName;
     document.getElementById('character-race-display').textContent = raceText;
@@ -2456,7 +2876,8 @@ function populateCharacterInfo() {
     document.getElementById('eye-display').textContent = eyeColor;
     document.getElementById('skin-display').textContent = skinColor;
     document.getElementById('features-display').textContent = notableFeatures;
-    
+    document.getElementById('resistances-display').textContent = resistances;
+
     // background information
     document.getElementById('background-display').textContent = background;
     document.getElementById('background-feat-display').textContent = backgroundFeat;
