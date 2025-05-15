@@ -515,6 +515,36 @@ const armorData = {
             "<strong>Level 14:</strong> Fortress Mode increases shield capacity by 50% and reduces incoming damage."
         ]
     },
+    "Alchemists-Utility-Plate": {
+    name: "Alchemist's Utility Plate",
+    hitdice: "d8",
+    armorclass: "14 + Dex modifier (max +2)",
+    description: "A marvel of articulated plating and reinforced glass vials, this chestpiece hums with contained alchemical energy. Tubes and conduits snake across its surface, ready to channel potent infusions directly into the wearer's system or project them outwards.",
+    imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/alchemists_utility_plate.png",
+    progression: [
+        "<strong>Level 1:</strong> AC 14 + Dex modifier (max +2), d8 hit die, Infusion Matrix lets you use Cell Charges to heal, help allies, or gain combat advantages. Sealed System gives advantage on saves against poison and disease.",
+        "<strong>Level 4:</strong> Expanded Formulary adds Stone-Skin Elixir granting damage resistance and Dragonsbreath Tincture dealing elemental damage. Potion Integration allows storing one potion in your suit.",
+        "<strong>Level 7:</strong> Synergistic Infusions lets you combine two basic infusions in one activation. Dragonsbreath Tincture damage increases to 4d6.",
+        "<strong>Level 11:</strong> Advanced Potion Integration allows rare potions. Auto-Injector can save you from death using stored healing potions. Panacea Mist cures conditions or diseases.",
+        "<strong>Level 14:</strong> Master Alchemist upgrade increases healing output and allows storing two potions simultaneously. Apotheosis Elixir grants combat bonuses for 1 minute.",
+        "<strong>Level 17:</strong> Alchemical Prime State (Capstone) creates a powerful aura that heals allies, harms enemies, and reduces Cell Charge costs for all your infusions."
+    ]
+},
+"Plate-of-the-Fearless-Heart": {
+    name: "Plate of the Fearless Heart (Brave Plate)",
+    hitdice: "d8",
+    armorclass: "13 + Dex modifier (max +3)",
+    description: "This armor is surprisingly light for its apparent sturdiness, favoring aggressive designs with sharp angles and minimal extraneous plating. It often bears symbols of beasts of prey or depictions of heroic, reckless charges. It seems to hum with a barely contained, furious energy.",
+    imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/brave_plate1.png",
+    progression: [
+        "<strong>Level 1:</strong> AC 13 + Dex modifier (max +3), d8 hit die. Battle Fugue lets you trade AC for combat power, gaining +5 to melee attacks and damage, +2 to spell save DCs, and triple damage dice on critical hits at the cost of -2 AC.",
+        "<strong>Level 5:</strong> Reckless Abandon allows you to take self-damage to deal massive additional damage to enemies. Fuel the Fury lets you increase both the self-damage and enemy damage by spending Cell Charges.",
+        "<strong>Level 8:</strong> Pain Conduit converts damage you take into stackable attack and damage bonuses for your next turn, storing your suffering as combat potential.",
+        "<strong>Level 11:</strong> Unstoppable Carnage increases critical hit damage to quadruple dice and grants healing when you reduce enemies to 0 hit points with melee attacks.",
+        "<strong>Level 14:</strong> Fury Incarnate reduces Battle Fugue's AC penalty, and lets you gain condition immunities and damage resistance by spending extra Cell Charges when activating it.",
+        "<strong>Level 17:</strong> Last Stand of the Fearless (Capstone) prevents you from dropping below 1 hit point when in Battle Fugue, redirecting excess damage to enemies within 30 feet."
+    ]
+},
     "Retributive-Coreplate": {
         name: "Retributive Coreplate",
         hitdice: "d10",
@@ -543,6 +573,21 @@ const armorData = {
             "<strong>Level 14:</strong> Bulwark of Unyielding Discipline creates an aura that grants +1 to AC and saving throws for all allies, and adds your Con modifier to their death saves."
         ]
     },
+        "Duelists-Frock-Coat": {
+        name: "Duelist's Frock Coat",
+        hitdice: "d10",
+        armorclass: "12 + Dex modifier",
+        description: "This stylish piece appears more like a reinforced duster or a finely tailored long coat than traditional plate. It's made of hardened leathers, articulated light metal plates hidden beneath fabric, and ballistic weaves, offering protection without sacrificing panache.",
+        imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/duelistfrock.png",
+        progression: [
+            "<strong>Level 1:</strong> AC 12 + Dex modifier, d10 hit die. Point-Blank Precision eliminates disadvantage on ranged attacks with foes within 5 feet. Duelist's Flourish marks a target, granting AC bonus, movement bonus, and insight against that opponent.",
+            "<strong>Level 4:</strong> Gun-and-Blade Virtuoso enables bonus action attacks when dual-wielding. Reactive Riposte allows expending Cell Charges to make additional opportunity attacks with your off-hand weapon.",
+            "<strong>Level 7:</strong> Improved Duelist's Flourish enhances target-marking benefits and lowers Performance check DC. Deft Repositioning grants free Disengage and movement after attacking your marked target.",
+            "<strong>Level 11:</strong> Masterful Duelist enhances off-hand damage and grants Uncanny Dodge. Press the Advantage imposes disadvantage on your marked target when you land hits with both weapons.",
+            "<strong>Level 14:</strong> Legendary Duelist's Panache expands critical hit range against marked targets. Whirlwind of Steel and Shot launches devastating attacks against multiple nearby enemies.",
+            "<strong>Level 17:</strong> Perfect Riposte Stance (Capstone) grants automatic critical counter-attacks, protection against ranged attacks, and devastating bonus damage against your marked target."
+        ]
+    },
     "Crystalline-Cribplate": {
     name: "Crystalline Cribplate",
     hitdice: "d10",
@@ -555,6 +600,22 @@ const armorData = {
         "<strong>Level 7:</strong> Aura of Serene Warding provides advantage on saves against charm and fear effects and redirects enemy aggression toward you.",
         "<strong>Level 11:</strong> Guardian's Embrace reaction reduces damage to you or an ally by 2d10 + your level once per long rest.",
         "<strong>Level 14:</strong> Sanctum of Celestial Custody creates a protective dome that provides cover, damage resistance, and healing to allies within."
+    ]
+    },
+    "Living-Grove-Platemail": {
+    name: "Living Grove Platemail",
+    hitdice: "d10",
+    armorclass: "15 + Dex modifier (max +2)",
+    description: "This marvel of druidic craftsmanship features living wood carefully grown and shaped into protective armor, with layers of magically-treated oak, ironbark, and supple vines forming a surprisingly robust defense.",
+    imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/living_grove_platemail.jpg",
+    progression: [
+        "<strong>Level 1:</strong> AC 15 + Dex modifier (max +2), resistance to poison damage, and ability to breathe normally in areas with thin or tainted air through oxygen-producing plants.",
+        "<strong>Level 3:</strong> Barkskin Defense allows spending 1 Cell Charge to increase AC by 2 for 1 minute, giving your skin a bark-like appearance.",
+        "<strong>Level 5:</strong> Verdant Awareness grants ability to sense plant life within 60 feet and identify plant-based poisons with advantage on saving throws against them.",
+        "<strong>Level 7:</strong> Regenerative Vines heal you each turn and allow spending 1 Cell Charge as a reaction to gain temporary hit points when damaged.",
+        "<strong>Level 11:</strong> Verdant Eruption spends 2 Cell Charges to damage and restrain nearby enemies while granting temporary hit points to allies.",
+        "<strong>Level 14:</strong> Warden of the Wild transforms the area into difficult terrain and allows halving damage to you or nearby allies as a reaction.",
+        "<strong>Level 17:</strong> Ancient Grove Guardian (Capstone) spends 4 Cell Charges for a partial transformation that increases AC, grants poison immunity, allows an additional action each turn, and creates a damaging thorn zone around you."
     ]
     },
     "Soiling-Shield-Bib": {
