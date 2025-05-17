@@ -253,6 +253,9 @@
                             <option value="Alchemists-Utility-Plate">L. Alchemist's Utility Plate</option>
                             <option value="Plate-of-the-Fearless-Heart">M. Plate of the Fearless Heart (Brave Plate)</option>
                             <option value="Duelists-Frock-Coat">N. Duelist's Frock Coat</option>
+                            <option value="Transspatial-Phase-Weave">O. Transspatial Phase Weave</option>
+                            <option value="Daydreamer-Magi-Onesie">P. Daydreamer's Magi-Onesie</option>
+                            <option value="Reapers-Embrace">Q. Reaper's Embrace</option>
                         </select>
                     </div>
                       <div class="armor-piece">
@@ -313,6 +316,9 @@
                             <option value="Cherubs-Comfort-Aegis">L. Cherub's Comfort Aegis</option>
                             <option value="Justicars-Conviction">M. Justicar's Conviction</option>
                             <option value="Trailblazers-Merit">N. Trailblazer's Merit</option>
+                            <option value="Aether-Weaver">O. Aether-Weaver</option>
+                            <option value="Animus-Gear-System">P. Animus Gear System</option>
+                            <option value="Maestro-Harness">Q. Maestro's Harness</option>
                         </select>
                     </div>
                     
@@ -663,13 +669,14 @@ document.getElementById('collapse-all').addEventListener('click', function() {
   <div class="tabs-nav">
     <button class="tab-btn active" data-tab="character-tab">Character Creator</button>
     <button class="tab-btn" data-tab="armory-tab">Armory</button>
+    <button class="tab-btn" data-tab="class-features-and-tips">Class Features and Tips</button>
   </div>
   
   <!-- Character Creator Tab (the original content) -->
   <div id="character-tab" class="tab-content active">
     <!-- This div is just a placeholder as we'll move the existing content here via JavaScript -->
   </div>
-  
+
   <!-- Armory Tab -->
   <div id="armory-tab" class="tab-content">
     <div class="armory-section">
@@ -713,7 +720,247 @@ document.getElementById('collapse-all').addEventListener('click', function() {
       </div>
     </div>
   </div>
-</div>
 
+<div id="class-features-and-tips" class="tab-content">
+    <h2>The Aegisknight: A Mechanical Overview</h2>
+    <p>The Aegisknight is a highly adaptable combatant whose abilities are defined by their sophisticated, modular magitek armor. This overview outlines the core class mechanics and diverse gameplay styles suggested by the provided class information and armory.</p>
+    <br>
+    <hr class="gold-divider">
+    <h2><u>Core Class Mechanics</u></h2>
+    <hr class="gold-divider">
+    <br>
+    <u><h3>Hit Points</h3></u>
+    <ul>
+        <li><strong>Hit Dice:</strong> Determined by your chosen Chest Armor type:
+            <ul>
+                <li class="hit-die-item"><span class="chest-name">Balanced Type:</span> <span class="hit-die">d10</span> per Aegisknight level</li>
+                <li class="hit-die-item"><span class="chest-name">Bulwark Type:</span> <span class="hit-die">d12</span> per Aegisknight level</li>
+                <li class="hit-die-item"><span class="chest-name">Light Type:</span> <span class="hit-die">d8</span> per Aegisknight level</li>
+                <li class="hit-die-item"><span class="chest-name">Xtra-Hev Composite Frame:</span> <span class="hit-die">d10</span> per Aegisknight level</li>
+                <li class="hit-die-item"><span class="chest-name">Aegis of Fleeting Vitality:</span> <span class="hit-die">d12</span> per Aegisknight level</li>
+                <li class="hit-die-item"><span class="chest-name">Adaptive Environment Frame:</span> <span class="hit-die">d10</span> per Aegisknight level</li>
+                <li class="hit-die-item"><span class="chest-name">Alchemist's Utility Plate:</span> <span class="hit-die">d8</span> per Aegisknight level</li>
+                <li class="hit-die-item"><span class="chest-name">Plate of the Fearless Heart:</span> <span class="hit-die">d8</span> per Aegisknight level</li>
+                <li class="hit-die-item"><span class="chest-name">Duelist's Frock Coat:</span> <span class="hit-die">d10</span> per Aegisknight level</li>
+                <li class="hit-die-item"><span class="chest-name">Living Grove Platemail:</span> <span class="hit-die">d10</span> per Aegisknight level</li>
+                <li class="hit-die-item"><span class="chest-name">Retributive Coreplate:</span> <span class="hit-die">d10</span> per Aegisknight level</li>
+                <li class="hit-die-item"><span class="chest-name">Padded Parental Bulwark:</span> <span class="hit-die">d12</span> per Aegisknight level</li>
+                <li class="hit-die-item"><span class="chest-name">Crystalline Cribplate:</span> <span class="hit-die">d10</span> per Aegisknight level</li>
+                <li class="hit-die-item"><span class="chest-name">Soiling Shield Bib:</span> <span class="hit-die">d10</span> per Aegisknight level</li>
+                <li class="hit-die-item"><span class="chest-name">Transspatial Phase Weave:</span> <span class="hit-die">d6</span> per Aegisknight level</li>
+                <li class="hit-die-item"><span class="chest-name">Daydreamer Magi Onesie:</span> <span class="hit-die">d6</span> per Aegisknight level</li>
+                <li class="hit-die-item"><span class="chest-name">Reaper's Embrace:</span> <span class="hit-die">d12</span> per Aegisknight level</li>
+            </ul>
+        </li>
+        <li><strong>Hit Points at 1st Level:</strong> The maximum value of your Hit Die (based on chest piece) + your Constitution modifier.</li>
+        <li><strong>Hit Points at Higher Levels:</strong> Roll your designated Hit Die (or take the fixed average) + your Constitution modifier for each Aegisknight level after 1st.</li>
+    </ul>
+
+    <h4>Proficiencies</h4>
+    <ul>
+        <li><strong>Armor:</strong> Your magitek suit (all components combined).</li>
+        <li><strong>Weapons:</strong> Simple and martial weapons.</li>
+        <li><strong>Tools:</strong> Proficiency with one profession or artisan tool of your choice. (Some armor components may grant additional tool proficiencies).</li>
+        <li><strong>Saving Throws:</strong> Strength and Wisdom.</li>
+        <li><strong>Skills:</strong> Choose three from Athletics, Acrobatics, Perception, Insight, Investigation, Intimidation, Persuasion, or Sleight of Hand.</li>
+    </ul>
+
+    <h4>Equipment</h4>
+    <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+    <ul>
+        <li>(a) a longsword or (b) a warhammer.</li>
+        <li>(a) a light crossbow with 20 bolts or (b) a simple firearm with 20 bullets (if firearms exist in your setting).</li>
+        <li>(a) an explorer's pack or (b) a dungeoneer's pack.</li>
+        <li>Your fully modular magitek armor (all components chosen at character creation).</li>
+    </ul>
+
+    <h4>Full Soul Armor</h4>
+    <p>The Aegisknight's commitment to their raiment is absolute. They do not gain attunement slots for magic items beyond the capacity to attune to a single weapon.</p>
+
+    <h4>Armor Activation (1st Level)</h4>
+    <ul>
+        <li>As an action, you can don or doff your armor a number of times per day equal to your Wisdom modifier + your proficiency bonus.</li>
+        <li>When donned, your personal enhancements and modular abilities become active.</li>
+        <li>When doffed, they are temporarily inactive (you still retain your base class proficiencies and saving throw benefits).</li>
+        <li>You may expend <strong>1 Cell Charge</strong> to don your armor as a bonus action, or to don it if you have expended all your daily Armor Activation uses.</li>
+    </ul>
+    <br>
+    <hr class="gold-divider">
+    <h3>Primary Resource: Cell Charges</h3>
+    <hr class="gold-divider">
+    <br>
+    <p>Nearly all advanced functions of the Aegisknight's armor are fueled by <strong>Cell Charges</strong>. Effective management of this resource is crucial for sustained combat effectiveness.</p>
+    <ul>
+        <li><strong>Starting Charges:</strong> At 1st level, you have 5 Cell Charges. This maximum increases as you gain Aegisknight levels (see progression table below).</li>
+        <li><strong>Recovering Cell Charges:</strong>
+            <ul>
+                <li>You regain all expended Cell Charges after finishing a long rest.</li>
+                <li>You regain cell charges by expending hit dice the same way you might to restore hit points during a long rest, but instead of recovering HP, you recover an equal amount of cell charges, any additional overflow are not added to the total.</li>
+                <li>Some armor components may provide additional ways to recover cell charges or may be otherwise limiting in how they recover their cell charges- such as the Godhead Shard's devotional rites required for the restoration of charges.</li>
+            </ul>
+        </li>
+        <li><strong>Universal Power Source:</strong> Cell Charges are expended to activate a vast array of offensive, defensive, and utility-based armor abilities.</li>
+        <li><strong>Tactical Expenditure:</strong> The cost of abilities can vary significantly (from 1 to 8+ Cell Charges for capstone abilities), requiring careful decisions about when and how to spend this energy.</li>
+         <li><strong>Re-using Limited Abilities:</strong>
+            <ul>
+                <li>An Aegisknight ability that can normally be used once per short rest can be activated again by expending <strong>1 Cell Charge</strong>.</li>
+                <li>An Aegisknight ability that can normally be used once per long rest can be activated again by expending <strong>3 Cell Charges</strong>. If these abilities incur any risk of overload or critical failure, that risk is heightened (typically represented as a failure on a roll of 1-2 on a d20).</li>
+                <li><em>Note:</em> Some specific armor pieces, like the <code>Unstable Fury Core</code>, have inherent extra Cell Charge costs for their abilities.</li>
+            </ul>
+        </li>
+        <li><strong>Resource Augmentation:</strong> Certain components, particularly Raiment options like the <code>Soul-Core Manifold</code>, <code>Godhead-Shard</code>, or <code>Cherub's Comfort Aegis</code>, can directly influence the Aegisknight's Cell Charge economy by increasing maximum charges or providing unique recovery methods (e.g., <code>Godhead Shard</code>'s Sacred Recharge).</li>
+        <li><strong>High-Powered Abilities:</strong> Many potent, game-changing effects, especially "Capstone" abilities, demand a significant Cell Charge investment.</li>
+    </ul>
+    <br>
+    <hr class="gold-divider">
+    <h2>Aegisknight Class Progression</h2>
+    <hr class="gold-divider">
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th>Level</th>
+                <th>Prof. Bonus</th>
+                <th>Features</th>
+                <th>Max Cell Charges</th>
+                <th>Modular Armor Progression</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1st</td><td>+2</td><td>Armor Activation, Cell Charges</td><td>5</td><td>All initial components chosen</td></tr>
+            <tr><td>2nd</td><td>+2</td><td>Power Surge</td><td>6</td><td></td></tr>
+            <tr><td>3rd</td><td>+2</td><td>Raiment Choice</td><td>7</td><td>Raiment base features</td></tr>
+            <tr><td>4th</td><td>+2</td><td>Ability Score Improvement</td><td>8</td><td>Component upgrades (Level 4 features)</td></tr>
+            <tr><td>5th</td><td>+3</td><td>Extra Attack</td><td>9</td><td></td></tr>
+            <tr><td>6th</td><td>+3</td><td>New Component Upgrade Effects</td><td>10</td><td>Component upgrades (Level 6 features)</td></tr>
+            <tr><td>7th</td><td>+3</td><td>Additional Component Benefits</td><td>11</td><td>Component upgrades (Level 7 features)</td></tr>
+            <tr><td>8th</td><td>+3</td><td>Ability Score Improvement</td><td>12</td><td></td></tr>
+            <tr><td>9th</td><td>+4</td><td>Advanced Raiment/Component Upgrades</td><td>13</td><td></td></tr>
+            <tr><td>10th</td><td>+4</td><td>Overclock</td><td>14</td><td></td></tr>
+            <tr><td>11th</td><td>+4</td><td>Enhanced Component Upgrades</td><td>15</td><td>Component upgrades (Level 11 features)</td></tr>
+            <tr><td>12th</td><td>+4</td><td>Ability Score Improvement</td><td>16</td><td>Raiment upgrade (Level 12 features)</td></tr>
+            <tr><td>13th</td><td>+5</td><td>Modular Upgrades</td><td>17</td><td></td></tr>
+            <tr><td>14th</td><td>+5</td><td>Apex Raiment Ability</td><td>18</td><td>Component upgrades (Level 14 features), Raiment Apex ability</td></tr>
+            <tr><td>15th</td><td>+5</td><td>Overdrive Mode</td><td>19</td><td></td></tr>
+            <tr><td>16th</td><td>+5</td><td>Ability Score Improvement</td><td>20</td><td></td></tr>
+            <tr><td>17th</td><td>+6</td><td>Legendary Component Upgrade</td><td>21</td><td>Component upgrades (Level 17 Capstones), Raiment Major Apex ability</td></tr>
+            <tr><td>18th</td><td>+6</td><td>Master Overdrive Mode</td><td>22</td><td></td></tr>
+            <tr><td>19th</td><td>+6</td><td>Ability Score Improvement</td><td>23</td><td></td></tr>
+            <tr><td>20th</td><td>+6</td><td>Ultimate Apex Raiment Ability</td><td>25</td><td>Raiment Ultimate Apex ability</td></tr>
+        </tbody>
+    </table>
+    <br>
+    <hr class="gold-divider">
+    <h2><u>Key Class Features</u></h2>
+    <hr class="gold-divider">
+    <br>
+    <h3>Power Surge (2nd Level)</h3>
+    <ul>
+        <li>As a bonus action or reaction, you may spend <strong>2 Cell Charges</strong> to surge extra power through your armor for 1 minute.</li>
+        <li>Choose one of the following effects, if it is an immediate power, such as a bonus attack or damage, it must be used before the end of your turn. During this time, you may expend another two cell charges to activate another one of the listed features:</li>
+            <ul>
+                <li>Gain advantage on all attack rolls <strong>or</strong> saving throws (choose one) until the end of your turn.</li>
+                <li>Your next successful melee attack before the end of your turn deals an extra 1d8 damage of your choice.</li>
+                <li>Use the Dash action as part of the bonus action.</li>
+                <li>Gain resistance to all damage until the end of your turn.</li>
+            </ul>
+        </li>
+        <li>You can use this feature a number of times per long rest equal to your proficiency bonus. Unlike many Aegisknight abilities, this power cannot be activated more than its allotted amount unless an armor component specifically allows it.</li>
+    </ul>
+
+    <h3>Raiment (3rd Level)</h3>
+    <p>You choose your core Raiment component, which grants a suite of abilities that scale with level. See armory list for Raiment options like <code>Singularity-Drive</code>, <code>Mystery-Module</code>, <code>Transmorphic-Belt</code>, etc. Raiments form the core aesthetic and backbone of an Aegisknight loadout and often introduce mechanics and powers that mimick or even outperform base class ability progression.</p>
+
+    <h3>Extra Attack (5th Level)</h3>
+    <p>You can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+
+    <h3>Overclock (10th Level)</h3>
+    <p>As a bonus action, once per long rest, you can overclock your suit to instantly regain <strong>5 Cell Charges</strong>.</p> For 10 minutes after using this ability you can all of the benefits of the Power Surge feature without expending any Cell Charges, but you cannot use the Power Surge feature again until the end of this 10 minute period. <strong>As well, during Overlock, all Aegisknight powers cost one additional cell charge per usage.</strong></p>
+
+    <h3>Apex Raiment Ability (14th Level)</h3>
+    <p>Your chosen Raiment unlocks the first of several powerful "Apex" abilities, as detailed in its specific description. These powers are the truest incarnation of your Raiment's potential, representing the pinnacle of its capabilities- and even some of the least impressive Raiments become insurmountably potent once they reach their apex- a reward for dedication to the craft and cloth.</p>
+
+    <h3>Overdrive Mode (15th Level)</h3>
+    <ul>
+        <li>As an action, once per long rest, you can enter Overdrive Mode for 1 minute.</li>
+        <li>During Overdrive:
+            <ul>
+                <li>You gain a +2 bonus to AC.</li>
+                <li>You can make one additional attack when you take the Attack action on your turn (total of three attacks with Extra Attack).</li>
+                <li>You may initiate Power Surge for a 1 Cell Charge instead of the normal cost of two.</li>
+                <li>At the start of each of your turns, you regain 1 Cell Charge. The Unstable Fury Core, and other similar components may recover additional Cell Charges during this time as provided in their descriptions.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>Master Overdrive Mode (18th Level)</h3>
+    <p>Your Overdrive Mode is enhanced (details likely in full class description, not provided in the PDF snippet, but assumed to be an improvement to the 15th level feature).</p>
+
+    <h4>Ultimate Apex Raiment Ability (20th Level)</h4>
+    <p>Your chosen Raiment unlocks its "Ultimate Apex" or final capstone ability, representing the pinnacle of its power.</p>
+    <hr class="gold-divider">
+    <h2>Core Concept: The Adaptive Magitek Armor</h2>
+    <hr class="gold-divider">
+    <p>At the heart of the Aegisknight is their customizable suit, composed of several key components that grant unique powers and attributes:</p>
+    <ul>
+        <li><strong>Components:</strong> Helmet, Pauldrons, Arms, Chestpiece, Boots, and a central Raiment/Core. Each slot houses a distinct piece of technology or enchantment.</li>
+        <li><strong>Progressive Power:</strong> Features granted by armor components unlock and enhance as the Aegisknight gains levels (common breakpoints include 1, 3/4, 6/7, 8, 10/11, 12, 14, 17, and 20), culminating in powerful "Capstone" abilities.</li>
+        <li><strong>Interchangeability:</strong> The sheer variety of components implies that Aegisknights can swap parts to tailor their loadout for specific missions, challenges, or desired combat roles.</li>
+    </ul>
+<hr class="gold-divider">
+    <h2>Combat Roles & Build Versatility</h2>
+    <hr class="gold-divider">
+    <p>The Aegisknight's modularity allows for exceptional specialization into various combat roles, defined by the chosen armor components:</p>
+    <ul>
+        <li><strong>Guardian Protocol (Tanking & Defense):</strong>
+            <ul>
+                <li>Focus on components like the <code>Bulwark-Type Frame</code>, <code>Ultimate-Bastion Heavy Helmet</code>, <code>Vanguard-Heavy-Type Pauldrons</code>, or <code>Padded Parental Bulwark</code>.</li>
+                <li>Mechanics include substantial AC bonuses, diverse damage resistances and immunities (elemental, physical, magical), damage negation/reduction abilities, threat redirection, and enhanced hit point pools (e.g., d12 Hit Die from Bulwark Frame).</li>
+            </ul>
+        </li>
+        <li><strong>Assault Systems (Damage Dealing):</strong>
+            <ul>
+                <li><strong>Melee Prowess:</strong> Leverage components like the <code>Helmet-of-the-Mantis</code> (Ki-empowered strikes), <code>Blastbreaker Fists</code> (enhanced strength, weapon versatility), <code>Gauntlets-of-the-Iron-Fist</code> (magical unarmed strikes, Stunning Strike), or <code>Pauldrons-of-the-Tiger-Warrior</code> (charging ferocity, grappling). These often enhance direct combat, add bonus damage (force, elemental), and provide control options.</li>
+                <li><strong>Ranged Specialization:</strong> Utilize items such as the <code>Marksman-Type-Pauldron</code> (missile launcher, Sharp Shooter synergy) or the <code>Tactical-Vision-Array</code> helmet (target marking, enhanced scanning). These focus on precision, ranged attack bonuses, and specialized ammunition/projectiles.</li>
+                <li><strong>Arcane Hybridization:</strong> Combine martial or technological prowess with magical abilities through components like the <code>Cursed-Helm-of-Felpietus</code> (Warlock cantrips), <code>Gloves-of-Arcane-Fusion</code> (Handmeld-Cannon, spell enhancement), <code>Somatic-Satellites</code> (spell storage/delivery), or Raiment like the <code>Arcanomatrix</code> (Wizard spells) and <code>Godhead-Shard</code> (Cleric/Paladin spells). This allows for a blend of direct damage, spell attacks, and utility casting.</li>
+            </ul>
+        </li>
+        <li><strong>Support & Tactical Operations:</strong>
+            <ul>
+                <li>Emphasize components like the <code>Helm-of-the-Sentinel's-Grace</code> (ally protection, Aid spell), <code>Mender's Touch Gauntlets</code> (healing, condition removal), <code>Incense-Censer-Pauldron</code> (area-of-effect buffs/debuffs), <code>Gauntlets-of-Restoration</code> (revival, action granting), or the <code>Maestro-Harness</code> Raiment (buffs, enemy disruption via sound).</li>
+                <li>These builds focus on healing, ally enhancement (temp HP, advantage, bonus actions), enemy control, and battlefield manipulation.</li>
+            </ul>
+        </li>
+        <li><strong>Specialized Operations (Stealth, Mobility, Unique Themes):</strong>
+            <ul>
+                <li>For infiltration and evasion, components like <code>Shadestreak-Handmantles</code> (thieves' tools, invisibility), the <code>Photonic-Cape</code> Raiment (stealth bonus, flight, invisibility), or <code>Voidwalker-Treads</code> (shadow stride, teleportation) are key.</li>
+                <li>Enhanced mobility is offered by various Boots (<code>Balanced-Boots</code>, <code>Temporal-Stride-Boots</code>, <code>Blastcore-Soles</code>) and lighter Chest Frames (<code>Light-Type-Frame</code>), granting increased speed, difficult terrain negation, and teleportation.</li>
+                <li>Highly thematic builds, such as those from the "Diaper-School" (e.g., <code>Bonnet-of-Blushing-Bravado</code>, <code>Padding-of-the-ButtBuster</code>, <code>Mephidium-Coda</code>), introduce unique mechanics often tied to charm, unconventional debuffs, or distinct resource interactions (like "Diaper Use charges").</li>
+            </ul>
+        </li>
+    </ul>
+    <hr class="gold-divider">
+    <h3>Synergies and Customization</h3>
+    <hr class="gold-divider">
+    <p>The true depth of the Aegisknight comes from creatively combining armor components:</p>
+    <ul>
+        <li><strong>Explicit Synergies:</strong> Some items directly mention enhanced functionality when paired with others (e.g., <code>Golden-Chain-Hood</code> with <code>Godhead Shard</code>, <code>Tactical-Vision-Array</code> with <code>Gloves-of-Arcane-Fusion</code>'s Handmeld-Cannon, <code>Tech-Type Pauldrons</code> with <code>Somatic Satellites</code>).</li>
+        <li><strong>Thematic Builds:</strong> Grouping components with similar themes (e.g., Mantis/Ki, Infernal/Warlock, Druidic/Nature, Diaper-School) often results in a cohesive and mechanically complementary playstyle.</li>
+        <li><strong>Ability Score Alignment:</strong> Components frequently grant bonuses or rely on specific ability scores (Strength, Dexterity, Constitution, Intelligence, Wisdom, or Charisma) for their effects (e.g., save DCs, attack/damage modifiers). Aegisknights can optimize their builds by selecting components that align with their primary ability scores.</li>
+        <li><strong>Action Economy:</strong> Consider how different component abilities use actions, bonus actions, and reactions to create an efficient turn. Some grant additional actions or allow abilities to be used as reactions under specific triggers.</li>
+    </ul>
+    <hr class="gold-divider">
+    <h3>Roleplaying Your Aegisknight</h3>
+    <hr class="gold-divider">
+    <p>The nature of your Aegisknight's armor can heavily influence their story and interactions:</p>
+    <ul>
+        <li><strong>Armor's Origin:</strong> Was the suit a marvel of personal engineering, a rediscovered relic of a lost age, a divine gift, or a pact-bound artifact? This can shape your character's knowledge, allegiances, and goals.</li>
+        <li><strong>Technological vs. Mystical Viewpoint:</strong> Does your Aegisknight see their armor as a piece of advanced science, a conduit for magical energies, or a fusion of both? This can affect how they describe their abilities and interact with other technologically or magically inclined characters.</li>
+        <li><strong>Identity and the Suit:</strong> Is the armor merely a tool, or is it an integral part of the Aegisknight's identity? Some might feel vulnerable without it, while others might see it as a burden or a responsibility. Consider the implications of highly thematic armor like the "Diaper-School" set on your character's persona and social interactions.</li>
+        <li><strong>Maintenance and Evolution:</strong> How does your Aegisknight maintain, repair, and upgrade their armor? This could involve tinkering, research, rituals, or seeking out rare materials and knowledge. The constant evolution of the armor is a journey in itself.</li>
+    </ul>
+</div>
+    </div>
+</div>
 </body>
 </html>

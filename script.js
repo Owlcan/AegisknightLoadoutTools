@@ -473,7 +473,53 @@ const armorData = {
             "<strong>Level 11:</strong> Critical hits reduced to normal hits during Bulwark Aegis.",
             "<strong>Level 14:</strong> Resistance to all damage types except psychic."
         ]
-    },        "Light-Type-Frame": {
+    },
+    "Daydreamer-Magi-Onesie": {
+    name: "Daydreamer Magi-Onesie",
+    hitdice: "d6",
+    armorclass: "10 + Dexterity Modifier",
+    description: "This comfortable, fluffy onesie is adorned with soft, pastel colors and whimsical patterns like stars, clouds, and smiling moons. Often featuring an oversized hood with animal ears or a little tail, it radiates a faint, soothing warmth and smells of lavender and cookies.",
+    imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/daydreamermagionesie.png", // Update with actual image URL when available
+    progression: [
+            "<strong>Level 1:</strong> AC 10 + Dexterity modifier, d6 hit die. Age/Size Toggle action transforms between adult (Medium) and child (Small) forms with mechanical benefits. Naptime Resistance grants advantage against magical sleep. Learn the Little Miracle cantrip.",
+            "<strong>Level 4:</strong> Childlike Wonder grants +1 to spell attacks/save DCs and skill proficiency in Small form. Dream Weaving (1 Cell Charge) adds disadvantage on saving throws or advantage on spell attack rolls.",
+            "<strong>Level 7:</strong> Enhanced Childlike Wonder increases your spell bonus to +2. Soothing Aura gives nearby allies advantage on fear saves. Pocket Full of Dreams (2 Cell Charges) creates illusions or small objects.",
+            "<strong>Level 11:</strong> Masterful Childlike Wonder increases your spell bonus to +3. Gain psychic damage resistance (immunity in Small form). Slumbering Hex (3 Cell Charges) can put attackers to sleep.",
+            "<strong>Level 14:</strong> Oneiric Potency adds your spellcasting modifier to spell damage rolls. Expanded Soothing Aura grants temporary hit points. Shared Dream (4 Cell Charges) allows telepathic connection and condition removal.",
+            "<strong>Level 17:</strong> <strong>Dreamscape Manifestation (Capstone):</strong> Once per long rest, expend 6 Cell Charges to create a magical dreamscape that heals allies, charms enemies, and allows teleportation."
+         ]
+    },
+        "Reapers-Embrace": {
+        name: "Reaper's Embrace",
+        hitdice: "d12",
+        armorclass: "16",
+        description: "This dark, ominous chestpiece is adorned with skeletal motifs or soul-trapping runes. It seems to draw in ambient life energy, empowering the wearer by siphoning the vitality of their foes.",
+        imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/reapersembrace.png",
+        progression: [
+            "<strong>Level 1:</strong> AC 16 (Bulwark Type), d12 hit die. Soul Siphon grants temporary hit points equal to your proficiency bonus when you reduce a hostile creature to 0 hit points with a melee attack.",
+            "<strong>Level 4:</strong> Vampiric Strike allows expending 1 Cell Charge to deal an additional 1d8 necrotic damage and regain half that amount as hit points.",
+            "<strong>Level 7:</strong> Aura of Dread imposes disadvantage on saving throws against being frightened for enemies that are frightened or have taken necrotic damage from you. Improved Soul Siphon increases temporary hit points to proficiency bonus plus Constitution modifier.",
+            "<strong>Level 11:</strong> Essence Drain increases Vampiric Strike damage to 2d8 and converts excess healing to temporary hit points.",
+            "<strong>Level 14:</strong> Feast of Souls allows regaining hit points and gaining advantage on rolls when enemies die nearby.",
+            "<strong>Level 17:</strong> <strong>Harbinger of the End (Capstone):</strong> Once per long rest, expend 5 Cell Charges to gain a powerful aura that grants damage resistance, bonus necrotic damage, area-of-effect damage, and prevents fallen enemies from being revived."
+        ]
+    },    
+        "Transspatial-Phase-Weave": {
+        name: "Transspatial Phase Weave",
+        hitdice: "d6",
+        armorclass: "10 + Dexterity Modifier",
+        description: "A lightweight, dark cloth garment that allows short teleports, ethereal steps, and access to extradimensional pockets, enhancing agility and elusiveness.",
+        imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/transpatialweave_bria.png", // Placeholder - replace with actual URL
+        progression: [
+            "<strong>Level 1:</strong> +2 Dexterity (max 22), +5 ft speed, Transspatial Pockets (20 lbs), 5 ft Phase Hop (1 CC).",
+            "<strong>Level 5:</strong> Phase Hop to 10 ft, Pockets to 40 lbs, Ethereal Step (2 CC).",
+            "<strong>Level 8:</strong> Reactive Phase (disadvantage to attacker/advantage on save), Swift Jaunt (Phase Hop as bonus action to 20 ft, 2 CC).",
+            "<strong>Level 11:</strong> Phase Dance (30 ft teleport + attack, disadvantage vs you, 3 CC), Pockets to 60 lbs.",
+            "<strong>Level 14:</strong> Speed + additional 5 ft (total +10), Dimensional Shroud (reaction invis + 60ft teleport, 4 CC), Phase Dance can bring one creature.",
+            "<strong>Level 17:</strong> Phase Rift Cascade (Capstone: multi-rift teleport & AoE damage, 6 CC, 1/long rest)."
+    ]
+  },      
+        "Light-Type-Frame": {
         name: "Light Type Frame",
         hitdice: "d8",
         armorclass: "13+dex",
@@ -1140,18 +1186,60 @@ const armorData = {
         "<strong>Level 14:</strong> Master hunting techniques and provide emergency healing to fallen allies."
     ]
 },
-    "Mephidium-Coda": {
-        name: "Mephidium Coda (Skunk's Tail)",
-        description: "Embodying toxic misfortune and grimy power, the Mephidium Coda transforms your battle presence into a malodorous curse that intensifies with combat grime.",
-        imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/mephidiumcoda.png",
-        bonusCellCharges: 4,
-        progression: [
-            "<strong>Level 3:</strong> Base toxic abilities including poison effects and noxious aura.",
-            "<strong>Level 6:</strong> Enhanced poison damage and expanded aura of misfortune.",
-            "<strong>Level 9:</strong> Additional toxic effects with chance to inflict special conditions.",
-            "<strong>Level 12:</strong> Ultimate stinking cloud ability and toxic immunity."
-        ]
-    }
+"Aether-Weaver": {
+    name: "Aether-Weaver",
+    description: "Crafted from shimmering, unstable aether, this raiment allows the wearer to manipulate raw magical energy, creating barriers, unleashing unpredictable bursts, and disrupting the flow of magic.",
+    imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/aetherweavetracer.png",
+    bonusCellCharges: 5,
+    progression: [
+        "<strong>Level 3:</strong> Aetheric Shunt: When you are hit by a spell attack or included in the area of effect of a spell, you can use your reaction and expend 1 Cell Charge to gain a +2 bonus to your AC against the spell attack or advantage on the saving throw against the spell. This can be used once per short rest without expending Cell Charges. You can use this feature again by expending 1 Cell Charge.\nUnstable Aether Bolt: As an action, you can expend 1 Cell Charge to fire a bolt of unstable aether at a creature within 60 feet. Make a ranged spell attack (+ proficiency bonus + your spellcasting ability modifier). On a hit, the target takes 1d10 force damage and is subjected to a random minor effect from the Mystery Module's Miracore Effects Table (roll a d50, ignore results that grant Cell Charges or require an action/reaction).",
+        "<strong>Level 6:</strong> Aetheric Barrier: As an action, you can expend 2 Cell Charges to create a wall of shimmering aether up to 30 feet long, 10 feet high, and 1 foot thick within 60 feet of you. The wall provides three-quarters cover. Each creature that passes through the wall for the first time on a turn takes 2d6 force damage. The wall lasts for 1 minute or until you dismiss it as a bonus action. This can be used once per short rest without expending Cell Charges. You can use this feature again by expending 2 Cell Charges.",
+        "<strong>Level 8:</strong> Disrupting Pulse: As an action, you can expend 3 Cell Charges to emit a pulse of disruptive aether. Each creature concentrating on a spell within 30 feet of you must succeed on a Constitution saving throw (DC = 8 + your proficiency bonus + your spellcasting ability modifier) or lose concentration. This can be used once per short rest without expending Cell Charges. You can use this feature again by expending 3 Cell Charges.",
+        "<strong>Level 12:</strong> Aetheric Step: As a bonus action, you can expend 2 Cell Charges to teleport up to 60 feet to an unoccupied space you can see. When you arrive, each creature within 5 feet of your destination must succeed on a Constitution saving throw (DC = 8 + your proficiency bonus + your spellcasting ability modifier) or take 1d6 force damage. This can be used once per short rest without expending Cell Charges. You can use this feature again by expending 2 Cell Charges.\nUnleashed Anomaly (Apex Raiment Ability): Once per long rest, as an action, you can expend 4 Cell Charges to unleash a localized aetheric anomaly. Choose a point you can see within 60 feet. A 20-foot radius sphere centered on that point becomes a zone of wild magic for 1 minute. At the start of each creature's turn in the area, roll on the Wild Magic Surge table (Player's Handbook, p. 104) and apply the effect to that creature. This ability cannot be used again until you finish a long rest.",
+        "<strong>Level 17:</strong> <strong>Aetheric Singularity (Capstone):</strong> Once per long rest, as an action, you can expend 5 Cell Charges to create a temporary aetheric singularity. Choose a point you can see within 60 feet. Each creature in a 20-foot radius sphere centered on that point must succeed on a Strength saving throw (DC = 8 + your proficiency bonus + your spellcasting ability modifier) or be pulled to the center of the sphere and restrained for 1 minute. While restrained this way, a creature takes 4d6 force damage at the start of its turn. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. This ability cannot be used again until you finish a long rest."
+    ]
+},
+"Animus-Gear-System": {
+    name: "Animus-Gear-System",
+    description: "This Raiment is a marvel of bio-mechanical engineering, a framework of shifting plates, glowing conduits, and articulated joints that can reconfigure the Aegisknight's form into powerful, synthetic beast modes. It hums with a synthesized echo of natural energies.",
+    imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/animusgear.png",
+    bonusCellCharges: 5,
+    progression: [
+        "<strong>Level 3:</strong> Synthetic Shift: As an action, expend 2 Cell Charges to transform into a beast form (CR 1/2 or lower, no flying/swimming). You retain your mental stats, hit points, and skill proficiencies. Integrated Systems: +1 max Cell Charges and Nature proficiency.",
+        "<strong>Level 6:</strong> Enhanced Animus Forms & Cavalry Configuration: CR limit increases to 1 and you can use swimming forms. The Mecha-Centaur form grants 50 ft. movement, improved physical stats, and powerful integrated weapons.",
+        "<strong>Level 8:</strong> Aerial & Aquatic Adaptation: CR limit increases to 2, flying forms now available. System Optimization grants temporary hit points equal to your level with each transformation.",
+        "<strong>Level 12:</strong> Apex Animus Forms: CR limit increases to 3. Adaptive Weaponry lets you manifest specialized weapon systems in forms lacking suitable natural attacks.",
+        "<strong>Level 14:</strong> Modular Evolution: Expend 4 Cell Charges to access CR 4 beasts and add Evolution Modules that enhance stealth, defense, movement, or critical hit range."
+    ]
+},
+  "Maestro-Harness": {
+	 name: "Maestro-Harness",
+	 description: "Transforms battlefield maneuvers into a symphony of support and disruption, inspiring allies and disorienting foes with sonic energy.",
+	 imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/maestroharness.png", // Placeholder URL
+	 bonusCellCharges: 4, // Assuming no bonus CC unless specified
+	 progression: [
+		 "<strong>Level 3:</strong> Base support (Inspiring Cadence) and disruption (Discordant Pulse) abilities.",
+		 "<strong>Level 6:</strong> Aura of Harmony & Dissonance proximity effect.",
+		 "<strong>Level 8:</strong> Enhanced Rousing Anthem and Protective Crescendo synergy.",
+		 "<strong>Level 12:</strong> Symphony of Disruption cone effect with added debuff.",
+		 "<strong>Level 14:</strong> Grand Crescendo Apex ability with passive benefit.",
+		 "<strong>Level 17:</strong> Maestro's Command Capstone ability."
+	 ]
+  },
+"Mephidium-Coda": {
+	 name: "Mephidium Coda (Skunk's Tail)",
+	 description: "Embodying toxic misfortune and grimy power, the Mephidium Coda transforms your battle presence into a malodorous curse that intensifies with combat grime.",
+	 imageUrl: "https://ik.imagekit.io/owlcan/aegisknight/mephidiumcoda.png",
+	 bonusCellCharges: 4,
+	 progression: [
+		 "<strong>Level 3:</strong> Base toxic abilities, soiled buff, and poison resistance.",
+		 "<strong>Level 6:</strong> Expanded Toxic Emission and Lingering Stench proximity effect.",
+		 "<strong>Level 8:</strong> Enhanced soiled buff and Pestilent Synergy with allies.",
+		 "<strong>Level 12:</strong> Accidental Misfortune area effect and greater poison resistance.",
+		 "<strong>Level 14:</strong> Plaguebearer's Presence Apex ability.",
+		 "<strong>Level 17:</strong> Toxic Overlord Capstone ability."
+	 ]
+  },
 };
 
 // Hardcoded subset of weapons data
@@ -2659,15 +2747,38 @@ function finalizeLoadout() {
     const constitutionScore = document.getElementById('constitution').value || 10;
     const strengthScore = document.getElementById('strength').value || 10; 
     
-    // Calculate ability modifiers
+    // Debug log to verify actual values
+    console.log("Actual DEX score from input:", dexterityScore);
+    
+    // Apply bonus dexterity from armor if applicable
+    let bonusDexterity = 0;
+    const selectedChestValue = document.getElementById('chest-select').value;
+    if (selectedChestValue) {
+        const selectedChestArmor = armorData[selectedChestValue];
+        if (selectedChestArmor.bonusDexterity) {
+            bonusDexterity = selectedChestArmor.bonusDexterity;
+            console.log(`Adding +${bonusDexterity} to Dexterity from ${selectedChestArmor.name}`);
+        }
+    }
+    
+    // Calculate final dexterity score with bonus
+    const finalDexterityScore = parseInt(dexterityScore) + bonusDexterity;
+    
+    // Calculate ability modifiers with the adjusted dexterity
     const strModifier = getAbilityModifier(strengthScore);
-    const dexModifier = getAbilityModifier(dexterityScore);
+    const dexModifier = getAbilityModifier(finalDexterityScore);
+    const conModifier = getAbilityModifier(constitutionScore);
+    
+    // Update ability scores in the character sheet display
+    document.getElementById('strength-display').textContent = `${strengthScore} (${strModifier >= 0 ? '+' : ''}${strModifier})`;
+    
+    document.getElementById('constitution-display').textContent = `${constitutionScore} (${conModifier >= 0 ? '+' : ''}${conModifier})`;
+    
     
     // Get selected chest armor for HP and AC calculations
-    const selectedChestValue = document.getElementById('chest-select').value;
     let hitDice = "";
     let armorClassText = "";
-      if (selectedChestValue) {
+    if (selectedChestValue) {
         const selectedChestArmor = armorData[selectedChestValue];
         hitDice = selectedChestArmor.hitdice;
         armorClassText = selectedChestArmor.armorclass;
@@ -2676,17 +2787,22 @@ function finalizeLoadout() {
         console.log("Selected Armor:", selectedChestValue);
         console.log("Hit Dice Value:", hitDice);
         console.log("Armor Class Text:", armorClassText);
-          // Calculate and display HP and AC
+        
+        // Calculate and display HP and AC
         const maxHP = calculateMaxHP(hitDice, constitutionScore);
-        const armorClass = calculateAC(armorClassText, dexterityScore);
-        const dexModifier = getAbilityModifier(dexterityScore);
-          document.getElementById('hp-display').textContent = maxHP;
+        const armorClass = calculateAC(armorClassText, finalDexterityScore);
+      
+        
+        
+        document.getElementById('hp-display').textContent = maxHP;
         document.getElementById('ac-display').textContent = `${armorClass}`;
+      
     } else {
         document.getElementById('hp-display').textContent = "-";
         document.getElementById('ac-display').textContent = "-";
     }
-      // Populate character information
+    
+    // Populate character information
     populateCharacterInfo();
     
     // Populate weapons information
@@ -3232,8 +3348,12 @@ function calculateMaxHP(hitDice, constitutionScore) {
     // Debug logging
     console.log("Hit Dice:", hitDice);
     
-    // Calculate HP based on hit dice
+ // Calculate HP based on hit dice
     switch(hitDice) {
+        case "d6":
+            baseHP = 6 + (6 * 4); // Maximized HP
+            console.log("d6 used:", baseHP);
+            break;
         case "d8":
             baseHP = 8 + (8 * 4); // Maximized HP
             console.log("d8 used for Light Type Frame:", baseHP);
